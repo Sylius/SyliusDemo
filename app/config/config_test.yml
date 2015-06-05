@@ -1,0 +1,43 @@
+imports:
+    - { resource: config.yml }
+
+parameters:
+    sylius.promotion.item_based: true
+    sylius.order.allow_guest_order: true
+
+framework:
+    test: ~
+    default_locale: "en"
+    session:
+        storage_id: session.storage.mock_file
+
+swiftmailer:
+    disable_delivery: true
+
+doctrine:
+    dbal:
+        dbname: %sylius.database.name%_test
+        path:   %sylius.database.path%
+        driver_class: Sylius\Bundle\CoreBundle\Tests\MySqlDriver
+
+sylius_money:
+    currency: EUR
+    locale:   en_US
+
+sylius_payment:
+    gateways:
+        cc:     Credit Card
+        test:   Test
+        stripe: Stripe
+
+doctrine_cache:
+    providers:
+        sylius_settings:
+            type: array
+
+monolog:
+    handlers:
+        main:
+            type:  stream
+            path:  %kernel.logs_dir%/%kernel.environment%.log
+            level: error
