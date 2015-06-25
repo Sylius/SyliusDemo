@@ -1,0 +1,6 @@
+services:
+    sylius_demo.listener.admin_delete:
+        class: AppBundle\EventListener\AdminDeleteListener
+        arguments: [@session]
+        tags:
+            - { name: kernel.event_listener, event: sylius.customer.pre_delete, method: preDelete }
