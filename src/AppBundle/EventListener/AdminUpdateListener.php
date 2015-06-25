@@ -37,7 +37,7 @@ class AdminUpdateListener
         }
 
         if ($this->assertCustomerIsDemoAdmin($subject)) {
-            $this->session->getFlashBag()->add("error", "You cannot disable Sylius Demo administrator!");
+            $this->session->getFlashBag()->add('error', 'sylius_demo.account.prevent_disable');
 
             $event->stopPropagation();
         }

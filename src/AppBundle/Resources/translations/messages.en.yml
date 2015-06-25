@@ -1,0 +1,4 @@
+sylius_demo:
+    account:
+        prevent_delete: You cannot delete administrator of Sylius Demo!
+        prevent_disable: You cannot disable Sylius Demo administrator!

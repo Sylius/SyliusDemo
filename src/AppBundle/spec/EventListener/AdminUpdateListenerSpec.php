@@ -39,7 +39,7 @@ class AdminUpdateListenerSpec extends ObjectBehavior
         $customer->getEmail()->willReturn('sylius@example.com');
 
         $session->getFlashBag()->willReturn($flashBag);
-        $flashBag->add("error", "You cannot disable Sylius Demo administrator!")->shouldBeCalled();
+        $flashBag->add('error', 'sylius_demo.account.prevent_disable')->shouldBeCalled();
 
         $event->stopPropagation()->shouldBeCalled();
 

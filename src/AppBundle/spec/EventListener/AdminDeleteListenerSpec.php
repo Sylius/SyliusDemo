@@ -37,7 +37,7 @@ class AdminDeleteListenerSpec extends ObjectBehavior
         $customer->getEmail()->willReturn('sylius@example.com');
 
         $session->getFlashBag()->willReturn($flashBag);
-        $flashBag->add("error", "You cannot delete administrator of Sylius Demo!")->shouldBeCalled();
+        $flashBag->add("error", "sylius_demo.account.prevent_delete")->shouldBeCalled();
 
         $event->stopPropagation()->shouldBeCalled();
 

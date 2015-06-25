@@ -37,7 +37,7 @@ class AdminDeleteListener
         }
 
         if ('sylius@example.com' === $subject->getEmail() && $subject->getUser()->hasRole('ROLE_SYLIUS_ADMIN')) {
-            $this->session->getFlashBag()->add("error", "You cannot delete administrator of Sylius Demo!");
+            $this->session->getFlashBag()->add("error", "sylius_demo.account.prevent_delete");
 
             $event->stopPropagation();
         }
