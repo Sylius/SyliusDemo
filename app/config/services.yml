@@ -4,3 +4,8 @@ services:
         arguments: [@session]
         tags:
             - { name: kernel.event_listener, event: sylius.customer.pre_delete, method: preDelete }
+    sylius_demo.listener.admin_update:
+        class: AppBundle\EventListener\AdminUpdateListener
+        arguments: [@session]
+        tags:
+            - { name: kernel.event_listener, event: sylius.customer.pre_update, method: preUpdate }
