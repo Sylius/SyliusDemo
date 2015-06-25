@@ -36,7 +36,7 @@ class AdminDeleteListener
             throw new UnexpectedTypeException($subject, 'Sylius\Component\Core\Model\CustomerInterface');
         }
 
-        if ('sylius@example.com' === $subject->getEmail() && $subject->getUser()->hasRole('ROLE_SYLIUS_ADMIN')) {
+        if ('sylius@example.com' === $subject->getEmail()) {
             $this->session->getFlashBag()->add("error", "sylius_demo.account.prevent_delete");
 
             $event->stopPropagation();

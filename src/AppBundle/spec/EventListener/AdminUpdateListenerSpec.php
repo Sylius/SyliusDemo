@@ -5,7 +5,6 @@ namespace spec\AppBundle\EventListener;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 use Sylius\Component\Core\Model\CustomerInterface;
-use Sylius\Component\User\Model\UserInterface;
 use Symfony\Component\EventDispatcher\GenericEvent;
 use Symfony\Component\HttpFoundation\File\Exception\UnexpectedTypeException;
 use Symfony\Component\HttpFoundation\Session\Flash\FlashBagInterface;
@@ -26,20 +25,15 @@ class AdminUpdateListenerSpec extends ObjectBehavior
     function it_is_triggered_pre_update(
         GenericEvent $event,
         CustomerInterface $customer,
-        UserInterface $user,
         FlashBagInterface $flashBag,
         $session
     ) {
         $event->getSubject()->willReturn($customer);
 
-        $customer->getUser()->willReturn($user);
-        $user->hasRole('ROLE_SYLIUS_ADMIN')->willReturn(true);
-        $user->isEnabled()->willReturn(false);
-
         $customer->getEmail()->willReturn('sylius@example.com');
 
         $session->getFlashBag()->willReturn($flashBag);
-        $flashBag->add('error', 'sylius_demo.account.prevent_disable')->shouldBeCalled();
+        $flashBag->add('error', 'sylius_demo.account.prevent_edit')->shouldBeCalled();
 
         $event->stopPropagation()->shouldBeCalled();
 

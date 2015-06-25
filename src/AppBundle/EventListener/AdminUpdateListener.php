@@ -36,20 +36,10 @@ class AdminUpdateListener
             throw new UnexpectedTypeException($subject, 'Sylius\Component\Core\Model\CustomerInterface');
         }
 
-        if ($this->assertCustomerIsDemoAdmin($subject)) {
-            $this->session->getFlashBag()->add('error', 'sylius_demo.account.prevent_disable');
+        if ('sylius@example.com' === $subject->getEmail()) {
+            $this->session->getFlashBag()->add('error', 'sylius_demo.account.prevent_edit');
 
             $event->stopPropagation();
         }
-    }
-
-    /**
-     * @param CustomerInterface $customer
-     *
-     * @return boolean
-     */
-    private function assertCustomerIsDemoAdmin(CustomerInterface $customer)
-    {
-        return ('sylius@example.com' === $customer->getEmail() && $customer->getUser()->hasRole('ROLE_SYLIUS_ADMIN') && !$customer->getUser()->isEnabled());
     }
 }
