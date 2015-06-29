@@ -1078,7 +1078,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/migrations/zipball/abb87d84ed21fd30c27bd3b52252a495a36d32fb",
+                "url": "https://api.github.com/repos/doctrine/migrations/zipball/43619782df4e9ae6be6b24557f0429471eeee848",
                 "reference": "abb87d84ed21fd30c27bd3b52252a495a36d32fb",
                 "shasum": ""
             },
@@ -6365,12 +6365,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/Sylius.git",
-                "reference": "e3717e0f7e78b30fddf8fd6a900e75565c09b32f"
+                "reference": "6e3a88aa37c130c8ae35b551d764d7443b5f62ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/e3717e0f7e78b30fddf8fd6a900e75565c09b32f",
-                "reference": "e3717e0f7e78b30fddf8fd6a900e75565c09b32f",
+                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/6e3a88aa37c130c8ae35b551d764d7443b5f62ce",
+                "reference": "6e3a88aa37c130c8ae35b551d764d7443b5f62ce",
                 "shasum": ""
             },
             "require": {
@@ -6540,7 +6540,7 @@
             ],
             "description": "E-Commerce platform for PHP, based on Symfony framework.",
             "homepage": "http://sylius.org",
-            "time": "2015-06-05 07:21:58"
+            "time": "2015-06-29 09:26:02"
         },
         {
             "name": "symfony-cmf/block-bundle",
