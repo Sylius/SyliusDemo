@@ -7,7 +7,6 @@ class AppKernel extends Kernel
     public function registerBundles()
     {
         $bundles = array(
-            new \Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle(),
             new \AppBundle\AppBundle()
         );
 

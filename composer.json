@@ -21,10 +21,7 @@
     ],
     "require": {
         "php":                          ">=5.3.3",
-
-        "sylius/sylius":                "0.15.*@dev",
-        "doctrine/migrations":          "~1.0@dev",
-        "sensio/generator-bundle":      "~2.3"
+        "sylius/sylius":                "0.15.*@dev"
     },
     "require-dev": {
         "behat/behat":                  "~3.0",
