@@ -20,8 +20,8 @@
         }
     ],
     "require": {
-        "php":                          ">=5.3.3",
-        "sylius/sylius":                "0.15.*@dev"
+        "php":                          ">=5.5.9",
+        "sylius/sylius":                "0.16.*@dev"
     },
     "require-dev": {
         "behat/behat":                  "~3.0",
