@@ -1,0 +1,26 @@
+imports:
+    - vendor/sylius/sylius/behat.yml.dist
+
+default:
+    extensions:
+        Sylius\Behat\Extension\MultiContainerExtension:
+            imports:
+                - "vendor/sylius/sylius/src/Sylius/Behat/Resources/config/services.xml"
+
+        FriendsOfBehat\SuiteSettingsExtension:
+            paths:
+                - "vendor/sylius/sylius/features"
+                - "features"
+
+        Behat\MinkExtension:
+            files_path: "%paths.base%/vendor/sylius/sylius/src/Sylius/Behat/Resources/fixtures/"
+
+cached:
+    extensions:
+        Sylius\Behat\Extension\MultiContainerExtension:
+            imports:
+                - "vendor/sylius/sylius/src/Sylius/Behat/Resources/config/services.xml"
+
+        Behat\MinkExtension:
+            javascript_session: chromium
+            files_path: "%paths.base%/vendor/sylius/sylius/src/Sylius/Behat/Resources/fixtures/"
