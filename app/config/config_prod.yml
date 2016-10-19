@@ -14,3 +14,6 @@ monolog:
             type: stream
             path: "%kernel.logs_dir%/%kernel.environment%.log"
             level: debug
+
+swiftmailer:
+    disable_delivery: true
