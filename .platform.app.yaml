@@ -1,0 +1,94 @@
+name: sylius
+
+type: "php:7.0"
+build:
+    flavor: symfony
+
+relationships:
+    database: "mysql:mysql"
+
+runtime:
+    extensions:
+        - msgpack
+        - igbinary
+        - memcached
+
+web:
+    document_root: "/web"
+    passthru: "/app.php"
+
+    whitelist:
+      - \.css$
+      - \.js$
+
+      - \.gif$
+      - \.jpe?g$
+      - \.png$
+      - \.tiff?$
+      - \.wbmp$
+      - \.ico$
+      - \.jng$
+      - \.bmp$
+      - \.svgz?$
+
+      - \.midi?$
+      - \.mpe?ga$
+      - \.mp2$
+      - \.mp3$
+      - \.m4a$
+      - \.ra$
+      - \.weba$
+
+      - \.3gpp?$
+      - \.mp4$
+      - \.mpe?g$
+      - \.mpe$
+      - \.ogv$
+      - \.mov$
+      - \.webm$
+      - \.flv$
+      - \.mng$
+      - \.asx$
+      - \.asf$
+      - \.wmv$
+      - \.avi$
+
+      - \.ogx$
+
+      - \.swf$
+
+      - \.jar$
+
+      - \.ttf$
+      - \.eot$
+      - \.woff$
+      - \.otf$
+
+      - /robots\.txt$
+
+      - \.html$
+      - \.pdf$
+
+disk: 2048
+
+mounts:
+    "/app/cache": "shared:files/cache"
+    "/app/logs": "shared:files/logs"
+    "/web/uploads": "shared:files/uploads"
+    "/web/media": "shared:files/media"
+
+hooks:
+    build: |
+        rm -rf app/cache/*
+        php app/console --env=prod --no-debug --ansi cache:clear
+        php app/console --env=prod --no-debug --ansi assets:install
+        npm install
+        npm run gulp
+    deploy: |
+        rm -rf web/media/*
+        php app/console --env=prod --no-debug sylius:fixtures:load
+
+crons:
+    reset:
+        spec: "0 */1 * * *"
+        cmd: "rm -rf web/media/* && php app/console --env=prod --no-debug sylius:fixtures:load"

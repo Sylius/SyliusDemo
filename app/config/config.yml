@@ -8,6 +8,7 @@ imports:
     - { resource: "@SyliusShopBundle/Resources/config/app/config.yml" }
 
     - { resource: "parameters.yml" }
+    - { resource: "parameters_platform.php" }
     - { resource: "security.yml" }
 
 framework:
