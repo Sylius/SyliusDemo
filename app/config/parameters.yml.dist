@@ -13,6 +13,8 @@ parameters:
     mailer_user: ~
     mailer_password: ~
 
+    redis_dsn: ~
+
     secret: EDITME
     locale: en_US
     currency: USD

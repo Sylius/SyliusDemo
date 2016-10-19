@@ -24,7 +24,9 @@
 
         "sylius/sylius": "^1.0@dev",
 
-        "sensio/distribution-bundle": "^3.0"
+        "sensio/distribution-bundle": "^3.0",
+        "snc/redis-bundle": "^2.0",
+        "predis/predis": "^1.0"
     },
     "require-dev": {
         "behat/behat": "^3.0",

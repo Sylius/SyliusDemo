@@ -6,12 +6,14 @@ build:
 
 relationships:
     database: "mysql:mysql"
+    redis: "redis:redis"
 
 runtime:
     extensions:
         - msgpack
         - igbinary
         - memcached
+        - redis
 
 web:
     document_root: "/web"
