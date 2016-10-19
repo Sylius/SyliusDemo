@@ -18,9 +18,12 @@ class AppKernel extends Kernel
             new Sylius\Bundle\ShopBundle\SyliusShopBundle(),
             new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle(),
             new FOS\OAuthServerBundle\FOSOAuthServerBundle(),
-            new Snc\RedisBundle\SncRedisBundle(),
             new AppBundle\AppBundle(),
         ];
+
+        if ('prod' === $this->getEnvironment()) {
+            $bundles[] = new Snc\RedisBundle\SncRedisBundle();
+        }
 
         return array_merge(parent::registerBundles(), $bundles);
     }
