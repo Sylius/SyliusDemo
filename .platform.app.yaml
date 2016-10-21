@@ -89,6 +89,7 @@ hooks:
     deploy: |
         rm -rf web/media/*
         php app/console --env=prod --no-debug sylius:fixtures:load
+        rm -rf app/cache/*
 
 crons:
     reset:
