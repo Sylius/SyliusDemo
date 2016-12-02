@@ -74,24 +74,27 @@ web:
 disk: 2048
 
 mounts:
-    "/app/cache": "shared:files/cache"
-    "/app/logs": "shared:files/logs"
+    "/var/cache": "shared:files/cache"
+    "/var/logs": "shared:files/logs"
     "/web/uploads": "shared:files/uploads"
     "/web/media": "shared:files/media"
 
 hooks:
     build: |
-        rm -rf app/cache/*
-        php app/console --env=prod --no-debug --ansi cache:clear
-        php app/console --env=prod --no-debug --ansi assets:install
+        rm web/app_dev.php
+        rm web/app_test.php
+        rm web/app_test_cached.php
+        rm -rf var/cache/*
+        php bin/console --env=prod --no-debug --ansi cache:clear
+        php bin/console --env=prod --no-debug --ansi assets:install
         npm install
         npm run gulp
     deploy: |
         rm -rf web/media/*
-        php app/console --env=prod --no-debug sylius:fixtures:load
-        rm -rf app/cache/*
+        php bin/console --env=prod --no-debug sylius:fixtures:load
+        rm -rf var/cache/*
 
 crons:
     reset:
         spec: "0 */1 * * *"
-        cmd: "rm -rf web/media/* && php app/console --env=prod --no-debug sylius:fixtures:load"
+        cmd: "rm -rf web/media/* && php bin/console --env=prod --no-debug sylius:fixtures:load"

@@ -13,11 +13,5 @@ parameters:
     mailer_user: ~
     mailer_password: ~
 
-    redis_dsn: ~
-
     secret: EDITME
     locale: en_US
-    currency: USD
-
-    wkhtmltopdf.bin_path: /usr/bin/wkhtmltopdf
-    wkhtmltoimage.bin_path: /usr/bin/wkhtmltoimage
