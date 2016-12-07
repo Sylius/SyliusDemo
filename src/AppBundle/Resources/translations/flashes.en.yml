@@ -1,0 +1,4 @@
+sylius_demo:
+    admin_account:
+        prevent_delete: 'You cannot delete administrator of Sylius Demo!'
+        prevent_edit: 'You cannot edit administrator of Sylius Demo!'

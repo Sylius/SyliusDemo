@@ -1,1 +1,7 @@
-services: ~
+services:
+    sylius_demo.listener.admin:
+        class: AppBundle\EventListener\AdminListener
+        arguments: ['@session']
+        tags:
+            - { name: kernel.event_listener, event: sylius.admin_user.pre_delete, method: preDelete }
+            - { name: kernel.event_listener, event: sylius.admin_user.pre_update, method: preUpdate }
