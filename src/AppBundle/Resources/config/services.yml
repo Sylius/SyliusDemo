@@ -5,3 +5,9 @@ services:
         tags:
             - { name: kernel.event_listener, event: sylius.admin_user.pre_delete, method: preDelete }
             - { name: kernel.event_listener, event: sylius.admin_user.pre_update, method: preUpdate }
+
+    sylius_demo.listener.channel:
+        class: AppBundle\EventListener\ChannelListener
+        arguments: ['@session', '@router']
+        tags:
+            - { name: kernel.event_listener, event: kernel.request , method: preCreate }
