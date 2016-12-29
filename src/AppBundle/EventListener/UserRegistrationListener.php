@@ -11,13 +11,11 @@
 
 namespace AppBundle\EventListener;
 
-use Sylius\Component\Channel\Context\ChannelContextInterface;
+use AppBundle\Generator\FlashMessageGeneratorInterface;
 use Sylius\Component\Core\Model\CustomerInterface;
 use Sylius\Component\User\Security\Generator\GeneratorInterface;
 use Symfony\Component\EventDispatcher\GenericEvent;
 use Symfony\Component\HttpFoundation\Session\Session;
-use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
-use Symfony\Component\Translation\TranslatorInterface;
 use Webmozart\Assert\Assert;
 
 /**
@@ -36,39 +34,23 @@ final class UserRegistrationListener
     private $verificationTokenGenerator;
 
     /**
-     * @var UrlGeneratorInterface
+     * @var FlashMessageGeneratorInterface
      */
-    private $urlGenerator;
-
-    /**
-     * @var ChannelContextInterface
-     */
-    private $channelContext;
-
-    /**
-     * @var TranslatorInterface
-     */
-    private $translator;
+    private $flashMessageGenerator;
 
     /**
      * @param Session $session
      * @param GeneratorInterface $verificationTokenGenerator
-     * @param UrlGeneratorInterface $urlGenerator
-     * @param ChannelContextInterface $channelContext
-     * @param TranslatorInterface $translator
+     * @param FlashMessageGeneratorInterface $flashMessageGenerator
      */
     public function __construct(
         Session $session,
         GeneratorInterface $verificationTokenGenerator,
-        UrlGeneratorInterface $urlGenerator,
-        ChannelContextInterface $channelContext,
-        TranslatorInterface $translator
+        FlashMessageGeneratorInterface $flashMessageGenerator
     ) {
         $this->session = $session;
         $this->verificationTokenGenerator = $verificationTokenGenerator;
-        $this->urlGenerator = $urlGenerator;
-        $this->channelContext = $channelContext;
-        $this->translator = $translator;
+        $this->flashMessageGenerator = $flashMessageGenerator;
     }
 
     /**
@@ -84,10 +66,7 @@ final class UserRegistrationListener
         $token = $this->verificationTokenGenerator->generate();
         $user->setEmailVerificationToken($token);
 
-        $url = $this->urlGenerator->generate('sylius_shop_user_verification', ['token' => $token]);
-        $message = $this->translator->trans('sylius_demo.verification_link_flash', [
-            '%url%' => 'http://'.$this->channelContext->getChannel()->getHostname().$url,
-        ]);
+        $message = $this->flashMessageGenerator->generate($token);
 
         $this->session->getFlashBag()->add('success', $message);
     }
