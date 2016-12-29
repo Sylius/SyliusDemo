@@ -11,3 +11,9 @@ services:
         arguments: ['@session', '@router']
         tags:
             - { name: kernel.event_listener, event: kernel.request , method: preCreate }
+
+    sylius_demo.listener.user_registration:
+        class: AppBundle\EventListener\UserRegistrationListener
+        arguments: ['@session', '@sylius.admin_user.token_generator.email_verification', '@router', '@sylius.context.channel', '@translator.default']
+        tags:
+            - { name: kernel.event_listener, event: sylius.customer.post_register , method: addVerificationLink }
