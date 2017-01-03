@@ -26,14 +26,9 @@ final class VerificationFlashMessageGeneratorSpec extends ObjectBehavior
 {
     function let(
         UrlGeneratorInterface $urlGenerator,
-        ChannelContextInterface $channelContext,
         TranslatorInterface $translator
     ) {
-        $this->beConstructedWith(
-            $urlGenerator,
-            $channelContext,
-            $translator
-        );
+        $this->beConstructedWith($urlGenerator, $translator);
     }
 
     function it_is_initializable()
@@ -47,23 +42,18 @@ final class VerificationFlashMessageGeneratorSpec extends ObjectBehavior
     }
 
     function it_generates_flash_message_with_verification_link(
-        ChannelContextInterface $channelContext,
-        ChannelInterface $channel,
         TranslatorInterface $translator,
         UrlGeneratorInterface $urlGenerator
     ) {
-        $channelContext->getChannel()->willReturn($channel);
-        $channel->getHostname()->willReturn('localhost');
-
         $urlGenerator
-            ->generate('sylius_shop_user_verification', ['token' => 'token'])
-            ->willReturn('/verification/?token=token')
+            ->generate('sylius_shop_user_verification', ['token' => 'token'], UrlGeneratorInterface::ABSOLUTE_URL)
+            ->willReturn('http://demo.sylius.org/verification/?token=token')
         ;
 
         $translator->trans('sylius_demo.verification_link_flash', [
-            '%url%' => 'http://localhost/verification/?token=token',
-        ])->willReturn('To verify your email address - please visit http://localhost/?token=token');
+            '%url%' => 'http://demo.sylius.org/verification/?token=token',
+        ])->willReturn('For demo purposes you can visit http://demo.sylius.org/verification/?token=token to verify the account.');
 
-        $this->generate('token')->shouldReturn('To verify your email address - please visit http://localhost/?token=token');
+        $this->generate('token')->shouldReturn('For demo purposes you can visit http://demo.sylius.org/verification/?token=token to verify the account.');
     }
 }

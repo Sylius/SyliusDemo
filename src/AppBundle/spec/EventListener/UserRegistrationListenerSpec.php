@@ -44,7 +44,6 @@ final class UserRegistrationListenerSpec extends ObjectBehavior
     }
 
     function it_adds_flash_message_with_verification_link(
-        CustomerInterface $customer,
         FlashBagInterface $flashBag,
         FlashMessageGeneratorInterface $flashMessageGenerator,
         GeneratorInterface $verificationTokenGenerator,
@@ -52,8 +51,7 @@ final class UserRegistrationListenerSpec extends ObjectBehavior
         Session $session,
         UserInterface $user
     ) {
-        $event->getSubject()->willReturn($customer);
-        $customer->getUser()->willReturn($user);
+        $event->getSubject()->willReturn($user);
 
         $session->getFlashBag()->willReturn($flashBag);
 
@@ -73,7 +71,7 @@ final class UserRegistrationListenerSpec extends ObjectBehavior
         $this->addVerificationLink($event);
     }
 
-    function it_throws_exception_if_event_subject_is_not_customer(GenericEvent $event)
+    function it_throws_exception_if_event_subject_is_not_user(GenericEvent $event)
     {
         $event->getSubject()->willReturn('badObject');
 

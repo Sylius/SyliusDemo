@@ -11,7 +11,6 @@
 
 namespace AppBundle\Generator;
 
-use Sylius\Component\Channel\Context\ChannelContextInterface;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Translation\TranslatorInterface;
 
@@ -26,27 +25,19 @@ final class VerificationFlashMessageGenerator implements FlashMessageGeneratorIn
     private $urlGenerator;
 
     /**
-     * @var ChannelContextInterface
-     */
-    private $channelContext;
-
-    /**
      * @var TranslatorInterface
      */
     private $translator;
 
     /**
      * @param UrlGeneratorInterface $urlGenerator
-     * @param ChannelContextInterface $channelContext
      * @param TranslatorInterface $translator
      */
     public function __construct(
         UrlGeneratorInterface $urlGenerator,
-        ChannelContextInterface $channelContext,
         TranslatorInterface $translator
     ) {
         $this->urlGenerator = $urlGenerator;
-        $this->channelContext = $channelContext;
         $this->translator = $translator;
     }
 
@@ -55,9 +46,13 @@ final class VerificationFlashMessageGenerator implements FlashMessageGeneratorIn
      */
     public function generate($token)
     {
-        $url = $this->urlGenerator->generate('sylius_shop_user_verification', ['token' => $token]);
+        $url = $this
+            ->urlGenerator
+            ->generate('sylius_shop_user_verification', ['token' => $token], UrlGeneratorInterface::ABSOLUTE_URL)
+        ;
+
         $message = $this->translator->trans('sylius_demo.verification_link_flash', [
-            '%url%' => 'http://'.$this->channelContext->getChannel()->getHostname().$url,
+            '%url%' => $url,
         ]);
 
         return $message;

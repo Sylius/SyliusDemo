@@ -1,2 +1,2 @@
 sylius_demo:
-    verification_link_flash: 'To verify your account - please visit %url%'
+    verification_link_flash: 'For demo purposes you can visit %url% to verify the account.'

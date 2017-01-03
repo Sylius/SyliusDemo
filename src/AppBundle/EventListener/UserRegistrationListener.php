@@ -13,6 +13,7 @@ namespace AppBundle\EventListener;
 
 use AppBundle\Generator\FlashMessageGeneratorInterface;
 use Sylius\Component\Core\Model\CustomerInterface;
+use Sylius\Component\User\Model\UserInterface;
 use Sylius\Component\User\Security\Generator\GeneratorInterface;
 use Symfony\Component\EventDispatcher\GenericEvent;
 use Symfony\Component\HttpFoundation\Session\Session;
@@ -58,13 +59,12 @@ final class UserRegistrationListener
      */
     public function addVerificationLink(GenericEvent $event)
     {
-        /** @var CustomerInterface $subject */
+        /** @var UserInterface $subject */
         $subject = $event->getSubject();
-        Assert::isInstanceOf($subject, CustomerInterface::class);
+        Assert::isInstanceOf($subject, UserInterface::class);
 
-        $user = $subject->getUser();
         $token = $this->verificationTokenGenerator->generate();
-        $user->setEmailVerificationToken($token);
+        $subject->setEmailVerificationToken($token);
 
         $message = $this->flashMessageGenerator->generate($token);
 
