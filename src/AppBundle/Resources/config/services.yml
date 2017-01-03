@@ -14,7 +14,7 @@ services:
 
     sylius_demo.listener.user_registration:
         class: AppBundle\EventListener\UserRegistrationListener
-        arguments: ['@session', '@sylius.admin_user.token_generator.email_verification', '@sylius_demo.generator.verification_flash_message']
+        arguments: ['@session', '@sylius_demo.generator.verification_flash_message']
         tags:
             - { name: kernel.event_listener, event: sylius.user.email_verification.token , method: addVerificationLink }
 

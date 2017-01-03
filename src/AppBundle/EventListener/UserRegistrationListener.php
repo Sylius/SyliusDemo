@@ -12,6 +12,7 @@
 namespace AppBundle\EventListener;
 
 use AppBundle\Generator\FlashMessageGeneratorInterface;
+use Doctrine\Common\Persistence\ObjectManager;
 use Sylius\Component\Core\Model\CustomerInterface;
 use Sylius\Component\User\Model\UserInterface;
 use Sylius\Component\User\Security\Generator\GeneratorInterface;
@@ -30,27 +31,19 @@ final class UserRegistrationListener
     private $session;
 
     /**
-     * @var GeneratorInterface
-     */
-    private $verificationTokenGenerator;
-
-    /**
      * @var FlashMessageGeneratorInterface
      */
     private $flashMessageGenerator;
 
     /**
      * @param Session $session
-     * @param GeneratorInterface $verificationTokenGenerator
      * @param FlashMessageGeneratorInterface $flashMessageGenerator
      */
     public function __construct(
         Session $session,
-        GeneratorInterface $verificationTokenGenerator,
         FlashMessageGeneratorInterface $flashMessageGenerator
     ) {
         $this->session = $session;
-        $this->verificationTokenGenerator = $verificationTokenGenerator;
         $this->flashMessageGenerator = $flashMessageGenerator;
     }
 
@@ -63,9 +56,7 @@ final class UserRegistrationListener
         $subject = $event->getSubject();
         Assert::isInstanceOf($subject, UserInterface::class);
 
-        $token = $this->verificationTokenGenerator->generate();
-        $subject->setEmailVerificationToken($token);
-
+        $token = $subject->getEmailVerificationToken();
         $message = $this->flashMessageGenerator->generate($token);
 
         $this->session->getFlashBag()->add('success', $message);
