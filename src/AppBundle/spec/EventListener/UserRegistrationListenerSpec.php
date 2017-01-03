@@ -13,6 +13,7 @@ namespace spec\AppBundle\EventListener;
 
 use AppBundle\EventListener\UserRegistrationListener;
 use AppBundle\Generator\FlashMessageGeneratorInterface;
+use Doctrine\Common\Persistence\ObjectManager;
 use PhpSpec\ObjectBehavior;
 use Sylius\Component\Core\Model\CustomerInterface;
 use Sylius\Component\User\Model\UserInterface;
@@ -28,14 +29,9 @@ final class UserRegistrationListenerSpec extends ObjectBehavior
 {
     function let(
         Session $session,
-        GeneratorInterface $verificationTokenGenerator,
         FlashMessageGeneratorInterface $flashMessageGenerator
     ) {
-        $this->beConstructedWith(
-            $session,
-            $verificationTokenGenerator,
-            $flashMessageGenerator
-        );
+        $this->beConstructedWith($session, $flashMessageGenerator);
     }
 
     function it_is_initializable()
@@ -46,7 +42,6 @@ final class UserRegistrationListenerSpec extends ObjectBehavior
     function it_adds_flash_message_with_verification_link(
         FlashBagInterface $flashBag,
         FlashMessageGeneratorInterface $flashMessageGenerator,
-        GeneratorInterface $verificationTokenGenerator,
         GenericEvent $event,
         Session $session,
         UserInterface $user
@@ -55,8 +50,7 @@ final class UserRegistrationListenerSpec extends ObjectBehavior
 
         $session->getFlashBag()->willReturn($flashBag);
 
-        $verificationTokenGenerator->generate()->willReturn('token');
-        $user->setEmailVerificationToken('token')->shouldBeCalled();
+        $user->getEmailVerificationToken()->willReturn('token');
 
         $flashMessageGenerator
             ->generate('token')
