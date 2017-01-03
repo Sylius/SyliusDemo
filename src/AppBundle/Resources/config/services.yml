@@ -11,3 +11,13 @@ services:
         arguments: ['@session', '@router']
         tags:
             - { name: kernel.event_listener, event: kernel.request , method: preCreate }
+
+    sylius_demo.listener.user_registration:
+        class: AppBundle\EventListener\UserRegistrationListener
+        arguments: ['@session', '@sylius.admin_user.token_generator.email_verification', '@sylius_demo.generator.verification_flash_message']
+        tags:
+            - { name: kernel.event_listener, event: sylius.user.email_verification.token , method: addVerificationLink }
+
+    sylius_demo.generator.verification_flash_message:
+        class: AppBundle\Generator\VerificationFlashMessageGenerator
+        arguments: ['@router', '@translator.default']

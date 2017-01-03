@@ -1,0 +1,2 @@
+suites:
+    app: { namespace: AppBundle, psr4_prefix: AppBundle, src_path: src/AppBundle, spec_path: src/AppBundle }

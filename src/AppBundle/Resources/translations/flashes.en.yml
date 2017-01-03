@@ -4,3 +4,7 @@ sylius_demo:
         prevent_edit: 'You cannot edit administrator of Sylius Demo!'
     channel:
         prevent_create: 'You cannot create channel on Sylius Demo!'
+
+sylius:
+    customer:
+        register: 'Thank you for registering.'
