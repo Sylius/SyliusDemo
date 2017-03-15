@@ -1,6 +1,6 @@
 "http://{default}/":
     type: upstream
-    upstream: "sylius:php"
+    upstream: "sylius:http"
 
 "http://www.{default}/":
     type: redirect
