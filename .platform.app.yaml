@@ -64,6 +64,7 @@ web:
       - \.ttf$
       - \.eot$
       - \.woff$
+      - \.woff2$
       - \.otf$
 
       - /robots\.txt$
