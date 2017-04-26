@@ -22,7 +22,7 @@
     "require": {
         "php": "^7.0",
 
-        "sylius/sylius": "^1.0@beta",
+        "sylius/sylius": "dev-master",
         "snc/redis-bundle": "^2.0",
         "predis/predis": "^1.0"
     },
