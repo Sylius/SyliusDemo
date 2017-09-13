@@ -15,7 +15,6 @@ framework:
 doctrine:
     dbal:
         dbname: "%database_name%_test"
-        driver_class: Sylius\Bundle\CoreBundle\Test\MySqlDriver
 
 monolog:
     handlers:
@@ -50,6 +49,3 @@ swiftmailer:
 sylius_theme:
     sources:
         test: ~
-
-twig:
-    exception_controller: "Sylius\\Bundle\\CoreBundle\\Controller\\VerboseExceptionController::showAction"

@@ -5,12 +5,14 @@ imports:
     - { resource: "@SyliusCoreBundle/Resources/config/app/config.yml" }
     - { resource: "@SyliusAdminBundle/Resources/config/app/config.yml" }
     - { resource: "@SyliusShopBundle/Resources/config/app/config.yml" }
-    - { resource: "@SyliusApiBundle/Resources/config/app/config.yml" }
-    - { resource: "@AppBundle/Resources/config/config.yml" }
+    - { resource: "@SyliusAdminApiBundle/Resources/config/app/config.yml" }
 
     - { resource: "parameters.yml" }
     - { resource: "parameters_platform.php" }
     - { resource: "security.yml" }
+
+parameters:
+    locale: en_US
 
 framework:
     translator: { fallbacks: ["%locale%"] }
@@ -35,6 +37,7 @@ doctrine:
         dbname: "%database_name%"
         user: "%database_user%"
         password: "%database_password%"
+        server_version: "5.5"
         charset: UTF8
 
 doctrine_migrations:
@@ -50,6 +53,7 @@ swiftmailer:
     password: "%mailer_password%"
 
 fos_rest:
+    exception: ~
     view:
         formats:
             json: true

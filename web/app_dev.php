@@ -9,6 +9,8 @@
  * file that was distributed with this source code.
  */
 
+declare(strict_types=1);
+
 use Symfony\Component\Debug\Debug;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -22,17 +24,15 @@ use Symfony\Component\HttpFoundation\Request;
  *   SetEnv SYLIUS_APP_DEV_PERMITTED 1
  */
 if (!getenv("SYLIUS_APP_DEV_PERMITTED") && (
-    isset($_SERVER['HTTP_CLIENT_IP'])
-    || isset($_SERVER['HTTP_X_FORWARDED_FOR'])
-    || !(in_array(@$_SERVER['REMOTE_ADDR'], ['127.0.0.1', 'fe80::1', '::1', '113.0.0.1', '10.0.0.1'], true) || php_sapi_name() === 'cli-server')
-)) {
+        isset($_SERVER['HTTP_CLIENT_IP'])
+        || isset($_SERVER['HTTP_X_FORWARDED_FOR'])
+        || !(in_array(@$_SERVER['REMOTE_ADDR'], ['127.0.0.1', 'fe80::1', '::1', '113.0.0.1', '10.0.0.1'], true) || php_sapi_name() === 'cli-server')
+    )) {
     header('HTTP/1.0 403 Forbidden');
     exit('You are not allowed to access this file. Check '.basename(__FILE__).' for more information.');
 }
 
-/** @var \Composer\Autoload\ClassLoader $loader */
-$loader = require __DIR__.'/../app/autoload.php';
-include_once __DIR__.'/../var/bootstrap.php.cache';
+require __DIR__.'/../vendor/autoload.php';
 
 Debug::enable();
 
