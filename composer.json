@@ -22,7 +22,7 @@
     "require": {
         "php": "^7.0",
 
-        "sylius/sylius": "^1.0",
+        "sylius/sylius": "^1.1@dev",
         "snc/redis-bundle": "^2.0",
         "predis/predis": "^1.0"
     },
@@ -49,7 +49,6 @@
         "sensio/generator-bundle": "^3.1",
         "stripe/stripe-php": "^4.1"
     },
-    "minimum-stability": "rc",
     "prefer-stable": true,
     "scripts": {
         "post-install-cmd": [
@@ -90,7 +89,7 @@
             "dist-file": "vendor/sylius/sylius/app/config/parameters.yml.dist"
         },
         "branch-alias": {
-            "dev-master": "1.0-dev"
+            "dev-master": "1.1-dev"
         }
     }
 }
