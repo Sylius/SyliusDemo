@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "13a864e4c5772d582dda1530f792c051",
+    "content-hash": "8afd3a3796cf302f931dfb2077c5780d",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -4967,16 +4967,16 @@
         },
         {
             "name": "sylius/sylius",
-            "version": "v1.0.0-rc.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/Sylius.git",
-                "reference": "80b2aa30436f2cd06e8fac93c61224af6a586edb"
+                "reference": "a04bfe805904d8efa2b19c919045301c257b6172"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/80b2aa30436f2cd06e8fac93c61224af6a586edb",
-                "reference": "80b2aa30436f2cd06e8fac93c61224af6a586edb",
+                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/a04bfe805904d8efa2b19c919045301c257b6172",
+                "reference": "a04bfe805904d8efa2b19c919045301c257b6172",
                 "shasum": ""
             },
             "require": {
@@ -5112,7 +5112,7 @@
                     "file": "app/config/parameters.yml"
                 },
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.1-dev"
                 }
             },
             "autoload": {
@@ -5145,7 +5145,7 @@
             ],
             "description": "E-Commerce platform for PHP, based on Symfony framework.",
             "homepage": "http://sylius.org",
-            "time": "2017-09-12T18:03:42+00:00"
+            "time": "2017-09-15T10:26:32+00:00"
         },
         {
             "name": "symfony/monolog-bundle",
@@ -9178,8 +9178,10 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "RC",
-    "stability-flags": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "sylius/sylius": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
