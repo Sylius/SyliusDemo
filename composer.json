@@ -23,6 +23,7 @@
         "php": "^7.0",
 
         "sylius/sylius": "^1.1@dev",
+        "sylius/shop-api-plugin": "^1.0@beta",
         "snc/redis-bundle": "^2.0",
         "predis/predis": "^1.0"
     },
