@@ -4,7 +4,8 @@
 parameters:
     sylius.security.admin_regex: "^/admin"
     sylius.security.api_regex: "^/api"
-    sylius.security.shop_regex: "^/(?!admin|api/.*|api$)[^/]++"
+    sylius.security.shop_regex: "^/(?!admin|api/.*|api$|shop-api)[^/]++"
+    shop_api.security.regex: "^/shop-api"
 
 security:
     providers:
@@ -79,6 +80,11 @@ security:
                 invalidate_session: false
                 success_handler: sylius.handler.shop_user_logout
             anonymous: true
+
+        shop_api:
+            pattern: "%shop_api.security.regex%"
+            stateless:  true
+            anonymous:  true
 
         dev:
             pattern:  ^/(_(profiler|wdt)|css|images|js)/
