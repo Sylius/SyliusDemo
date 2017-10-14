@@ -33,6 +33,7 @@ class AppKernel extends Kernel
 
             new \Sylius\ShopApiPlugin\ShopApiPlugin(),
             new \League\Tactician\Bundle\TacticianBundle(),
+            new Nelmio\CorsBundle\NelmioCorsBundle(),
 
             new \AppBundle\AppBundle(),
         ];
