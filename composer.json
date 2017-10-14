@@ -25,7 +25,8 @@
         "sylius/sylius": "^1.1@dev",
         "sylius/shop-api-plugin": "^1.0@beta",
         "snc/redis-bundle": "^2.0",
-        "predis/predis": "^1.0"
+        "predis/predis": "^1.0",
+        "nelmio/cors-bundle": "^1.5"
     },
     "require-dev": {
         "behat/behat": "^3.2",
