@@ -22,7 +22,7 @@
     "require": {
         "php": "^7.0",
 
-        "sylius/sylius": "^1.1@dev",
+        "sylius/sylius": "^1.0",
         "sylius/shop-api-plugin": "^1.0@beta",
         "snc/redis-bundle": "^2.0",
         "predis/predis": "^1.0",
@@ -89,9 +89,6 @@
         "incenteev-parameters": {
             "file": "app/config/parameters.yml",
             "dist-file": "vendor/sylius/sylius/app/config/parameters.yml.dist"
-        },
-        "branch-alias": {
-            "dev-master": "1.1-dev"
         }
     }
 }
