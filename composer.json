@@ -22,7 +22,7 @@
     "require": {
         "php": "^7.1",
 
-        "sylius/sylius": "^1.1",
+        "sylius/sylius": "^1.1@rc",
         "sylius/shop-api-plugin": "^1.0@dev",
         "snc/redis-bundle": "^2.0",
         "predis/predis": "^1.0",
@@ -38,7 +38,7 @@
         "coduo/php-matcher": "^2.1",
         "friends-of-behat/context-service-extension": "^1.0",
         "friends-of-behat/cross-container-extension": "^1.0",
-        "friends-of-behat/exclude-specifications-extension": "^0.1.0",
+        "friends-of-behat/exclude-specifications-extension": "^0.1",
         "friends-of-behat/performance-extension": "^1.0",
         "friends-of-behat/service-container-extension": "^1.0",
         "friends-of-behat/suite-settings-extension": "^1.0",
@@ -91,6 +91,5 @@
             "file": "app/config/parameters.yml",
             "dist-file": "vendor/sylius/sylius/app/config/parameters.yml.dist"
         }
-    },
-    "minimum-stability": "RC"
+    }
 }

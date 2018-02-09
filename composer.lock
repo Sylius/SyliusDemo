@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "984824e0b5997b8aed0ef422a6e4e19c",
+    "content-hash": "8244d71bbd9baa3c10ab730b5cbfd484",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -7810,16 +7810,16 @@
         },
         {
             "name": "friends-of-behat/exclude-specifications-extension",
-            "version": "v0.1.0",
+            "version": "v0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfBehat/ExcludeSpecificationsExtension.git",
-                "reference": "1f74a21c8dbca986c79e25e765cb228593c558cb"
+                "reference": "79fb3851f5d0baca8d359b269da000d2293c4257"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfBehat/ExcludeSpecificationsExtension/zipball/1f74a21c8dbca986c79e25e765cb228593c558cb",
-                "reference": "1f74a21c8dbca986c79e25e765cb228593c558cb",
+                "url": "https://api.github.com/repos/FriendsOfBehat/ExcludeSpecificationsExtension/zipball/79fb3851f5d0baca8d359b269da000d2293c4257",
+                "reference": "79fb3851f5d0baca8d359b269da000d2293c4257",
                 "shasum": ""
             },
             "require": {
@@ -7848,7 +7848,7 @@
                 }
             ],
             "description": "Allows to exclude features or scenarios in Behat tests.",
-            "time": "2017-07-10T21:06:20+00:00"
+            "time": "2018-02-09T11:52:19+00:00"
         },
         {
             "name": "friends-of-behat/performance-extension",
@@ -9807,8 +9807,9 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "RC",
+    "minimum-stability": "stable",
     "stability-flags": {
+        "sylius/sylius": 5,
         "sylius/shop-api-plugin": 20
     },
     "prefer-stable": true,
