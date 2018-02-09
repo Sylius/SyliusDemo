@@ -8,6 +8,8 @@ if (!$relationships) {
 
 $relationships = json_decode(base64_decode($relationships), true);
 
+var_dump($relationships);
+
 foreach ($relationships['database'] as $endpoint) {
     if (empty($endpoint['query']['is_master'])) {
       continue;
@@ -21,6 +23,7 @@ foreach ($relationships['database'] as $endpoint) {
     $container->setParameter('database_password', $endpoint['password']);
     $container->setParameter('database_path', '');
 }
+
 foreach ($relationships['redis'] as $endpoint) {
     $container->setParameter('redis_dsn', 'redis://'.$endpoint['host'].':'.$endpoint['port']);
 }
