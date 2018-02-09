@@ -15,6 +15,24 @@ default:
         Behat\MinkExtension:
             files_path: "%paths.base%/vendor/sylius/sylius/src/Sylius/Behat/Resources/fixtures/"
 
+        FriendsOfBehat\ExcludeSpecificationsExtension:
+            features:
+                - vendor/sylius/sylius/features/account/registering.feature
+                - vendor/sylius/sylius/features/account/renewing_account_after_deletion.feature
+                - vendor/sylius/sylius/features/account/verification/verifying_email_address.feature
+                - vendor/sylius/sylius/features/admin/switching_admins_locale.feature
+                - vendor/sylius/sylius/features/channel/managing_channels/adding_channel.feature
+                - vendor/sylius/sylius/features/channel/managing_channels/channel_unique_code_validation.feature
+                - vendor/sylius/sylius/features/channel/managing_channels/channel_validation.feature
+                - vendor/sylius/sylius/features/channel/managing_channels/not_being_able_to_add_disabled_channel_when_no_other_exist.feature
+                - vendor/sylius/sylius/features/channel/managing_channels/selecting_currencies_available_for_channel.feature
+                - vendor/sylius/sylius/features/channel/managing_channels/selecting_default_tax_zone_for_channel.feature
+                - vendor/sylius/sylius/features/channel/managing_channels/selecting_locales_available_for_channel.feature
+                - vendor/sylius/sylius/features/channel/managing_channels/selecting_tax_calculation_strategy_for_channel.feature
+                - vendor/sylius/sylius/features/channel/theming/managing_themes_per_channel.feature
+                - vendor/sylius/sylius/features/checkout/no_shipping_cost_when_not_required.feature
+                - vendor/sylius/sylius/features/order/managing_orders/seeing_order_shipment_state_as_shipped_if_there_is_not_shipments_to_deliver.feature
+
 cached:
     extensions:
         FriendsOfBehat\ContextServiceExtension:

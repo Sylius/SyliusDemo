@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "02d04eae14a7396b1c97bdb6b03b3209",
+    "content-hash": "8244d71bbd9baa3c10ab730b5cbfd484",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -5103,16 +5103,16 @@
         },
         {
             "name": "sonata-project/block-bundle",
-            "version": "3.11.0",
+            "version": "3.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataBlockBundle.git",
-                "reference": "c58b58fb3c784200eaf9e08be6a22fabf4f17f80"
+                "reference": "e88bf24dcf1c89db9b7ad68d164f339465f15b7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataBlockBundle/zipball/c58b58fb3c784200eaf9e08be6a22fabf4f17f80",
-                "reference": "c58b58fb3c784200eaf9e08be6a22fabf4f17f80",
+                "url": "https://api.github.com/repos/sonata-project/SonataBlockBundle/zipball/e88bf24dcf1c89db9b7ad68d164f339465f15b7a",
+                "reference": "e88bf24dcf1c89db9b7ad68d164f339465f15b7a",
                 "shasum": ""
             },
             "require": {
@@ -5134,7 +5134,8 @@
                 "jms/di-extra-bundle": "^1.7",
                 "knplabs/knp-menu-bundle": "^2.0",
                 "sonata-project/admin-bundle": "^3.22",
-                "symfony/phpunit-bridge": "^3.3 || ^4.0"
+                "symfony/phpunit-bridge": "^4.0",
+                "symfony/stopwatch": "^2.8 || ^3.2 || ^4.0"
             },
             "suggest": {
                 "jms/di-extra-bundle": "Annotations for Block definition",
@@ -5176,7 +5177,7 @@
                 "block",
                 "sonata"
             ],
-            "time": "2018-01-23T15:18:58+00:00"
+            "time": "2018-02-08T09:59:45+00:00"
         },
         {
             "name": "sonata-project/cache",
@@ -7808,6 +7809,48 @@
             "time": "2017-12-04T17:23:54+00:00"
         },
         {
+            "name": "friends-of-behat/exclude-specifications-extension",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfBehat/ExcludeSpecificationsExtension.git",
+                "reference": "79fb3851f5d0baca8d359b269da000d2293c4257"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfBehat/ExcludeSpecificationsExtension/zipball/79fb3851f5d0baca8d359b269da000d2293c4257",
+                "reference": "79fb3851f5d0baca8d359b269da000d2293c4257",
+                "shasum": ""
+            },
+            "require": {
+                "behat/behat": "^3.1",
+                "php": "^7.1",
+                "symfony/dependency-injection": "^2.8|^3.0"
+            },
+            "require-dev": {
+                "friends-of-behat/test-context": "^1.0",
+                "phpspec/phpspec": "^4.0@alpha"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FriendsOfBehat\\ExcludeSpecificationsExtension\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mateusz Zalewski",
+                    "homepage": "http://mpzalewski.com.pl"
+                }
+            ],
+            "description": "Allows to exclude features or scenarios in Behat tests.",
+            "time": "2018-02-09T11:52:19+00:00"
+        },
+        {
             "name": "friends-of-behat/performance-extension",
             "version": "v1.0.2",
             "source": {
@@ -9764,8 +9807,9 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "RC",
+    "minimum-stability": "stable",
     "stability-flags": {
+        "sylius/sylius": 5,
         "sylius/shop-api-plugin": 20
     },
     "prefer-stable": true,
