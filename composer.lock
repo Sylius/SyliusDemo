@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8244d71bbd9baa3c10ab730b5cbfd484",
+    "content-hash": "4f6b6fa3df38ff8b559a105542799402",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -1175,38 +1175,40 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "v2.5.14",
+            "version": "v2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "810a7baf81462a5ddf10e8baa8cb94b6eec02754"
+                "reference": "374e7ace49d864dad8cddbc55346447c8a6a2083"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/810a7baf81462a5ddf10e8baa8cb94b6eec02754",
-                "reference": "810a7baf81462a5ddf10e8baa8cb94b6eec02754",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/374e7ace49d864dad8cddbc55346447c8a6a2083",
+                "reference": "374e7ace49d864dad8cddbc55346447c8a6a2083",
                 "shasum": ""
             },
             "require": {
-                "doctrine/cache": "~1.4",
-                "doctrine/collections": "~1.2",
-                "doctrine/common": ">=2.5-dev,<2.9-dev",
-                "doctrine/dbal": ">=2.5-dev,<2.7-dev",
-                "doctrine/instantiator": "^1.0.1",
+                "doctrine/annotations": "~1.5",
+                "doctrine/cache": "~1.6",
+                "doctrine/collections": "^1.4",
+                "doctrine/common": "^2.7.1",
+                "doctrine/dbal": "^2.6",
+                "doctrine/instantiator": "~1.1",
                 "ext-pdo": "*",
-                "php": ">=5.4",
-                "symfony/console": "~2.5|~3.0|~4.0"
+                "php": "^7.1",
+                "symfony/console": "~3.0|~4.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.0",
-                "symfony/yaml": "~2.3|~3.0|~4.0"
+                "doctrine/coding-standard": "^1.0",
+                "phpunit/phpunit": "^6.5",
+                "squizlabs/php_codesniffer": "^3.2",
+                "symfony/yaml": "~3.4|~4.0"
             },
             "suggest": {
                 "symfony/yaml": "If you want to use YAML Metadata Mapping Driver"
             },
             "bin": [
-                "bin/doctrine",
-                "bin/doctrine.php"
+                "bin/doctrine"
             ],
             "type": "library",
             "extra": {
@@ -1215,8 +1217,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Doctrine\\ORM\\": "lib/"
+                "psr-4": {
+                    "Doctrine\\ORM\\": "lib/Doctrine/ORM"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1239,6 +1241,10 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Marco Pivetta",
+                    "email": "ocramius@gmail.com"
                 }
             ],
             "description": "Object-Relational-Mapper for PHP",
@@ -1247,7 +1253,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2017-12-17T02:57:51+00:00"
+            "time": "2017-12-20T00:38:15+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -2440,32 +2446,33 @@
         },
         {
             "name": "knplabs/knp-gaufrette-bundle",
-            "version": "0.3.0",
+            "version": "v0.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/KnpGaufretteBundle.git",
-                "reference": "44cf552e14031517516458b0e394f16dd36a131b"
+                "reference": "2a3d24efda257023e5d3f21866f1ff18f50c60ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/KnpGaufretteBundle/zipball/44cf552e14031517516458b0e394f16dd36a131b",
-                "reference": "44cf552e14031517516458b0e394f16dd36a131b",
+                "url": "https://api.github.com/repos/KnpLabs/KnpGaufretteBundle/zipball/2a3d24efda257023e5d3f21866f1ff18f50c60ba",
+                "reference": "2a3d24efda257023e5d3f21866f1ff18f50c60ba",
                 "shasum": ""
             },
             "require": {
-                "knplabs/gaufrette": "~0.1.7|~0.2",
-                "symfony/framework-bundle": "~2.0|~3.0"
+                "knplabs/gaufrette": "~0.1.7|~0.2|~0.3|~0.4|~0.5",
+                "symfony/config": "~2.1|~3.0|~4.0",
+                "symfony/dependency-injection": "~2.1|~3.0|~4.0",
+                "symfony/framework-bundle": "~2.0|~3.0|~4.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.2",
-                "symfony/console": "~2.0|~3.0",
-                "symfony/yaml": "~2.0|~3.0"
+                "phpunit/phpunit": "~4.8.35",
+                "symfony/console": "~2.1|~3.0|~4.0",
+                "symfony/filesystem": "~2.1|~3.0|~4.0",
+                "symfony/yaml": "~2.1|~3.0|~4.0"
             },
             "type": "symfony-bundle",
             "extra": {
-                "branch-alias": {
-                    "dev-master": "0.4.x-dev"
-                }
+                "branch-alias": []
             },
             "autoload": {
                 "psr-4": {
@@ -2494,7 +2501,7 @@
                 "filesystem",
                 "media"
             ],
-            "time": "2016-01-16T00:12:11+00:00"
+            "time": "2018-01-30T13:05:01+00:00"
         },
         {
             "name": "knplabs/knp-menu",
@@ -5656,16 +5663,16 @@
         },
         {
             "name": "sylius/sylius",
-            "version": "v1.1.0-RC",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/Sylius.git",
-                "reference": "d33d433e0bba59c79fc87c1d5967fdcd568dff71"
+                "reference": "723c19834562f61167a51a155e575fe3a8d6ae8f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/d33d433e0bba59c79fc87c1d5967fdcd568dff71",
-                "reference": "d33d433e0bba59c79fc87c1d5967fdcd568dff71",
+                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/723c19834562f61167a51a155e575fe3a8d6ae8f",
+                "reference": "723c19834562f61167a51a155e575fe3a8d6ae8f",
                 "shasum": ""
             },
             "require": {
@@ -5675,7 +5682,7 @@
                 "doctrine/doctrine-cache-bundle": "^1.3",
                 "doctrine/doctrine-fixtures-bundle": "^2.3",
                 "doctrine/doctrine-migrations-bundle": "^1.2",
-                "doctrine/orm": "~2.5.0",
+                "doctrine/orm": "^2.5",
                 "ext-exif": "*",
                 "ext-fileinfo": "*",
                 "ext-gd": "*",
@@ -5685,7 +5692,7 @@
                 "gedmo/doctrine-extensions": "^2.4.12",
                 "incenteev/composer-parameter-handler": "^2.1",
                 "jms/serializer-bundle": "^2.0",
-                "knplabs/knp-gaufrette-bundle": "^0.3",
+                "knplabs/knp-gaufrette-bundle": "^0.5",
                 "knplabs/knp-menu-bundle": "^2.1",
                 "liip/imagine-bundle": "^1.9.1",
                 "ocramius/proxy-manager": "^2.1",
@@ -5826,21 +5833,21 @@
             ],
             "authors": [
                 {
-                    "name": "Sylius project",
-                    "homepage": "http://sylius.org"
-                },
-                {
                     "name": "Community contributions",
                     "homepage": "http://github.com/Sylius/Sylius/contributors"
                 },
                 {
                     "name": "Paweł Jędrzejewski",
                     "homepage": "http://pjedrzejewski.com"
+                },
+                {
+                    "name": "Sylius project",
+                    "homepage": "http://sylius.com"
                 }
             ],
             "description": "E-Commerce platform for PHP, based on Symfony framework.",
-            "homepage": "http://sylius.org",
-            "time": "2018-02-02T17:23:04+00:00"
+            "homepage": "http://sylius.com",
+            "time": "2018-02-09T15:09:49+00:00"
         },
         {
             "name": "symfony/monolog-bundle",
@@ -9809,7 +9816,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "sylius/sylius": 5,
         "sylius/shop-api-plugin": 20
     },
     "prefer-stable": true,
