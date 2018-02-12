@@ -41,7 +41,7 @@ final class VerificationFlashMessageGenerator implements FlashMessageGeneratorIn
     /**
      * {@inheritdoc}
      */
-    public function generate($token)
+    public function generate(string $token): string
     {
         $url = $this
             ->urlGenerator

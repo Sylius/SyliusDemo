@@ -40,7 +40,7 @@ final class ChannelListener
     /**
      * @param GetResponseEvent $event
      */
-    public function preCreate(GetResponseEvent $event)
+    public function preCreate(GetResponseEvent $event): void
     {
         if ('sylius_admin_channel_create' === $event->getRequest()->get('_route')) {
             $this->session->getFlashBag()->add('error', 'sylius_demo.channel.prevent_create');

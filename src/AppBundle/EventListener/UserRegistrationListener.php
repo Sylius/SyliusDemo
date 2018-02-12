@@ -47,7 +47,7 @@ final class UserRegistrationListener
     /**
      * @param GenericEvent $event
      */
-    public function addVerificationLink(GenericEvent $event)
+    public function addVerificationLink(GenericEvent $event): void
     {
         /** @var UserInterface $subject */
         $subject = $event->getSubject();

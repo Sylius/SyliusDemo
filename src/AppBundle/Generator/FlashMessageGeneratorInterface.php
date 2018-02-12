@@ -18,5 +18,5 @@ interface FlashMessageGeneratorInterface
      *
      * @return string
      */
-    public function generate($token);
+    public function generate(string $token): string;
 }

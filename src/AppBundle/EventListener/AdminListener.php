@@ -25,7 +25,7 @@ final class AdminListener
     /**
      * @param GenericEvent $event
      */
-    public function preDelete(GenericEvent $event)
+    public function preDelete(GenericEvent $event): void
     {
         $subject = $subject = $event->getSubject();
 
@@ -42,7 +42,7 @@ final class AdminListener
     /**
      * @param GenericEvent $event
      */
-    public function preUpdate(GenericEvent $event)
+    public function preUpdate(GenericEvent $event): void
     {
         $subject = $subject = $event->getSubject();
 
