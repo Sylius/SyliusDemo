@@ -11,9 +11,6 @@
 
 namespace AppBundle\Generator;
 
-/**
- * @author Mateusz Zalewski <mateusz.zalewski@lakion.com>
- */
 interface FlashMessageGeneratorInterface
 {
     /**
@@ -21,5 +18,5 @@ interface FlashMessageGeneratorInterface
      *
      * @return string
      */
-    public function generate($token);
+    public function generate(string $token): string;
 }

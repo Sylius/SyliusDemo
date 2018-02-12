@@ -19,9 +19,6 @@ use Sylius\Component\Core\Model\ChannelInterface;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Translation\TranslatorInterface;
 
-/**
- * @author Mateusz Zalewski <mateusz.zalewski@lakion.com>
- */
 final class VerificationFlashMessageGeneratorSpec extends ObjectBehavior
 {
     function let(

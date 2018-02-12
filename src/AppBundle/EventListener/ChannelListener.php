@@ -16,10 +16,7 @@ use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Session\Session;
 use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 
-/**
- * @author Anna Walasek <anna.walasek@lakion.com>
- */
-class ChannelListener
+final class ChannelListener
 {
     /**
      * @var Session
@@ -43,7 +40,7 @@ class ChannelListener
     /**
      * @param GetResponseEvent $event
      */
-    public function preCreate(GetResponseEvent $event)
+    public function preCreate(GetResponseEvent $event): void
     {
         if ('sylius_admin_channel_create' === $event->getRequest()->get('_route')) {
             $this->session->getFlashBag()->add('error', 'sylius_demo.channel.prevent_create');

@@ -10,9 +10,6 @@ use Symfony\Component\HttpFoundation\File\Exception\UnexpectedTypeException;
 use Symfony\Component\HttpFoundation\Session\Flash\FlashBagInterface;
 use Symfony\Component\HttpFoundation\Session\Session;
 
-/**
- * @author Mateusz Zalewski <mateusz.zalewski@lakion.com>
- */
 final class AdminListenerSpec extends ObjectBehavior
 {
     function let(Session $session)

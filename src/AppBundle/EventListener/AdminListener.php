@@ -7,9 +7,6 @@ use Symfony\Component\EventDispatcher\GenericEvent;
 use Symfony\Component\HttpFoundation\File\Exception\UnexpectedTypeException;
 use Symfony\Component\HttpFoundation\Session\Session;
 
-/**
- * @author Mateusz Zalewski <mateusz.p.zalewski@gmail.com>
- */
 final class AdminListener
 {
     /**
@@ -28,7 +25,7 @@ final class AdminListener
     /**
      * @param GenericEvent $event
      */
-    public function preDelete(GenericEvent $event)
+    public function preDelete(GenericEvent $event): void
     {
         $subject = $subject = $event->getSubject();
 
@@ -45,7 +42,7 @@ final class AdminListener
     /**
      * @param GenericEvent $event
      */
-    public function preUpdate(GenericEvent $event)
+    public function preUpdate(GenericEvent $event): void
     {
         $subject = $subject = $event->getSubject();
 

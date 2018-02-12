@@ -20,9 +20,6 @@ use Symfony\Component\EventDispatcher\GenericEvent;
 use Symfony\Component\HttpFoundation\Session\Session;
 use Webmozart\Assert\Assert;
 
-/**
- * @author Mateusz Zalewski <mateusz.zalewski@lakion.com>
- */
 final class UserRegistrationListener
 {
     /**
@@ -50,7 +47,7 @@ final class UserRegistrationListener
     /**
      * @param GenericEvent $event
      */
-    public function addVerificationLink(GenericEvent $event)
+    public function addVerificationLink(GenericEvent $event): void
     {
         /** @var UserInterface $subject */
         $subject = $event->getSubject();

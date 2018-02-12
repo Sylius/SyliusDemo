@@ -14,9 +14,6 @@ namespace AppBundle\Generator;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Translation\TranslatorInterface;
 
-/**
- * @author Mateusz Zalewski <mateusz.zalewski@lakion.com>
- */
 final class VerificationFlashMessageGenerator implements FlashMessageGeneratorInterface
 {
     /**
@@ -44,7 +41,7 @@ final class VerificationFlashMessageGenerator implements FlashMessageGeneratorIn
     /**
      * {@inheritdoc}
      */
-    public function generate($token)
+    public function generate(string $token): string
     {
         $url = $this
             ->urlGenerator
