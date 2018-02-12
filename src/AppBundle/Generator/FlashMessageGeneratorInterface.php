@@ -11,9 +11,6 @@
 
 namespace AppBundle\Generator;
 
-/**
- * @author Mateusz Zalewski <mateusz.zalewski@lakion.com>
- */
 interface FlashMessageGeneratorInterface
 {
     /**

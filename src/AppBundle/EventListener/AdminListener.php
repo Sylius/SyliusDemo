@@ -7,9 +7,6 @@ use Symfony\Component\EventDispatcher\GenericEvent;
 use Symfony\Component\HttpFoundation\File\Exception\UnexpectedTypeException;
 use Symfony\Component\HttpFoundation\Session\Session;
 
-/**
- * @author Mateusz Zalewski <mateusz.p.zalewski@gmail.com>
- */
 final class AdminListener
 {
     /**

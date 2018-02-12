@@ -16,10 +16,7 @@ use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Session\Session;
 use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 
-/**
- * @author Anna Walasek <anna.walasek@lakion.com>
- */
-class ChannelListener
+final class ChannelListener
 {
     /**
      * @var Session
