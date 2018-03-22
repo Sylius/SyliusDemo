@@ -2874,35 +2874,36 @@
         },
         {
             "name": "league/uri-components",
-            "version": "1.7.0",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/uri-components.git",
-                "reference": "0a82a42327555f47929f56c7a2c89981ebe27e74"
+                "reference": "5290537e2d3bc5218d4aa4cc62d277a7e01050b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/uri-components/zipball/0a82a42327555f47929f56c7a2c89981ebe27e74",
-                "reference": "0a82a42327555f47929f56c7a2c89981ebe27e74",
+                "url": "https://api.github.com/repos/thephpleague/uri-components/zipball/5290537e2d3bc5218d4aa4cc62d277a7e01050b5",
+                "reference": "5290537e2d3bc5218d4aa4cc62d277a7e01050b5",
                 "shasum": ""
             },
             "require": {
                 "ext-curl": "*",
                 "ext-fileinfo": "*",
                 "ext-intl": "*",
-                "ext-mbstring": "*",
                 "league/uri-hostname-parser": "^1.1.0",
                 "php": ">=7.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.3",
-                "phpstan/phpstan": "^0.9.0",
+                "phpstan/phpstan": "^0.9.2",
+                "phpstan/phpstan-phpunit": "^0.9.4",
+                "phpstan/phpstan-strict-rules": "^0.9.0",
                 "phpunit/phpunit": "^6.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.x-dev"
                 }
             },
             "autoload": {
@@ -2940,7 +2941,7 @@
                 "url",
                 "userinfo"
             ],
-            "time": "2018-01-31T12:09:52+00:00"
+            "time": "2018-03-14T15:32:06+00:00"
         },
         {
             "name": "league/uri-hostname-parser",
