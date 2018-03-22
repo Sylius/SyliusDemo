@@ -24,3 +24,24 @@ default:
                 - sylius_demo.behat.context.ui.admin.managing_channels_context
             filters:
                 tags: "@managing_channels && @ui"
+        ui_managing_administrators:
+            contexts_services:
+                - sylius.behat.context.hook.doctrine_orm
+
+                - sylius.behat.context.transform.shared_storage
+                - sylius.behat.context.transform.lexical
+                - sylius.behat.context.transform.locale
+
+                - sylius.behat.context.setup.channel
+                - sylius.behat.context.setup.locale
+                - sylius.behat.context.setup.admin_security
+                - sylius.behat.context.setup.admin_user
+
+                - sylius.behat.context.ui.admin.dashboard
+                - sylius.behat.context.ui.admin.managing_administrators
+                - sylius.behat.context.ui.admin.notification
+                - sylius.behat.context.ui.admin.login
+
+                - sylius_demo.behat.context.ui.admin.managing_administrators_context
+            filters:
+                tags: "@managing_administrators && @ui"
