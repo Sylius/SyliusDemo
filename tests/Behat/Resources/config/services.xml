@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+        <service
+            id="sylius_demo.behat.context.ui.admin.managing_administrators_context"
+            class="Tests\Behat\Context\Ui\Admin\ManagingAdministratorsContext">
+            <argument type="service" id="sylius.behat.notification_checker" />
+            <argument type="service" id="__symfony__.sylius.repository.admin_user" />
+            <argument type="service" id="sylius.behat.page.admin.administrator.update" />
+            <tag name="fob.context_service" />
+        </service>
+
+        <service
+            id="sylius_demo.behat.context.ui.admin.managing_channels_context"
+            class="Tests\Behat\Context\Ui\Admin\ManagingChannelsContext">
+            <argument type="service" id="sylius.behat.page.admin.channel.create" />
+            <argument type="service" id="sylius.behat.notification_checker" />
+            <tag name="fob.context_service" />
+        </service>
+
+        <service
+            id="sylius_demo.behat.context.ui.shop.registration_context"
+            class="Tests\Behat\Context\Ui\Shop\RegistrationContext">
+            <argument type="service" id="sylius.behat.notification_checker" />
+            <argument type="service" id="__symfony__.router" />
+            <argument type="service" id="__symfony__.sylius.repository.shop_user" />
+            <tag name="fob.context_service" />
+        </service>
+    </services>
+</container>

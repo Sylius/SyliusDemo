@@ -1,11 +1,13 @@
 imports:
     - vendor/sylius/sylius/behat.yml.dist
+    - tests/Behat/Resources/config/suites.yml
 
 default:
     extensions:
         FriendsOfBehat\ContextServiceExtension:
             imports:
                 - "vendor/sylius/sylius/src/Sylius/Behat/Resources/config/services.xml"
+                - "tests/Behat/Resources/config/services.xml"
 
         FriendsOfBehat\SuiteSettingsExtension:
             paths:

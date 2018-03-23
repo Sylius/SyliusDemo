@@ -77,6 +77,11 @@
         },
         "classmap": ["app/AppKernel.php", "app/AppCache.php"]
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Behat\\": "tests/Behat/"
+        }
+    },
     "config": {
         "bin-dir": "bin"
     },
