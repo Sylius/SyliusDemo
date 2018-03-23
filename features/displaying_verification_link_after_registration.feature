@@ -2,7 +2,7 @@
 Feature: Displaying verification link after registration
     In order to be able to use registered account
     As a Visitor
-    I want to have account verification link displayed rather than sent by email
+    I want to have account verification link displayed
 
     Background:
         Given the store operates on a single channel in "United States"

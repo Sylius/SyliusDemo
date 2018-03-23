@@ -2,7 +2,7 @@
 Feature: Preventing default administrator deletion
     In order to prevent breaking Sylius Demo application
     As an Administrator
-    I want to not be able to delete administrator with email "sylius@example.com"
+    I want to be prevented from deleting administrator with email "sylius@example.com"
 
     Background:
         Given there is an administrator "sylius@example.com"

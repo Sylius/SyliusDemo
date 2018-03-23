@@ -2,7 +2,7 @@
 Feature: Preventing default administrator edition
     In order to prevent breaking Sylius Demo application
     As an Administrator
-    I want to not be able to edit administrator with email "sylius@example.com"
+    I want to be prevented from editing administrator with email "sylius@example.com"
 
     Background:
         Given there is also an administrator "admin@example.com"
