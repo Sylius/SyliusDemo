@@ -18,5 +18,14 @@
             <argument type="service" id="sylius.behat.notification_checker" />
             <tag name="fob.context_service" />
         </service>
+
+        <service
+            id="sylius_demo.behat.context.ui.shop.registration_context"
+            class="Tests\Behat\Context\Ui\Shop\RegistrationContext">
+            <argument type="service" id="sylius.behat.notification_checker" />
+            <argument type="service" id="__symfony__.router" />
+            <argument type="service" id="__symfony__.sylius.repository.shop_user" />
+            <tag name="fob.context_service" />
+        </service>
     </services>
 </container>

@@ -45,3 +45,23 @@ default:
                 - sylius_demo.behat.context.ui.admin.managing_administrators_context
             filters:
                 tags: "@managing_administrators && @ui"
+        ui_customer_registration:
+            contexts_services:
+                - sylius.behat.context.hook.doctrine_orm
+                - sylius.behat.context.hook.email_spool
+
+                - sylius.behat.context.transform.shared_storage
+                - sylius.behat.context.transform.customer
+
+                - sylius.behat.context.setup.channel
+                - sylius.behat.context.setup.customer
+                - sylius.behat.context.setup.order
+                - sylius.behat.context.setup.shop_security
+                - sylius.behat.context.setup.user
+
+                - sylius.behat.context.ui.email
+                - sylius.behat.context.ui.shop.registration
+
+                - sylius_demo.behat.context.ui.shop.registration_context
+            filters:
+                tags: "@customer_registration && @ui"
