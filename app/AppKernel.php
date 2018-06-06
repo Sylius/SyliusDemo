@@ -18,7 +18,7 @@ class AppKernel extends Kernel
     /**
      * {@inheritdoc}
      */
-    public function registerBundles()
+    public function registerBundles(): array
     {
         $bundles = [
             new \Sylius\Bundle\AdminBundle\SyliusAdminBundle(),
