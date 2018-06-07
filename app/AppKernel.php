@@ -18,7 +18,7 @@ class AppKernel extends Kernel
     /**
      * {@inheritdoc}
      */
-    public function registerBundles()
+    public function registerBundles(): array
     {
         $bundles = [
             new \Sylius\Bundle\AdminBundle\SyliusAdminBundle(),
@@ -27,8 +27,6 @@ class AppKernel extends Kernel
             new \FOS\OAuthServerBundle\FOSOAuthServerBundle(), // Required by SyliusApiBundle
             new \Sylius\Bundle\AdminApiBundle\SyliusAdminApiBundle(),
 
-            new \Sylius\ShopApiPlugin\ShopApiPlugin(),
-            new \League\Tactician\Bundle\TacticianBundle(),
             new Nelmio\CorsBundle\NelmioCorsBundle(),
 
             new \AppBundle\AppBundle(),

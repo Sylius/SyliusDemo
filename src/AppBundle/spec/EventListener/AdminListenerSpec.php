@@ -58,7 +58,7 @@ final class AdminListenerSpec extends ObjectBehavior
         $adminUser->getEmailCanonical()->willReturn('sylius@example.com');
         $session->getFlashBag()->willReturn($flashBag);
 
-        $flashBag->add('error', 'sylius_demo.account.prevent_edit')->shouldBeCalled();
+        $flashBag->add('error', 'sylius_demo.admin_account.prevent_edit')->shouldBeCalled();
         $event->stopPropagation()->shouldBeCalled();
 
         $this->preUpdate($event);
