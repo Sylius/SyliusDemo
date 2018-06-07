@@ -1,6 +1,6 @@
 mysql:
     type: mysql
-    disk: 2048
+    disk: 1024
 
 redis:
-    type: redis:2.8
+    type: redis:3.0
