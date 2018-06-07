@@ -1,6 +1,6 @@
 "https://{default}/":
     type: upstream
-    upstream: "sylius:http"
+    upstream: "app:http"
 
 "https://www.{default}/":
     type: redirect

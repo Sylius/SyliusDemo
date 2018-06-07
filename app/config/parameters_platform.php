@@ -29,3 +29,7 @@ foreach ($relationships['redis'] as $endpoint) {
 $container->setParameter('sylius.cache', array('type' => 'array'));
 
 ini_set('session.save_path', '/tmp/sessions');
+
+if (getenv('PLATFORM_PROJECT_ENTROPY')) {
+    $container->setParameter('secret', getenv('PLATFORM_PROJECT_ENTROPY'));
+}
