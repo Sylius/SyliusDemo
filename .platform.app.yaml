@@ -77,7 +77,7 @@ hooks:
         php bin/console --env=prod --no-debug --ansi cache:warmup
         php bin/console --env=prod --no-debug --ansi assets:install
         yarn install
-        GULP_ENV=prod yarn run gulp
+        GULP_ENV=prod yarn build
     deploy: |
         rm -rf var/cache/*
         rm -rf var/media/*
