@@ -53,6 +53,13 @@
     },
     "prefer-stable": true,
     "scripts": {
+        "reload-database": [
+            "rm -rf web/media/*",
+            "php bin/console --env=prod doctrine:cache:clear-metadata",
+            "php bin/console --env=prod doctrine:cache:clear-query",
+            "php bin/console --env=prod doctrine:cache:clear-result",
+            "php bin/console --no-debug sylius:fixtures:load"
+        ],
         "post-install-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",

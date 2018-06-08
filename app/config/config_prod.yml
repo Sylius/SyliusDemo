@@ -31,3 +31,21 @@ snc_redis:
         query_cache:
             client: default
             entity_manager: default
+
+doctrine:
+    orm:
+        metadata_cache_driver:
+            type: "%metacache_driver%"
+            database: 1
+            host: "%redis_host%"
+            port: "%redis_port%"
+        query_cache_driver:
+            type: "%querycache_driver%"
+            database: 2
+            host: "%redis_host%"
+            port: "%redis_port%"
+        result_cache_driver:
+            type: "%resultcache_driver%"
+            database: 3
+            host: "%redis_host%"
+            port: "%redis_port%"
