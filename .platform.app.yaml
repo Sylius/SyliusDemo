@@ -88,3 +88,10 @@ crons:
     reset:
         spec: "0 */1 * * *"
         cmd: "rm -rf web/media/* && php bin/console --env=prod --no-debug sylius:fixtures:load"
+    renewcertificate:
+        # Force a redeploy at 10 am (UTC) on the 3rd of every month.
+        spec: '0 10 3 * *'
+        cmd: |
+            if [ "$PLATFORM_BRANCH" = master ]; then
+                platform redeploy --yes --no-wait
+            fi
