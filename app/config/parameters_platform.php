@@ -23,6 +23,16 @@ foreach ($relationships['database'] as $endpoint) {
 }
 
 foreach ($relationships['redis'] as $endpoint) {
+    $container->setParameter('metacache_driver', 'redis');
+    $container->setParameter('querycache_driver', 'redis');
+    $container->setParameter('resultcache_driver', 'redis');
+
+    $container->setParameter('redis_dsn', 'redis://'.$endpoint['host'].':'.$endpoint['port']);
+    $container->setParameter('redis_host', $endpoint['host']);
+    $container->setParameter('redis_port', $endpoint['port']);
+}
+
+foreach ($relationships['redis'] as $endpoint) {
     $container->setParameter('redis_dsn', 'redis://'.$endpoint['host'].':'.$endpoint['port']);
 }
 

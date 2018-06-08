@@ -13,7 +13,12 @@ parameters:
     mailer_user: ~
     mailer_password: ~
 
+    metacache_driver: []
+    querycache_driver: []
+    resultcache_driver: []
     redis_dsn: ~
+    redis_host: ~
+    redis_port: ~
 
     secret: EDITME
     locale: en_US

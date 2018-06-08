@@ -9,6 +9,10 @@ relationships:
     database: "mysql:mysql"
     redis: "redis:redis"
 
+variables:
+    env:
+        SYMFONY_ENV: 'prod'
+
 runtime:
     extensions:
         - msgpack
@@ -73,21 +77,19 @@ hooks:
         rm web/app_test.php
         rm web/app_test_cached.php
         rm -rf var/cache/*
-        php bin/console --env=prod --no-debug --ansi cache:clear --no-warmup
-        php bin/console --env=prod --no-debug --ansi cache:warmup
-        php bin/console --env=prod --no-debug --ansi assets:install
+        php bin/console --no-debug --ansi cache:clear --no-warmup
+        php bin/console --no-debug --ansi cache:warmup
+        php bin/console --no-debug --ansi assets:install
         yarn install
         GULP_ENV=prod yarn build
     deploy: |
-        rm -rf var/cache/*
-        rm -rf var/media/*
-        php bin/console --env=prod doctrine:migrations:migrate --no-interaction
-        php bin/console --env=prod --no-debug sylius:fixtures:load
+        php bin/console doctrine:migrations:migrate --no-interaction
+        php composer reload-fixtures
 
 crons:
     reset:
         spec: "0 */1 * * *"
-        cmd: "rm -rf web/media/* && php bin/console --env=prod --no-debug sylius:fixtures:load"
+        cmd: "php composer reload-fixtures"
     renewcertificate:
         # Force a redeploy at 10 am (UTC) on the 3rd of every month.
         spec: '0 10 3 * *'
