@@ -1,12 +1,16 @@
-![Sylius](http://demo.sylius.org/assets/shop/img/logo.png)
+<h1 align="center">
+    <a href="https://sylius.com" target="_blank">
+        <img src="https://demo.sylius.com/assets/shop/img/logo.png" />
+    </a>
+</h1>
 
 [![License](https://img.shields.io/packagist/l/Sylius/Sylius.svg)](https://packagist.org/packages/sylius/sylius)
 [![Version](https://img.shields.io/packagist/vpre/Sylius/Sylius.svg)](https://packagist.org/packages/sylius/sylius)
-[![Build status on Linux](https://img.shields.io/travis/Sylius/Sylius/master.svg)](http://travis-ci.org/Sylius/Sylius)
+[![Build Status on Linux](https://travis-ci.org/Sylius/SyliusDemo.svg?branch=master)](https://travis-ci.org/Sylius/SyliusDemo)
 [![Scrutinizer Quality Score](https://img.shields.io/scrutinizer/g/Sylius/Sylius.svg)](https://scrutinizer-ci.com/g/Sylius/Sylius/)
 [![Total Downloads](https://poser.pugx.org/sylius/sylius/downloads)](https://packagist.org/packages/sylius/sylius)
 
-**This is Sylius Demo Edition repository deployed to demo.sylius.org.**
+**This is Sylius Demo Edition repository deployed to [demo.sylius.com](https://demo.sylius.com/).**
 
 Sylius is the first decoupled eCommerce framework based on [**Symfony**](http://symfony.com) and [**Doctrine**](http://doctrine-project.org). 
 The highest quality of code, strong testing culture, built-in Agile (BDD) workflow and exceptional flexibility make it the best solution for application tailored to your business requirements. 
@@ -17,7 +21,7 @@ We're using full-stack Behavior-Driven-Development, with [phpspec](http://phpspe
 Documentation
 -------------
 
-Documentation is available at [docs.sylius.org](http://docs.sylius.org).
+Documentation is available at [docs.sylius.com](https://docs.sylius.com).
 
 Installation
 ------------
@@ -48,7 +52,7 @@ If you are using the supplied Vagrant development environment, please see the re
 Contributing
 ------------
 
-Would like to help us and build the most developer-friendly eCommerce platform? Start from reading our [Contributing Guide](http://docs.sylius.org/en/latest/contributing/index.html)!
+Would like to help us and build the most developer-friendly eCommerce platform? Start from reading our [Contributing Guide](https://docs.sylius.com/en/latest/contributing/index.html)!
 
 Stay Updated
 ------------
