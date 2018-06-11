@@ -18,20 +18,6 @@ monolog:
 swiftmailer:
     disable_delivery: true
 
-snc_redis:
-    clients:
-        default:
-            type: predis
-            alias: default
-            dsn: %redis_dsn%
-    doctrine:
-        metadata_cache:
-            client: default
-            entity_manager: default
-        query_cache:
-            client: default
-            entity_manager: default
-
 doctrine:
     orm:
         metadata_cache_driver:
