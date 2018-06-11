@@ -83,6 +83,7 @@ hooks:
         yarn install
         GULP_ENV=prod yarn build
     deploy: |
+        rm -rf var/cache/*
         php bin/console doctrine:migrations:migrate --no-interaction
         php composer reload-fixtures
 
