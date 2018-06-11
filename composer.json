@@ -55,9 +55,9 @@
     "scripts": {
         "reload-database": [
             "rm -rf web/media/*",
-            "php bin/console --env=prod doctrine:cache:clear-metadata",
-            "php bin/console --env=prod doctrine:cache:clear-query",
-            "php bin/console --env=prod doctrine:cache:clear-result",
+            "php bin/console doctrine:cache:clear-metadata",
+            "php bin/console doctrine:cache:clear-query",
+            "php bin/console doctrine:cache:clear-result",
             "php bin/console --no-debug sylius:fixtures:load"
         ],
         "post-install-cmd": [
@@ -100,7 +100,7 @@
         "symfony-assets-install": "relative",
         "incenteev-parameters": {
             "file": "app/config/parameters.yml",
-            "dist-file": "vendor/sylius/sylius/app/config/parameters.yml.dist"
+            "dist-file": "app/config/parameters.yml.dist"
         }
     }
 }
