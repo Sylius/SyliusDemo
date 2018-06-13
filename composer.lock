@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "aec8a88cbe5cf2dec6e9d308e1e42742",
+    "content-hash": "da7111e19bb0aa98e80514c80c0f7118",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -5262,16 +5262,16 @@
         },
         {
             "name": "sylius-labs/sensio-distribution-bundle",
-            "version": "v6.0.0",
+            "version": "v6.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SyliusLabs/SensioDistributionBundle.git",
-                "reference": "360ca815d10019e7b584779a9739132a675ffb46"
+                "reference": "b03786d9af2e8fead7e837cbd1541dd5c0996e03"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SyliusLabs/SensioDistributionBundle/zipball/360ca815d10019e7b584779a9739132a675ffb46",
-                "reference": "360ca815d10019e7b584779a9739132a675ffb46",
+                "url": "https://api.github.com/repos/SyliusLabs/SensioDistributionBundle/zipball/b03786d9af2e8fead7e837cbd1541dd5c0996e03",
+                "reference": "b03786d9af2e8fead7e837cbd1541dd5c0996e03",
                 "shasum": ""
             },
             "require": {
@@ -5284,7 +5284,7 @@
                 "symfony/http-kernel": "~2.3|~3.0|^4.0",
                 "symfony/process": "~2.3|~3.0|^4.0"
             },
-            "conflict": {
+            "replace": {
                 "sensio/distribution-bundle": "*"
             },
             "type": "symfony-bundle",
@@ -5313,20 +5313,20 @@
                 "configuration",
                 "distribution"
             ],
-            "time": "2018-02-13T14:20:21+00:00"
+            "time": "2018-06-11T11:50:52+00:00"
         },
         {
             "name": "sylius/sylius",
-            "version": "v1.2.0-RC",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/Sylius.git",
-                "reference": "1ec29efea1adbbc2ba3778d540c017c49858f535"
+                "reference": "fe61f5c3aee73754e2e3df0cdc7558237ee0f8aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/1ec29efea1adbbc2ba3778d540c017c49858f535",
-                "reference": "1ec29efea1adbbc2ba3778d540c017c49858f535",
+                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/fe61f5c3aee73754e2e3df0cdc7558237ee0f8aa",
+                "reference": "fe61f5c3aee73754e2e3df0cdc7558237ee0f8aa",
                 "shasum": ""
             },
             "require": {
@@ -5511,7 +5511,7 @@
             ],
             "description": "E-Commerce platform for PHP, based on Symfony framework.",
             "homepage": "http://sylius.com",
-            "time": "2018-06-07T14:13:56+00:00"
+            "time": "2018-06-12T12:21:18+00:00"
         },
         {
             "name": "symfony/monolog-bundle",
@@ -8003,16 +8003,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.8.0",
+            "version": "1.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "478465659fd987669df0bd8a9bf22a8710e5f1b6"
+                "reference": "3e01bdad3e18354c3dce54466b7fbe33a9f9f7f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/478465659fd987669df0bd8a9bf22a8710e5f1b6",
-                "reference": "478465659fd987669df0bd8a9bf22a8710e5f1b6",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/3e01bdad3e18354c3dce54466b7fbe33a9f9f7f8",
+                "reference": "3e01bdad3e18354c3dce54466b7fbe33a9f9f7f8",
                 "shasum": ""
             },
             "require": {
@@ -8047,7 +8047,7 @@
                 "object",
                 "object graph"
             ],
-            "time": "2018-05-29T17:25:09+00:00"
+            "time": "2018-06-11T23:09:50+00:00"
         },
         {
             "name": "nelmio/alice",
@@ -9546,13 +9546,11 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "sylius/sylius": 5
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.1"
+        "php": "^7.2"
     },
     "platform-dev": []
 }
