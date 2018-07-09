@@ -21,7 +21,6 @@
     ],
     "require": {
         "php": "^7.2",
-
         "sylius/sylius": "^1.2"
     },
     "require-dev": {
