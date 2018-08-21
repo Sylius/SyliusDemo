@@ -52,6 +52,11 @@ security:
             stateless:  true
             anonymous:  true
 
+        shop_api:
+            pattern: "%shop_api.security.regex%"
+            stateless:  true
+            anonymous:  true
+
         shop:
             switch_user: { role: ROLE_ALLOWED_TO_SWITCH }
             context: shop

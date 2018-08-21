@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6937bd3c2f9ae4cc646d5b0d952e4711",
+    "content-hash": "c9ea80147555de70a70d93a0ffb55a4e",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -2890,6 +2890,185 @@
             "time": "2017-12-24T16:32:39+00:00"
         },
         {
+            "name": "league/tactician",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/tactician.git",
+                "reference": "d0339e22fd9252fb0fa53102b488d2c514483b8a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/tactician/zipball/d0339e22fd9252fb0fa53102b488d2c514483b8a",
+                "reference": "d0339e22fd9252fb0fa53102b488d2c514483b8a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "^4.8.35",
+                "squizlabs/php_codesniffer": "~2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Tactician\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ross Tuck",
+                    "homepage": "http://tactician.thephpleague.com"
+                }
+            ],
+            "description": "A small, flexible command bus. Handy for building service layers.",
+            "keywords": [
+                "command",
+                "command bus",
+                "service layer"
+            ],
+            "time": "2017-11-30T09:17:20+00:00"
+        },
+        {
+            "name": "league/tactician-bundle",
+            "version": "v0.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/tactician-bundle.git",
+                "reference": "14b38eb1d855fdd805eee2f6c1c20e956534381f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/tactician-bundle/zipball/14b38eb1d855fdd805eee2f6c1c20e956534381f",
+                "reference": "14b38eb1d855fdd805eee2f6c1c20e956534381f",
+                "shasum": ""
+            },
+            "require": {
+                "league/tactician": "^1.0",
+                "php": ">=5.5",
+                "symfony/config": "^2.3|^3.0",
+                "symfony/dependency-injection": "^2.3|^3.0",
+                "symfony/http-kernel": "^2.3|^3.0",
+                "symfony/yaml": "^2.3|^3.0"
+            },
+            "require-dev": {
+                "league/tactician-doctrine": "^1.0",
+                "matthiasnoback/symfony-config-test": "~1.0",
+                "matthiasnoback/symfony-dependency-injection-test": "^0.7",
+                "mockery/mockery": "~0.9.4",
+                "phpunit/phpunit": "~4.5",
+                "symfony/validator": "^2.3|^3.0"
+            },
+            "suggest": {
+                "league/tactician-doctrine": "For doctrine transaction middleware",
+                "symfony/validator": "For command validator middleware"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Tactician\\Bundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rafael Dohms",
+                    "homepage": "http://doh.ms"
+                },
+                {
+                    "name": "Xander Smalbil",
+                    "email": "xander@videofunk.nl"
+                },
+                {
+                    "name": "Richard Tuin",
+                    "homepage": "http://www.rtuin.nl/"
+                },
+                {
+                    "name": "Ross Tuck",
+                    "email": "me@rosstuck.com"
+                }
+            ],
+            "description": "Bundle to integrate Tactician with Symfony projects",
+            "keywords": [
+                "bundle",
+                "symfony",
+                "tactician"
+            ],
+            "time": "2016-04-21T08:00:01+00:00"
+        },
+        {
+            "name": "league/tactician-doctrine",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/tactician-doctrine.git",
+                "reference": "c554dfc464e56aa7057fa4625376f9406e5656f6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/tactician-doctrine/zipball/c554dfc464e56aa7057fa4625376f9406e5656f6",
+                "reference": "c554dfc464e56aa7057fa4625376f9406e5656f6",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/dbal": "^2.4",
+                "league/tactician": "^1.0",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "doctrine/orm": "~2.4",
+                "mockery/mockery": "~0.9.7",
+                "phpunit/phpunit": "~4.8",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "suggest": {
+                "doctrine/orm": "Required if you need to use ORM Transaction Middleware"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "League\\Tactician\\Doctrine\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ross Tuck"
+                }
+            ],
+            "description": "Plugins for Tactician commands using Doctrine, like wrapping every command in a transaction",
+            "homepage": "https://github.com/thephpleague/tactician-doctrine",
+            "keywords": [
+                "command bus",
+                "doctrine",
+                "tactician",
+                "transactions"
+            ],
+            "time": "2018-04-13T10:03:47+00:00"
+        },
+        {
             "name": "league/uri",
             "version": "5.3.0",
             "source": {
@@ -3798,24 +3977,23 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "v2.99.99",
+            "version": "v2.0.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "35469243ebbb9be5086cff57538cac6da2c36852"
+                "reference": "29af24f25bab834fcbb38ad2a69fa93b867e070d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/35469243ebbb9be5086cff57538cac6da2c36852",
-                "reference": "35469243ebbb9be5086cff57538cac6da2c36852",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/29af24f25bab834fcbb38ad2a69fa93b867e070d",
+                "reference": "29af24f25bab834fcbb38ad2a69fa93b867e070d",
                 "shasum": ""
             },
             "require": {
-                "php": "^7"
+                "php": ">=5.2.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "4.*|5.*",
-                "vimeo/psalm": "^1"
+                "phpunit/phpunit": "4.*|5.*"
             },
             "suggest": {
                 "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
@@ -3844,7 +4022,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2018-06-06T05:12:00+00:00"
+            "time": "2018-07-04T16:31:37+00:00"
         },
         {
             "name": "payum/iso4217",
@@ -5563,17 +5741,61 @@
             "time": "2018-06-11T11:50:52+00:00"
         },
         {
+            "name": "sylius/shop-api-plugin",
+            "version": "v1.0.0-beta.20",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Sylius/SyliusShopApiPlugin.git",
+                "reference": "b82a5ac6c4c88cfe1e620e8fb9469ae30977f7aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Sylius/SyliusShopApiPlugin/zipball/b82a5ac6c4c88cfe1e620e8fb9469ae30977f7aa",
+                "reference": "b82a5ac6c4c88cfe1e620e8fb9469ae30977f7aa",
+                "shasum": ""
+            },
+            "require": {
+                "league/tactician-bundle": "^0.4",
+                "league/tactician-doctrine": "^1.1",
+                "php": "^7.1",
+                "sylius/sylius": "^1.0"
+            },
+            "require-dev": {
+                "doctrine/common": "<2.8",
+                "lakion/api-test-case": "^1.1",
+                "lexik/jwt-authentication-bundle": "^2.4",
+                "matthiasnoback/symfony-config-test": "^2.0",
+                "matthiasnoback/symfony-dependency-injection-test": "^1.0",
+                "phpspec/phpspec": "^3.2",
+                "phpunit/phpunit": "^5.6",
+                "sylius-labs/coding-standard": "^1.0",
+                "symplify/easy-coding-standard": "^2.4"
+            },
+            "type": "sylius-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Sylius\\ShopApiPlugin\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Shop API for Sylius E-Commerce.",
+            "time": "2017-09-28T07:17:51+00:00"
+        },
+        {
             "name": "sylius/sylius",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/Sylius.git",
-                "reference": "2760de2a3cba93bfdab12dbef28af2b5480400b2"
+                "reference": "e42ee5ac96b0817485a1b1741eda8a0cfaeab27e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/2760de2a3cba93bfdab12dbef28af2b5480400b2",
-                "reference": "2760de2a3cba93bfdab12dbef28af2b5480400b2",
+                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/e42ee5ac96b0817485a1b1741eda8a0cfaeab27e",
+                "reference": "e42ee5ac96b0817485a1b1741eda8a0cfaeab27e",
                 "shasum": ""
             },
             "require": {
@@ -5591,7 +5813,6 @@
                 "friendsofsymfony/rest-bundle": "^2.1",
                 "fzaninotto/faker": "^1.6",
                 "gedmo/doctrine-extensions": "^2.4.12",
-                "incenteev/composer-parameter-handler": "^2.1.3",
                 "jms/serializer-bundle": "^2.0",
                 "knplabs/knp-gaufrette-bundle": "^0.5",
                 "knplabs/knp-menu-bundle": "^2.1",
@@ -5721,12 +5942,9 @@
                 "symfony-app-dir": "app",
                 "symfony-bin-dir": "bin",
                 "symfony-var-dir": "var",
-                "symfony-web-dir": "web",
+                "symfony-web-dir": "public",
                 "symfony-tests-dir": "tests",
                 "symfony-assets-install": "relative",
-                "incenteev-parameters": {
-                    "file": "app/config/parameters.yml"
-                },
                 "branch-alias": {
                     "dev-master": "1.3-dev"
                 }
@@ -5761,7 +5979,7 @@
             ],
             "description": "E-Commerce platform for PHP, based on Symfony framework.",
             "homepage": "http://sylius.com",
-            "time": "2018-08-15T12:12:14+00:00"
+            "time": "2018-08-21T14:13:01+00:00"
         },
         {
             "name": "symfony/monolog-bundle",
@@ -6664,7 +6882,7 @@
                     "email": "adrien.brault@gmail.com"
                 },
                 {
-                    "name": "William DURAND",
+                    "name": "William Durand",
                     "email": "william.durand1@gmail.com"
                 }
             ],
@@ -9797,7 +10015,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "sylius/sylius": 20
+        "sylius/sylius": 20,
+        "sylius/shop-api-plugin": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,
