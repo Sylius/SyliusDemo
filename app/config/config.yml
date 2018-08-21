@@ -7,6 +7,8 @@ imports:
     - { resource: "@SyliusShopBundle/Resources/config/app/config.yml" }
     - { resource: "@SyliusAdminApiBundle/Resources/config/app/config.yml" }
 
+    - { resource: "@ShopApiPlugin/Resources/config/app/config.yml" }
+
     - { resource: "parameters.yml" }
     - { resource: "parameters_platform.php" }
     - { resource: "security.yml" }
@@ -68,3 +70,5 @@ fos_rest:
 sylius_shop:
     product_grid:
         include_all_descendants: true
+    checkout_resolver:
+        pattern: "%sylius.security.shop_regex%/checkout/.+"
