@@ -27,6 +27,9 @@ before_install:
 
     - echo "extension = memcached.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
 
+    - mv .env.test.dist .env.test
+    - set -a && source .env.test && set +a
+
 install:
     - composer install --no-interaction --prefer-dist
     - yarn install
