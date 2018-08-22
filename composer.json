@@ -21,7 +21,8 @@
     ],
     "require": {
         "php": "^7.2",
-        "sylius/sylius": "1.3.*@dev"
+        "sylius/sylius": "1.3.*@dev",
+        "incenteev/composer-parameter-handler": "^2.1"
     },
     "require-dev": {
         "behat/behat": "^3.2",
