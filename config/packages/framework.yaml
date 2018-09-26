@@ -1,0 +1,7 @@
+framework:
+    secret: "%secret%"
+    form: true
+    csrf_protection: true
+    templating: { engines: ["twig"] }
+    session:
+        handler_id: ~
