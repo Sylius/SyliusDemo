@@ -28,8 +28,8 @@ dependencies:
 web:
     locations:
         '/':
-            root: "web"
-            passthru: "/app.php"
+            root: "public"
+            passthru: "/index.php"
             allow: true
             expires: -1
             scripts: true
@@ -50,7 +50,7 @@ web:
                 '\.(jpe?g|png|gif|svgz?)$':
                     allow: true
         '/media/cache/resolve':
-            passthru: "/app.php"
+            passthru: "/index.php"
             expires: -1
             allow: true
             scripts: true
@@ -73,9 +73,9 @@ mounts:
 
 hooks:
     build: |
-        rm web/app_dev.php
-        rm web/app_test.php
-        rm web/app_test_cached.php
+        rm public/app_dev.php
+        rm public/app_test.php
+        rm public/app_test_cached.php
         rm -rf var/cache/*
         php bin/console --no-debug --ansi cache:clear --no-warmup
         php bin/console --no-debug --ansi cache:warmup
@@ -85,7 +85,7 @@ hooks:
     deploy: |
         rm -rf var/cache/*
         php bin/console doctrine:migrations:migrate --no-interaction
-        rm -rf web/media/*
+        rm -rf public/media/*
         php bin/console doctrine:cache:clear-metadata
         php bin/console doctrine:cache:clear-query
         php bin/console doctrine:cache:clear-result
