@@ -11,7 +11,8 @@ relationships:
 
 variables:
     env:
-        SYMFONY_ENV: 'prod'
+        APP_ENV: 'prod'
+        APP_DEBUG: 0
 
 runtime:
     extensions:

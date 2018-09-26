@@ -21,7 +21,8 @@
     ],
     "require": {
         "php": "^7.2",
-        "sylius/sylius": "v1.3.0-BETA"
+        "sylius/sylius": "v1.3.0-BETA",
+        "platformsh/symfonyflex-bridge": "^1.3"
     },
     "require-dev": {
         "behat/behat": "^3.2",
