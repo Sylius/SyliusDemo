@@ -1,5 +1,5 @@
 framework:
-    secret: "%secret%"
+    secret: "%env(APP_SECRET)%"
     form: true
     csrf_protection: true
     templating: { engines: ["twig"] }
