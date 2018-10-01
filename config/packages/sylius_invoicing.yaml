@@ -1,0 +1,18 @@
+imports:
+    - { resource: "@SyliusInvoicingPlugin/Resources/config/config.yml" }
+
+sylius_channel:
+    resources:
+        channel:
+            classes:
+                model: App\Entity\Channel
+
+doctrine:
+    orm:
+        mappings:
+            sylius_channel:
+                type: annotation
+                dir: '%kernel.project_dir%/src/Entity'
+                is_bundle: false
+                prefix: App\Entity
+                alias: App

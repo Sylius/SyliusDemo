@@ -1,4 +1,7 @@
 {
+    "beberlei/assert": {
+        "version": "v3.0.0"
+    },
     "behat/behat": {
         "version": "v3.5.0"
     },
@@ -149,6 +152,15 @@
             "ref": "81dee417d2cc60cd1c9d6208dff2ec22a1103e93"
         }
     },
+    "friendsofsymfony/jsrouting-bundle": {
+        "version": "2.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "512",
+            "version": "2.0",
+            "ref": ""
+        }
+    },
     "friendsofsymfony/oauth-server-bundle": {
         "version": "1.6.1"
     },
@@ -226,6 +238,18 @@
     },
     "knplabs/knp-menu-bundle": {
         "version": "v2.2.1"
+    },
+    "knplabs/knp-snappy": {
+        "version": "v1.0.4"
+    },
+    "knplabs/knp-snappy-bundle": {
+        "version": "1.5",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "511",
+            "version": "1.5",
+            "ref": ""
+        }
     },
     "lakion/api-test-case": {
         "version": "v1.2.0"
@@ -389,6 +413,15 @@
     "polishsymfonycommunity/symfony-mocker-container": {
         "version": "v1.0.2"
     },
+    "prooph/common": {
+        "version": "v4.3.0"
+    },
+    "prooph/service-bus": {
+        "version": "v6.2.2"
+    },
+    "prooph/service-bus-symfony-bundle": {
+        "version": "v0.7.0"
+    },
     "psr/cache": {
         "version": "1.0.1"
     },
@@ -508,6 +541,51 @@
     },
     "sylius-labs/sensio-distribution-bundle": {
         "version": "v6.0.1"
+    },
+    "sylius/admin-order-creation-plugin": {
+        "version": "0.6",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "512",
+            "version": "0.6",
+            "ref": ""
+        }
+    },
+    "sylius/customer-order-cancellation-plugin": {
+        "version": "0.2",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "513",
+            "version": "0.2",
+            "ref": ""
+        }
+    },
+    "sylius/customer-reorder-plugin": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "510",
+            "version": "1.0",
+            "ref": ""
+        }
+    },
+    "sylius/invoicing-plugin": {
+        "version": "0.5",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "511",
+            "version": "0.5",
+            "ref": ""
+        }
+    },
+    "sylius/refund-plugin": {
+        "version": "0.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "508",
+            "version": "0.4",
+            "ref": ""
+        }
     },
     "sylius/sylius": {
         "version": "v1.3.0-beta"
@@ -664,6 +742,9 @@
             "version": "3.3",
             "ref": "f8a63faa0d9521526499c0a8f403c9964ecb0527"
         }
+    },
+    "symfony/serializer": {
+        "version": "v4.1.4"
     },
     "symfony/stopwatch": {
         "version": "v4.1.4"

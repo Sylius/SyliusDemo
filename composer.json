@@ -22,7 +22,12 @@
     "require": {
         "php": "^7.2",
         "sylius/sylius": "^1.3",
-        "platformsh/symfonyflex-bridge": "^1.3"
+        "platformsh/symfonyflex-bridge": "^1.3",
+        "sylius/customer-reorder-plugin": "^1.0",
+        "sylius/customer-order-cancellation-plugin": "^0.2",
+        "sylius/invoicing-plugin": "^0.5",
+        "sylius/admin-order-creation-plugin": "^0.6",
+        "sylius/refund-plugin": "^0.4"
     },
     "require-dev": {
         "behat/behat": "^3.4",
@@ -73,7 +78,8 @@
         "auto-scripts": {
             "cache:clear": "symfony-cmd",
             "assets:install %PUBLIC_DIR%": "symfony-cmd",
-            "security-checker security:check": "script"
+            "security-checker security:check": "script",
+            "assets:install --symlink %PUBLIC_DIR%": "symfony-cmd"
         },
         "post-install-cmd": [
             "@auto-scripts"
@@ -89,7 +95,7 @@
     },
     "extra": {
         "symfony": {
-            "allow-contrib": false
+            "allow-contrib": "true"
         }
     }
 }
