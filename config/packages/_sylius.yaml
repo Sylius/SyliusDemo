@@ -8,6 +8,7 @@ imports:
 
 parameters:
     locale: en_US
+    sylius_core.public_dir: '%kernel.project_dir%/public'
 
 sylius_shop:
     product_grid:
