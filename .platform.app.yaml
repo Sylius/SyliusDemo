@@ -68,15 +68,12 @@ disk: 4096
 
 mounts:
     "/var/cache": "shared:files/cache"
-    "/var/logs": "shared:files/logs"
+    "/var/log": "shared:files/log"
     "/web/uploads": "shared:files/uploads"
     "/web/media": "shared:files/media"
 
 hooks:
     build: |
-        rm public/app_dev.php
-        rm public/app_test.php
-        rm public/app_test_cached.php
         rm -rf var/cache/*
         php bin/console --no-debug --ansi cache:clear --no-warmup
         php bin/console --no-debug --ansi cache:warmup
