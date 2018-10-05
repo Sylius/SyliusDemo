@@ -68,15 +68,12 @@ disk: 4096
 
 mounts:
     "/var/cache": "shared:files/cache"
-    "/var/logs": "shared:files/logs"
-    "/web/uploads": "shared:files/uploads"
-    "/web/media": "shared:files/media"
+    "/var/log": "shared:files/log"
+    "/public/uploads": "shared:files/uploads"
+    "/public/media": "shared:files/media"
 
 hooks:
     build: |
-        rm public/app_dev.php
-        rm public/app_test.php
-        rm public/app_test_cached.php
         rm -rf var/cache/*
         php bin/console --no-debug --ansi cache:clear --no-warmup
         php bin/console --no-debug --ansi cache:warmup
@@ -96,7 +93,7 @@ crons:
     reset:
         spec: "0 */1 * * *"
         cmd: |
-            rm -rf web/media/*
+            rm -rf public/media/*
             php bin/console doctrine:cache:clear-metadata
             php bin/console doctrine:cache:clear-query
             php bin/console doctrine:cache:clear-result

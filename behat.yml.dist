@@ -14,9 +14,6 @@ default:
                 - "vendor/sylius/sylius/features"
                 - "features"
 
-        FriendsOfBehat\SymfonyExtension:
-            env_file: ~
-
         Behat\MinkExtension:
             files_path: "%paths.base%/vendor/sylius/sylius/src/Sylius/Behat/Resources/fixtures/"
 
@@ -52,9 +49,6 @@ cached:
         FriendsOfBehat\ContextServiceExtension:
             imports:
                 - "vendor/sylius/sylius/src/Sylius/Behat/Resources/config/services.xml"
-
-        FriendsOfBehat\SymfonyExtension:
-            env_file: ~
 
         Behat\MinkExtension:
             javascript_session: chromium

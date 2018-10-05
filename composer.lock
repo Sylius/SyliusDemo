@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "370ef48af2c8be6c977b3772053ff931",
+    "content-hash": "75808a37344f539246e72f5a5dfe6c9f",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -9614,21 +9614,30 @@
         },
         {
             "name": "friends-of-behat/page-object-extension",
-            "version": "0.1",
+            "version": "0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfBehat/PageObjectExtension.git",
-                "reference": "9dfdda8a744f899e2cca8e37362f332d4963f3dd"
+                "reference": "23bf73a2d779e6b6736d2e1dc919a6fb25a947c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfBehat/PageObjectExtension/zipball/9dfdda8a744f899e2cca8e37362f332d4963f3dd",
-                "reference": "9dfdda8a744f899e2cca8e37362f332d4963f3dd",
+                "url": "https://api.github.com/repos/FriendsOfBehat/PageObjectExtension/zipball/23bf73a2d779e6b6736d2e1dc919a6fb25a947c0",
+                "reference": "23bf73a2d779e6b6736d2e1dc919a6fb25a947c0",
                 "shasum": ""
             },
             "require": {
                 "behat/mink": "^1.7",
                 "php": "^7.1"
+            },
+            "conflict": {
+                "symfony/routing": "<3.4"
+            },
+            "require-dev": {
+                "symfony/routing": "^3.4"
+            },
+            "suggest": {
+                "symfony/routing": "Allow better support for PageObject pattern in Symfony applications"
             },
             "type": "library",
             "autoload": {
@@ -9657,7 +9666,7 @@
                 }
             ],
             "description": "Provides default classes for Page object pattern in Behat",
-            "time": "2018-07-04T06:35:01+00:00"
+            "time": "2018-07-04T09:41:45+00:00"
         },
         {
             "name": "friends-of-behat/service-container-extension",
