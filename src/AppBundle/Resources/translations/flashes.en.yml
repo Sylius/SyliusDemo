@@ -1,0 +1,10 @@
+sylius_demo:
+    admin_account:
+        prevent_delete: 'You cannot delete administrator of Sylius Demo!'
+        prevent_edit: 'You cannot edit administrator of Sylius Demo!'
+    channel:
+        prevent_create: 'You cannot create channel on Sylius Demo!'
+
+sylius:
+    customer:
+        register: 'Thank you for registering.'
