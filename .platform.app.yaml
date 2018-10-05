@@ -11,8 +11,7 @@ relationships:
 
 variables:
     env:
-        APP_ENV: 'prod'
-        APP_DEBUG: 0
+        SYMFONY_ENV: 'prod'
 
 runtime:
     extensions:
@@ -29,8 +28,8 @@ dependencies:
 web:
     locations:
         '/':
-            root: "public"
-            passthru: "/index.php"
+            root: "web"
+            passthru: "/app.php"
             allow: true
             expires: -1
             scripts: true
@@ -51,7 +50,7 @@ web:
                 '\.(jpe?g|png|gif|svgz?)$':
                     allow: true
         '/media/cache/resolve':
-            passthru: "/index.php"
+            passthru: "/app.php"
             expires: -1
             allow: true
             scripts: true
@@ -74,9 +73,9 @@ mounts:
 
 hooks:
     build: |
-        rm public/app_dev.php
-        rm public/app_test.php
-        rm public/app_test_cached.php
+        rm web/app_dev.php
+        rm web/app_test.php
+        rm web/app_test_cached.php
         rm -rf var/cache/*
         php bin/console --no-debug --ansi cache:clear --no-warmup
         php bin/console --no-debug --ansi cache:warmup
@@ -86,7 +85,7 @@ hooks:
     deploy: |
         rm -rf var/cache/*
         php bin/console doctrine:migrations:migrate --no-interaction
-        rm -rf public/media/*
+        rm -rf web/media/*
         php bin/console doctrine:cache:clear-metadata
         php bin/console doctrine:cache:clear-query
         php bin/console doctrine:cache:clear-result

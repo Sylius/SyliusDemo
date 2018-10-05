@@ -1,0 +1,37 @@
+# This file is part of the Sylius package.
+# (c) Paweł Jędrzejewski
+
+imports:
+    - { resource: "config.yml" }
+
+monolog:
+    handlers:
+        main:
+            type: fingers_crossed
+            action_level: error
+            handler: nested
+        nested:
+            type: stream
+            path: "%kernel.logs_dir%/%kernel.environment%.log"
+            level: debug
+
+swiftmailer:
+    disable_delivery: true
+
+doctrine:
+    orm:
+        metadata_cache_driver:
+            type: "%metacache_driver%"
+            database: 1
+            host: "%redis_host%"
+            port: "%redis_port%"
+        query_cache_driver:
+            type: "%querycache_driver%"
+            database: 2
+            host: "%redis_host%"
+            port: "%redis_port%"
+        result_cache_driver:
+            type: "%resultcache_driver%"
+            database: 3
+            host: "%redis_host%"
+            port: "%redis_port%"

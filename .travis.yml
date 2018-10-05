@@ -72,7 +72,7 @@ script:
     - composer validate --strict
 
     - echo "Testing (Behat - regular scenarios; ~@javascript && ~@todo && ~@cli)" "Sylius"
-    - vendor/bin/behat --strict --no-interaction -vvv -f progress --tags="~@javascript && ~@todo && ~@cli"
+    - bin/behat --strict --no-interaction -vvv -f progress --tags="~@javascript && ~@todo && ~@cli"
 
 after_failure:
     - vendor/lakion/mink-debug-extension/travis/tools/upload-textfiles "${SYLIUS_BUILD_DIR}/*.log"
