@@ -27,6 +27,9 @@ before_install:
 
     - echo "extension = memcached.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
 
+    - cp .env.test_cached.dist .env.test_cached
+    - set -a && source .env.test_cached && set +a
+
 install:
     - composer install --no-interaction --prefer-dist
     - yarn install
@@ -72,7 +75,7 @@ script:
     - composer validate --strict
 
     - echo "Testing (Behat - regular scenarios; ~@javascript && ~@todo && ~@cli)" "Sylius"
-    - bin/behat --strict --no-interaction -vvv -f progress --tags="~@javascript && ~@todo && ~@cli"
+    - vendor/bin/behat --strict --no-interaction -vvv -f progress --tags="~@javascript && ~@todo && ~@cli"
 
 after_failure:
     - vendor/lakion/mink-debug-extension/travis/tools/upload-textfiles "${SYLIUS_BUILD_DIR}/*.log"

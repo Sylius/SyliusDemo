@@ -1,0 +1,4 @@
+doctrine_migrations:
+    dir_name: "%kernel.root_dir%/../vendor/sylius/sylius/app/migrations"
+
+    namespace: Sylius\Migrations

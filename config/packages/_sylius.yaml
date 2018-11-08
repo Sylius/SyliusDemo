@@ -1,0 +1,22 @@
+imports:
+    - { resource: "@SyliusCoreBundle/Resources/config/app/config.yml" }
+
+    - { resource: "@SyliusAdminBundle/Resources/config/app/config.yml" }
+    - { resource: "@SyliusAdminApiBundle/Resources/config/app/config.yml" }
+
+    - { resource: "@SyliusShopBundle/Resources/config/app/config.yml" }
+
+parameters:
+    sylius_core.public_dir: '%kernel.project_dir%/public'
+    sylius.cache:
+        type: array
+
+sylius_shop:
+    product_grid:
+        include_all_descendants: true
+
+sylius_theme:
+    sources:
+        filesystem:
+            directories:
+                - "%kernel.project_dir%/themes"
