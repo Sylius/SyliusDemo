@@ -14,11 +14,17 @@ default:
                 - "vendor/sylius/sylius/features"
                 - "features"
 
-        FriendsOfBehat\SymfonyExtension:
-            env_file: ~
-
         Behat\MinkExtension:
             files_path: "%paths.base%/vendor/sylius/sylius/src/Sylius/Behat/Resources/fixtures/"
+
+        FriendsOfBehat\SymfonyExtension:
+            env_file: .env.test
+            kernel:
+                env: test
+                debug: true
+                class: App\Kernel
+                path: src/Kernel.php
+                bootstrap: ~
 
         FriendsOfBehat\ExcludeSpecificationsExtension:
             features:
@@ -44,9 +50,15 @@ cached:
             imports:
                 - "vendor/sylius/sylius/src/Sylius/Behat/Resources/config/services.xml"
 
-        FriendsOfBehat\SymfonyExtension:
-            env_file: ~
-
         Behat\MinkExtension:
             javascript_session: chromium
             files_path: "%paths.base%/vendor/sylius/sylius/src/Sylius/Behat/Resources/fixtures/"
+
+        FriendsOfBehat\SymfonyExtension:
+            env_file: .env.test_cached
+            kernel:
+                env: test_cached
+                debug: false
+                class: App\Kernel
+                path: src/Kernel.php
+                bootstrap: ~
