@@ -410,6 +410,9 @@
     "psr/simple-cache": {
         "version": "1.0.1"
     },
+    "ralouphie/getallheaders": {
+        "version": "2.0.5"
+    },
     "ramsey/uuid": {
         "version": "3.8.0"
     },
@@ -479,6 +482,9 @@
     "sonata-project/datagrid-bundle": {
         "version": "2.3.1"
     },
+    "sonata-project/doctrine-extensions": {
+        "version": "1.1.5"
+    },
     "sonata-project/intl-bundle": {
         "version": "2.5.0"
     },
@@ -538,6 +544,9 @@
             "version": "3.3",
             "ref": "e3868d2f4a5104f19f844fe551099a00c6562527"
         }
+    },
+    "symfony/contracts": {
+        "version": "v1.0.2"
     },
     "symfony/css-selector": {
         "version": "v3.4.16"
@@ -721,6 +730,9 @@
     },
     "symfony/var-dumper": {
         "version": "v4.1.5"
+    },
+    "symfony/var-exporter": {
+        "version": "v4.2.2"
     },
     "symfony/web-profiler-bundle": {
         "version": "3.3",

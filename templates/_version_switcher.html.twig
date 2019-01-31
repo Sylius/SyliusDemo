@@ -1,0 +1,50 @@
+{% set is_stable = 'DEV' not in sylius_meta.version %}
+{% set version_descriptor = ' (v' ~ sylius_meta.version ~ ')' %}
+
+<style>
+    .version-switch {
+        position: fixed;
+        bottom: 0;
+        right: 30px;
+        display: flex;
+        align-items: center;
+        background: #333;
+        padding: 10px 10px;
+        border-radius: 5px 5px 0 0;
+        color: #fff;
+        z-index: 9999;
+    }
+
+    .version-switch label {
+        display: inline-block;
+        padding: 0 10px;
+        font-size: 13px;
+        color: #999;
+    }
+
+    .version-switch select {
+        display: inline-block;
+        height: 30px;
+        border: 1px solid #5a5a5a;
+        background: #333;
+        color: #fff;
+        font-size: 13px;
+    }
+</style>
+
+<div class="version-switch">
+    <label for="version-switch">Sylius version:</label>
+    {# Remove "disabled" when the second demo is published #}
+    <select id="version-switch" disabled>
+        <option value="//demo.sylius.com"{% if is_stable %} selected{% endif %}>stable{{ is_stable ? version_descriptor : '' }}</option>
+        <option value="//master.demo.sylius.com"{% if not is_stable %} selected{% endif %}>master{{ is_stable ? '' : version_descriptor }}</option>
+    </select>
+</div>
+
+<script type="text/javascript">
+    const versionSelect = document.getElementById('version-switch');
+
+    versionSelect.addEventListener('change', (e) => {
+        window.location.href = e.target.value;
+    });
+</script>
