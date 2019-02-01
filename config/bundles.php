@@ -48,7 +48,7 @@ return [
     Sylius\Bundle\FixturesBundle\SyliusFixturesBundle::class => ['all' => true],
     Sylius\Bundle\PayumBundle\SyliusPayumBundle::class => ['all' => true],
     Sylius\Bundle\ThemeBundle\SyliusThemeBundle::class => ['all' => true],
-    Symfony\Bundle\WebServerBundle\WebServerBundle::class => ['all' => true],
+    Symfony\Bundle\WebServerBundle\WebServerBundle::class => ['dev' => true, 'test' => true, 'test_cached' => true],
     Sylius\Bundle\AdminBundle\SyliusAdminBundle::class => ['all' => true],
     Sylius\Bundle\ShopBundle\SyliusShopBundle::class => ['all' => true],
     FOS\OAuthServerBundle\FOSOAuthServerBundle::class => ['all' => true],
@@ -58,4 +58,5 @@ return [
     Sonata\DatagridBundle\SonataDatagridBundle::class => ['all' => true],
     Nelmio\Alice\Bridge\Symfony\NelmioAliceBundle::class => ['dev' => true, 'test' => true],
     Fidry\AliceDataFixtures\Bridge\Symfony\FidryAliceDataFixturesBundle::class => ['dev' => true, 'test' => true],
+    Sylius\Behat\Application\SyliusTestPlugin\SyliusTestPlugin::class => ['test' => true, 'test_cached' => true],
 ];
