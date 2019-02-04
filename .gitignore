@@ -20,11 +20,6 @@
 /bin/*
 !/bin/console
 
-/.env
-/.env.prod
-/.env.test
-/.env.test_cached
-
 ###> symfony/web-server-bundle ###
 /.web-server-pid
 ###< symfony/web-server-bundle ###
@@ -44,10 +39,13 @@
 ###< squizlabs/php_codesniffer ###
 
 ###> symfony/framework-bundle ###
-/.env
 /public/bundles/
 /var/
 /vendor/
+
+/.env.local
+/.env.local.php
+/.env.*.local
 ###< symfony/framework-bundle ###
 
 ###> liip/imagine-bundle ###
