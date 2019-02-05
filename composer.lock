@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "da9a65a63aad6cec765d11cca70c1cca",
+    "content-hash": "ea54912ee86772cb90f579332267d43e",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -5504,16 +5504,16 @@
         },
         {
             "name": "sylius/sylius",
-            "version": "v1.4.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/Sylius.git",
-                "reference": "c4bb5174a64c52d3477b97ab6e33078810c005d0"
+                "reference": "cd0f5e6e1e18d57ba60ef4de88cab99029dd431c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/c4bb5174a64c52d3477b97ab6e33078810c005d0",
-                "reference": "c4bb5174a64c52d3477b97ab6e33078810c005d0",
+                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/cd0f5e6e1e18d57ba60ef4de88cab99029dd431c",
+                "reference": "cd0f5e6e1e18d57ba60ef4de88cab99029dd431c",
                 "shasum": ""
             },
             "require": {
@@ -5693,7 +5693,7 @@
                     "allow-contrib": false
                 },
                 "branch-alias": {
-                    "dev-master": "1.4-dev"
+                    "dev-master": "1.5-dev"
                 }
             },
             "autoload": {
@@ -5726,7 +5726,7 @@
             ],
             "description": "E-Commerce platform for PHP, based on Symfony framework.",
             "homepage": "http://sylius.com",
-            "time": "2019-02-04T01:41:34+00:00"
+            "time": "2019-02-04T01:44:29+00:00"
         },
         {
             "name": "symfony/asset",
@@ -13751,6 +13751,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "sylius/sylius": 20,
         "symfony/flex": 20,
         "behat/mink": 20
     },
