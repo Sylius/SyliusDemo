@@ -34,8 +34,7 @@
 
 <div class="version-switch">
     <label for="version-switch">Sylius version:</label>
-    {# Remove "disabled" when the second demo is published #}
-    <select id="version-switch" disabled>
+    <select id="version-switch">
         <option value="//demo.sylius.com"{% if is_stable %} selected{% endif %}>stable{{ is_stable ? version_descriptor : '' }}</option>
         <option value="//master.demo.sylius.com"{% if not is_stable %} selected{% endif %}>master{{ is_stable ? '' : version_descriptor }}</option>
     </select>
