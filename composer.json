@@ -21,8 +21,10 @@
     ],
     "require": {
         "php": "^7.2",
+
+        "sensiolabs/security-checker": " ^5.0",
         "sylius/sylius": "^1.4",
-        "sensiolabs/security-checker": " ^5.0"
+        "symfony/flex": "^1.2@dev"
     },
     "require-dev": {
         "behat/behat": "^3.4",
@@ -35,8 +37,8 @@
         "friends-of-behat/suite-settings-extension": "^1.0",
         "friends-of-behat/symfony-extension": "^2.0",
         "friends-of-behat/variadic-extension": "^1.1",
-        "lakion/api-test-case": "^3.0",
         "lakion/mink-debug-extension": "^1.2.3",
+        "lchrusciel/api-test-case": "^3.0",
         "phpspec/phpspec": "^5.0",
         "phpunit/phpunit": "^6.5",
         "stripe/stripe-php": "^4.1",
@@ -44,7 +46,6 @@
         "symfony/browser-kit": "^3.4|^4.1",
         "symfony/debug-bundle": "^3.4|^4.1",
         "symfony/dotenv": "^3.4|^4.1",
-        "symfony/flex": "^1.1",
         "symfony/intl": "^3.4|^4.1",
         "symfony/web-profiler-bundle": "^3.4|^4.1",
         "symfony/web-server-bundle": "^3.4|^4.1"
@@ -53,8 +54,7 @@
     "autoload": {
         "psr-4": {
             "App\\": "src/"
-        },
-        "files": [".platformsh.php"]
+        }
     },
     "autoload-dev": {
         "psr-4": {
