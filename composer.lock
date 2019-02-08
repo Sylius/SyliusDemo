@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ea54912ee86772cb90f579332267d43e",
+    "content-hash": "433afecb08d93e54ac8bec687772d981",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -5508,12 +5508,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/Sylius.git",
-                "reference": "cd0f5e6e1e18d57ba60ef4de88cab99029dd431c"
+                "reference": "53f150fc218637a6697691135a87422fa2f11396"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/cd0f5e6e1e18d57ba60ef4de88cab99029dd431c",
-                "reference": "cd0f5e6e1e18d57ba60ef4de88cab99029dd431c",
+                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/53f150fc218637a6697691135a87422fa2f11396",
+                "reference": "53f150fc218637a6697691135a87422fa2f11396",
                 "shasum": ""
             },
             "require": {
@@ -5726,7 +5726,7 @@
             ],
             "description": "E-Commerce platform for PHP, based on Symfony framework.",
             "homepage": "http://sylius.com",
-            "time": "2019-02-04T01:44:29+00:00"
+            "time": "2019-02-06T10:42:13+00:00"
         },
         {
             "name": "symfony/asset",
@@ -6279,6 +6279,63 @@
             ],
             "description": "Symfony Doctrine Bridge",
             "homepage": "https://symfony.com",
+            "time": "2019-01-24T21:39:51+00:00"
+        },
+        {
+            "name": "symfony/dotenv",
+            "version": "v4.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/dotenv.git",
+                "reference": "9a3bdfcd7a0d9602754894d76c614d15ca366535"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/dotenv/zipball/9a3bdfcd7a0d9602754894d76c614d15ca366535",
+                "reference": "9a3bdfcd7a0d9602754894d76c614d15ca366535",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3"
+            },
+            "require-dev": {
+                "symfony/process": "~3.4|~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Dotenv\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Registers environment variables from a .env file",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "dotenv",
+                "env",
+                "environment"
+            ],
             "time": "2019-01-24T21:39:51+00:00"
         },
         {
@@ -12877,63 +12934,6 @@
             "description": "Symfony DomCrawler Component",
             "homepage": "https://symfony.com",
             "time": "2019-01-16T20:35:37+00:00"
-        },
-        {
-            "name": "symfony/dotenv",
-            "version": "v4.2.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/dotenv.git",
-                "reference": "9a3bdfcd7a0d9602754894d76c614d15ca366535"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dotenv/zipball/9a3bdfcd7a0d9602754894d76c614d15ca366535",
-                "reference": "9a3bdfcd7a0d9602754894d76c614d15ca366535",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1.3"
-            },
-            "require-dev": {
-                "symfony/process": "~3.4|~4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Dotenv\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Registers environment variables from a .env file",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "dotenv",
-                "env",
-                "environment"
-            ],
-            "time": "2019-01-24T21:39:51+00:00"
         },
         {
             "name": "symfony/polyfill-php70",
