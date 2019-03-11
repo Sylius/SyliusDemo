@@ -506,6 +506,9 @@
     "sylius-labs/coding-standard": {
         "version": "v2.0.0"
     },
+    "sylius/registry": {
+        "version": "v1.4.1"
+    },
     "sylius/sylius": {
         "version": "v1.3.0"
     },
@@ -631,6 +634,9 @@
     },
     "symfony/polyfill-intl-icu": {
         "version": "v1.9.0"
+    },
+    "symfony/polyfill-intl-idn": {
+        "version": "v1.10.0"
     },
     "symfony/polyfill-mbstring": {
         "version": "v1.9.0"
