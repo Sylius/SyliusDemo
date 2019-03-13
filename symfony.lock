@@ -218,6 +218,21 @@
     "knplabs/knp-menu-bundle": {
         "version": "v2.2.1"
     },
+    "knplabs/knp-snappy": {
+        "version": "v1.1.0"
+    },
+    "knplabs/knp-snappy-bundle": {
+        "version": "1.5",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "1.5",
+            "ref": "c81bdcf4a9d4e7b1959071457f9608631865d381"
+        },
+        "files": [
+            "config/packages/knp_snappy.yaml"
+        ]
+    },
     "lakion/api-test-case": {
         "version": "v3.1.3"
     },
@@ -506,6 +521,19 @@
     "sylius-labs/coding-standard": {
         "version": "v2.0.0"
     },
+    "sylius/invoicing-plugin": {
+        "version": "0.5",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "0.5",
+            "ref": "4720bdeb3db9f81932523a640184244cf75da7f0"
+        },
+        "files": [
+            "config/packages/sylius_invoicing.yaml",
+            "config/routes/sylius_invoicing.yaml"
+        ]
+    },
     "sylius/registry": {
         "version": "v1.4.1"
     },
@@ -610,6 +638,18 @@
     },
     "symfony/intl": {
         "version": "v4.1.5"
+    },
+    "symfony/messenger": {
+        "version": "4.1",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "4.1",
+            "ref": "f11dfa18618a8a5dd853ea3a302db2e0557e031c"
+        },
+        "files": [
+            "config/packages/messenger.yaml"
+        ]
     },
     "symfony/monolog-bridge": {
         "version": "v4.1.5"

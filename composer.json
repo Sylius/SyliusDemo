@@ -24,7 +24,8 @@
 
         "sensiolabs/security-checker": " ^5.0",
         "sylius/sylius": "^1.5@dev",
-        "symfony/flex": "^1.2@dev"
+        "symfony/flex": "^1.2@dev",
+        "sylius/invoicing-plugin": "^0.8.3"
     },
     "require-dev": {
         "behat/behat": "^3.4",
@@ -82,7 +83,7 @@
     },
     "extra": {
         "symfony": {
-            "allow-contrib": false
+            "allow-contrib": true
         }
     }
 }
