@@ -1,9 +1,3 @@
 framework:
     messenger:
-        transports:
-            # Uncomment the following line to enable a transport named "amqp"
-            # amqp: '%env(MESSENGER_TRANSPORT_DSN)%'
-
-        routing:
-            # Route your messages to the transports
-            # 'App\Message\YourMessage': amqp
+        default_bus: sylius_refund_plugin.command_bus
