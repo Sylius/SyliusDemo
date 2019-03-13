@@ -1,4 +1,7 @@
 {
+    "beberlei/assert": {
+        "version": "v3.2.0"
+    },
     "behat/behat": {
         "version": "v3.5.0"
     },
@@ -410,6 +413,24 @@
     "polishsymfonycommunity/symfony-mocker-container": {
         "version": "v1.0.2"
     },
+    "prooph/common": {
+        "version": "v4.3.0"
+    },
+    "prooph/service-bus": {
+        "version": "v6.2.2"
+    },
+    "prooph/service-bus-symfony-bundle": {
+        "version": "0.6",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "0.6",
+            "ref": "ba474153d2fa28a44e91cbe27fddf1c0f572988c"
+        },
+        "files": [
+            "config/packages/prooph_service_bus.yaml"
+        ]
+    },
     "psr/cache": {
         "version": "1.0.1"
     },
@@ -583,6 +604,9 @@
             "config/packages/sylius_invoicing.yaml",
             "config/routes/sylius_invoicing.yaml"
         ]
+    },
+    "sylius/rbac-plugin": {
+        "version": "v0.2.1"
     },
     "sylius/refund-plugin": {
         "version": "0.4",
