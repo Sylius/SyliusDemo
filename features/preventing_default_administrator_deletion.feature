@@ -6,7 +6,7 @@ Feature: Preventing default administrator deletion
 
     Background:
         Given there is an administrator "sylius@example.com"
-        And there is also an administrator "admin@example.com"
+        And there is also a root administrator "admin@example.com"
         And I am logged in as "admin@example.com" administrator
 
     @ui
