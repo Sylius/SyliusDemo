@@ -13,7 +13,7 @@ use Sylius\RbacPlugin\Entity\AdministrationRoleTrait;
  * @ORM\MappedSuperclass
  * @ORM\Table(name="sylius_admin_user")
  */
-final class AdminUser extends BaseAdminUser implements AdministrationRoleAwareInterface
+class AdminUser extends BaseAdminUser implements AdministrationRoleAwareInterface
 {
     use AdministrationRoleTrait;
 }
