@@ -24,7 +24,13 @@
 
         "sensiolabs/security-checker": " ^5.0",
         "sylius/sylius": "^1.5@dev",
-        "symfony/flex": "^1.2@dev"
+        "symfony/flex": "^1.2@dev",
+        "sylius/invoicing-plugin": "^0.8.3",
+        "sylius/refund-plugin": "^0.6.0",
+        "sylius/customer-order-cancellation-plugin": "^1.1",
+        "sylius/customer-reorder-plugin": "^1.1",
+        "sylius/admin-order-creation-plugin": "^0.7.0",
+        "sylius/rbac-plugin": "^0.2.1"
     },
     "require-dev": {
         "behat/behat": "^3.4",
@@ -82,7 +88,7 @@
     },
     "extra": {
         "symfony": {
-            "allow-contrib": false
+            "allow-contrib": true
         }
     }
 }

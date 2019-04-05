@@ -5,7 +5,7 @@ Feature: Preventing default administrator edition
     I want to be prevented from editing administrator with email "sylius@example.com"
 
     Background:
-        Given there is also an administrator "admin@example.com"
+        Given there is a root administrator "admin@example.com"
         And there is an administrator "sylius@example.com"
         And I am logged in as "admin@example.com" administrator
 
