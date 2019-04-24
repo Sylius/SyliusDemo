@@ -254,6 +254,9 @@
     "lakion/mink-debug-extension": {
         "version": "v1.2.3"
     },
+    "lchrusciel/api-test-case": {
+        "version": "v3.1.4"
+    },
     "league/uri": {
         "version": "5.3.0"
     },
@@ -592,6 +595,9 @@
             "config/routes/sylius_customer_reorder.yaml"
         ]
     },
+    "sylius/fixtures-bundle": {
+        "version": "v1.4.1"
+    },
     "sylius/invoicing-plugin": {
         "version": "0.5",
         "recipe": {
@@ -604,6 +610,12 @@
             "config/packages/sylius_invoicing.yaml",
             "config/routes/sylius_invoicing.yaml"
         ]
+    },
+    "sylius/mailer": {
+        "version": "v1.4.3"
+    },
+    "sylius/mailer-bundle": {
+        "version": "v1.4.3"
     },
     "sylius/rbac-plugin": {
         "version": "v0.2.1"
@@ -626,6 +638,9 @@
     },
     "sylius/sylius": {
         "version": "v1.3.0"
+    },
+    "sylius/theme-bundle": {
+        "version": "v1.4.5"
     },
     "symfony/asset": {
         "version": "v4.1.5"
