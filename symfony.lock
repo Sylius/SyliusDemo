@@ -512,8 +512,14 @@
     "sylius/fixtures-bundle": {
         "version": "v1.4.1"
     },
+    "sylius/grid-bundle": {
+        "version": "v1.4.4"
+    },
     "sylius/registry": {
         "version": "v1.4.1"
+    },
+    "sylius/resource-bundle": {
+        "version": "v1.4.4"
     },
     "sylius/sylius": {
         "version": "v1.3.0"
