@@ -1,4 +1,7 @@
 {
+    "beberlei/assert": {
+        "version": "v3.2.0"
+    },
     "behat/behat": {
         "version": "v3.5.0"
     },
@@ -143,6 +146,18 @@
             "ref": "81dee417d2cc60cd1c9d6208dff2ec22a1103e93"
         }
     },
+    "friendsofsymfony/jsrouting-bundle": {
+        "version": "2.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "2.3",
+            "ref": "a9f2e49180f75cdc71ae279a929c4b2e0638de84"
+        },
+        "files": [
+            "config/routes/fos_js_routing.yaml"
+        ]
+    },
     "friendsofsymfony/oauth-server-bundle": {
         "version": "1.6.1"
     },
@@ -217,6 +232,21 @@
     },
     "knplabs/knp-menu-bundle": {
         "version": "v2.2.1"
+    },
+    "knplabs/knp-snappy": {
+        "version": "v1.1.0"
+    },
+    "knplabs/knp-snappy-bundle": {
+        "version": "1.5",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "1.5",
+            "ref": "c81bdcf4a9d4e7b1959071457f9608631865d381"
+        },
+        "files": [
+            "config/packages/knp_snappy.yaml"
+        ]
     },
     "lakion/api-test-case": {
         "version": "v3.1.3"
@@ -386,6 +416,24 @@
     "polishsymfonycommunity/symfony-mocker-container": {
         "version": "v1.0.2"
     },
+    "prooph/common": {
+        "version": "v4.3.0"
+    },
+    "prooph/service-bus": {
+        "version": "v6.2.2"
+    },
+    "prooph/service-bus-symfony-bundle": {
+        "version": "0.6",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "0.6",
+            "ref": "ba474153d2fa28a44e91cbe27fddf1c0f572988c"
+        },
+        "files": [
+            "config/packages/prooph_service_bus.yaml"
+        ]
+    },
     "psr/cache": {
         "version": "1.0.1"
     },
@@ -509,11 +557,84 @@
     "sylius-labs/coding-standard": {
         "version": "v2.0.0"
     },
+    "sylius/admin-order-creation-plugin": {
+        "version": "0.6",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "0.6",
+            "ref": "3ac19aedc8c846cc48cc61ee62ab5b280823efbf"
+        },
+        "files": [
+            "config/packages/sylius_admin_order_creation.yaml",
+            "config/routes/sylius_admin_order_creation.yaml"
+        ]
+    },
+    "sylius/customer-order-cancellation-plugin": {
+        "version": "0.2",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "0.2",
+            "ref": "0df1d0d6f01546907877e0d832edb15d00406613"
+        },
+        "files": [
+            "config/routes/sylius_customer_order_cancellation.yaml"
+        ]
+    },
+    "sylius/customer-reorder-plugin": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "c05aac7dd6534c7a92da168c7e2883282466b9da"
+        },
+        "files": [
+            "config/packages/sylius_customer_reorder.yaml",
+            "config/routes/sylius_customer_reorder.yaml"
+        ]
+    },
     "sylius/fixtures-bundle": {
         "version": "v1.4.1"
     },
+    "sylius/grid-bundle": {
+        "version": "v1.4.4"
+    },
+    "sylius/invoicing-plugin": {
+        "version": "0.5",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "0.5",
+            "ref": "4720bdeb3db9f81932523a640184244cf75da7f0"
+        },
+        "files": [
+            "config/packages/sylius_invoicing.yaml",
+            "config/routes/sylius_invoicing.yaml"
+        ]
+    },
+    "sylius/rbac-plugin": {
+        "version": "v0.2.1"
+    },
+    "sylius/refund-plugin": {
+        "version": "0.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "0.4",
+            "ref": "a3f813f608c6f04bd7d0b4cefd73a96bf378c390"
+        },
+        "files": [
+            "config/packages/sylius_refund.yaml",
+            "config/routes/sylius_refund.yaml"
+        ]
+    },
     "sylius/registry": {
         "version": "v1.4.1"
+    },
+    "sylius/resource-bundle": {
+        "version": "v1.4.4"
     },
     "sylius/sylius": {
         "version": "v1.3.0"
@@ -620,6 +741,18 @@
     "symfony/intl": {
         "version": "v4.1.5"
     },
+    "symfony/messenger": {
+        "version": "4.1",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "4.1",
+            "ref": "2c72a5331d001fce2e8e8e94371b97afd5c32f34"
+        },
+        "files": [
+            "config/packages/messenger.yaml"
+        ]
+    },
     "symfony/monolog-bridge": {
         "version": "v4.1.5"
     },
@@ -685,6 +818,9 @@
             "version": "3.3",
             "ref": "f8a63faa0d9521526499c0a8f403c9964ecb0527"
         }
+    },
+    "symfony/serializer": {
+        "version": "v4.2.8"
     },
     "symfony/stopwatch": {
         "version": "v4.1.5"
