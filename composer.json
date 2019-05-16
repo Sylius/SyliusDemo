@@ -23,7 +23,7 @@
         "php": "^7.2",
 
         "sensiolabs/security-checker": " ^5.0",
-        "sylius/sylius": "^1.5",
+        "sylius/sylius": "^1.6@dev",
         "symfony/flex": "^1.2",
         "sylius/invoicing-plugin": "^0.8.3",
         "sylius/refund-plugin": "^0.6.0",
