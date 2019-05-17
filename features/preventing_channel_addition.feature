@@ -5,7 +5,7 @@ Feature: Preventing a new channel addition
     I want to not be able to add a new channel
 
     Background:
-        Given I am logged in as a root administrator
+        Given I am logged in as an administrator
 
     @ui
     Scenario: Being prevented from adding a new channel
