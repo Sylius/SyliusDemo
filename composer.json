@@ -82,7 +82,7 @@
     },
     "extra": {
         "symfony": {
-            "allow-contrib": true
+            "allow-contrib": false
         }
     }
 }
