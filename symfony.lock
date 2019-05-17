@@ -614,6 +614,9 @@
             "config/routes/sylius_invoicing.yaml"
         ]
     },
+    "sylius/mailer-bundle": {
+        "version": "v1.4.4"
+    },
     "sylius/rbac-plugin": {
         "version": "v0.2.1"
     },
