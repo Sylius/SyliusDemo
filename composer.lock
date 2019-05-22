@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "05fc3877a6a19f6945dd2eccc862de98",
+    "content-hash": "c2c7e43aabafb4f50242fb9be3afea28",
     "packages": [
         {
             "name": "beberlei/assert",
@@ -1590,16 +1590,16 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.7",
+            "version": "2.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "709f21f92707308cdf8f9bcfa1af4cb26586521e"
+                "reference": "c26463ff9241f27907112fbcd0c86fa670cfef98"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/709f21f92707308cdf8f9bcfa1af4cb26586521e",
-                "reference": "709f21f92707308cdf8f9bcfa1af4cb26586521e",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/c26463ff9241f27907112fbcd0c86fa670cfef98",
+                "reference": "c26463ff9241f27907112fbcd0c86fa670cfef98",
                 "shasum": ""
             },
             "require": {
@@ -1643,7 +1643,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2018-12-04T22:38:24+00:00"
+            "time": "2019-05-16T22:02:54+00:00"
         },
         {
             "name": "friendsofsymfony/jsrouting-bundle",
@@ -6296,16 +6296,16 @@
         },
         {
             "name": "sylius/grid-bundle",
-            "version": "v1.5.0",
+            "version": "v1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/SyliusGridBundle.git",
-                "reference": "dfc5f4a0920010550b1af60801179bea7ada5632"
+                "reference": "1cbdbfa56a538b0fe8da53c0d0aef9885bd7120e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/SyliusGridBundle/zipball/dfc5f4a0920010550b1af60801179bea7ada5632",
-                "reference": "dfc5f4a0920010550b1af60801179bea7ada5632",
+                "url": "https://api.github.com/repos/Sylius/SyliusGridBundle/zipball/1cbdbfa56a538b0fe8da53c0d0aef9885bd7120e",
+                "reference": "1cbdbfa56a538b0fe8da53c0d0aef9885bd7120e",
                 "shasum": ""
             },
             "require": {
@@ -6389,7 +6389,7 @@
                 "sylius",
                 "webshop"
             ],
-            "time": "2019-05-01T07:08:18+00:00"
+            "time": "2019-05-21T14:01:07+00:00"
         },
         {
             "name": "sylius/invoicing-plugin",
@@ -6895,16 +6895,16 @@
         },
         {
             "name": "sylius/sylius",
-            "version": "v1.5.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/Sylius.git",
-                "reference": "006ba9c39ccf9b250d6951e7459a2e1c3159d4fd"
+                "reference": "ef5f79d088fb3db3dece31a53bff02b78e9494e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/006ba9c39ccf9b250d6951e7459a2e1c3159d4fd",
-                "reference": "006ba9c39ccf9b250d6951e7459a2e1c3159d4fd",
+                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/ef5f79d088fb3db3dece31a53bff02b78e9494e7",
+                "reference": "ef5f79d088fb3db3dece31a53bff02b78e9494e7",
                 "shasum": ""
             },
             "require": {
@@ -7085,7 +7085,7 @@
                     "allow-contrib": false
                 },
                 "branch-alias": {
-                    "dev-master": "1.5-dev"
+                    "dev-master": "1.6-dev"
                 }
             },
             "autoload": {
@@ -7118,20 +7118,20 @@
             ],
             "description": "E-Commerce platform for PHP, based on Symfony framework.",
             "homepage": "http://sylius.com",
-            "time": "2019-05-15T08:58:48+00:00"
+            "time": "2019-05-21T10:38:51+00:00"
         },
         {
             "name": "sylius/theme-bundle",
-            "version": "v1.4.5",
+            "version": "v1.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/SyliusThemeBundle.git",
-                "reference": "fcea49a71cc3e2b17c10882eeb7918048b9e53b6"
+                "reference": "c98d300f2e6a80d9b89810d87c165ffe242ebc82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/SyliusThemeBundle/zipball/fcea49a71cc3e2b17c10882eeb7918048b9e53b6",
-                "reference": "fcea49a71cc3e2b17c10882eeb7918048b9e53b6",
+                "url": "https://api.github.com/repos/Sylius/SyliusThemeBundle/zipball/c98d300f2e6a80d9b89810d87c165ffe242ebc82",
+                "reference": "c98d300f2e6a80d9b89810d87c165ffe242ebc82",
                 "shasum": ""
             },
             "require": {
@@ -7140,6 +7140,7 @@
                 "symfony/asset": "^3.4|^4.1.1",
                 "symfony/config": "^3.4|^4.1.1",
                 "symfony/console": "^3.4|^4.1.1",
+                "symfony/contracts": "^1.0",
                 "symfony/dependency-injection": "^3.4|^4.1.1",
                 "symfony/filesystem": "^3.4|^4.1.1",
                 "symfony/finder": "^3.4|^4.1.1",
@@ -7206,7 +7207,7 @@
                 "themes",
                 "theming"
             ],
-            "time": "2019-04-19T06:25:17+00:00"
+            "time": "2019-05-17T03:52:38+00:00"
         },
         {
             "name": "symfony/asset",
@@ -15446,6 +15447,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "sylius/sylius": 20,
         "behat/mink": 20
     },
     "prefer-stable": true,
