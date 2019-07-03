@@ -146,18 +146,6 @@
             "ref": "81dee417d2cc60cd1c9d6208dff2ec22a1103e93"
         }
     },
-    "friendsofsymfony/jsrouting-bundle": {
-        "version": "2.3",
-        "recipe": {
-            "repo": "github.com/symfony/recipes-contrib",
-            "branch": "master",
-            "version": "2.3",
-            "ref": "a9f2e49180f75cdc71ae279a929c4b2e0638de84"
-        },
-        "files": [
-            "config/routes/fos_js_routing.yaml"
-        ]
-    },
     "friendsofsymfony/oauth-server-bundle": {
         "version": "1.6.1"
     },
@@ -557,19 +545,6 @@
     "sylius-labs/coding-standard": {
         "version": "v2.0.0"
     },
-    "sylius/admin-order-creation-plugin": {
-        "version": "0.6",
-        "recipe": {
-            "repo": "github.com/symfony/recipes-contrib",
-            "branch": "master",
-            "version": "0.6",
-            "ref": "3ac19aedc8c846cc48cc61ee62ab5b280823efbf"
-        },
-        "files": [
-            "config/packages/sylius_admin_order_creation.yaml",
-            "config/routes/sylius_admin_order_creation.yaml"
-        ]
-    },
     "sylius/customer-order-cancellation-plugin": {
         "version": "0.2",
         "recipe": {
@@ -830,9 +805,6 @@
             "version": "3.3",
             "ref": "f8a63faa0d9521526499c0a8f403c9964ecb0527"
         }
-    },
-    "symfony/serializer": {
-        "version": "v4.2.8"
     },
     "symfony/service-contracts": {
         "version": "v1.1.2"
