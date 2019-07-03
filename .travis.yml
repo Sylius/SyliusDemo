@@ -78,7 +78,7 @@ before_script:
     - bin/console server:run 127.0.0.1:8080 --quiet > /dev/null 2>&1 &
 
 script:
-    - composer validate --strict
+    - composer validate --strict --no-check-all
 
     - echo "Testing (Behat - regular scenarios)" "SyliusDemo"
     - vendor/bin/behat features/ --strict --no-interaction -vvv -f progress
