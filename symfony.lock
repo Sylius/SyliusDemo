@@ -515,14 +515,8 @@
     "sylius/grid-bundle": {
         "version": "v1.4.4"
     },
-    "sylius/mailer-bundle": {
-        "version": "v1.4.4"
-    },
     "sylius/registry": {
         "version": "v1.4.1"
-    },
-    "sylius/resource-bundle": {
-        "version": "v1.4.4"
     },
     "sylius/sylius": {
         "version": "v1.3.0"
@@ -629,6 +623,9 @@
     "symfony/intl": {
         "version": "v4.1.5"
     },
+    "symfony/mime": {
+        "version": "v4.3.4"
+    },
     "symfony/monolog-bridge": {
         "version": "v4.1.5"
     },
@@ -664,6 +661,9 @@
     },
     "symfony/polyfill-php72": {
         "version": "v1.9.0"
+    },
+    "symfony/polyfill-php73": {
+        "version": "v1.12.0"
     },
     "symfony/process": {
         "version": "v4.1.5"
