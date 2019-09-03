@@ -34,6 +34,8 @@ before_install:
 
     - echo "extension = memcached.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
 
+    - mysql -V
+
 install:
     - composer install --no-interaction --prefer-dist
     - yarn install
