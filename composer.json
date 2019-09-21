@@ -24,7 +24,8 @@
 
         "sensiolabs/security-checker": " ^5.0",
         "sylius/sylius": "^1.5",
-        "symfony/flex": "^1.2"
+        "symfony/flex": "^1.2",
+        "sylius/shop-api-plugin": "^1.0@rc"
     },
     "require-dev": {
         "behat/behat": "^3.4",
