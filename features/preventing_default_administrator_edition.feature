@@ -5,9 +5,7 @@ Feature: Preventing default administrator edition
     I want to be prevented from editing administrator with email "sylius@example.com"
 
     Background:
-        Given there is a root administrator "admin@example.com"
-        And there is an administrator "sylius@example.com"
-        And I am logged in as "admin@example.com" administrator
+        Given I am logged in as an administrator
 
     @ui
     Scenario: Being prevented from edition default administrator
@@ -15,5 +13,7 @@ Feature: Preventing default administrator edition
         And I change its name to "Jon Snow"
         And I change its email to "jon@example.com"
         And I save my changes
+        And I am logged in as "sylius@example.com" administrator
+        And I browse administrators
         Then I should be notified that I cannot edit Administrator of Sylius Demo
         And I should see the administrator "sylius@example.com" in the list

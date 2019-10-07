@@ -20,10 +20,3 @@ sylius_theme:
         filesystem:
             directories:
                 - "%kernel.project_dir%/themes"
-
-sylius_user:
-    resources:
-        admin:
-            user:
-                classes:
-                    model: App\Entity\AdminUser

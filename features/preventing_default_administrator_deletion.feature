@@ -5,9 +5,7 @@ Feature: Preventing default administrator deletion
     I want to be prevented from deleting administrator with email "sylius@example.com"
 
     Background:
-        Given there is an administrator "sylius@example.com"
-        And there is also a root administrator "admin@example.com"
-        And I am logged in as "admin@example.com" administrator
+        Given I am logged in as an administrator
 
     @ui
     Scenario: Being prevented from deleting default administrator

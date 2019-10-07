@@ -28,8 +28,7 @@
         "sylius/invoicing-plugin": "^0.8.3",
         "sylius/refund-plugin": "^0.6.0",
         "sylius/customer-order-cancellation-plugin": "^1.1",
-        "sylius/customer-reorder-plugin": "^1.1",
-        "sylius/rbac-plugin": "^0.2.1"
+        "sylius/customer-reorder-plugin": "^1.1"
     },
     "require-dev": {
         "behat/behat": "^3.4",
