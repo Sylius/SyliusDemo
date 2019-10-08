@@ -1,5 +1,0 @@
-imports:
-    - { resource: "@SyliusRbacPlugin/Resources/config/config.yml" }
-
-parameters:
-    root_administrator_email: 'sylius@example.com'

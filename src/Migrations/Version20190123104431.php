@@ -46,7 +46,7 @@ final class Version20190123104431 extends AbstractMigration
         $this->addSql('ALTER TABLE sylius_locale DROP enabled');
         $this->addSql('ALTER TABLE sylius_product_option ADD position INT NOT NULL');
         $this->addSql('ALTER TABLE sylius_product_association_type DROP name');
-        $this->addSql('ALTER TABLE sylius_product_attribute_value ADD locale_code VARCHAR(255) NOT NULL, ADD json_value JSON DEFAULT NULL COMMENT \'(DC2Type:json_array)\'');
+        $this->addSql('ALTER TABLE sylius_product_attribute_value ADD locale_code VARCHAR(255) NOT NULL, ADD json_value LONGTEXT DEFAULT NULL COMMENT \'(DC2Type:json_array)\'');
         $this->addSql('ALTER TABLE sylius_taxon ADD created_at DATETIME NOT NULL, ADD updated_at DATETIME DEFAULT NULL');
         $this->addSql('ALTER TABLE sylius_shipping_method ADD archived_at DATETIME DEFAULT NULL');
         $this->addSql('ALTER TABLE sylius_order_sequence ADD version INT DEFAULT 1 NOT NULL');
