@@ -83,6 +83,7 @@ security:
             pattern: "%shop_api.security.regex%"
             stateless:  true
             anonymous:  true
+            provider: sylius_shop_user_provider
 
         dev:
             pattern:  ^/(_(profiler|wdt)|css|images|js)/
