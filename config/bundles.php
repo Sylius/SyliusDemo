@@ -65,4 +65,7 @@ return [
     Sylius\RefundPlugin\SyliusRefundPlugin::class => ['all' => true],
     Sylius\CustomerOrderCancellationPlugin\SyliusCustomerOrderCancellationPlugin::class => ['all' => true],
     Sylius\CustomerReorderPlugin\SyliusCustomerReorderPlugin::class => ['all' => true],
+    FOS\CKEditorBundle\FOSCKEditorBundle::class => ['all' => true],
+    SitemapPlugin\SitemapPlugin::class => ['all' => true],
+    BitBag\SyliusCmsPlugin\BitBagSyliusCmsPlugin::class  => ['all' => true],
 ];

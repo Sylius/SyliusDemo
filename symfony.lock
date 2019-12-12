@@ -20,6 +20,9 @@
     "behat/transliterator": {
         "version": "v1.2.0"
     },
+    "bitbag/cms-plugin": {
+        "version": "v2.3.3"
+    },
     "clue/stream-filter": {
         "version": "v1.4.0"
     },
@@ -143,6 +146,9 @@
             "ref": "81dee417d2cc60cd1c9d6208dff2ec22a1103e93"
         }
     },
+    "friendsofsymfony/ckeditor-bundle": {
+        "version": "1.2.0"
+    },
     "friendsofsymfony/oauth-server-bundle": {
         "version": "1.6.1"
     },
@@ -241,6 +247,9 @@
     },
     "lchrusciel/api-test-case": {
         "version": "v3.1.4"
+    },
+    "league/csv": {
+        "version": "9.4.1"
     },
     "league/uri": {
         "version": "5.3.0"
@@ -502,6 +511,9 @@
             "version": "3.0",
             "ref": "0dc9cceda799fd3a08b96987e176a261028a3709"
         }
+    },
+    "stefandoorn/sitemap-plugin": {
+        "version": "v1.1.0"
     },
     "stof/doctrine-extensions-bundle": {
         "version": "1.2",
