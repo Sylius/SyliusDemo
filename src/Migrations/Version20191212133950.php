@@ -7,19 +7,10 @@ namespace DoctrineMigrations;
 use Doctrine\DBAL\Schema\Schema;
 use Doctrine\Migrations\AbstractMigration;
 
-/**
- * Auto-generated Migration: Please modify to your needs!
- */
 final class Version20191212133950 extends AbstractMigration
 {
-    public function getDescription() : string
+    public function up(Schema $schema): void
     {
-        return '';
-    }
-
-    public function up(Schema $schema) : void
-    {
-        // this up() migration is auto-generated, please modify it to your needs
         $this->abortIf($this->connection->getDatabasePlatform()->getName() !== 'mysql', 'Migration can only be executed safely on \'mysql\'.');
 
         $this->addSql('CREATE TABLE bitbag_cms_section (id INT AUTO_INCREMENT NOT NULL, code VARCHAR(250) NOT NULL, UNIQUE INDEX UNIQ_421D079777153098 (code), PRIMARY KEY(id)) DEFAULT CHARACTER SET UTF8 COLLATE UTF8_unicode_ci ENGINE = InnoDB');
@@ -69,12 +60,10 @@ final class Version20191212133950 extends AbstractMigration
         $this->addSql('ALTER TABLE bitbag_cms_faq_channels ADD CONSTRAINT FK_FF6D59AC81BEC8C2 FOREIGN KEY (faq_id) REFERENCES bitbag_cms_faq (id) ON DELETE CASCADE');
         $this->addSql('ALTER TABLE bitbag_cms_faq_channels ADD CONSTRAINT FK_FF6D59AC72F5A1AA FOREIGN KEY (channel_id) REFERENCES sylius_channel (id) ON DELETE CASCADE');
         $this->addSql('ALTER TABLE bitbag_cms_page_image ADD CONSTRAINT FK_C9C589EA7E3C61F9 FOREIGN KEY (owner_id) REFERENCES bitbag_cms_page_translation (id)');
-        $this->addSql('ALTER TABLE sylius_channel DROP type');
     }
 
-    public function down(Schema $schema) : void
+    public function down(Schema $schema): void
     {
-        // this down() migration is auto-generated, please modify it to your needs
         $this->abortIf($this->connection->getDatabasePlatform()->getName() !== 'mysql', 'Migration can only be executed safely on \'mysql\'.');
 
         $this->addSql('ALTER TABLE bitbag_cms_page_sections DROP FOREIGN KEY FK_D548E347D823E37A');
@@ -117,6 +106,5 @@ final class Version20191212133950 extends AbstractMigration
         $this->addSql('DROP TABLE bitbag_cms_faq');
         $this->addSql('DROP TABLE bitbag_cms_faq_channels');
         $this->addSql('DROP TABLE bitbag_cms_page_image');
-        $this->addSql('ALTER TABLE sylius_channel ADD type VARCHAR(255) DEFAULT NULL COLLATE utf8_unicode_ci');
     }
 }
