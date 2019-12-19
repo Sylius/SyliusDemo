@@ -1,0 +1,17 @@
+{% set is_stable = 'DEV' not in sylius_meta.version %}
+{% set admin_url = is_stable ? 'https://demo.sylius.com/admin' : 'https://master.demo.sylius.com/admin' %}
+
+{% if app.request.attributes.get('_route') == 'sylius_shop_homepage' %}
+    <div class="ui message">
+        <p>
+            <strong>How to access Sylius administration panel?</strong><br>
+            Go to <a href="{{ admin_url }}">{{ admin_url }}</a><br><br>
+
+            <strong>Do you know that you can browse the demo of different Sylius versions?</strong><br>
+            In the bottom right corner you can switch between the demo of the latest stable release and the demo of yet unreleased features.<br><br>
+
+            <strong>Any questions?</strong><br>
+            <a href="https://sylius.com/contact/?utm_source=demo">Contact us!</a>
+        </p>
+    </div>
+{% endif %}
