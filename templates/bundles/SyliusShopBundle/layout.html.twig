@@ -59,6 +59,7 @@
         {% block header %}
             <header>
                 {% include '@SyliusShop/_header.html.twig' %}
+                {% include '/_infoBox.html.twig' %}
 
                 {{ sonata_block_render_event('sylius.shop.layout.after_header') }}
 
@@ -79,7 +80,7 @@
     {% block footer %}
         {% include '@SyliusShop/_footer.html.twig' %}
 
-        {% include '/_version_switcher.html.twig' %}
+        {% include '/_versionSwitcher.html.twig' %}
     {% endblock %}
 </div>
 
