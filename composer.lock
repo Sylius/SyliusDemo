@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "49a969522ecbceb650f2689e6fcea5e3",
+    "content-hash": "3a8625f6959e978a1ee3705488b2d435",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -3893,35 +3893,34 @@
         },
         {
             "name": "ocramius/package-versions",
-            "version": "1.5.1",
+            "version": "1.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ocramius/PackageVersions.git",
-                "reference": "1d32342b8c1eb27353c8887c366147b4c2da673c"
+                "reference": "44af6f3a2e2e04f2af46bcb302ad9600cba41c7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ocramius/PackageVersions/zipball/1d32342b8c1eb27353c8887c366147b4c2da673c",
-                "reference": "1d32342b8c1eb27353c8887c366147b4c2da673c",
+                "url": "https://api.github.com/repos/Ocramius/PackageVersions/zipball/44af6f3a2e2e04f2af46bcb302ad9600cba41c7d",
+                "reference": "44af6f3a2e2e04f2af46bcb302ad9600cba41c7d",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.0.0",
-                "php": "^7.3.0"
+                "php": "^7.1.0"
             },
             "require-dev": {
-                "composer/composer": "^1.8.6",
-                "doctrine/coding-standard": "^6.0.0",
+                "composer/composer": "^1.6.3",
+                "doctrine/coding-standard": "^5.0.1",
                 "ext-zip": "*",
-                "infection/infection": "^0.13.4",
-                "phpunit/phpunit": "^8.2.5",
-                "vimeo/psalm": "^3.4.9"
+                "infection/infection": "^0.7.1",
+                "phpunit/phpunit": "^7.5.17"
             },
             "type": "composer-plugin",
             "extra": {
                 "class": "PackageVersions\\Installer",
                 "branch-alias": {
-                    "dev-master": "1.6.x-dev"
+                    "dev-master": "2.0.x-dev"
                 }
             },
             "autoload": {
@@ -3940,7 +3939,7 @@
                 }
             ],
             "description": "Composer plugin that provides efficient querying for installed package versions (no runtime IO)",
-            "time": "2019-07-17T15:49:50+00:00"
+            "time": "2019-11-15T16:17:10+00:00"
         },
         {
             "name": "ocramius/proxy-manager",
@@ -6811,6 +6810,7 @@
                 "behat/mink-browserkit-driver": "^1.3",
                 "behat/mink-extension": "^2.2",
                 "behat/mink-selenium2-driver": "^1.3",
+                "doctrine/data-fixtures": "^1.4",
                 "friends-of-behat/page-object-extension": "^0.3",
                 "friends-of-behat/symfony-extension": "^2.0",
                 "friends-of-behat/variadic-extension": "^1.1",
@@ -6827,7 +6827,6 @@
                 "phpstan/phpstan-webmozart-assert": "0.12.0",
                 "phpunit/phpunit": "^7.0",
                 "psr/event-dispatcher": "^1.0",
-                "sensiolabs/security-checker": "^5.0",
                 "sspooky13/yaml-standards": "^5.0",
                 "stripe/stripe-php": "^4.1",
                 "sylius-labs/coding-standard": "^3.0",
@@ -6882,7 +6881,7 @@
             ],
             "description": "E-Commerce platform for PHP, based on Symfony framework.",
             "homepage": "http://sylius.com",
-            "time": "2019-12-18T15:31:48+00:00"
+            "time": "2019-12-19T14:41:38+00:00"
         },
         {
             "name": "sylius/theme-bundle",
@@ -10760,7 +10759,7 @@
             ],
             "authors": [
                 {
-                    "name": "William DURAND",
+                    "name": "William Durand",
                     "email": "william.durand1@gmail.com"
                 }
             ],
@@ -12515,7 +12514,7 @@
                     "email": "shelburt02@gmail.com"
                 },
                 {
-                    "name": "Théo Fidry",
+                    "name": "Théo FIDRY",
                     "email": "theo.fidry@gmail.com"
                 }
             ],
@@ -12644,7 +12643,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "? Nette RobotLoader: high performance and comfortable autoloader that will search and autoload classes within your application.",
+            "description": "🍀 Nette RobotLoader: high performance and comfortable autoloader that will search and autoload classes within your application.",
             "homepage": "https://nette.org",
             "keywords": [
                 "autoload",
@@ -14272,30 +14271,30 @@
         },
         {
             "name": "slam/php-cs-fixer-extensions",
-            "version": "v1.19.3",
+            "version": "v1.19.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Slamdunk/php-cs-fixer-extensions.git",
-                "reference": "47b56952b804b6285fe0a7e9edfc13df71cf7226"
+                "reference": "ff457bef86539cb4ed7b7eb44eb85f3edddf53e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Slamdunk/php-cs-fixer-extensions/zipball/47b56952b804b6285fe0a7e9edfc13df71cf7226",
-                "reference": "47b56952b804b6285fe0a7e9edfc13df71cf7226",
+                "url": "https://api.github.com/repos/Slamdunk/php-cs-fixer-extensions/zipball/ff457bef86539cb4ed7b7eb44eb85f3edddf53e1",
+                "reference": "ff457bef86539cb4ed7b7eb44eb85f3edddf53e1",
                 "shasum": ""
             },
             "require": {
-                "friendsofphp/php-cs-fixer": "^2.16",
-                "php": "^7.3"
+                "friendsofphp/php-cs-fixer": "^2.15",
+                "php": "^7.2"
             },
             "require-dev": {
-                "phpstan/phpstan": "^0.12",
-                "phpstan/phpstan-phpunit": "^0.12",
+                "phpstan/phpstan": "^0.11",
+                "phpstan/phpstan-phpunit": "^0.11",
                 "phpunit/phpunit": "^7.5",
                 "roave/security-advisories": "dev-master",
-                "slam/php-debug-r": "^1.6",
-                "slam/phpstan-extensions": "^4.0",
-                "thecodingmachine/phpstan-strict-rules": "^0.12"
+                "slam/php-debug-r": "^1.4",
+                "slam/phpstan-extensions": "^3.0",
+                "thecodingmachine/phpstan-strict-rules": "^0.11"
             },
             "type": "library",
             "autoload": {
@@ -14315,7 +14314,7 @@
                 }
             ],
             "description": "Slam extension of friendsofphp/php-cs-fixer",
-            "time": "2019-12-09T10:29:07+00:00"
+            "time": "2019-05-28T14:18:12+00:00"
         },
         {
             "name": "slevomat/coding-standard",

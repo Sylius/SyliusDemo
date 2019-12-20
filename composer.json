@@ -62,7 +62,9 @@
         "symfony/dom-crawler": "4.1.8",
         "symfony/framework-bundle": "4.3.0",
         "symfony/routing": "4.1.8",
-        "symfony/validator": "4.3.0"
+        "symfony/validator": "4.3.0",
+        "ocramius/package-versions": "^1.5",
+        "slam/php-cs-fixer-extensions": "^1.19.2"
     },
     "prefer-stable": true,
     "autoload": {
