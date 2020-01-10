@@ -8,6 +8,7 @@ imports:
     - { resource: "@BitBagSyliusCmsPlugin/Resources/config/config.yml" }
 
 parameters:
+    fixtures_dir: "%kernel.root_dir%/Resources/fixtures"
     sylius_core.public_dir: '%kernel.project_dir%/public'
     sylius.cache:
         type: array
@@ -21,3 +22,26 @@ sylius_theme:
         filesystem:
             directories:
                 - "%kernel.project_dir%/themes"
+
+sylius_fixtures:
+    suites:
+        default:
+            fixtures:
+                block:
+                    options:
+                        custom:
+                            about_us:
+                                channels:
+                                    - 'FASHION_WEB'
+                                translations:
+                                    en_US:
+                                        content: |
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad adipisci aperiam consectetur cum dicta dolores ducimus, eveniet ex exercitationem harum in iure labore libero magnam minima neque, numquam officiis possimus quasi reiciendis rem repellat repellendus rerum ut vel veniam vitae? Beatae consectetur culpa debitis ex laudantium porro unde? Modi.
+                media:
+                    options:
+                        custom:
+                            homepage_banner:
+                                channels:
+                                    - 'FASHION_WEB'
+                                type: image
+                                path: "%kernel.project_dir%/public/assets/shop/img/homepage-banner.jpg"
