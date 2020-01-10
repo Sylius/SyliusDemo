@@ -3,7 +3,7 @@
 {% block content %}
     <div class="homepage">
         <div class="ui hidden divider"></div>
-        <img class="ui fluid image" src="{{ asset('assets/shop/img/homepage-banner.jpg') }}" alt="Sylius">
+            {{ bitbag_cms_render_media('homepage_banner') }}
         <div class="ui hidden divider"></div>
 
         <h2 class="ui center aligned huge header">{{ 'sylius.ui.latest_products'|trans }}</h2>
@@ -63,7 +63,7 @@
                         {{ 'sylius.homepage.about_us'|trans }}
                     </h2>
                     <p>
-                        {{ 'sylius.homepage.about_us_content'|trans }}
+                        {{ bitbag_cms_render_block('about_us') }}
                     </p>
                 </div>
             </div>
