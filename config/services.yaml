@@ -24,3 +24,9 @@ services:
     App\Generator\FlashMessageGeneratorInterface:
         class: App\Generator\VerificationFlashMessageGenerator
         arguments: ['@router', '@translator.default']
+
+    App\Twig\ReturnCmsBlockExtension:
+        arguments:
+            - '@bitbag_sylius_cms_plugin.resolver.block_resource'
+        tags:
+            - { name: twig.extension }
