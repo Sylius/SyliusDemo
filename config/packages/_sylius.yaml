@@ -36,7 +36,15 @@ sylius_fixtures:
                                 translations:
                                     en_US:
                                         content: |
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad adipisci aperiam consectetur cum dicta dolores ducimus, eveniet ex exercitationem harum in iure labore libero magnam minima neque, numquam officiis possimus quasi reiciendis rem repellat repellendus rerum ut vel veniam vitae? Beatae consectetur culpa debitis ex laudantium porro unde? Modi.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad adipisci aperiam consectetur cum dicta dolores ducimus, eveniet ex exercitationem harum in iure labore libero magnam minima neque, numquam officiis possimus quasi reiciendis rem repellat repellendus rerum ut vel veniam vitae? Beatae consectetur culpa debitis ex laudantium porro unde? Modi.
+                            seasonal_promotion:
+                                channels:
+                                    - 'FASHION_WEB'
+                                products: 4
+                                translations:
+                                    en_US:
+                                        content: |
+                                            Brace yourself! Winter is coming
                 media:
                     options:
                         custom:
