@@ -6667,12 +6667,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/Sylius.git",
-                "reference": "4cd8959bff725c75543ddc8fe16ca2c9b16aa180"
+                "reference": "69c27950a2cd45363963a0f904368207f42f664d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/4cd8959bff725c75543ddc8fe16ca2c9b16aa180",
-                "reference": "4cd8959bff725c75543ddc8fe16ca2c9b16aa180",
+                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/69c27950a2cd45363963a0f904368207f42f664d",
+                "reference": "69c27950a2cd45363963a0f904368207f42f664d",
                 "shasum": ""
             },
             "require": {
@@ -11017,6 +11017,7 @@
                 "code",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-code",
             "time": "2019-12-10T19:21:15+00:00"
         },
         {
@@ -11071,6 +11072,7 @@
                 "events",
                 "zf2"
             ],
+            "abandoned": "laminas/laminas-eventmanager",
             "time": "2018-04-25T15:33:34+00:00"
         },
         {
@@ -11131,6 +11133,7 @@
                 "hydrator",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-hydrator",
             "time": "2019-10-04T11:17:36+00:00"
         },
         {
@@ -11177,6 +11180,7 @@
                 "stdlib",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-stdlib",
             "time": "2018-08-28T21:34:05+00:00"
         }
     ],
