@@ -24,3 +24,9 @@ services:
     App\Generator\FlashMessageGeneratorInterface:
         class: App\Generator\VerificationFlashMessageGenerator
         arguments: ['@router', '@translator.default']
+
+    App\Twig\LocaleExtension:
+        class: App\Twig\LocaleExtension
+        arguments: ['@Twig\Extra\Intl\IntlExtension']
+        tags:
+            - {name: twig.extension}
