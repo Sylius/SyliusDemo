@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1d42105be061d46e7cc1560f860643d0",
+    "content-hash": "bf03505e911dafe714c31f55db8647f8",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -53,23 +53,22 @@
         },
         {
             "name": "bitbag/cms-plugin",
-            "version": "v2.3.3",
+            "version": "v2.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/BitBagCommerce/SyliusCmsPlugin.git",
-                "reference": "417948cd97ab13cc740af1ef89aa14656be62179"
+                "reference": "59c274e7950a5840417c5dd23f6f6d54f6a78466"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/BitBagCommerce/SyliusCmsPlugin/zipball/417948cd97ab13cc740af1ef89aa14656be62179",
-                "reference": "417948cd97ab13cc740af1ef89aa14656be62179",
+                "url": "https://api.github.com/repos/BitBagCommerce/SyliusCmsPlugin/zipball/59c274e7950a5840417c5dd23f6f6d54f6a78466",
+                "reference": "59c274e7950a5840417c5dd23f6f6d54f6a78466",
                 "shasum": ""
             },
             "require": {
                 "friendsofsymfony/ckeditor-bundle": "^1.1",
-                "league/csv": "^9.0",
+                "league/csv": "^9.1",
                 "php": "^7.2",
-                "sensiolabs/security-checker": "^5.0",
                 "stefandoorn/sitemap-plugin": "^1.0",
                 "sylius/sylius": "^1.4"
             },
@@ -99,6 +98,7 @@
                 "phpstan/phpstan-symfony": "^0.10",
                 "phpstan/phpstan-webmozart-assert": "^0.10",
                 "phpunit/phpunit": "^6.5",
+                "sensiolabs/security-checker": "^5.0",
                 "sylius-labs/coding-standard": "^2.0",
                 "symfony/browser-kit": "^3.4|^4.1",
                 "symfony/debug-bundle": "^3.4|^4.1",
@@ -124,7 +124,7 @@
                 "sylius-cms",
                 "sylius-plugin"
             ],
-            "time": "2019-07-17T20:11:02+00:00"
+            "time": "2020-02-19T01:48:39+00:00"
         },
         {
             "name": "clue/stream-filter",
@@ -10724,7 +10724,7 @@
             ],
             "authors": [
                 {
-                    "name": "William DURAND",
+                    "name": "William Durand",
                     "email": "william.durand1@gmail.com"
                 }
             ],
@@ -12484,7 +12484,7 @@
                     "email": "shelburt02@gmail.com"
                 },
                 {
-                    "name": "Théo Fidry",
+                    "name": "Théo FIDRY",
                     "email": "theo.fidry@gmail.com"
                 }
             ],
@@ -12614,7 +12614,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "? Nette RobotLoader: high performance and comfortable autoloader that will search and autoload classes within your application.",
+            "description": "🍀 Nette RobotLoader: high performance and comfortable autoloader that will search and autoload classes within your application.",
             "homepage": "https://nette.org",
             "keywords": [
                 "autoload",
