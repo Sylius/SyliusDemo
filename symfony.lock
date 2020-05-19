@@ -13,9 +13,6 @@
             "src/Entity/.gitignore"
         ]
     },
-    "beberlei/doctrineextensions": {
-        "version": "v1.2.6"
-    },
     "behat/behat": {
         "version": "v3.5.0"
     },
