@@ -13,12 +13,6 @@ doctrine:
 
         url: '%env(resolve:DATABASE_URL)%'
     orm:
-        dql:
-            string_functions:
-                DAY: DoctrineExtensions\Query\Mysql\Day
-                HOUR: DoctrineExtensions\Query\Mysql\Hour
-                MONTH: DoctrineExtensions\Query\Mysql\Month
-                YEAR: DoctrineExtensions\Query\Mysql\Year
         auto_generate_proxy_classes: '%kernel.debug%'
         auto_mapping: true
         mappings:
