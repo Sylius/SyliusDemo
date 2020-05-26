@@ -78,6 +78,8 @@ before_script:
 script:
     - composer validate --strict --no-check-all
 
+    - bin/console sylius:fixtures:load --no-interaction
+
     - echo "Testing (Behat - regular scenarios)" "SyliusDemo"
     - vendor/bin/behat features/ --strict --no-interaction -vvv -f progress
 
