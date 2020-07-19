@@ -27,7 +27,7 @@
         "symfony/flex": "^1.2"
     },
     "require-dev": {
-        "behat/behat": "^3.4",
+        "behat/behat": "3.5.0",
         "behat/mink": "^1.7@dev",
         "behat/mink-browserkit-driver": "^1.3",
         "behat/mink-extension": "^2.2",
