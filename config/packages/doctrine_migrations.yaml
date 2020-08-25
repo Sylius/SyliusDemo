@@ -1,7 +1,6 @@
 doctrine_migrations:
+    migrations_paths:
+        'App\Migrations': 'src/Migrations'
     storage:
         table_storage:
             table_name: sylius_migrations
-    migrations_paths:
-        'App\Migrations': 'src/Migrations'
-
