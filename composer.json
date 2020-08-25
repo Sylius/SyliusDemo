@@ -29,7 +29,8 @@
         "sylius/refund-plugin": "^1.0.0@rc",
         "sylius/customer-order-cancellation-plugin": "^1.1",
         "sylius/customer-reorder-plugin": "^1.1",
-        "bitbag/cms-plugin": "2.3.4"
+        "bitbag/cms-plugin": "2.3.4",
+        "bugsnag/bugsnag-symfony": "^1.7"
     },
     "require-dev": {
         "behat/behat": "^3.4",

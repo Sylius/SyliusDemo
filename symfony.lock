@@ -37,6 +37,12 @@
     "bitbag/cms-plugin": {
         "version": "v2.3.3"
     },
+    "bugsnag/bugsnag": {
+        "version": "v3.21.0"
+    },
+    "bugsnag/bugsnag-symfony": {
+        "version": "v1.7.0"
+    },
     "clue/stream-filter": {
         "version": "v1.4.0"
     },
