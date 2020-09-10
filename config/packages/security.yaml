@@ -4,6 +4,10 @@ parameters:
     sylius.security.shop_regex: "^/(?!admin|api/.*|api$)[^/]++"
     sylius.security.new_api_route: "/new-api"
     sylius.security.new_api_regex: "^%sylius.security.new_api_route%"
+    sylius.security.new_api_admin_route: "%sylius.security.new_api_route%/admin"
+    sylius.security.new_api_admin_regex: "^%sylius.security.new_api_admin_route%"
+    sylius.security.new_api_shop_route: "%sylius.security.new_api_route%/shop"
+    sylius.security.new_api_shop_regex: "^%sylius.security.new_api_shop_route%"
 
 security:
     providers:
@@ -146,3 +150,6 @@ security:
         - { path: "%sylius.security.admin_regex%", role: ROLE_ADMINISTRATION_ACCESS }
         - { path: "%sylius.security.api_regex%/.*", role: ROLE_API_ACCESS }
         - { path: "%sylius.security.shop_regex%/account", role: ROLE_USER }
+
+        - { path: "%sylius.security.new_api_admin_regex%/.*", role: ROLE_API_ACCESS }
+        - { path: "%sylius.security.new_api_shop_regex%/.*", role: IS_AUTHENTICATED_ANONYMOUSLY }
