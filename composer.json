@@ -21,7 +21,6 @@
     ],
     "require": {
         "php": "^7.3",
-
         "sensiolabs/security-checker": " ^5.0",
         "sylius/sylius": "^1.5",
         "symfony/flex": "^1.2"

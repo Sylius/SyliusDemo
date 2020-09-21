@@ -1,6 +1,0 @@
-mysql:
-    type: mysql
-    disk: 1024
-
-redis:
-    type: redis:3.0
