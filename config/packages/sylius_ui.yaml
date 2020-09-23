@@ -15,3 +15,14 @@ sylius_ui:
                 footer:
                     template: "/Blocks/_versionSwitcher.html.twig"
                     priority: 10
+        sylius.shop.homepage:
+            blocks:
+                banner:
+                    template: "/Blocks/_banner.html.twig"
+                    priority: 60
+                latest_products_carousel:
+                    template: "/Blocks/_latestProductsCarousel.html.twig"
+                    priority: 40
+                about_us:
+                    template: "/Blocks/_aboutUs.html.twig"
+                    priority: 10
