@@ -1,0 +1,17 @@
+sylius_ui:
+    events:
+        sylius.shop.layout.header:
+            blocks:
+                after_menu:
+                    template: "/Blocks/_infoBox.html.twig"
+                    priority: 12
+        sylius.shop.layout.head:
+            blocks:
+                analistics:
+                    template: "/Blocks/_analytics.html.twig"
+                    priority: 10
+        sylius.shop.layout.footer:
+            blocks:
+                footer:
+                    template: "/Blocks/_versionSwitcher.html.twig"
+                    priority: 10
