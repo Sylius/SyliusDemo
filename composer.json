@@ -25,7 +25,7 @@
         "sensiolabs/security-checker": " ^5.0",
         "sylius/sylius": "dev-master",
         "symfony/flex": "^1.2",
-        "sylius/invoicing-plugin": "^0.10",
+        "sylius/invoicing-plugin": "~0.10",
         "sylius/refund-plugin": "^1.0.0@rc",
         "sylius/customer-order-cancellation-plugin": "^1.1",
         "sylius/customer-reorder-plugin": "^1.1",

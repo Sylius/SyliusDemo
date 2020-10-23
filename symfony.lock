@@ -61,9 +61,6 @@
     "composer/xdebug-handler": {
         "version": "1.3.0"
     },
-    "container-interop/container-interop": {
-        "version": "1.2.0"
-    },
     "doctrine/annotations": {
         "version": "1.0",
         "recipe": {
@@ -694,6 +691,9 @@
     "symfony/dependency-injection": {
         "version": "v4.1.5"
     },
+    "symfony/deprecation-contracts": {
+        "version": "v2.2.0"
+    },
     "symfony/doctrine-bridge": {
         "version": "v4.1.5"
     },
@@ -741,6 +741,9 @@
             "version": "3.3",
             "ref": "1717e67afa995e4f01a25ba9ae7aca5b2327bcaa"
         }
+    },
+    "symfony/http-client-contracts": {
+        "version": "v2.3.1"
     },
     "symfony/http-foundation": {
         "version": "v4.1.5"
@@ -790,11 +793,17 @@
     "symfony/polyfill-iconv": {
         "version": "v1.9.0"
     },
+    "symfony/polyfill-intl-grapheme": {
+        "version": "v1.19.0"
+    },
     "symfony/polyfill-intl-icu": {
         "version": "v1.9.0"
     },
     "symfony/polyfill-intl-idn": {
         "version": "v1.10.0"
+    },
+    "symfony/polyfill-intl-normalizer": {
+        "version": "v1.19.0"
     },
     "symfony/polyfill-mbstring": {
         "version": "v1.9.0"
@@ -838,9 +847,6 @@
             "ref": "5f514d9d3b8a8aac3d62ae6a86b18b90ed0c7826"
         }
     },
-    "symfony/security": {
-        "version": "v4.1.5"
-    },
     "symfony/security-bundle": {
         "version": "3.3",
         "recipe": {
@@ -850,6 +856,18 @@
             "ref": "f8a63faa0d9521526499c0a8f403c9964ecb0527"
         }
     },
+    "symfony/security-core": {
+        "version": "v4.4.15"
+    },
+    "symfony/security-csrf": {
+        "version": "v4.4.15"
+    },
+    "symfony/security-guard": {
+        "version": "v4.4.15"
+    },
+    "symfony/security-http": {
+        "version": "v4.4.15"
+    },
     "symfony/serializer": {
         "version": "v5.0.5"
     },
@@ -858,6 +876,9 @@
     },
     "symfony/stopwatch": {
         "version": "v4.1.5"
+    },
+    "symfony/string": {
+        "version": "v5.1.7"
     },
     "symfony/swiftmailer-bundle": {
         "version": "2.5",
