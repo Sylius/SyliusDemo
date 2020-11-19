@@ -30,7 +30,8 @@
         "sylius/customer-order-cancellation-plugin": "^1.1",
         "sylius/customer-reorder-plugin": "^1.1",
         "bitbag/cms-plugin": "2.3.4",
-        "bugsnag/bugsnag-symfony": "^1.7"
+        "bugsnag/bugsnag-symfony": "^1.7",
+        "sylius/paypal-plugin": "^1.0@rc"
     },
     "require-dev": {
         "behat/behat": "^3.4",
@@ -64,7 +65,6 @@
         "symfony/framework-bundle": "4.3.0",
         "symfony/routing": "4.1.8",
         "symfony/validator": "4.3.0",
-        "ocramius/package-versions": "^1.5",
         "slam/php-cs-fixer-extensions": "^1.19.2"
     },
     "prefer-stable": true,
