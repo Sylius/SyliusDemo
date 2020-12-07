@@ -73,6 +73,11 @@ jobs:
         run: symfony server:start --port=8080 --dir=public --daemon
 
       -
+        name: Restrict Symfony version
+        if: matrix.symfony != ''
+        run: bin/require-symfony-version composer.json "${{ matrix.symfony }}"
+
+      -
         name: Get Composer cache directory
         id: composer-cache
         run: echo "::set-output name=dir::$(composer config cache-files-dir)"
@@ -131,6 +136,14 @@ jobs:
       -
         name: Run security check
         run: symfony security:check
+
+      -
+        name: Check coding standard
+        run: vendor/bin/ecs check src
+
+      -
+        name: Run PHPStan
+        run: vendor/bin/phpstan analyse -c phpstan.neon -l max src/
 
       -
         name: Validate database schema
