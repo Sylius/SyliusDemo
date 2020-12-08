@@ -79,11 +79,6 @@ jobs:
         run: symfony server:start --port=8080 --dir=public --daemon
 
       -
-        name: Restrict Symfony version
-        if: matrix.symfony != ''
-        run: bin/require-symfony-version composer.json "${{ matrix.symfony }}"
-
-      -
         name: Get Composer cache directory
         id: composer-cache
         run: echo "::set-output name=dir::$(composer config cache-files-dir)"
