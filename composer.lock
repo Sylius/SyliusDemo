@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e8b3102435ddffcd6c103e1d6439fb7a",
+    "content-hash": "5a2876e63de85bc2217aeaa029f492f8",
     "packages": [
         {
             "name": "api-platform/core",
@@ -213,24 +213,24 @@
         },
         {
             "name": "bitbag/cms-plugin",
-            "version": "v2.3.4",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/BitBagCommerce/SyliusCmsPlugin.git",
-                "reference": "59c274e7950a5840417c5dd23f6f6d54f6a78466"
+                "reference": "b8bb133358fc26b37b403909ffe8d6acad48f7b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/BitBagCommerce/SyliusCmsPlugin/zipball/59c274e7950a5840417c5dd23f6f6d54f6a78466",
-                "reference": "59c274e7950a5840417c5dd23f6f6d54f6a78466",
+                "url": "https://api.github.com/repos/BitBagCommerce/SyliusCmsPlugin/zipball/b8bb133358fc26b37b403909ffe8d6acad48f7b8",
+                "reference": "b8bb133358fc26b37b403909ffe8d6acad48f7b8",
                 "shasum": ""
             },
             "require": {
-                "friendsofsymfony/ckeditor-bundle": "^1.1",
+                "friendsofsymfony/ckeditor-bundle": "^1.1|^2.0",
                 "league/csv": "^9.1",
-                "php": "^7.2",
+                "php": "^7.3",
                 "stefandoorn/sitemap-plugin": "^1.0",
-                "sylius/sylius": "^1.4"
+                "sylius/sylius": "^1.7"
             },
             "conflict": {
                 "symfony/browser-kit": "4.1.8",
@@ -240,8 +240,8 @@
                 "symfony/symfony": "4.1.8"
             },
             "require-dev": {
-                "behat/behat": "^3.4",
-                "behat/mink": "^1.7@dev",
+                "behat/behat": "^3.6",
+                "behat/mink": "^1.7",
                 "behat/mink-browserkit-driver": "^1.3",
                 "behat/mink-extension": "^2.2",
                 "behat/mink-selenium2-driver": "^1.3",
@@ -252,20 +252,20 @@
                 "lakion/mink-debug-extension": "^1.2.3",
                 "lchrusciel/api-test-case": "^3.0",
                 "matthiasnoback/symfony-config-test": "^3.0",
-                "phpspec/phpspec": "^5.0",
+                "phpspec/phpspec": "^6.0",
                 "phpstan/phpstan-doctrine": "^0.10",
                 "phpstan/phpstan-shim": "^0.10",
                 "phpstan/phpstan-symfony": "^0.10",
                 "phpstan/phpstan-webmozart-assert": "^0.10",
                 "phpunit/phpunit": "^6.5",
                 "sensiolabs/security-checker": "^5.0",
-                "sylius-labs/coding-standard": "^2.0",
-                "symfony/browser-kit": "^3.4|^4.1",
-                "symfony/debug-bundle": "^3.4|^4.1",
-                "symfony/dotenv": "^4.2",
-                "symfony/intl": "^3.4|^4.1",
-                "symfony/web-profiler-bundle": "^3.4|^4.1",
-                "symfony/web-server-bundle": "^3.4|^4.1"
+                "sylius-labs/coding-standard": "^3.0",
+                "symfony/browser-kit": "^4.4",
+                "symfony/debug-bundle": "^4.4",
+                "symfony/dotenv": "^4.4",
+                "symfony/intl": "^4.4",
+                "symfony/web-profiler-bundle": "^4.4",
+                "symfony/web-server-bundle": "^4.4"
             },
             "type": "sylius-plugin",
             "autoload": {
@@ -286,9 +286,9 @@
             ],
             "support": {
                 "issues": "https://github.com/BitBagCommerce/SyliusCmsPlugin/issues",
-                "source": "https://github.com/BitBagCommerce/SyliusCmsPlugin/tree/v2.3.4"
+                "source": "https://github.com/BitBagCommerce/SyliusCmsPlugin/tree/v2.4.0"
             },
-            "time": "2020-02-19T01:48:39+00:00"
+            "time": "2020-04-26T14:01:39+00:00"
         },
         {
             "name": "bugsnag/bugsnag",
@@ -2230,28 +2230,28 @@
         },
         {
             "name": "fakerphp/faker",
-            "version": "v1.9.1",
+            "version": "v1.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FakerPHP/Faker.git",
-                "reference": "b07d15b7f196f2eba51e70ac1bd7352918c8bf2f"
+                "reference": "84220cf137a9344acffb10374e781fed785ff307"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FakerPHP/Faker/zipball/b07d15b7f196f2eba51e70ac1bd7352918c8bf2f",
-                "reference": "b07d15b7f196f2eba51e70ac1bd7352918c8bf2f",
+                "url": "https://api.github.com/repos/FakerPHP/Faker/zipball/84220cf137a9344acffb10374e781fed785ff307",
+                "reference": "84220cf137a9344acffb10374e781fed785ff307",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.3.3 || ^7.0"
             },
             "conflict": {
-                "ergebnis/faker": "!=1.9.1",
-                "fzaninotto/faker": "!=1.9.1"
+                "ergebnis/faker": "!=1.9.2",
+                "fzaninotto/faker": "!=1.9.2"
             },
             "replace": {
-                "ergebnis/faker": "1.9.1",
-                "fzaninotto/faker": "1.9.1"
+                "ergebnis/faker": "1.9.2",
+                "fzaninotto/faker": "1.9.2"
             },
             "require-dev": {
                 "ext-intl": "*",
@@ -2281,9 +2281,9 @@
             ],
             "support": {
                 "issues": "https://github.com/FakerPHP/Faker/issues",
-                "source": "https://github.com/FakerPHP/Faker/tree/v1.9.1"
+                "source": "https://github.com/FakerPHP/Faker/tree/v1.9.2"
             },
-            "time": "2020-10-27T12:08:29+00:00"
+            "time": "2020-12-11T14:32:13+00:00"
         },
         {
             "name": "fig/link-util",
@@ -2348,49 +2348,47 @@
         },
         {
             "name": "friendsofsymfony/ckeditor-bundle",
-            "version": "1.2.0",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSCKEditorBundle.git",
-                "reference": "7d428b16154a7136e1dd4c11062573afa1bfb3df"
+                "reference": "7e1cfe2a83faba0be02661d44289d35e940bb5ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSCKEditorBundle/zipball/7d428b16154a7136e1dd4c11062573afa1bfb3df",
-                "reference": "7d428b16154a7136e1dd4c11062573afa1bfb3df",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSCKEditorBundle/zipball/7e1cfe2a83faba0be02661d44289d35e940bb5ea",
+                "reference": "7e1cfe2a83faba0be02661d44289d35e940bb5ea",
                 "shasum": ""
             },
             "require": {
+                "ext-json": "*",
                 "ext-zip": "*",
-                "php": "^5.6 || ^7.0",
-                "symfony/asset": "^2.7 || ^3.0 || ^4.0",
-                "symfony/config": "^2.7 || ^3.0 || ^4.0",
-                "symfony/dependency-injection": "^2.7 || ^3.0 || ^4.0",
-                "symfony/expression-language": "^2.7 || ^3.0 || ^4.0",
-                "symfony/form": "^2.7 || ^3.0 || ^4.0",
-                "symfony/framework-bundle": "^2.7 || ^3.0 || ^4.0",
-                "symfony/http-foundation": "^2.7 || ^3.0 || ^4.0",
-                "symfony/http-kernel": "^2.7 || ^3.0 || ^4.0",
-                "symfony/options-resolver": "^2.7 || ^3.0 || ^4.0",
-                "symfony/property-access": "^2.7 || ^3.0 || ^4.0",
-                "symfony/routing": "^2.7 || ^3.0 || ^4.0"
+                "php": "^7.1",
+                "symfony/asset": "^3.4 || ^4.0 || ^5.0",
+                "symfony/config": "^3.4 || ^4.0 || ^5.0",
+                "symfony/dependency-injection": "^3.4 || ^4.0 || ^5.0",
+                "symfony/expression-language": "^3.4 || ^4.0 || ^5.0",
+                "symfony/form": "^3.4 || ^4.0 || ^5.0",
+                "symfony/framework-bundle": "^3.4 || ^4.0 || ^5.0",
+                "symfony/http-foundation": "^3.4 || ^4.0 || ^5.0",
+                "symfony/http-kernel": "^3.4 || ^4.0 || ^5.0",
+                "symfony/options-resolver": "^3.4 || ^4.0 || ^5.0",
+                "symfony/property-access": "^3.4 || ^4.0 || ^5.0",
+                "symfony/routing": "^3.4 || ^4.0 || ^5.0",
+                "symfony/twig-bundle": "^3.4 || ^4.0 || ^5.0",
+                "twig/twig": "^2.4 || ^3.0"
             },
             "conflict": {
                 "sebastian/environment": "<1.3.4",
                 "sebastian/exporter": "<2.0.0"
             },
             "require-dev": {
-                "composer/composer": "^1.0",
                 "friendsofphp/php-cs-fixer": "^2.0",
                 "matthiasnoback/symfony-dependency-injection-test": "^1.0 || ^2.0",
-                "phpunit/phpunit": "^5.0 || ^6.0",
-                "sensio/distribution-bundle": "^3.0.12 || ^4.0 || ^5.0",
-                "symfony/console": "^2.7 || ^3.0 || ^4.0",
-                "symfony/phpunit-bridge": "^4.0",
-                "symfony/templating": "^2.7 || ^3.0 || ^4.0",
-                "symfony/twig-bridge": "^2.7 || ^3.0 || ^4.0",
-                "symfony/yaml": "^2.7 || ^3.0 || ^4.0",
-                "twig/twig": "^1.34 || ^2.0"
+                "phpunit/phpunit": "^6.0",
+                "symfony/console": "^3.4 || ^4.0 || ^5.0",
+                "symfony/phpunit-bridge": "^4.1 || ^5.0",
+                "symfony/yaml": "^3.4 || ^4.0 || ^5.0"
             },
             "suggest": {
                 "egeloen/form-extra-bundle": "Allows to load CKEditor asynchronously"
@@ -2398,7 +2396,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.x-dev"
+                    "dev-master": "2.x-dev"
                 }
             },
             "autoload": {
@@ -2426,9 +2424,9 @@
             ],
             "support": {
                 "issues": "https://github.com/FriendsOfSymfony/FOSCKEditorBundle/issues",
-                "source": "https://github.com/FriendsOfSymfony/FOSCKEditorBundle/tree/1.x"
+                "source": "https://github.com/FriendsOfSymfony/FOSCKEditorBundle/tree/2.2.0"
             },
-            "time": "2018-10-03T20:51:58+00:00"
+            "time": "2019-12-23T15:31:36+00:00"
         },
         {
             "name": "friendsofsymfony/oauth-server-bundle",
@@ -4177,22 +4175,22 @@
         },
         {
             "name": "league/csv",
-            "version": "9.6.1",
+            "version": "9.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/csv.git",
-                "reference": "634322df4aed210fdfbb7c94e434dc860da733d9"
+                "reference": "f28da6e483bf979bac10e2add384c90ae9983e4e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/csv/zipball/634322df4aed210fdfbb7c94e434dc860da733d9",
-                "reference": "634322df4aed210fdfbb7c94e434dc860da733d9",
+                "url": "https://api.github.com/repos/thephpleague/csv/zipball/f28da6e483bf979bac10e2add384c90ae9983e4e",
+                "reference": "f28da6e483bf979bac10e2add384c90ae9983e4e",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-mbstring": "*",
-                "php": "^7.2.5"
+                "php": ">=7.2.5"
             },
             "require-dev": {
                 "ext-curl": "*",
@@ -4257,7 +4255,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-05T08:40:12+00:00"
+            "time": "2020-12-10T19:40:30+00:00"
         },
         {
             "name": "league/uri",
@@ -5096,16 +5094,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "2.1.1",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "f9eee5cec93dfb313a38b6b288741e84e53f02d5"
+                "reference": "1cb1cde8e8dd0f70cc0fe51354a59acad9302084"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/f9eee5cec93dfb313a38b6b288741e84e53f02d5",
-                "reference": "f9eee5cec93dfb313a38b6b288741e84e53f02d5",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/1cb1cde8e8dd0f70cc0fe51354a59acad9302084",
+                "reference": "1cb1cde8e8dd0f70cc0fe51354a59acad9302084",
                 "shasum": ""
             },
             "require": {
@@ -5118,16 +5116,17 @@
             "require-dev": {
                 "aws/aws-sdk-php": "^2.4.9 || ^3.0",
                 "doctrine/couchdb": "~1.0@dev",
-                "elasticsearch/elasticsearch": "^6.0",
+                "elasticsearch/elasticsearch": "^7",
                 "graylog2/gelf-php": "^1.4.2",
+                "mongodb/mongodb": "^1.8",
                 "php-amqplib/php-amqplib": "~2.4",
                 "php-console/php-console": "^3.1.3",
-                "php-parallel-lint/php-parallel-lint": "^1.0",
                 "phpspec/prophecy": "^1.6.1",
+                "phpstan/phpstan": "^0.12.59",
                 "phpunit/phpunit": "^8.5",
                 "predis/predis": "^1.1",
                 "rollbar/rollbar": "^1.3",
-                "ruflin/elastica": ">=0.90 <3.0",
+                "ruflin/elastica": ">=0.90 <7.0.1",
                 "swiftmailer/swiftmailer": "^5.3|^6.0"
             },
             "suggest": {
@@ -5147,7 +5146,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.x-dev"
+                    "dev-main": "2.x-dev"
                 }
             },
             "autoload": {
@@ -5163,11 +5162,11 @@
                 {
                     "name": "Jordi Boggiano",
                     "email": "j.boggiano@seld.be",
-                    "homepage": "http://seld.be"
+                    "homepage": "https://seld.be"
                 }
             ],
             "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
-            "homepage": "http://github.com/Seldaek/monolog",
+            "homepage": "https://github.com/Seldaek/monolog",
             "keywords": [
                 "log",
                 "logging",
@@ -5175,7 +5174,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Seldaek/monolog/issues",
-                "source": "https://github.com/Seldaek/monolog/tree/2.1.1"
+                "source": "https://github.com/Seldaek/monolog/tree/2.2.0"
             },
             "funding": [
                 {
@@ -5187,7 +5186,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-23T08:41:23+00:00"
+            "time": "2020-12-14T13:15:25+00:00"
         },
         {
             "name": "myclabs/php-enum",
@@ -7557,32 +7556,31 @@
         },
         {
             "name": "swiftmailer/swiftmailer",
-            "version": "v6.2.3",
+            "version": "v6.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "149cfdf118b169f7840bbe3ef0d4bc795d1780c9"
+                "reference": "56f0ab23f54c4ccbb0d5dcc67ff8552e0c98d59e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/149cfdf118b169f7840bbe3ef0d4bc795d1780c9",
-                "reference": "149cfdf118b169f7840bbe3ef0d4bc795d1780c9",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/56f0ab23f54c4ccbb0d5dcc67ff8552e0c98d59e",
+                "reference": "56f0ab23f54c4ccbb0d5dcc67ff8552e0c98d59e",
                 "shasum": ""
             },
             "require": {
-                "egulias/email-validator": "~2.0",
+                "egulias/email-validator": "^2.0",
                 "php": ">=7.0.0",
                 "symfony/polyfill-iconv": "^1.0",
                 "symfony/polyfill-intl-idn": "^1.10",
                 "symfony/polyfill-mbstring": "^1.0"
             },
             "require-dev": {
-                "mockery/mockery": "~0.9.1",
-                "symfony/phpunit-bridge": "^3.4.19|^4.1.8"
+                "mockery/mockery": "^1.0",
+                "symfony/phpunit-bridge": "^4.4|^5.0"
             },
             "suggest": {
-                "ext-intl": "Needed to support internationalized email addresses",
-                "true/punycode": "Needed to support internationalized email addresses, if ext-intl is not installed"
+                "ext-intl": "Needed to support internationalized email addresses"
             },
             "type": "library",
             "extra": {
@@ -7617,9 +7615,19 @@
             ],
             "support": {
                 "issues": "https://github.com/swiftmailer/swiftmailer/issues",
-                "source": "https://github.com/swiftmailer/swiftmailer/tree/v6.2.3"
+                "source": "https://github.com/swiftmailer/swiftmailer/tree/v6.2.4"
             },
-            "time": "2019-11-12T09:31:26+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/swiftmailer/swiftmailer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-12-08T18:02:06+00:00"
         },
         {
             "name": "sylius-labs/association-hydrator",
@@ -7990,66 +7998,70 @@
         },
         {
             "name": "sylius/grid-bundle",
-            "version": "v1.7.5",
+            "version": "v1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/SyliusGridBundle.git",
-                "reference": "9fcccac746aea8f359b4ac8aeee9c6f3fcc1387d"
+                "reference": "23fae3073789d0f176e5f4a6f426ee085440af50"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/SyliusGridBundle/zipball/9fcccac746aea8f359b4ac8aeee9c6f3fcc1387d",
-                "reference": "9fcccac746aea8f359b4ac8aeee9c6f3fcc1387d",
+                "url": "https://api.github.com/repos/Sylius/SyliusGridBundle/zipball/23fae3073789d0f176e5f4a6f426ee085440af50",
+                "reference": "23fae3073789d0f176e5f4a6f426ee085440af50",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2",
-                "sylius/registry": "^1.1",
-                "symfony/config": "^4.4|^5.0",
-                "symfony/dependency-injection": "^4.4|^5.0",
-                "symfony/event-dispatcher": "^4.4|^5.0",
-                "symfony/form": "^4.4|^5.0",
-                "symfony/framework-bundle": "^4.4|^5.0",
-                "symfony/http-kernel": "^4.4|^5.0",
-                "symfony/options-resolver": "^4.4|^5.0",
-                "symfony/property-access": "^4.4|^5.0"
+                "php": "^7.3",
+                "sylius-labs/polyfill-symfony-event-dispatcher": "^1.0",
+                "sylius/registry": "^1.5",
+                "symfony/config": "^4.4 || ^5.1",
+                "symfony/dependency-injection": "^4.4 || ^5.1",
+                "symfony/deprecation-contracts": "^2.2",
+                "symfony/event-dispatcher": "^4.4 || ^5.1",
+                "symfony/form": "^4.4 || ^5.1",
+                "symfony/framework-bundle": "^4.4 || ^5.1",
+                "symfony/http-kernel": "^4.4 || ^5.1",
+                "symfony/options-resolver": "^4.4 || ^5.1",
+                "symfony/property-access": "^4.4 || ^5.1",
+                "webmozart/assert": "^1.9"
             },
             "conflict": {
-                "symplify/package-builder": "^7.2",
-                "symplify/smart-file-system": "^7.2",
                 "twig/twig": "^1.0"
             },
             "replace": {
                 "sylius/grid": "self.version"
             },
             "require-dev": {
-                "doctrine/doctrine-bundle": "^1.3",
-                "doctrine/orm": "^2.5",
-                "doctrine/persistence": "^1.3",
-                "doctrine/phpcr-odm": "^1.3",
-                "jackalope/jackalope-doctrine-dbal": "^1.2",
-                "lchrusciel/api-test-case": "^4.1",
-                "matthiasnoback/symfony-config-test": "^4.0",
-                "matthiasnoback/symfony-dependency-injection-test": "^3.0",
-                "pagerfanta/pagerfanta": "^1.0|^2.0",
-                "pamil/phpspec-skip-example-extension": "^4.1",
-                "phpspec/phpspec": "^6.1",
-                "phpstan/phpstan": "^0.11",
-                "phpstan/phpstan-phpunit": "^0.11",
-                "phpstan/phpstan-webmozart-assert": "^0.11",
-                "phpunit/phpunit": "^7.0",
+                "doctrine/doctrine-bundle": "^1.12 || ^2.0",
+                "doctrine/orm": "^2.8",
+                "doctrine/persistence": "^1.3 || ^2.0",
+                "doctrine/phpcr-odm": "^1.5",
+                "jackalope/jackalope-doctrine-dbal": "^1.6",
+                "lchrusciel/api-test-case": "^5.0",
+                "matthiasnoback/symfony-config-test": "^4.2.1",
+                "matthiasnoback/symfony-dependency-injection-test": "^4.2.1",
+                "pagerfanta/pagerfanta": "^1.1 || ^2.5",
+                "pamil/phpspec-skip-example-extension": "^4.2",
+                "phpspec/phpspec": "^7.0",
+                "phpstan/phpstan": "0.12.59",
+                "phpstan/phpstan-phpunit": "0.12.16",
+                "phpstan/phpstan-webmozart-assert": "0.12.7",
+                "phpunit/phpunit": "^9.5",
                 "sylius-labs/coding-standard": "^3.0",
-                "sylius/currency-bundle": "^1.1",
-                "symfony/console": "^4.4|^5.0",
-                "symfony/twig-bundle": "^4.4|^5.0",
+                "sylius/resource-bundle": "^1.7",
+                "symfony/console": "^4.4 || ^5.1",
+                "symfony/twig-bundle": "^4.4 || ^5.1",
                 "twig/extensions": "^1.5",
-                "twig/twig": "^2.12|^3.0",
-                "vimeo/psalm": "^3.5"
+                "twig/twig": "^2.12 || ^3.0",
+                "vimeo/psalm": "4.3.1"
+            },
+            "suggest": {
+                "sylius/currency-bundle": "^1.7"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.6-dev"
+                    "dev-master": "1.8-dev"
                 }
             },
             "autoload": {
@@ -8065,34 +8077,33 @@
             "authors": [
                 {
                     "name": "Paweł Jędrzejewski",
-                    "homepage": "http://pjedrzejewski.com"
+                    "homepage": "https://pjedrzejewski.com"
                 },
                 {
                     "name": "Sylius project",
-                    "homepage": "http://sylius.com"
+                    "homepage": "https://sylius.com"
                 },
                 {
                     "name": "Community contributions",
-                    "homepage": "http://github.com/Sylius/Sylius/contributors"
+                    "homepage": "https://github.com/Sylius/Sylius/contributors"
                 }
             ],
             "description": "Amazing grids with support of filters and custom fields integrated into Symfony.",
-            "homepage": "http://sylius.com",
+            "homepage": "https://sylius.com",
             "keywords": [
                 "admin",
+                "api",
                 "crud",
-                "ecommerce",
+                "doctrine",
                 "grid",
-                "shop",
-                "store",
-                "sylius",
-                "webshop"
+                "resource",
+                "sylius"
             ],
             "support": {
                 "issues": "https://github.com/Sylius/SyliusGridBundle/issues",
-                "source": "https://github.com/Sylius/SyliusGridBundle/tree/v1.7.5"
+                "source": "https://github.com/Sylius/SyliusGridBundle/tree/v1.8.0"
             },
-            "time": "2020-04-14T10:50:49+00:00"
+            "time": "2020-12-08T15:55:21+00:00"
         },
         {
             "name": "sylius/invoicing-plugin",
@@ -8616,12 +8627,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/Sylius.git",
-                "reference": "b934eaf3833fb3a397befc96103914f11e6b0c33"
+                "reference": "58545ffeb320af211f6a49bb5a4512c3d199b868"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/b934eaf3833fb3a397befc96103914f11e6b0c33",
-                "reference": "b934eaf3833fb3a397befc96103914f11e6b0c33",
+                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/58545ffeb320af211f6a49bb5a4512c3d199b868",
+                "reference": "58545ffeb320af211f6a49bb5a4512c3d199b868",
                 "shasum": ""
             },
             "require": {
@@ -8666,8 +8677,8 @@
                 "sylius/mailer": "^1.5",
                 "sylius/mailer-bundle": "^1.5",
                 "sylius/registry": "^1.5",
-                "sylius/resource": "^1.6",
-                "sylius/resource-bundle": "^1.6",
+                "sylius/resource": "1.6.*",
+                "sylius/resource-bundle": "1.6.*",
                 "sylius/theme-bundle": "^1.5",
                 "symfony/asset": "^4.4",
                 "symfony/config": "^4.4",
@@ -8848,7 +8859,7 @@
                 "issues": "https://github.com/Sylius/Sylius/issues",
                 "source": "https://github.com/Sylius/Sylius/tree/master"
             },
-            "time": "2020-12-07T18:13:15+00:00"
+            "time": "2020-12-15T08:20:06+00:00"
         },
         {
             "name": "sylius/theme-bundle",
@@ -16554,16 +16565,16 @@
         },
         {
             "name": "nette/utils",
-            "version": "v2.5.6",
+            "version": "v2.5.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/utils.git",
-                "reference": "5915eeca39f2773f2c4bc2e9e8b3118aeedf7ad9"
+                "reference": "d272f87cd6491377231702b1ccd920b6e981b713"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/5915eeca39f2773f2c4bc2e9e8b3118aeedf7ad9",
-                "reference": "5915eeca39f2773f2c4bc2e9e8b3118aeedf7ad9",
+                "url": "https://api.github.com/repos/nette/utils/zipball/d272f87cd6491377231702b1ccd920b6e981b713",
+                "reference": "d272f87cd6491377231702b1ccd920b6e981b713",
                 "shasum": ""
             },
             "require": {
@@ -16634,9 +16645,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/utils/issues",
-                "source": "https://github.com/nette/utils/tree/v2.5.6"
+                "source": "https://github.com/nette/utils/tree/v2.5.7"
             },
-            "time": "2020-11-26T00:13:25+00:00"
+            "time": "2020-12-13T14:12:17+00:00"
         },
         {
             "name": "openlss/lib-array2xml",
