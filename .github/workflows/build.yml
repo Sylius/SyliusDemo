@@ -46,12 +46,6 @@ jobs:
           coverage: none
 
       -
-        name: Setup Node
-        uses: actions/setup-node@v1
-        with:
-          node-version: "${{ matrix.node }}"
-
-      -
         name: Shutdown default MySQL
         run: sudo service mysql stop
 
@@ -93,7 +87,7 @@ jobs:
             ${{ runner.os }}-php-${{ matrix.php }}-composer-
       -
         name: Install PHP dependencies
-        run: composer install --no-interaction
+        run: composer install --no-interaction --prefer-dist
 
       -
         name: Get Yarn cache directory
@@ -137,10 +131,6 @@ jobs:
       -
         name: Run security check
         run: symfony security:check
-
-      -
-        name: Check coding standard
-        run: vendor/bin/ecs check src
 
       -
         name: Run PHPStan
