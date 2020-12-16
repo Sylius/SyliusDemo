@@ -8627,12 +8627,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/Sylius.git",
-                "reference": "58545ffeb320af211f6a49bb5a4512c3d199b868"
+                "reference": "1771cad7ee140c2ce76b529982fd0d3b1482e39a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/58545ffeb320af211f6a49bb5a4512c3d199b868",
-                "reference": "58545ffeb320af211f6a49bb5a4512c3d199b868",
+                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/1771cad7ee140c2ce76b529982fd0d3b1482e39a",
+                "reference": "1771cad7ee140c2ce76b529982fd0d3b1482e39a",
                 "shasum": ""
             },
             "require": {
@@ -8859,7 +8859,7 @@
                 "issues": "https://github.com/Sylius/Sylius/issues",
                 "source": "https://github.com/Sylius/Sylius/tree/master"
             },
-            "time": "2020-12-15T08:20:06+00:00"
+            "time": "2020-12-16T10:22:40+00:00"
         },
         {
             "name": "sylius/theme-bundle",
