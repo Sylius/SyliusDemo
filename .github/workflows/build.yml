@@ -29,7 +29,7 @@ jobs:
             mysql: 8.0
 
     env:
-      APP_ENV: test_cached
+      APP_ENV: test
       DATABASE_URL: "mysql://root:root@127.0.0.1/sylius?serverVersion=${{ matrix.mysql }}"
 
     steps:
