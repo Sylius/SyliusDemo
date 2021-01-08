@@ -20,13 +20,11 @@ env:
         - SYLIUS_BUILD_DIR=etc/build
 
 addons:
-    apt:
-        sources:
-            - mysql-5.7-trusty
+    mariadb: '10.1.34'
 
 services:
     - memcached
-    - mysql
+#    - mysql
 
 before_install:
     - phpenv config-rm xdebug.ini || true
