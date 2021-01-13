@@ -20,7 +20,7 @@
         }
     ],
     "require": {
-        "php": "^7.2",
+        "php": "^7.3",
 
         "sensiolabs/security-checker": " ^5.0",
         "sylius/sylius": "dev-master",
@@ -29,7 +29,7 @@
         "sylius/refund-plugin": "^1.0.0@rc",
         "sylius/customer-order-cancellation-plugin": "^1.1",
         "sylius/customer-reorder-plugin": "^1.1",
-        "bitbag/cms-plugin": "2.3.4",
+        "bitbag/cms-plugin": "^2.3.4",
         "bugsnag/bugsnag-symfony": "^1.7",
         "sylius/paypal-plugin": "^1.0@rc"
     },
@@ -46,7 +46,7 @@
         "friends-of-behat/variadic-extension": "^1.1",
         "lakion/mink-debug-extension": "^1.2.3",
         "lchrusciel/api-test-case": "^3.0",
-        "phpspec/phpspec": "^5.0",
+        "phpspec/phpspec": "^6.0",
         "phpunit/phpunit": "^6.5",
         "stripe/stripe-php": "^4.1",
         "sylius-labs/coding-standard": "^2.0",
