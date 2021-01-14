@@ -1,6 +1,6 @@
 language: php
 
-dist: trusty
+dist: xenial
 
 sudo: false
 
@@ -19,12 +19,9 @@ env:
         - SYLIUS_CACHE_DIR=$HOME/.sylius-cache
         - SYLIUS_BUILD_DIR=etc/build
 
-addons:
-    mariadb: '10.1.34'
-
 services:
     - memcached
-#    - mysql
+    - mysql
 
 before_install:
     - phpenv config-rm xdebug.ini || true

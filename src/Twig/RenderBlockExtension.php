@@ -18,7 +18,7 @@ use BitBag\SyliusCmsPlugin\Resolver\BlockResourceResolverInterface;
 use Twig\Environment;
 use Twig\Extension\AbstractExtension;
 
-class RenderBlockExtension extends AbstractExtension
+final class RenderBlockExtension extends AbstractExtension
 {
     /** @var BlockRepositoryInterface */
     private $blockRepository;

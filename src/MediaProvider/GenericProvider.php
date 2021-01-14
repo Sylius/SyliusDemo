@@ -18,7 +18,7 @@ use BitBag\SyliusCmsPlugin\MediaProvider\ProviderInterface;
 use BitBag\SyliusCmsPlugin\Uploader\MediaUploaderInterface;
 use Twig\Environment;
 
-class GenericProvider implements ProviderInterface
+final class GenericProvider implements ProviderInterface
 {
     /** @var MediaUploaderInterface */
     private $uploader;
