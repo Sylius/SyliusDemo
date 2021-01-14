@@ -22,6 +22,7 @@
     "require": {
         "php": "^7.3",
 
+        "friendsofsymfony/oauth-server-bundle": ">2.0.0-alpha.0 ^2.0@dev",
         "sensiolabs/security-checker": " ^5.0",
         "sylius/sylius": "dev-master",
         "symfony/flex": "^1.7",
