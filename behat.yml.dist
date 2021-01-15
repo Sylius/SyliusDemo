@@ -9,7 +9,7 @@ default:
             snippets: false
 
     extensions:
-        Lakion\Behat\MinkDebugExtension:
+        FriendsOfBehat\MinkDebugExtension:
             directory: etc/build
             clean_start: false
             screenshot: true
@@ -39,11 +39,6 @@ default:
                     selenium2:
                         browser: firefox
             show_auto: false
-
-        FriendsOfBehat\SuiteSettingsExtension:
-            paths:
-                - "vendor/sylius/sylius/features"
-                - "features"
 
         FriendsOfBehat\SymfonyExtension: ~
 

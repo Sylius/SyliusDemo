@@ -1,6 +1,6 @@
 language: php
 
-dist: trusty
+dist: xenial
 
 sudo: false
 
@@ -18,11 +18,6 @@ env:
         - APP_ENV=test
         - SYLIUS_CACHE_DIR=$HOME/.sylius-cache
         - SYLIUS_BUILD_DIR=etc/build
-
-addons:
-    apt:
-        sources:
-            - mysql-5.7-trusty
 
 services:
     - memcached
