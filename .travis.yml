@@ -37,7 +37,6 @@ before_script:
     - APP_DEBUG=1 bin/console doctrine:database:create -vvv # Have to be run with debug = true, to omit generating proxies before setting up the database
     - bin/console cache:warmup -vvv
     - bin/console doctrine:migrations:migrate --no-interaction -vvv
-    - bin/console ckeditor:install
     - bin/console assets:install -vvv
     - yarn build
 

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cb2faa3ff61054da65296e13526d2db9",
+    "content-hash": "b333b8f77e2f93570c6f7a3877200694",
     "packages": [
         {
             "name": "api-platform/core",
@@ -269,81 +269,6 @@
                 "transliterator"
             ],
             "time": "2020-01-14T16:39:13+00:00"
-        },
-        {
-            "name": "bitbag/cms-plugin",
-            "version": "v3.0.0-beta1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/BitBagCommerce/SyliusCmsPlugin.git",
-                "reference": "ca9c40138ce8f85edf4478c337aea8e1521c2473"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/BitBagCommerce/SyliusCmsPlugin/zipball/ca9c40138ce8f85edf4478c337aea8e1521c2473",
-                "reference": "ca9c40138ce8f85edf4478c337aea8e1521c2473",
-                "shasum": ""
-            },
-            "require": {
-                "friendsofsymfony/ckeditor-bundle": "^1.1|^2.0",
-                "league/csv": "^9.1",
-                "php": "^7.3",
-                "stefandoorn/sitemap-plugin": "^1.0",
-                "sylius/sylius": "^1.8"
-            },
-            "conflict": {
-                "symfony/browser-kit": "4.1.8",
-                "symfony/dependency-injection": "4.1.8",
-                "symfony/dom-crawler": "4.1.8",
-                "symfony/routing": "4.1.8",
-                "symfony/symfony": "4.1.8"
-            },
-            "require-dev": {
-                "behat/behat": "^3.6",
-                "behat/mink": "^1.7",
-                "behat/mink-browserkit-driver": "^1.3",
-                "behat/mink-extension": "^2.2",
-                "behat/mink-selenium2-driver": "^1.3",
-                "friends-of-behat/page-object-extension": "^0.3",
-                "friends-of-behat/suite-settings-extension": "^1.0",
-                "friends-of-behat/symfony-extension": "^2.0",
-                "friends-of-behat/variadic-extension": "^1.1",
-                "lakion/mink-debug-extension": "^1.2.3",
-                "lchrusciel/api-test-case": "^3.0",
-                "matthiasnoback/symfony-config-test": "^3.0",
-                "phpspec/phpspec": "^6.0",
-                "phpstan/phpstan": "^0.12",
-                "phpstan/phpstan-doctrine": "^0.12",
-                "phpstan/phpstan-symfony": "^0.12",
-                "phpstan/phpstan-webmozart-assert": "^0.12",
-                "phpunit/phpunit": "^6.5",
-                "sensiolabs/security-checker": "^5.0",
-                "sylius-labs/coding-standard": "^3.0",
-                "symfony/browser-kit": "^4.4",
-                "symfony/debug-bundle": "^4.4",
-                "symfony/dotenv": "^4.4",
-                "symfony/intl": "^4.4",
-                "symfony/web-profiler-bundle": "^4.4",
-                "symfony/web-server-bundle": "^4.4"
-            },
-            "type": "sylius-plugin",
-            "autoload": {
-                "psr-4": {
-                    "BitBag\\SyliusCmsPlugin\\": "src/",
-                    "Tests\\BitBag\\SyliusCmsPlugin\\": "tests/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "CMS plugin for Sylius applications.",
-            "keywords": [
-                "sylius",
-                "sylius-cms",
-                "sylius-plugin"
-            ],
-            "time": "2021-01-10T11:15:37+00:00"
         },
         {
             "name": "bugsnag/bugsnag",
@@ -2074,16 +1999,16 @@
         },
         {
             "name": "friendsofphp/proxy-manager-lts",
-            "version": "v1.0.2",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfPHP/proxy-manager-lts.git",
-                "reference": "4a66e4e0d3279d3bb3722963b4294331fabe15bc"
+                "reference": "121af47c9aee9c03031bdeca3fac0540f59aa5c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/proxy-manager-lts/zipball/4a66e4e0d3279d3bb3722963b4294331fabe15bc",
-                "reference": "4a66e4e0d3279d3bb3722963b4294331fabe15bc",
+                "url": "https://api.github.com/repos/FriendsOfPHP/proxy-manager-lts/zipball/121af47c9aee9c03031bdeca3fac0540f59aa5c3",
+                "reference": "121af47c9aee9c03031bdeca3fac0540f59aa5c3",
                 "shasum": ""
             },
             "require": {
@@ -2138,84 +2063,7 @@
                 "proxy pattern",
                 "service proxies"
             ],
-            "time": "2021-01-04T11:21:26+00:00"
-        },
-        {
-            "name": "friendsofsymfony/ckeditor-bundle",
-            "version": "2.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/FriendsOfSymfony/FOSCKEditorBundle.git",
-                "reference": "282c79b0d3eda68855ea4c8732ab8d249cd5fbd0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSCKEditorBundle/zipball/282c79b0d3eda68855ea4c8732ab8d249cd5fbd0",
-                "reference": "282c79b0d3eda68855ea4c8732ab8d249cd5fbd0",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "ext-zip": "*",
-                "php": "^7.1|^8.0",
-                "symfony/asset": "^4.4 || ^5.0",
-                "symfony/config": "^4.4 || ^5.0",
-                "symfony/dependency-injection": "^4.4 || ^5.0",
-                "symfony/expression-language": "^4.4 || ^5.0",
-                "symfony/form": "^4.4 || ^5.0",
-                "symfony/framework-bundle": "^4.4 || ^5.0",
-                "symfony/http-foundation": "^4.4 || ^5.0",
-                "symfony/http-kernel": "^4.4 || ^5.0",
-                "symfony/options-resolver": "^4.4 || ^5.0",
-                "symfony/property-access": "^4.4 || ^5.0",
-                "symfony/routing": "^4.4 || ^5.0",
-                "symfony/twig-bundle": "^4.4 || ^5.0",
-                "twig/twig": "^2.4 || ^3.0"
-            },
-            "conflict": {
-                "sebastian/environment": "<1.3.4",
-                "sebastian/exporter": "<2.0.0"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.0",
-                "matthiasnoback/symfony-dependency-injection-test": "^3.0 || ^4.0",
-                "symfony/console": "^4.4 || ^5.0",
-                "symfony/phpunit-bridge": "^4.4 || ^5.0",
-                "symfony/yaml": "^4.4 || ^5.0"
-            },
-            "suggest": {
-                "egeloen/form-extra-bundle": "Allows to load CKEditor asynchronously"
-            },
-            "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "FOS\\CKEditorBundle\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Eric GELOEN",
-                    "email": "geloen.eric@gmail.com"
-                },
-                {
-                    "name": "FriendsOfSymfony Community",
-                    "homepage": "https://github.com/FriendsOfSymfony/FOSCKEditorBundle/graphs/contributors"
-                }
-            ],
-            "description": "Provides a CKEditor integration for your Symfony project.",
-            "keywords": [
-                "CKEditor"
-            ],
-            "time": "2020-12-26T14:29:00+00:00"
+            "time": "2021-01-14T21:52:44+00:00"
         },
         {
             "name": "friendsofsymfony/oauth-server-bundle",
@@ -3686,78 +3534,6 @@
                 "jwt"
             ],
             "time": "2020-12-03T13:43:45+00:00"
-        },
-        {
-            "name": "league/csv",
-            "version": "9.6.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thephpleague/csv.git",
-                "reference": "f28da6e483bf979bac10e2add384c90ae9983e4e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/csv/zipball/f28da6e483bf979bac10e2add384c90ae9983e4e",
-                "reference": "f28da6e483bf979bac10e2add384c90ae9983e4e",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "ext-mbstring": "*",
-                "php": ">=7.2.5"
-            },
-            "require-dev": {
-                "ext-curl": "*",
-                "ext-dom": "*",
-                "friendsofphp/php-cs-fixer": "^2.16",
-                "phpstan/phpstan": "^0.12.0",
-                "phpstan/phpstan-phpunit": "^0.12.0",
-                "phpstan/phpstan-strict-rules": "^0.12.0",
-                "phpunit/phpunit": "^8.5"
-            },
-            "suggest": {
-                "ext-dom": "Required to use the XMLConverter and or the HTMLConverter classes",
-                "ext-iconv": "Needed to ease transcoding CSV using iconv stream filters"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "9.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "League\\Csv\\": "src"
-                },
-                "files": [
-                    "src/functions_include.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ignace Nyamagana Butera",
-                    "email": "nyamsprod@gmail.com",
-                    "homepage": "https://github.com/nyamsprod/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "CSV data manipulation made easy in PHP",
-            "homepage": "http://csv.thephpleague.com",
-            "keywords": [
-                "convert",
-                "csv",
-                "export",
-                "filter",
-                "import",
-                "read",
-                "transform",
-                "write"
-            ],
-            "time": "2020-12-10T19:40:30+00:00"
         },
         {
             "name": "league/uri",
@@ -6187,6 +5963,7 @@
                 }
             ],
             "description": "A security checker for your composer.lock",
+            "abandoned": "https://github.com/fabpot/local-php-security-checker",
             "time": "2018-12-19T17:14:59+00:00"
         },
         {
@@ -6582,54 +6359,6 @@
                 "twig-extensions"
             ],
             "time": "2021-01-05T10:14:49+00:00"
-        },
-        {
-            "name": "stefandoorn/sitemap-plugin",
-            "version": "v1.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/stefandoorn/sitemap-plugin.git",
-                "reference": "8cc6d9eae08ee14f3055387fb84863fbcf46584a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/stefandoorn/sitemap-plugin/zipball/8cc6d9eae08ee14f3055387fb84863fbcf46584a",
-                "reference": "8cc6d9eae08ee14f3055387fb84863fbcf46584a",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1",
-                "sylius/sylius": "^1.0"
-            },
-            "conflict": {
-                "sylius/sylius": "1.1.3 || 1.1.4",
-                "symfony/symfony": "3.4.7"
-            },
-            "require-dev": {
-                "lchrusciel/api-test-case": "^2.0|^3.1.0",
-                "matthiasnoback/symfony-dependency-injection-test": "^2.0|^3.0",
-                "phpspec/phpspec": "^4.0|^5.0",
-                "phpstan/phpstan": "^0.11.1",
-                "phpunit/phpunit": "^6.0|^7.0",
-                "sylius-labs/coding-standard": "^3.0"
-            },
-            "type": "sylius-plugin",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.1-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "SitemapPlugin\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Sitemap Plugin for Sylius",
-            "time": "2020-03-04T14:10:42+00:00"
         },
         {
             "name": "stof/doctrine-extensions-bundle",
@@ -7374,16 +7103,16 @@
         },
         {
             "name": "sylius/paypal-plugin",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/PayPalPlugin.git",
-                "reference": "be622412fc4e659e1c06adb574cabf89a43acc9a"
+                "reference": "41b7ef73a6d11c1579064c86ed5bab6043b6084a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/PayPalPlugin/zipball/be622412fc4e659e1c06adb574cabf89a43acc9a",
-                "reference": "be622412fc4e659e1c06adb574cabf89a43acc9a",
+                "url": "https://api.github.com/repos/Sylius/PayPalPlugin/zipball/41b7ef73a6d11c1579064c86ed5bab6043b6084a",
+                "reference": "41b7ef73a6d11c1579064c86ed5bab6043b6084a",
                 "shasum": ""
             },
             "require": {
@@ -7447,7 +7176,7 @@
                 "sylius",
                 "sylius-plugin"
             ],
-            "time": "2020-12-03T14:36:05+00:00"
+            "time": "2021-01-15T11:42:29+00:00"
         },
         {
             "name": "sylius/refund-plugin",
@@ -7708,12 +7437,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/Sylius.git",
-                "reference": "f917ff2cb4cfbde1b75b4bbaa01cff361b029271"
+                "reference": "ab759b5d97ff3b26a4a3a45264335e2e2238bf3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/f917ff2cb4cfbde1b75b4bbaa01cff361b029271",
-                "reference": "f917ff2cb4cfbde1b75b4bbaa01cff361b029271",
+                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/ab759b5d97ff3b26a4a3a45264335e2e2238bf3e",
+                "reference": "ab759b5d97ff3b26a4a3a45264335e2e2238bf3e",
                 "shasum": ""
             },
             "require": {
@@ -7878,7 +7607,7 @@
                 "mockery/mockery": "^1.4",
                 "phpspec/phpspec": "^7.0",
                 "phpstan/phpstan": "0.12.66",
-                "phpstan/phpstan-doctrine": "0.12.26",
+                "phpstan/phpstan-doctrine": "0.12.27",
                 "phpunit/phpunit": "^8.5",
                 "psalm/plugin-mockery": "0.7.0",
                 "psr/event-dispatcher": "^1.0",
@@ -7937,7 +7666,7 @@
             ],
             "description": "E-Commerce platform for PHP, based on Symfony framework.",
             "homepage": "https://sylius.com",
-            "time": "2021-01-14T10:50:51+00:00"
+            "time": "2021-01-18T10:19:03+00:00"
         },
         {
             "name": "sylius/theme-bundle",
@@ -12332,30 +12061,31 @@
         },
         {
             "name": "willdurand/hateoas",
-            "version": "3.6.0",
+            "version": "3.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/willdurand/Hateoas.git",
-                "reference": "27cfbb4b8497075dba2290cc51b903479385c12a"
+                "reference": "63e255bb762fd6fa79d973d99ac669daab56c638"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/willdurand/Hateoas/zipball/27cfbb4b8497075dba2290cc51b903479385c12a",
-                "reference": "27cfbb4b8497075dba2290cc51b903479385c12a",
+                "url": "https://api.github.com/repos/willdurand/Hateoas/zipball/63e255bb762fd6fa79d973d99ac669daab56c638",
+                "reference": "63e255bb762fd6fa79d973d99ac669daab56c638",
                 "shasum": ""
             },
             "require": {
                 "doctrine/annotations": "~1.0",
                 "jms/metadata": "^2.0",
                 "jms/serializer": "^3.2",
-                "php": "^7.2",
+                "php": "^7.2 | ^8.0",
                 "symfony/expression-language": "~3.0 || ~4.0 || ~5.0"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^5.0",
+                "doctrine/coding-standard": "^5.0 | ^8.0",
                 "doctrine/persistence": "^1.3.4",
                 "pagerfanta/pagerfanta": "~1.0",
-                "phpunit/phpunit": "^7",
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpunit/phpunit": "^7 | ^9",
                 "symfony/routing": "~3.0 || ~4.0 || ~5.0",
                 "symfony/yaml": "~3.0 || ~4.0 || ~5.0",
                 "twig/twig": "^1.34 || ^2.0 || ^3.0"
@@ -12395,7 +12125,7 @@
                 }
             ],
             "description": "A PHP library to support implementing representations for HATEOAS REST web services",
-            "time": "2020-02-19T11:47:03+00:00"
+            "time": "2021-01-12T22:07:17+00:00"
         },
         {
             "name": "willdurand/hateoas-bundle",
@@ -13751,16 +13481,16 @@
         },
         {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v2.17.3",
+            "version": "v2.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfPHP/PHP-CS-Fixer.git",
-                "reference": "bd32f5dd72cdfc7b53f54077f980e144bfa2f595"
+                "reference": "cbc5b50bfa2688a1afca20e5a8c71f058e9ccbef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/bd32f5dd72cdfc7b53f54077f980e144bfa2f595",
-                "reference": "bd32f5dd72cdfc7b53f54077f980e144bfa2f595",
+                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/cbc5b50bfa2688a1afca20e5a8c71f058e9ccbef",
+                "reference": "cbc5b50bfa2688a1afca20e5a8c71f058e9ccbef",
                 "shasum": ""
             },
             "require": {
@@ -13782,7 +13512,6 @@
                 "symfony/stopwatch": "^3.0 || ^4.0 || ^5.0"
             },
             "require-dev": {
-                "johnkary/phpunit-speedtrap": "^1.1 || ^2.0 || ^3.0",
                 "justinrainbow/json-schema": "^5.0",
                 "keradus/cli-executor": "^1.4",
                 "mikey179/vfsstream": "^1.6",
@@ -13791,11 +13520,11 @@
                 "php-cs-fixer/phpunit-constraint-isidenticalstring": "^1.2",
                 "php-cs-fixer/phpunit-constraint-xmlmatchesxsd": "^1.2.1",
                 "phpspec/prophecy-phpunit": "^1.1 || ^2.0",
-                "phpunit/phpunit": "^5.7.27 || ^6.5.14 || ^7.5.20 || ^8.5.13 || ^9.4.4 <9.5",
+                "phpunit/phpunit": "^5.7.27 || ^6.5.14 || ^7.5.20 || ^8.5.13 || ^9.5",
                 "phpunitgoodpractices/polyfill": "^1.5",
                 "phpunitgoodpractices/traits": "^1.9.1",
                 "sanmai/phpunit-legacy-adapter": "^6.4 || ^8.2.1",
-                "symfony/phpunit-bridge": "^5.1",
+                "symfony/phpunit-bridge": "^5.2.1",
                 "symfony/yaml": "^3.0 || ^4.0 || ^5.0"
             },
             "suggest": {
@@ -13841,7 +13570,7 @@
                 }
             ],
             "description": "A tool to automatically fix PHP code style",
-            "time": "2020-12-24T11:14:44+00:00"
+            "time": "2021-01-18T03:31:06+00:00"
         },
         {
             "name": "instaclick/php-webdriver",
@@ -15018,16 +14747,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "0.12.66",
+            "version": "0.12.68",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "4110a2425c6bd53acbdfcda07885e87b66e9ba3e"
+                "reference": "ddbe01af0706ee094c3f1ce9730b35aebb508d3d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/4110a2425c6bd53acbdfcda07885e87b66e9ba3e",
-                "reference": "4110a2425c6bd53acbdfcda07885e87b66e9ba3e",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/ddbe01af0706ee094c3f1ce9730b35aebb508d3d",
+                "reference": "ddbe01af0706ee094c3f1ce9730b35aebb508d3d",
                 "shasum": ""
             },
             "require": {
@@ -15056,7 +14785,7 @@
                 "MIT"
             ],
             "description": "PHPStan - PHP Static Analysis Tool",
-            "time": "2021-01-11T16:43:15+00:00"
+            "time": "2021-01-18T12:29:17+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -15313,16 +15042,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "8.5.13",
+            "version": "8.5.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "8e86be391a58104ef86037ba8a846524528d784e"
+                "reference": "c25f79895d27b6ecd5abfa63de1606b786a461a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/8e86be391a58104ef86037ba8a846524528d784e",
-                "reference": "8e86be391a58104ef86037ba8a846524528d784e",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/c25f79895d27b6ecd5abfa63de1606b786a461a3",
+                "reference": "c25f79895d27b6ecd5abfa63de1606b786a461a3",
                 "shasum": ""
             },
             "require": {
@@ -15392,7 +15121,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2020-12-01T04:53:52+00:00"
+            "time": "2021-01-17T07:37:30+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -17156,7 +16885,6 @@
         "friendsofsymfony/oauth-server-bundle": 20,
         "sylius/sylius": 20,
         "sylius/refund-plugin": 5,
-        "bitbag/cms-plugin": 10,
         "sylius/paypal-plugin": 5
     },
     "prefer-stable": true,
