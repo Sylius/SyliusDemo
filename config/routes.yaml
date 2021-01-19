@@ -1,5 +1,6 @@
-bitbag_sylius_cms_plugin:
-    resource: "@BitBagSyliusCmsPlugin/Resources/config/routing.yml"
+# Uncomment after cms_plugin fix for support sylius 1.9
+#bitbag_sylius_cms_plugin:
+#    resource: "@BitBagSyliusCmsPlugin/Resources/config/routing.yml"
 
 sylius_paypal_webhook:
     resource: "@SyliusPayPalPlugin/Resources/config/webhook_routing.yaml"

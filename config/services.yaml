@@ -31,53 +31,7 @@ services:
         tags:
             - {name: twig.extension}
 
-    bitbag_sylius_cms_plugin.twig.extension.block:
-        class: App\Twig\RenderBlockExtension
-        arguments:
-            - "@bitbag_sylius_cms_plugin.repository.block"
-            - "@bitbag_sylius_cms_plugin.resolver.block_resource"
-            - "@twig"
-        tags:
-            - { name: twig.extension }
-
-    bitbag_sylius_cms_plugin.twig.extension.product_pages:
-        class: App\Twig\RenderProductPagesExtension
-        arguments:
-            - "@bitbag_sylius_cms_plugin.repository.page"
-            - "@sylius.context.channel"
-            - "@twig"
-        tags:
-            - { name: twig.extension }
-
-    bitbag_sylius_cms_plugin.media_provider.image:
-        class: App\MediaProvider\GenericProvider
-        arguments:
-            - "@bitbag_sylius_cms_plugin.media_uploader"
-            - "@twig"
-            - "@@BitBagSyliusCmsPlugin/Shop/Media/Show/image.html.twig"
-            - "media/image"
-        tags:
-            - { name: bitbag_sylius_cms_plugin.media_provider, type: image, label: bitbag_sylius_cms_plugin.ui.image_provider }
-
-    bitbag_sylius_cms_plugin.media_provider.video:
-        class: App\MediaProvider\GenericProvider
-        arguments:
-            - "@bitbag_sylius_cms_plugin.media_uploader"
-            - "@twig"
-            - "@@BitBagSyliusCmsPlugin/Shop/Media/Show/video.html.twig"
-            - "media/video"
-        tags:
-            - { name: bitbag_sylius_cms_plugin.media_provider, type: video, label: bitbag_sylius_cms_plugin.ui.video_provider }
-
-    bitbag_sylius_cms_plugin.media_provider.file:
-        class: App\MediaProvider\GenericProvider
-        arguments:
-            - "@bitbag_sylius_cms_plugin.media_uploader"
-            - "@twig"
-            - "@@BitBagSyliusCmsPlugin/Shop/Media/Show/file.html.twig"
-            - "media/file"
-        tags:
-            - { name: bitbag_sylius_cms_plugin.media_provider, type: file, label: bitbag_sylius_cms_plugin.ui.file_provider }
+# Below services are added for support sylius 1.9, Remove it if will be fixed in vendors
 
     sylius_invoicing_plugin.generator.invoice_pdf_file:
         class: Sylius\InvoicingPlugin\Generator\InvoicePdfFileGenerator

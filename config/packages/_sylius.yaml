@@ -8,7 +8,8 @@ imports:
 
     - { resource: "@SyliusApiBundle/Resources/config/app/config.yaml" }
 
-    - { resource: "@BitBagSyliusCmsPlugin/Resources/config/config.yml" }
+# Comment until cms_plugin fix for support sylius 1.9
+#    - { resource: "@BitBagSyliusCmsPlugin/Resources/config/config.yml" }
 
     - { resource: "@SyliusPayPalPlugin/Resources/config/config.yaml" }
 
@@ -28,33 +29,34 @@ sylius_theme:
             directories:
                 - "%kernel.project_dir%/themes"
 
-sylius_fixtures:
-    suites:
-        default:
-            fixtures:
-                block:
-                    options:
-                        custom:
-                            about_us:
-                                channels:
-                                    - 'FASHION_WEB'
-                                translations:
-                                    en_US:
-                                        content: |
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad adipisci aperiam consectetur cum dicta dolores ducimus, eveniet ex exercitationem harum in iure labore libero magnam minima neque, numquam officiis possimus quasi reiciendis rem repellat repellendus rerum ut vel veniam vitae? Beatae consectetur culpa debitis ex laudantium porro unde? Modi.
-                            seasonal_promotion:
-                                channels:
-                                    - 'FASHION_WEB'
-                                products: 4
-                                translations:
-                                    en_US:
-                                        content: |
-                                            Brace yourself! Winter is coming
-                media:
-                    options:
-                        custom:
-                            homepage_banner:
-                                channels:
-                                    - 'FASHION_WEB'
-                                type: image
-                                path: "%kernel.project_dir%/public/assets/shop/img/homepage-banner.jpg"
+# Uncomment after cms_plugin fix for support sylius 1.9
+#sylius_fixtures:
+#    suites:
+#        default:
+#            fixtures:
+#                block:
+#                    options:
+#                        custom:
+#                            about_us:
+#                                channels:
+#                                    - 'FASHION_WEB'
+#                                translations:
+#                                    en_US:
+#                                        content: |
+#                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad adipisci aperiam consectetur cum dicta dolores ducimus, eveniet ex exercitationem harum in iure labore libero magnam minima neque, numquam officiis possimus quasi reiciendis rem repellat repellendus rerum ut vel veniam vitae? Beatae consectetur culpa debitis ex laudantium porro unde? Modi.
+#                            seasonal_promotion:
+#                                channels:
+#                                    - 'FASHION_WEB'
+#                                products: 4
+#                                translations:
+#                                    en_US:
+#                                        content: |
+#                                            Brace yourself! Winter is coming
+#                media:
+#                    options:
+#                        custom:
+#                            homepage_banner:
+#                                channels:
+#                                    - 'FASHION_WEB'
+#                                type: image
+#                                path: "%kernel.project_dir%/public/assets/shop/img/homepage-banner.jpg"
