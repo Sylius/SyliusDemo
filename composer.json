@@ -60,7 +60,8 @@
         "symfony/web-server-bundle": "^4.4"
     },
     "conflict": {
-        "slam/php-cs-fixer-extensions": "^1.19.2"
+        "slam/php-cs-fixer-extensions": "^1.19.2",
+        "api-platform/core": "^2.6.0"
     },
     "prefer-stable": true,
     "autoload": {

@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b333b8f77e2f93570c6f7a3877200694",
+    "content-hash": "abc045a975a435dffa12699009926c59",
     "packages": [
         {
             "name": "api-platform/core",
-            "version": "v2.5.9",
+            "version": "v2.5.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/api-platform/core.git",
-                "reference": "4f05477b5ec5cff7c9324a7510900db2a1173d70"
+                "reference": "908dafa251fc532cb2c3673318b4ac4a6438f9da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/api-platform/core/zipball/4f05477b5ec5cff7c9324a7510900db2a1173d70",
-                "reference": "4f05477b5ec5cff7c9324a7510900db2a1173d70",
+                "url": "https://api.github.com/repos/api-platform/core/zipball/908dafa251fc532cb2c3673318b4ac4a6438f9da",
+                "reference": "908dafa251fc532cb2c3673318b4ac4a6438f9da",
                 "shasum": ""
             },
             "require": {
@@ -150,7 +150,7 @@
                 "rest",
                 "swagger"
             ],
-            "time": "2020-12-17T15:47:58+00:00"
+            "time": "2021-01-22T10:36:37+00:00"
         },
         {
             "name": "babdev/pagerfanta-bundle",
@@ -396,12 +396,12 @@
             "version": "v1.5.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/clue/php-stream-filter.git",
+                "url": "https://github.com/clue/stream-filter.git",
                 "reference": "aeb7d8ea49c7963d3b581378955dbf5bc49aa320"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/clue/php-stream-filter/zipball/aeb7d8ea49c7963d3b581378955dbf5bc49aa320",
+                "url": "https://api.github.com/repos/clue/stream-filter/zipball/aeb7d8ea49c7963d3b581378955dbf5bc49aa320",
                 "reference": "aeb7d8ea49c7963d3b581378955dbf5bc49aa320",
                 "shasum": ""
             },
@@ -858,16 +858,16 @@
         },
         {
             "name": "doctrine/data-fixtures",
-            "version": "1.4.4",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/data-fixtures.git",
-                "reference": "16a03fadb5473f49aad70384002dfd5012fe680e"
+                "reference": "51d3d4880d28951fff42a635a2389f8c63baddc5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/data-fixtures/zipball/16a03fadb5473f49aad70384002dfd5012fe680e",
-                "reference": "16a03fadb5473f49aad70384002dfd5012fe680e",
+                "url": "https://api.github.com/repos/doctrine/data-fixtures/zipball/51d3d4880d28951fff42a635a2389f8c63baddc5",
+                "reference": "51d3d4880d28951fff42a635a2389f8c63baddc5",
                 "shasum": ""
             },
             "require": {
@@ -879,11 +879,12 @@
                 "doctrine/phpcr-odm": "<1.3.0"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^6.0",
+                "doctrine/coding-standard": "^8.2",
                 "doctrine/dbal": "^2.5.4",
                 "doctrine/mongodb-odm": "^1.3.0 || ^2.0.0",
                 "doctrine/orm": "^2.7.0",
-                "phpunit/phpunit": "^7.0"
+                "ext-sqlite3": "*",
+                "phpunit/phpunit": "^8.0"
             },
             "suggest": {
                 "alcaeus/mongo-php-adapter": "For using MongoDB ODM 1.3 with PHP 7 (deprecated)",
@@ -892,11 +893,6 @@
                 "doctrine/phpcr-odm": "For loading PHPCR ODM fixtures"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.4.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Doctrine\\Common\\DataFixtures\\": "lib/Doctrine/Common/DataFixtures"
@@ -917,7 +913,7 @@
             "keywords": [
                 "database"
             ],
-            "time": "2020-09-01T07:13:28+00:00"
+            "time": "2021-01-23T10:20:43+00:00"
         },
         {
             "name": "doctrine/dbal",
@@ -2828,28 +2824,28 @@
         },
         {
             "name": "jms/serializer-bundle",
-            "version": "3.7.0",
+            "version": "3.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/JMSSerializerBundle.git",
-                "reference": "0ee8b75bfc484a342aa0471e3c6d9ad96fb430cf"
+                "reference": "5ba2675b9174659013fd93c3cbc8edf12189c9af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/JMSSerializerBundle/zipball/0ee8b75bfc484a342aa0471e3c6d9ad96fb430cf",
-                "reference": "0ee8b75bfc484a342aa0471e3c6d9ad96fb430cf",
+                "url": "https://api.github.com/repos/schmittjoh/JMSSerializerBundle/zipball/5ba2675b9174659013fd93c3cbc8edf12189c9af",
+                "reference": "5ba2675b9174659013fd93c3cbc8edf12189c9af",
                 "shasum": ""
             },
             "require": {
                 "jms/metadata": "^2.3",
                 "jms/serializer": "^3.0",
-                "php": "^7.2",
+                "php": "^7.2 || ^8.0",
                 "symfony/dependency-injection": "^3.3 || ^4.0 || ^5.0",
                 "symfony/framework-bundle": "^3.0 || ^4.0 || ^5.0"
             },
             "require-dev": {
                 "doctrine/orm": "^2.4",
-                "phpunit/phpunit": "^6.0|^7.0",
+                "phpunit/phpunit": "^8.0 || ^9.0",
                 "symfony/expression-language": "^3.0 || ^4.0 || ^5.0",
                 "symfony/finder": "^3.0 || ^4.0 || ^5.0",
                 "symfony/form": "^3.0 || ^4.0 || ^5.0",
@@ -2860,12 +2856,13 @@
             },
             "suggest": {
                 "jms/di-extra-bundle": "Required to get lazy loading (de)serialization visitors, ^1.3",
+                "symfony/expression-language": "Required for opcache preloading, ^3.0 || ^4.0 || ^5.0",
                 "symfony/finder": "Required for cache warmup, supported versions ^3.0|^4.0"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.7-dev"
+                    "dev-master": "3.8-dev"
                 }
             },
             "autoload": {
@@ -2898,7 +2895,7 @@
                 "serialization",
                 "xml"
             ],
-            "time": "2020-06-28T11:26:21+00:00"
+            "time": "2021-01-23T20:13:28+00:00"
         },
         {
             "name": "knplabs/gaufrette",
@@ -4012,16 +4009,16 @@
         },
         {
             "name": "lexik/jwt-authentication-bundle",
-            "version": "v2.10.5",
+            "version": "v2.10.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lexik/LexikJWTAuthenticationBundle.git",
-                "reference": "f6c0d9a2816b52e759ed1ba0658b45786b58fdf7"
+                "reference": "dc472dd55d6a7bc374306e3df8e6202bc95f76e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lexik/LexikJWTAuthenticationBundle/zipball/f6c0d9a2816b52e759ed1ba0658b45786b58fdf7",
-                "reference": "f6c0d9a2816b52e759ed1ba0658b45786b58fdf7",
+                "url": "https://api.github.com/repos/lexik/LexikJWTAuthenticationBundle/zipball/dc472dd55d6a7bc374306e3df8e6202bc95f76e9",
+                "reference": "dc472dd55d6a7bc374306e3df8e6202bc95f76e9",
                 "shasum": ""
             },
             "require": {
@@ -4104,7 +4101,7 @@
                 "rest",
                 "symfony"
             ],
-            "time": "2020-12-19T18:27:01+00:00"
+            "time": "2021-01-20T18:11:13+00:00"
         },
         {
             "name": "liip/imagine-bundle",
@@ -6612,6 +6609,98 @@
             "time": "2020-11-10T09:36:58+00:00"
         },
         {
+            "name": "sylius-labs/polyfill-symfony-framework-bundle",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SyliusLabs/PolyfillSymfonyFrameworkBundle.git",
+                "reference": "40e58dd1b602d88b54a2ba06b887c318a2adf07d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SyliusLabs/PolyfillSymfonyFrameworkBundle/zipball/40e58dd1b602d88b54a2ba06b887c318a2adf07d",
+                "reference": "40e58dd1b602d88b54a2ba06b887c318a2adf07d",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3 || ^8.0",
+                "symfony/framework-bundle": "^4.4 || ^5.2"
+            },
+            "conflict": {
+                "symfony/polyfill-mbstring": "1.22.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5",
+                "vimeo/psalm": "4.3.2"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "SyliusLabs\\Polyfill\\Symfony\\FrameworkBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kamil Kokot",
+                    "email": "kamil@kokot.me",
+                    "homepage": "https://kamilkokot.com"
+                }
+            ],
+            "description": "Symfony FrameworkBundle Polyfill",
+            "time": "2021-01-12T20:27:31+00:00"
+        },
+        {
+            "name": "sylius-labs/polyfill-symfony-security",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SyliusLabs/PolyfillSymfonySecurity.git",
+                "reference": "75c653ac2c019942d8adacb1d7538e2566d8ab92"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SyliusLabs/PolyfillSymfonySecurity/zipball/75c653ac2c019942d8adacb1d7538e2566d8ab92",
+                "reference": "75c653ac2c019942d8adacb1d7538e2566d8ab92",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3 || ^8.0",
+                "symfony/dependency-injection": "^4.4 || ^5.2",
+                "symfony/http-kernel": "^4.4 || ^5.2",
+                "symfony/security-core": "^4.4 || ^5.2"
+            },
+            "conflict": {
+                "symfony/polyfill-mbstring": "1.22.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5",
+                "vimeo/psalm": "4.3.2"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "SyliusLabs\\Polyfill\\Symfony\\Security\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kamil Kokot",
+                    "email": "kamil@kokot.me",
+                    "homepage": "https://kamilkokot.com"
+                }
+            ],
+            "description": "Symfony Security Polyfill",
+            "time": "2021-01-12T19:16:58+00:00"
+        },
+        {
             "name": "sylius/customer-order-cancellation-plugin",
             "version": "v1.1.0",
             "source": {
@@ -7437,12 +7526,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/Sylius.git",
-                "reference": "ab759b5d97ff3b26a4a3a45264335e2e2238bf3e"
+                "reference": "af428c41f8b300b2c6618ed61e1b502f46b47126"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/ab759b5d97ff3b26a4a3a45264335e2e2238bf3e",
-                "reference": "ab759b5d97ff3b26a4a3a45264335e2e2238bf3e",
+                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/af428c41f8b300b2c6618ed61e1b502f46b47126",
+                "reference": "af428c41f8b300b2c6618ed61e1b502f46b47126",
                 "shasum": ""
             },
             "require": {
@@ -7451,7 +7540,7 @@
                 "behat/transliterator": "^1.3",
                 "doctrine/collections": "^1.6",
                 "doctrine/doctrine-bundle": "^1.12 || ^2.0",
-                "doctrine/doctrine-migrations-bundle": "^3.0",
+                "doctrine/doctrine-migrations-bundle": "^3.0.1",
                 "doctrine/inflector": "^1.4 || ^2.0",
                 "doctrine/migrations": "^3.0",
                 "doctrine/orm": "^2.7",
@@ -7463,7 +7552,7 @@
                 "friendsofphp/proxy-manager-lts": "^1.0",
                 "friendsofsymfony/oauth-server-bundle": "^1.6 || >2.0.0-alpha.0 ^2.0@dev",
                 "friendsofsymfony/rest-bundle": "^3.0",
-                "gedmo/doctrine-extensions": "^2.4.12",
+                "gedmo/doctrine-extensions": "^2.4.12 || ^3.0",
                 "jms/serializer-bundle": "^3.5",
                 "knplabs/gaufrette": "^0.8",
                 "knplabs/knp-gaufrette-bundle": "^0.7",
@@ -7480,8 +7569,11 @@
                 "sonata-project/block-bundle": "^4.2",
                 "stof/doctrine-extensions-bundle": "^1.4",
                 "swiftmailer/swiftmailer": "^6.2",
-                "sylius-labs/association-hydrator": "^1.1",
+                "sylius-labs/association-hydrator": "^1.1.3",
                 "sylius-labs/doctrine-migrations-extra-bundle": "^0.1.3",
+                "sylius-labs/polyfill-symfony-event-dispatcher": "^1.0.1",
+                "sylius-labs/polyfill-symfony-framework-bundle": "^1.0",
+                "sylius-labs/polyfill-symfony-security": "^1.0",
                 "sylius/fixtures-bundle": "^1.6.1",
                 "sylius/grid": "^1.8",
                 "sylius/grid-bundle": "^1.8",
@@ -7490,46 +7582,47 @@
                 "sylius/registry": "^1.5",
                 "sylius/resource": "^1.7",
                 "sylius/resource-bundle": "^1.7",
-                "sylius/theme-bundle": "^2.1",
-                "symfony/asset": "^4.4",
-                "symfony/config": "^4.4",
-                "symfony/console": "^4.4",
-                "symfony/dependency-injection": "^4.4",
-                "symfony/doctrine-bridge": "^4.4",
-                "symfony/event-dispatcher": "^4.4",
-                "symfony/expression-language": "^4.4",
-                "symfony/filesystem": "^4.4",
-                "symfony/finder": "^4.4",
-                "symfony/form": "^4.4",
-                "symfony/framework-bundle": "^4.4",
-                "symfony/http-foundation": "^4.4",
-                "symfony/http-kernel": "^4.4",
-                "symfony/intl": "^4.4",
-                "symfony/messenger": "^4.4",
+                "sylius/theme-bundle": "^2.1.1",
+                "symfony/asset": "^4.4 || ^5.2",
+                "symfony/config": "^4.4 || ^5.2",
+                "symfony/console": "^4.4 || ^5.2",
+                "symfony/dependency-injection": "^4.4 || ^5.2",
+                "symfony/doctrine-bridge": "^4.4 || ^5.2",
+                "symfony/event-dispatcher": "^4.4 || ^5.2",
+                "symfony/expression-language": "^4.4 || ^5.2",
+                "symfony/filesystem": "^4.4 || ^5.2",
+                "symfony/finder": "^4.4 || ^5.2",
+                "symfony/form": "^4.4 || ^5.2",
+                "symfony/framework-bundle": "^4.4 || ^5.2",
+                "symfony/http-foundation": "^4.4 || ^5.2",
+                "symfony/http-kernel": "^4.4 || ^5.2",
+                "symfony/intl": "^4.4 || ^5.2",
+                "symfony/messenger": "^4.4 || ^5.2",
                 "symfony/monolog-bundle": "^3.5",
-                "symfony/options-resolver": "^4.4",
+                "symfony/options-resolver": "^4.4 || ^5.2",
                 "symfony/polyfill-iconv": "^1.17",
                 "symfony/polyfill-intl-icu": "^1.17",
                 "symfony/polyfill-mbstring": "^1.17",
                 "symfony/polyfill-php80": "^1.17",
-                "symfony/process": "^4.4",
-                "symfony/property-access": "^4.4",
-                "symfony/property-info": "^4.4",
-                "symfony/proxy-manager-bridge": "^4.4",
-                "symfony/routing": "^4.4",
-                "symfony/security-bundle": "^4.4",
-                "symfony/security-core": "^4.4",
-                "symfony/security-csrf": "^4.4",
-                "symfony/security-guard": "^4.4",
-                "symfony/security-http": "^4.4",
-                "symfony/serializer": "^4.4",
+                "symfony/process": "^4.4 || ^5.2",
+                "symfony/property-access": "^4.4 || ^5.2",
+                "symfony/property-info": "^4.4 || ^5.2",
+                "symfony/proxy-manager-bridge": "^4.4 || ^5.2",
+                "symfony/routing": "^4.4 || ^5.2",
+                "symfony/security-bundle": "^4.4 || ^5.2",
+                "symfony/security-core": "^4.4 || ^5.2",
+                "symfony/security-csrf": "^4.4 || ^5.2",
+                "symfony/security-guard": "^4.4 || ^5.2",
+                "symfony/security-http": "^4.4 || ^5.2",
+                "symfony/serializer": "^4.4 || ^5.2",
+                "symfony/string": "^5.2",
                 "symfony/swiftmailer-bundle": "^3.4",
-                "symfony/templating": "^4.4",
+                "symfony/templating": "^4.4 || ^5.2",
                 "symfony/thanks": "^1.2",
-                "symfony/translation": "^4.4",
-                "symfony/twig-bundle": "^4.4",
-                "symfony/validator": "^4.4",
-                "symfony/yaml": "^4.4",
+                "symfony/translation": "^4.4 || ^5.2",
+                "symfony/twig-bundle": "^4.4 || ^5.2",
+                "symfony/validator": "^4.4 || ^5.2",
+                "symfony/yaml": "^4.4 || ^5.2",
                 "twig/intl-extra": "^2.12",
                 "twig/twig": "^2.12",
                 "webmozart/assert": "^1.9",
@@ -7606,21 +7699,21 @@
                 "mikey179/vfsstream": "^1.6",
                 "mockery/mockery": "^1.4",
                 "phpspec/phpspec": "^7.0",
-                "phpstan/phpstan": "0.12.66",
-                "phpstan/phpstan-doctrine": "0.12.27",
+                "phpstan/phpstan": "0.12.68",
+                "phpstan/phpstan-doctrine": "0.12.30",
                 "phpunit/phpunit": "^8.5",
                 "psalm/plugin-mockery": "0.7.0",
                 "psr/event-dispatcher": "^1.0",
                 "sspooky13/yaml-standards": "^5.1",
                 "stripe/stripe-php": "^6.43",
                 "sylius-labs/coding-standard": "^3.1",
-                "symfony/browser-kit": "^4.4",
-                "symfony/debug-bundle": "^4.4",
-                "symfony/dotenv": "^4.4",
+                "symfony/browser-kit": "^4.4 || ^5.2",
+                "symfony/debug-bundle": "^4.4 || ^5.2",
+                "symfony/dotenv": "^4.4 || ^5.2",
                 "symfony/flex": "^1.7",
-                "symfony/web-profiler-bundle": "^4.4",
+                "symfony/web-profiler-bundle": "^4.4 || ^5.2",
                 "symplify/package-builder": "^8.0 <8.3",
-                "vimeo/psalm": "4.3.2"
+                "vimeo/psalm": "4.4.1"
             },
             "suggest": {
                 "ext-iconv": "For better performance than using Symfony Polyfill Component",
@@ -7666,7 +7759,7 @@
             ],
             "description": "E-Commerce platform for PHP, based on Symfony framework.",
             "homepage": "https://sylius.com",
-            "time": "2021-01-18T10:19:03+00:00"
+            "time": "2021-01-21T14:26:11+00:00"
         },
         {
             "name": "sylius/theme-bundle",
@@ -12015,12 +12108,12 @@
             "version": "1.9.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/webmozart/assert.git",
+                "url": "https://github.com/webmozarts/assert.git",
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "shasum": ""
             },
@@ -12566,23 +12659,23 @@
         },
         {
             "name": "behat/gherkin",
-            "version": "v4.6.2",
+            "version": "v4.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Behat/Gherkin.git",
-                "reference": "51ac4500c4dc30cbaaabcd2f25694299df666a31"
+                "reference": "0ffe6a7f67f8d038166143d71b30a9088f932576"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/Gherkin/zipball/51ac4500c4dc30cbaaabcd2f25694299df666a31",
-                "reference": "51ac4500c4dc30cbaaabcd2f25694299df666a31",
+                "url": "https://api.github.com/repos/Behat/Gherkin/zipball/0ffe6a7f67f8d038166143d71b30a9088f932576",
+                "reference": "0ffe6a7f67f8d038166143d71b30a9088f932576",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.1"
+                "php": ">=5.6"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.5|~5",
+                "phpunit/phpunit": "~5.7|~6|~7",
                 "symfony/phpunit-bridge": "~2.7|~3|~4",
                 "symfony/yaml": "~2.3|~3|~4"
             },
@@ -12611,7 +12704,7 @@
                     "homepage": "http://everzet.com"
                 }
             ],
-            "description": "Gherkin DSL parser for PHP 5.3",
+            "description": "Gherkin DSL parser for PHP",
             "homepage": "http://behat.org/",
             "keywords": [
                 "BDD",
@@ -12621,7 +12714,7 @@
                 "gherkin",
                 "parser"
             ],
-            "time": "2020-03-17T14:03:26+00:00"
+            "time": "2021-01-24T14:06:27+00:00"
         },
         {
             "name": "behat/mink-selenium2-driver",
@@ -13250,30 +13343,30 @@
         },
         {
             "name": "friends-of-behat/mink-extension",
-            "version": "v2.4.0",
+            "version": "v2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfBehat/MinkExtension.git",
-                "reference": "ca8796a20f2b39ea275860d1cee7b863447dfe06"
+                "reference": "83119aa70be1f2c63061c29dced9d41775cd9db2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfBehat/MinkExtension/zipball/ca8796a20f2b39ea275860d1cee7b863447dfe06",
-                "reference": "ca8796a20f2b39ea275860d1cee7b863447dfe06",
+                "url": "https://api.github.com/repos/FriendsOfBehat/MinkExtension/zipball/83119aa70be1f2c63061c29dced9d41775cd9db2",
+                "reference": "83119aa70be1f2c63061c29dced9d41775cd9db2",
                 "shasum": ""
             },
             "require": {
                 "behat/behat": "^3.0.5",
                 "behat/mink": "^1.5",
-                "php": "^7.2",
-                "symfony/config": "^4.4|^5.0"
+                "php": ">=7.2",
+                "symfony/config": "^3.4 || ^4.4 || ^5.0"
             },
             "replace": {
                 "behat/mink-extension": "self.version"
             },
             "require-dev": {
                 "behat/mink-goutte-driver": "^1.1",
-                "phpspec/phpspec": "^6.0"
+                "phpspec/phpspec": "^6.0 || ^7.0"
             },
             "type": "behat-extension",
             "extra": {
@@ -13308,7 +13401,7 @@
                 "test",
                 "web"
             ],
-            "time": "2020-01-15T17:16:57+00:00"
+            "time": "2021-01-21T09:27:44+00:00"
         },
         {
             "name": "friends-of-behat/page-object-extension",
@@ -13481,16 +13574,16 @@
         },
         {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v2.18.0",
+            "version": "v2.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfPHP/PHP-CS-Fixer.git",
-                "reference": "cbc5b50bfa2688a1afca20e5a8c71f058e9ccbef"
+                "reference": "c68ff6231adb276857761e43b7ed082f164dce0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/cbc5b50bfa2688a1afca20e5a8c71f058e9ccbef",
-                "reference": "cbc5b50bfa2688a1afca20e5a8c71f058e9ccbef",
+                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/c68ff6231adb276857761e43b7ed082f164dce0b",
+                "reference": "c68ff6231adb276857761e43b7ed082f164dce0b",
                 "shasum": ""
             },
             "require": {
@@ -13570,7 +13663,7 @@
                 }
             ],
             "description": "A tool to automatically fix PHP code style",
-            "time": "2021-01-18T03:31:06+00:00"
+            "time": "2021-01-21T18:50:42+00:00"
         },
         {
             "name": "instaclick/php-webdriver",
@@ -14747,16 +14840,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "0.12.68",
+            "version": "0.12.69",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "ddbe01af0706ee094c3f1ce9730b35aebb508d3d"
+                "reference": "8f436ea35241da33487fd0d38b4bc3e6dfe30ea8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/ddbe01af0706ee094c3f1ce9730b35aebb508d3d",
-                "reference": "ddbe01af0706ee094c3f1ce9730b35aebb508d3d",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/8f436ea35241da33487fd0d38b4bc3e6dfe30ea8",
+                "reference": "8f436ea35241da33487fd0d38b4bc3e6dfe30ea8",
                 "shasum": ""
             },
             "require": {
@@ -14785,7 +14878,7 @@
                 "MIT"
             ],
             "description": "PHPStan - PHP Static Analysis Tool",
-            "time": "2021-01-18T12:29:17+00:00"
+            "time": "2021-01-24T14:55:37+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -16759,21 +16852,21 @@
         },
         {
             "name": "theofidry/alice-data-fixtures",
-            "version": "1.3.3",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/theofidry/AliceDataFixtures.git",
-                "reference": "c35eec1cadd58f39bf0e1f48c107a23a44d0feee"
+                "reference": "bcfdf64bc940eb4a7b40b46d9ca5251e5692cc11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/theofidry/AliceDataFixtures/zipball/c35eec1cadd58f39bf0e1f48c107a23a44d0feee",
-                "reference": "c35eec1cadd58f39bf0e1f48c107a23a44d0feee",
+                "url": "https://api.github.com/repos/theofidry/AliceDataFixtures/zipball/bcfdf64bc940eb4a7b40b46d9ca5251e5692cc11",
+                "reference": "bcfdf64bc940eb4a7b40b46d9ca5251e5692cc11",
                 "shasum": ""
             },
             "require": {
                 "nelmio/alice": "^3.5",
-                "php": "^7.3",
+                "php": "^7.3 | ^8.0",
                 "psr/log": "^1.0"
             },
             "conflict": {
@@ -16836,7 +16929,7 @@
                 "orm",
                 "tests"
             ],
-            "time": "2021-01-09T18:07:53+00:00"
+            "time": "2021-01-25T10:07:17+00:00"
         },
         {
             "name": "theseer/tokenizer",

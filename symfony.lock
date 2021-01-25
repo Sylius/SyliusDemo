@@ -583,6 +583,12 @@
     "sylius-labs/polyfill-symfony-event-dispatcher": {
         "version": "v1.0.0"
     },
+    "sylius-labs/polyfill-symfony-framework-bundle": {
+        "version": "v1.0.0"
+    },
+    "sylius-labs/polyfill-symfony-security": {
+        "version": "v1.0.0"
+    },
     "sylius/customer-order-cancellation-plugin": {
         "version": "0.2",
         "recipe": {
