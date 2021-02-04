@@ -130,9 +130,6 @@
     "doctrine/persistence": {
         "version": "v1.0.1"
     },
-    "doctrine/reflection": {
-        "version": "v1.0.0"
-    },
     "doctrine/sql-formatter": {
         "version": "1.1.1"
     },
@@ -262,6 +259,9 @@
     "lchrusciel/api-test-case": {
         "version": "v3.1.4"
     },
+    "lcobucci/clock": {
+        "version": "2.0.0"
+    },
     "lcobucci/jwt": {
         "version": "3.3.1"
     },
@@ -377,7 +377,7 @@
         "version": "1.0.1"
     },
     "php": {
-        "version": "7.3"
+        "version": "7.4"
     },
     "php-cs-fixer/diff": {
         "version": "v1.3.0"
@@ -755,9 +755,6 @@
         "version": "v4.1.5"
     },
     "symfony/http-kernel": {
-        "version": "v4.1.5"
-    },
-    "symfony/inflector": {
         "version": "v4.1.5"
     },
     "symfony/intl": {
