@@ -1,4 +1,10 @@
 {
+    "aeon-php/calendar": {
+        "version": "0.16.1"
+    },
+    "alcohol/iso4217": {
+        "version": "3.1.5"
+    },
     "api-platform/core": {
         "version": "2.5",
         "recipe": {
@@ -271,20 +277,8 @@
     "league/uri-components": {
         "version": "1.8.1"
     },
-    "league/uri-hostname-parser": {
-        "version": "1.1.1"
-    },
     "league/uri-interfaces": {
         "version": "1.1.0"
-    },
-    "league/uri-manipulations": {
-        "version": "1.5.0"
-    },
-    "league/uri-parser": {
-        "version": "1.4.0"
-    },
-    "league/uri-schemes": {
-        "version": "1.2.0"
     },
     "lexik/jwt-authentication-bundle": {
         "version": "2.5",
@@ -655,6 +649,9 @@
     "sylius/theme-bundle": {
         "version": "v1.4.2"
     },
+    "symfony/amqp-messenger": {
+        "version": "v5.2.3"
+    },
     "symfony/asset": {
         "version": "v4.1.5"
     },
@@ -702,6 +699,9 @@
     },
     "symfony/doctrine-bridge": {
         "version": "v4.1.5"
+    },
+    "symfony/doctrine-messenger": {
+        "version": "v5.2.3"
     },
     "symfony/dom-crawler": {
         "version": "v4.1.5"
@@ -837,6 +837,9 @@
     },
     "symfony/proxy-manager-bridge": {
         "version": "v4.1.5"
+    },
+    "symfony/redis-messenger": {
+        "version": "v5.2.3"
     },
     "symfony/routing": {
         "version": "4.0",
@@ -1029,9 +1032,6 @@
     },
     "zendframework/zend-eventmanager": {
         "version": "3.2.1"
-    },
-    "zendframework/zend-hydrator": {
-        "version": "2.4.0"
     },
     "zendframework/zend-stdlib": {
         "version": "3.2.1"
