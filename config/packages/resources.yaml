@@ -1,0 +1,11 @@
+sylius_shipping:
+    resources:
+        shipment:
+            classes:
+              model: App\Entity\Shipping\Shipment
+
+sylius_order:
+    resources:
+        adjustment:
+            classes:
+                model: App\Entity\Order\Adjustment
