@@ -577,31 +577,6 @@
     "sylius-labs/polyfill-symfony-event-dispatcher": {
         "version": "v1.0.0"
     },
-    "sylius/customer-order-cancellation-plugin": {
-        "version": "0.2",
-        "recipe": {
-            "repo": "github.com/symfony/recipes-contrib",
-            "branch": "master",
-            "version": "0.2",
-            "ref": "0df1d0d6f01546907877e0d832edb15d00406613"
-        },
-        "files": [
-            "config/routes/sylius_customer_order_cancellation.yaml"
-        ]
-    },
-    "sylius/customer-reorder-plugin": {
-        "version": "1.0",
-        "recipe": {
-            "repo": "github.com/symfony/recipes-contrib",
-            "branch": "master",
-            "version": "1.0",
-            "ref": "c05aac7dd6534c7a92da168c7e2883282466b9da"
-        },
-        "files": [
-            "config/packages/sylius_customer_reorder.yaml",
-            "config/routes/sylius_customer_reorder.yaml"
-        ]
-    },
     "sylius/fixtures-bundle": {
         "version": "v1.4.1"
     },

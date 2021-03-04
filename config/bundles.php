@@ -59,8 +59,6 @@ return [
     Knp\Bundle\SnappyBundle\KnpSnappyBundle::class => ['all' => true],
     Sylius\InvoicingPlugin\SyliusInvoicingPlugin::class => ['all' => true],
     Sylius\RefundPlugin\SyliusRefundPlugin::class => ['all' => true],
-    Sylius\CustomerOrderCancellationPlugin\SyliusCustomerOrderCancellationPlugin::class => ['all' => true],
-    Sylius\CustomerReorderPlugin\SyliusCustomerReorderPlugin::class => ['all' => true],
     Lexik\Bundle\JWTAuthenticationBundle\LexikJWTAuthenticationBundle::class => ['all' => true],
     SyliusLabs\DoctrineMigrationsExtraBundle\SyliusLabsDoctrineMigrationsExtraBundle::class => ['all' => true],
     Bugsnag\BugsnagBundle\BugsnagBundle::class => ['all' => true],
