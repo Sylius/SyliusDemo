@@ -28,7 +28,8 @@
         "sylius/invoicing-plugin": "~0.13",
         "sylius/refund-plugin": "1.0.0-RC.7",
         "bugsnag/bugsnag-symfony": "^1.7",
-        "sylius/paypal-plugin": "^1.0@rc"
+        "sylius/paypal-plugin": "^1.0@rc",
+        "symfony/dotenv": "^4.4"
     },
     "require-dev": {
         "behat/behat": "^3.6.1",
@@ -51,7 +52,6 @@
         "sylius-labs/coding-standard": "^3.1",
         "symfony/browser-kit": "^4.4",
         "symfony/debug-bundle": "^4.4",
-        "symfony/dotenv": "^4.4",
         "symfony/intl": "^4.4",
         "symfony/web-profiler-bundle": "^4.4",
         "symfony/web-server-bundle": "^4.4"
