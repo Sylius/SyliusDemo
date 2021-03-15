@@ -1,11 +1,11 @@
 language: php
 
-dist: trusty
+dist: xenial
 
 sudo: false
 
 php:
-    - 7.3
+    - 7.4
 
 cache:
     yarn: true
@@ -19,11 +19,6 @@ env:
         - SYLIUS_CACHE_DIR=$HOME/.sylius-cache
         - SYLIUS_BUILD_DIR=etc/build
 
-addons:
-    apt:
-        sources:
-            - mysql-5.7-trusty
-
 services:
     - memcached
     - mysql
@@ -34,8 +29,6 @@ before_install:
 
     - echo "extension = memcached.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
 
-    - mysql -V
-
 install:
     - composer install --no-interaction --prefer-dist
     - yarn install
@@ -44,7 +37,6 @@ before_script:
     - APP_DEBUG=1 bin/console doctrine:database:create -vvv # Have to be run with debug = true, to omit generating proxies before setting up the database
     - bin/console cache:warmup -vvv
     - bin/console doctrine:migrations:migrate --no-interaction -vvv
-
     - bin/console assets:install -vvv
     - yarn build
 
@@ -78,10 +70,12 @@ before_script:
     - bin/console server:run 127.0.0.1:8080 --quiet > /dev/null 2>&1 &
 
 script:
-    - composer validate --strict
+    - composer validate --strict --no-check-all
 
-    - echo "Testing (Behat - regular scenarios; ~@javascript && ~@todo && ~@cli)" "Sylius"
-    - vendor/bin/behat features/ --strict --no-interaction -vvv -f progress --tags="~@javascript && ~@todo && ~@cli"
+    - bin/console sylius:fixtures:load --no-interaction
+
+    - echo "Testing (Behat - regular scenarios)" "SyliusDemo"
+    - vendor/bin/behat features/ --strict --no-interaction -vvv -f progress
 
 after_failure:
     - vendor/lakion/mink-debug-extension/travis/tools/upload-textfiles "${SYLIUS_BUILD_DIR}/*.log"
