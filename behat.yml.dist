@@ -40,11 +40,6 @@ default:
                         browser: firefox
             show_auto: false
 
-        FriendsOfBehat\SuiteSettingsExtension:
-            paths:
-                - "vendor/sylius/sylius/features"
-                - "features"
-
         FriendsOfBehat\SymfonyExtension: ~
 
         FriendsOfBehat\ExcludeSpecificationsExtension:
