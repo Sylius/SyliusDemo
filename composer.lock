@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9e69bcedc2a59b55db94699fc384cc71",
+    "content-hash": "3aee338abb729b51ac3347d2af9cdbaa",
     "packages": [
         {
             "name": "alcohol/iso4217",
@@ -1046,16 +1046,16 @@
         },
         {
             "name": "doctrine/doctrine-bundle",
-            "version": "2.2.3",
+            "version": "2.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineBundle.git",
-                "reference": "015fdd490074d4daa891e2d1df998dc35ba54924"
+                "reference": "708ed6f99c3d0142e15a8b05022946367cfcc075"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/015fdd490074d4daa891e2d1df998dc35ba54924",
-                "reference": "015fdd490074d4daa891e2d1df998dc35ba54924",
+                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/708ed6f99c3d0142e15a8b05022946367cfcc075",
+                "reference": "708ed6f99c3d0142e15a8b05022946367cfcc075",
                 "shasum": ""
             },
             "require": {
@@ -1134,7 +1134,7 @@
                 "orm",
                 "persistence"
             ],
-            "time": "2021-01-19T20:29:53+00:00"
+            "time": "2021-02-25T11:33:34+00:00"
         },
         {
             "name": "doctrine/doctrine-migrations-bundle",
@@ -1474,16 +1474,16 @@
         },
         {
             "name": "doctrine/migrations",
-            "version": "3.1.0",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/migrations.git",
-                "reference": "260991be753a38aa25b6f2d13dbb7f113f8dbf8f"
+                "reference": "e543224170a61ffe49fcadb8e7339c345df1baa2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/migrations/zipball/260991be753a38aa25b6f2d13dbb7f113f8dbf8f",
-                "reference": "260991be753a38aa25b6f2d13dbb7f113f8dbf8f",
+                "url": "https://api.github.com/repos/doctrine/migrations/zipball/e543224170a61ffe49fcadb8e7339c345df1baa2",
+                "reference": "e543224170a61ffe49fcadb8e7339c345df1baa2",
                 "shasum": ""
             },
             "require": {
@@ -1559,7 +1559,7 @@
                 "dbal",
                 "migrations"
             ],
-            "time": "2021-02-07T21:16:17+00:00"
+            "time": "2021-03-14T11:10:58+00:00"
         },
         {
             "name": "doctrine/orm",
@@ -6620,16 +6620,16 @@
         },
         {
             "name": "sylius/invoicing-plugin",
-            "version": "v0.13.0",
+            "version": "v0.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/InvoicingPlugin.git",
-                "reference": "150c35ceed1d8b2cd18d62f4cf3d127b657b1a5f"
+                "reference": "b1e54806a05f19f3d46491396855a457cee6a02c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/InvoicingPlugin/zipball/150c35ceed1d8b2cd18d62f4cf3d127b657b1a5f",
-                "reference": "150c35ceed1d8b2cd18d62f4cf3d127b657b1a5f",
+                "url": "https://api.github.com/repos/Sylius/InvoicingPlugin/zipball/b1e54806a05f19f3d46491396855a457cee6a02c",
+                "reference": "b1e54806a05f19f3d46491396855a457cee6a02c",
                 "shasum": ""
             },
             "require": {
@@ -6665,6 +6665,7 @@
                 "friendsofsymfony/oauth-server-bundle": "^1.6 || >2.0.0-alpha.0 ^2.0@dev",
                 "lakion/mink-debug-extension": "^1.2.3",
                 "matthiasnoback/symfony-config-test": "^4.0",
+                "matthiasnoback/symfony-dependency-injection-test": "^4.1",
                 "phpspec/phpspec": "^7.0",
                 "phpstan/extension-installer": "^1.0",
                 "phpstan/phpstan": "0.12.29",
@@ -6704,7 +6705,7 @@
                 "sylius-plugin",
                 "symfony"
             ],
-            "time": "2021-03-04T06:51:32+00:00"
+            "time": "2021-03-18T07:14:48+00:00"
         },
         {
             "name": "sylius/mailer-bundle",
@@ -6864,16 +6865,16 @@
         },
         {
             "name": "sylius/refund-plugin",
-            "version": "v1.0.0-RC.7",
+            "version": "v1.0.0-RC.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/RefundPlugin.git",
-                "reference": "bc8ff61010ab7432604d7cfb1c6c7f0e9129b574"
+                "reference": "9be9a7e858437417c0d97aeca604fbf4b946c289"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/RefundPlugin/zipball/bc8ff61010ab7432604d7cfb1c6c7f0e9129b574",
-                "reference": "bc8ff61010ab7432604d7cfb1c6c7f0e9129b574",
+                "url": "https://api.github.com/repos/Sylius/RefundPlugin/zipball/9be9a7e858437417c0d97aeca604fbf4b946c289",
+                "reference": "9be9a7e858437417c0d97aeca604fbf4b946c289",
                 "shasum": ""
             },
             "require": {
@@ -6902,6 +6903,8 @@
                 "friends-of-behat/variadic-extension": "^1.3",
                 "friendsofsymfony/oauth-server-bundle": "^1.6 || >2.0.0-alpha.0 ^2.0@dev",
                 "lakion/mink-debug-extension": "^1.2.3",
+                "matthiasnoback/symfony-config-test": "^4.0",
+                "matthiasnoback/symfony-dependency-injection-test": "^4.1",
                 "phpspec/phpspec": "^6.0",
                 "phpstan/phpstan": "0.12.29",
                 "phpstan/phpstan-webmozart-assert": "0.12.6",
@@ -6951,7 +6954,7 @@
                 "sylius-plugin",
                 "symfony"
             ],
-            "time": "2021-03-04T10:05:59+00:00"
+            "time": "2021-03-18T07:19:27+00:00"
         },
         {
             "name": "sylius/registry",
@@ -7122,12 +7125,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/Sylius.git",
-                "reference": "711d9efcdfd8e40eb70a47b9e20e93bfaec554f0"
+                "reference": "dda9032dac055b59796338c878298ec4b9e49123"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/711d9efcdfd8e40eb70a47b9e20e93bfaec554f0",
-                "reference": "711d9efcdfd8e40eb70a47b9e20e93bfaec554f0",
+                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/dda9032dac055b59796338c878298ec4b9e49123",
+                "reference": "dda9032dac055b59796338c878298ec4b9e49123",
                 "shasum": ""
             },
             "require": {
@@ -7146,7 +7149,7 @@
                 "ext-gd": "*",
                 "fakerphp/faker": "^1.9",
                 "friendsofphp/proxy-manager-lts": "^1.0",
-                "friendsofsymfony/oauth-server-bundle": "^1.6 || >2.0.0-alpha.0 ^2.0@dev",
+                "friendsofsymfony/oauth-server-bundle": ">2.0.0-alpha.0 ^2.0@dev",
                 "friendsofsymfony/rest-bundle": "^3.0",
                 "gedmo/doctrine-extensions": "^2.4.12 || ^3.0",
                 "jms/serializer-bundle": "^3.5",
@@ -7356,7 +7359,7 @@
             ],
             "description": "E-Commerce platform for PHP, based on Symfony framework.",
             "homepage": "https://sylius.com",
-            "time": "2021-03-09T10:42:24+00:00"
+            "time": "2021-03-18T16:58:02+00:00"
         },
         {
             "name": "sylius/theme-bundle",
@@ -14517,16 +14520,16 @@
         },
         {
             "name": "phpspec/prophecy",
-            "version": "1.12.2",
+            "version": "1.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "245710e971a030f42e08f4912863805570f23d39"
+                "reference": "be1996ed8adc35c3fd795488a653f4b518be70ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/245710e971a030f42e08f4912863805570f23d39",
-                "reference": "245710e971a030f42e08f4912863805570f23d39",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/be1996ed8adc35c3fd795488a653f4b518be70ea",
+                "reference": "be1996ed8adc35c3fd795488a653f4b518be70ea",
                 "shasum": ""
             },
             "require": {
@@ -14576,20 +14579,20 @@
                 "spy",
                 "stub"
             ],
-            "time": "2020-12-19T10:15:11+00:00"
+            "time": "2021-03-17T13:42:18+00:00"
         },
         {
             "name": "phpstan/phpstan",
-            "version": "0.12.81",
+            "version": "0.12.82",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "0dd5b0ebeff568f7000022ea5f04aa86ad3124b8"
+                "reference": "3920f0fb0aff39263d3a4cb0bca120a67a1a6a11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/0dd5b0ebeff568f7000022ea5f04aa86ad3124b8",
-                "reference": "0dd5b0ebeff568f7000022ea5f04aa86ad3124b8",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/3920f0fb0aff39263d3a4cb0bca120a67a1a6a11",
+                "reference": "3920f0fb0aff39263d3a4cb0bca120a67a1a6a11",
                 "shasum": ""
             },
             "require": {
@@ -14618,7 +14621,7 @@
                 "MIT"
             ],
             "description": "PHPStan - PHP Static Analysis Tool",
-            "time": "2021-03-08T22:03:02+00:00"
+            "time": "2021-03-19T06:08:17+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -14875,16 +14878,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "8.5.14",
+            "version": "8.5.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "c25f79895d27b6ecd5abfa63de1606b786a461a3"
+                "reference": "038d4196d8e8cb405cd5e82cedfe413ad6eef9ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/c25f79895d27b6ecd5abfa63de1606b786a461a3",
-                "reference": "c25f79895d27b6ecd5abfa63de1606b786a461a3",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/038d4196d8e8cb405cd5e82cedfe413ad6eef9ef",
+                "reference": "038d4196d8e8cb405cd5e82cedfe413ad6eef9ef",
                 "shasum": ""
             },
             "require": {
@@ -14954,7 +14957,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2021-01-17T07:37:30+00:00"
+            "time": "2021-03-17T07:27:54+00:00"
         },
         {
             "name": "psr/simple-cache",
