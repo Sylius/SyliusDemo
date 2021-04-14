@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7c784fed520e06eb18586e2f6409afa3",
+    "content-hash": "76775a5490a29cb42932d73714f674b6",
     "packages": [
         {
             "name": "alcohol/iso4217",
@@ -7251,12 +7251,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/Sylius.git",
-                "reference": "5a0ae8e4b59476b57f42a48d877b2a964212a85b"
+                "reference": "4619c12bae5385a6ff389bdc24adaf8f16f72568"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/5a0ae8e4b59476b57f42a48d877b2a964212a85b",
-                "reference": "5a0ae8e4b59476b57f42a48d877b2a964212a85b",
+                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/4619c12bae5385a6ff389bdc24adaf8f16f72568",
+                "reference": "4619c12bae5385a6ff389bdc24adaf8f16f72568",
                 "shasum": ""
             },
             "require": {
@@ -7487,7 +7487,7 @@
             ],
             "description": "E-Commerce platform for PHP, based on Symfony framework.",
             "homepage": "https://sylius.com",
-            "time": "2021-04-13T09:02:08+00:00"
+            "time": "2021-04-15T06:50:46+00:00"
         },
         {
             "name": "sylius/theme-bundle",
