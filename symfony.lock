@@ -97,6 +97,9 @@
     "doctrine/dbal": {
         "version": "v2.8.0"
     },
+    "doctrine/deprecations": {
+        "version": "v0.5.3"
+    },
     "doctrine/doctrine-bundle": {
         "version": "1.6",
         "recipe": {
@@ -576,6 +579,9 @@
     },
     "sylius-labs/polyfill-symfony-event-dispatcher": {
         "version": "v1.0.0"
+    },
+    "sylius/admin-api-bundle": {
+        "version": "v1.10.0"
     },
     "sylius/fixtures-bundle": {
         "version": "v1.4.1"
