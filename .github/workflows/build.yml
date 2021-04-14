@@ -19,7 +19,7 @@ jobs:
             fail-fast: false
             matrix:
                 php: [7.4]
-                symfony: [4.4.*]
+                symfony: [^4.4, ^5.2]
                 node: [10.x]
                 mysql: [5.7, 8.0]
 
@@ -68,6 +68,11 @@ jobs:
             -
                 name: Run Chrome Headless
                 run: google-chrome-stable --enable-automation --disable-background-networking --no-default-browser-check --no-first-run --disable-popup-blocking --disable-default-apps --allow-insecure-localhost --disable-translate --disable-extensions --no-sandbox --enable-features=Metal --headless --remote-debugging-port=9222 --window-size=2880,1800 --proxy-server='direct://' --proxy-bypass-list='*' http://127.0.0.1 > /dev/null 2>&1 &
+
+            -
+                name: Restrict Symfony version
+                if: matrix.symfony != ''
+                run: composer config extra.symfony.require "${{ matrix.symfony }}"
 
             -
                 name: Run webserver
