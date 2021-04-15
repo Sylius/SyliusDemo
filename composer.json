@@ -22,14 +22,13 @@
     "require": {
         "php": "^7.4",
         "friendsofsymfony/oauth-server-bundle": ">2.0.0-alpha.0 ^2.0@dev",
-        "sensiolabs/security-checker": " ^5.0",
         "sylius/sylius": "dev-master",
         "symfony/flex": "^1.7",
         "sylius/invoicing-plugin": "^0.14",
         "sylius/refund-plugin": "^1.0.0-RC.9",
         "bugsnag/bugsnag-symfony": "^1.7",
         "sylius/paypal-plugin": "^1.0@rc",
-        "symfony/console": "^4.4",
+        "symfony/console": "^4.4 || ^5.2",
         "symfony/dotenv": "^4.4 || ^5.2"
     },
     "require-dev": {
@@ -81,8 +80,7 @@
         ],
         "auto-scripts": {
             "cache:clear": "symfony-cmd",
-            "assets:install %PUBLIC_DIR%": "symfony-cmd",
-            "security-checker security:check": "script"
+            "assets:install %PUBLIC_DIR%": "symfony-cmd"
         }
     },
     "config": {

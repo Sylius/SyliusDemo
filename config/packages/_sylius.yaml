@@ -14,7 +14,7 @@ imports:
     - { resource: "@SyliusPayPalPlugin/Resources/config/config.yaml" }
 
 parameters:
-    fixtures_dir: "%kernel.root_dir%/Resources/fixtures"
+    fixtures_dir: "%kernel.project_dir%/Resources/fixtures"
     sylius_core.public_dir: '%kernel.project_dir%/public'
     sylius.cache:
         type: array
