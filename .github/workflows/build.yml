@@ -72,7 +72,9 @@ jobs:
             -
                 name: Restrict Symfony version
                 if: matrix.symfony != ''
-                run: composer config extra.symfony.require "${{ matrix.symfony }}"
+                run: |
+                    composer global require --no-progress --no-scripts --no-plugins "symfony/flex:^1.10"
+                    composer config extra.symfony.require "${{ matrix.symfony }}"
 
             -
                 name: Run webserver
@@ -94,7 +96,7 @@ jobs:
 
             -
                 name: Install PHP dependencies
-                run: composer update --no-interaction --prefer-dist  --no-scripts
+                run: composer update --no-interaction --prefer-dist  --no-scripts --with-all-dependencies
 
             -
                 name: Get Yarn cache directory
