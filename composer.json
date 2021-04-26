@@ -27,6 +27,7 @@
         "symfony/flex": "^1.7",
         "sylius/invoicing-plugin": "^0.14",
         "sylius/refund-plugin": "^1.0.0-RC.9",
+        "sylius/admin-api-bundle": "^1.10",
         "bugsnag/bugsnag-symfony": "^1.7",
         "sylius/paypal-plugin": "^1.0@rc",
         "symfony/dotenv": "^4.4 || ^5.2"
