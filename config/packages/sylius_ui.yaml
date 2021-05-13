@@ -3,17 +3,17 @@ sylius_ui:
         sylius.shop.layout.header:
             blocks:
                 after_menu:
-                    template: "/Blocks/_infoBox.html.twig"
+                    template: "Blocks/_infoBox.html.twig"
                     priority: 12
         sylius.shop.layout.head:
             blocks:
                 analistics:
-                    template: "/Blocks/_analytics.html.twig"
+                    template: "Blocks/_analytics.html.twig"
                     priority: 10
         sylius.shop.layout.footer:
             blocks:
                 footer:
-                    template: "/Blocks/_versionSwitcher.html.twig"
+                    template: "Blocks/_versionSwitcher.html.twig"
                     priority: 10
 # Uncomment after cms_plugin fix for support sylius 1.9
 #        sylius.shop.homepage:
