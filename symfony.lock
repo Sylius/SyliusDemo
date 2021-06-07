@@ -143,12 +143,6 @@
             "ref": "81dee417d2cc60cd1c9d6208dff2ec22a1103e93"
         }
     },
-    "friendsofsymfony/oauth-server-bundle": {
-        "version": "1.6.1"
-    },
-    "friendsofsymfony/oauth2-php": {
-        "version": "1.2.3"
-    },
     "friendsofsymfony/rest-bundle": {
         "version": "2.2",
         "recipe": {
@@ -448,9 +442,6 @@
             "version": "4.0",
             "ref": "421933bf8f0e75546ac8e00cb3eb12904fa2ac1a"
         }
-    },
-    "slam/php-cs-fixer-extensions": {
-        "version": "v1.17.0"
     },
     "slevomat/coding-standard": {
         "version": "4.8.4"
