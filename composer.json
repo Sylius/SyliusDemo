@@ -22,8 +22,7 @@
     "require": {
         "php": "^7.4",
         "sensiolabs/security-checker": " ^5.0",
-        "friendsofsymfony/oauth-server-bundle": ">2.0.0-alpha.0 ^2.0@dev",
-        "sylius/sylius": "^1.9",
+        "sylius/sylius": "~1.10.0@beta",
         "symfony/dotenv": "^5.2",
         "symfony/flex": "^1.7"
     },
@@ -44,10 +43,10 @@
         "stripe/stripe-php": "^4.1",
         "sylius-labs/coding-standard": "^2.0",
         "symfony/browser-kit": "^5.2",
-        "symfony/debug-bundle": "^4.4",
+        "symfony/debug-bundle": "^4.4 || ^5.2",
         "symfony/intl": "^5.2",
-        "symfony/web-profiler-bundle": "^4.4",
-        "symfony/web-server-bundle": "^4.4"
+        "symfony/web-profiler-bundle": "^4.4 || ^5.2",
+        "symfony/web-server-bundle": "^4.4 || ^5.2"
     },
     "prefer-stable": true,
     "autoload": {
