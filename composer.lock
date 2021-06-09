@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7228444115b907a7b7d2e1b05abeb0f0",
+    "content-hash": "80245379b568f85e5cb78e5e7efd6e0d",
     "packages": [
         {
             "name": "alcohol/iso4217",
@@ -60,28 +60,28 @@
         },
         {
             "name": "api-platform/core",
-            "version": "v2.6.4",
+            "version": "v2.5.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/api-platform/core.git",
-                "reference": "be971e5d0257a8c01a824ee01cfc217ba04c3200"
+                "reference": "908dafa251fc532cb2c3673318b4ac4a6438f9da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/api-platform/core/zipball/be971e5d0257a8c01a824ee01cfc217ba04c3200",
-                "reference": "be971e5d0257a8c01a824ee01cfc217ba04c3200",
+                "url": "https://api.github.com/repos/api-platform/core/zipball/908dafa251fc532cb2c3673318b4ac4a6438f9da",
+                "reference": "908dafa251fc532cb2c3673318b4ac4a6438f9da",
                 "shasum": ""
             },
             "require": {
                 "doctrine/inflector": "^1.0 || ^2.0",
                 "fig/link-util": "^1.0",
                 "php": ">=7.1",
-                "psr/cache": "^1.0 || ^2.0 || ^3.0",
+                "psr/cache": "^1.0",
                 "psr/container": "^1.0",
                 "symfony/http-foundation": "^4.4 || ^5.1",
                 "symfony/http-kernel": "^4.4 || ^5.1",
                 "symfony/property-access": "^3.4.19 || ^4.4 || ^5.1",
-                "symfony/property-info": "^3.4 || ^4.4 || ^5.2.1",
+                "symfony/property-info": "^3.4 || ^4.4 || ^5.1",
                 "symfony/serializer": "^4.4 || ^5.1",
                 "symfony/web-link": "^4.4 || ^5.1",
                 "willdurand/negotiation": "^2.0.3 || ^3.0"
@@ -111,7 +111,7 @@
                 "phpdocumentor/reflection-docblock": "^3.0 || ^4.0 || ^5.1",
                 "phpdocumentor/type-resolver": "^0.3 || ^0.4 || ^1.4",
                 "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan": "^0.12.65",
+                "phpstan/phpstan": "^0.12.53@dev",
                 "phpstan/phpstan-doctrine": "^0.12.7",
                 "phpstan/phpstan-phpunit": "^0.12.4",
                 "phpstan/phpstan-symfony": "^0.12.4",
@@ -153,7 +153,6 @@
                 "doctrine/mongodb-odm-bundle": "To support MongoDB. Only versions 4.0 and later are supported.",
                 "elasticsearch/elasticsearch": "To support Elasticsearch.",
                 "guzzlehttp/guzzle": "To use the HTTP cache invalidation system.",
-                "ocramius/package-versions": "To display the API Platform's version in the debug bar.",
                 "phpdocumentor/reflection-docblock": "To support extracting metadata from PHPDoc.",
                 "psr/cache-implementation": "To use metadata caching.",
                 "ramsey/uuid": "To support Ramsey's UUID identifiers.",
@@ -162,14 +161,13 @@
                 "symfony/expression-language": "To use authorization features.",
                 "symfony/security": "To use authorization features.",
                 "symfony/twig-bundle": "To use the Swagger UI integration.",
-                "symfony/uid": "To support Symfony UUID/ULID identifiers.",
                 "symfony/web-profiler-bundle": "To use the data collector.",
                 "webonyx/graphql-php": "To support GraphQL."
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "2.7.x-dev"
+                    "dev-master": "2.5.x-dev"
                 },
                 "symfony": {
                     "require": "^3.4 || ^4.4 || ^5.1"
@@ -204,7 +202,7 @@
                 "rest",
                 "swagger"
             ],
-            "time": "2021-04-12T14:53:14+00:00"
+            "time": "2021-01-22T10:36:37+00:00"
         },
         {
             "name": "babdev/pagerfanta-bundle",
@@ -378,16 +376,16 @@
         },
         {
             "name": "composer/ca-bundle",
-            "version": "1.2.9",
+            "version": "1.2.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "78a0e288fdcebf92aa2318a8d3656168da6ac1a5"
+                "reference": "9fdb22c2e97a614657716178093cd1da90a64aa8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/78a0e288fdcebf92aa2318a8d3656168da6ac1a5",
-                "reference": "78a0e288fdcebf92aa2318a8d3656168da6ac1a5",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/9fdb22c2e97a614657716178093cd1da90a64aa8",
+                "reference": "9fdb22c2e97a614657716178093cd1da90a64aa8",
                 "shasum": ""
             },
             "require": {
@@ -431,7 +429,7 @@
                 "ssl",
                 "tls"
             ],
-            "time": "2021-01-12T12:10:35+00:00"
+            "time": "2021-06-07T13:58:28+00:00"
         },
         {
             "name": "composer/package-versions-deprecated",
@@ -1699,27 +1697,27 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "3.1.1",
+            "version": "2.1.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "c81f18a3efb941d8c4d2e025f6183b5c6d697307"
+                "reference": "0dbf5d78455d4d6a41d186da50adc1122ec066f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/c81f18a3efb941d8c4d2e025f6183b5c6d697307",
-                "reference": "c81f18a3efb941d8c4d2e025f6183b5c6d697307",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/0dbf5d78455d4d6a41d186da50adc1122ec066f4",
+                "reference": "0dbf5d78455d4d6a41d186da50adc1122ec066f4",
                 "shasum": ""
             },
             "require": {
-                "doctrine/lexer": "^1.2",
-                "php": ">=7.2",
-                "symfony/polyfill-intl-idn": "^1.15"
+                "doctrine/lexer": "^1.0.1",
+                "php": ">=5.5",
+                "symfony/polyfill-intl-idn": "^1.10"
             },
             "require-dev": {
-                "php-coveralls/php-coveralls": "^2.2",
-                "phpunit/phpunit": "^8.5.8|^9.3.3",
-                "vimeo/psalm": "^4"
+                "dominicsayers/isemail": "^3.0.7",
+                "phpunit/phpunit": "^4.8.36|^7.5.15",
+                "satooshi/php-coveralls": "^1.0.1"
             },
             "suggest": {
                 "ext-intl": "PHP Internationalization Libraries are required to use the SpoofChecking validation"
@@ -1727,7 +1725,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0.x-dev"
+                    "dev-master": "2.1.x-dev"
                 }
             },
             "autoload": {
@@ -1753,7 +1751,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2021-04-01T18:37:14+00:00"
+            "time": "2020-12-29T14:50:06+00:00"
         },
         {
             "name": "fakerphp/faker",
@@ -1940,6 +1938,149 @@
                 "service proxies"
             ],
             "time": "2021-05-22T16:11:15+00:00"
+        },
+        {
+            "name": "friendsofsymfony/oauth-server-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfSymfony/FOSOAuthServerBundle.git",
+                "reference": "59404728a2277fad4c675f2b1c570e22f1136335"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSOAuthServerBundle/zipball/59404728a2277fad4c675f2b1c570e22f1136335",
+                "reference": "59404728a2277fad4c675f2b1c570e22f1136335",
+                "shasum": ""
+            },
+            "require": {
+                "friendsofsymfony/oauth2-php": "~1.1",
+                "php": "^7.2 || ^8.0",
+                "symfony/dependency-injection": "^4.4 || ^5.1",
+                "symfony/framework-bundle": "^4.4 || ^5.1",
+                "symfony/security-bundle": "^4.4 || ^5.1",
+                "symfony/twig-bundle": "^4.4 || ^5.1"
+            },
+            "conflict": {
+                "twig/twig": "<1.40 || >=2.0,<2.9"
+            },
+            "require-dev": {
+                "doctrine/doctrine-bundle": "^2.0",
+                "doctrine/mongodb-odm": "^2.2",
+                "doctrine/orm": "~2.2",
+                "phing/phing": "~2.4",
+                "php-mock/php-mock-phpunit": "~1.0 || ~2.0",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-phpunit": "~0.9",
+                "phpunit/phpunit": "^9.0",
+                "propel/propel1": "~1.6",
+                "symfony/console": "^4.4 || ^5.1",
+                "symfony/form": "^4.4 || ^5.1",
+                "symfony/phpunit-bridge": "^4.4 || ^5.1",
+                "symfony/yaml": "^4.4 || ^5.1",
+                "willdurand/propel-typehintable-behavior": "~1.0"
+            },
+            "suggest": {
+                "doctrine/doctrine-bundle": "*",
+                "doctrine/mongodb-odm-bundle": "*",
+                "propel/propel-bundle": "If you want to use Propel with Symfony2, then you will have to install the PropelBundle",
+                "symfony/console": "Needed to be able to use commands",
+                "symfony/form": "Needed to be able to use the AuthorizeFormType",
+                "willdurand/propel-typehintable-behavior": "The Typehintable behavior is useful to add type hints on generated methods, to be compliant with interfaces"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FOS\\OAuthServerBundle\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Arnaud Le Blanc",
+                    "email": "arnaud.lb@gmail.com"
+                },
+                {
+                    "name": "FriendsOfSymfony Community",
+                    "homepage": "https://github.com/FriendsOfSymfony/FOSOAuthServerBundle/contributors"
+                }
+            ],
+            "description": "Symfony2 OAuth Server Bundle",
+            "homepage": "http://friendsofsymfony.github.com",
+            "keywords": [
+                "oauth",
+                "oauth2",
+                "server"
+            ],
+            "time": "2021-04-01T07:15:12+00:00"
+        },
+        {
+            "name": "friendsofsymfony/oauth2-php",
+            "version": "1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfSymfony/oauth2-php.git",
+                "reference": "546f869d68fb79b284752e6787263d797165dba4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/oauth2-php/zipball/546f869d68fb79b284752e6787263d797165dba4",
+                "reference": "546f869d68fb79b284752e6787263d797165dba4",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.5.9 || ^7.0.8 || ^7.1.3 || ^7.2.5 || ^8.0.0",
+                "symfony/http-foundation": "~3.0|~4.0|~5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.0 || ^6.0 || ^8.0 || ^9.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "OAuth2\\": "lib/"
+                },
+                "exclude-from-classmap": [
+                    "/tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Arnaud Le Blanc",
+                    "email": "arnaud.lb@gmail.com"
+                },
+                {
+                    "name": "FriendsOfSymfony Community",
+                    "homepage": "https://github.com/FriendsOfSymfony/oauth2-php/contributors"
+                }
+            ],
+            "description": "OAuth2 library",
+            "homepage": "https://github.com/FriendsOfSymfony/oauth2-php",
+            "keywords": [
+                "oauth",
+                "oauth2"
+            ],
+            "time": "2021-04-06T17:14:49+00:00"
         },
         {
             "name": "friendsofsymfony/rest-bundle",
@@ -5880,6 +6021,86 @@
             "time": "2021-01-12T19:16:58+00:00"
         },
         {
+            "name": "sylius/admin-api-bundle",
+            "version": "v1.9.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Sylius/SyliusAdminApiBundle.git",
+                "reference": "98bb07ed0d4facb2b8c7829c8db55281d73607cd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Sylius/SyliusAdminApiBundle/zipball/98bb07ed0d4facb2b8c7829c8db55281d73607cd",
+                "reference": "98bb07ed0d4facb2b8c7829c8db55281d73607cd",
+                "shasum": ""
+            },
+            "require": {
+                "friendsofsymfony/oauth-server-bundle": ">2.0.0-alpha.0 ^2.0@dev",
+                "php": "^7.3",
+                "sylius-labs/doctrine-migrations-extra-bundle": "^0.1.3",
+                "sylius-labs/polyfill-symfony-framework-bundle": "^1.0",
+                "sylius/sylius": "~1.9.0",
+                "symfony/form": "^4.4 || ^5.2",
+                "symfony/framework-bundle": "^4.4 || ^5.2",
+                "symfony/validator": "^4.4 || ^5.2"
+            },
+            "require-dev": {
+                "doctrine/data-fixtures": "^1.5",
+                "doctrine/doctrine-bundle": "^1.12 || ^2.0",
+                "doctrine/orm": "^2.7",
+                "lchrusciel/api-test-case": "^5.0",
+                "matthiasnoback/symfony-config-test": "^4.2",
+                "matthiasnoback/symfony-dependency-injection-test": "^4.2",
+                "phpspec/phpspec": "^7.0",
+                "phpunit/phpunit": "^9.5",
+                "sensiolabs/security-checker": "^6.0",
+                "symfony/browser-kit": "^4.4",
+                "symfony/debug-bundle": "^4.4",
+                "symfony/dependency-injection": "^4.4 || ^5.2",
+                "symfony/dotenv": "^4.4 || ^5.2",
+                "symfony/monolog-bundle": "^3.7",
+                "symfony/web-profiler-bundle": "^4.4 || ^5.2",
+                "twig/twig": "^2.12",
+                "vimeo/psalm": "4.6.4"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Sylius\\Bundle\\AdminApiBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paweł Jędrzejewski",
+                    "homepage": "https://pjedrzejewski.com"
+                },
+                {
+                    "name": "Sylius project",
+                    "homepage": "https://sylius.com"
+                },
+                {
+                    "name": "Community contributions",
+                    "homepage": "https://github.com/Sylius/Sylius/contributors"
+                }
+            ],
+            "description": "APIs management for Symfony projects.",
+            "homepage": "https://sylius.com",
+            "keywords": [
+                "api",
+                "rest"
+            ],
+            "time": "2021-04-16T10:53:22+00:00"
+        },
+        {
             "name": "sylius/fixtures-bundle",
             "version": "v1.7.0",
             "source": {
@@ -6301,20 +6522,20 @@
         },
         {
             "name": "sylius/sylius",
-            "version": "v1.10.0-beta.1",
+            "version": "v1.9.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/Sylius.git",
-                "reference": "fea77af5ebe897077bc6bfcdc622fabd9f0778a6"
+                "reference": "941db0b96123982aab9c91380f2d4d9429196249"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/fea77af5ebe897077bc6bfcdc622fabd9f0778a6",
-                "reference": "fea77af5ebe897077bc6bfcdc622fabd9f0778a6",
+                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/941db0b96123982aab9c91380f2d4d9429196249",
+                "reference": "941db0b96123982aab9c91380f2d4d9429196249",
                 "shasum": ""
             },
             "require": {
-                "api-platform/core": "^2.6",
+                "api-platform/core": "^2.5",
                 "babdev/pagerfanta-bundle": "^2.5",
                 "behat/transliterator": "^1.3",
                 "doctrine/collections": "^1.6",
@@ -6323,12 +6544,13 @@
                 "doctrine/inflector": "^1.4 || ^2.0",
                 "doctrine/migrations": "^3.0",
                 "doctrine/orm": "^2.7",
-                "egulias/email-validator": "^3.1",
+                "egulias/email-validator": "^2.1",
                 "ext-exif": "*",
                 "ext-fileinfo": "*",
                 "ext-gd": "*",
                 "fakerphp/faker": "^1.9",
                 "friendsofphp/proxy-manager-lts": "^1.0",
+                "friendsofsymfony/oauth-server-bundle": ">2.0.0-alpha.0 ^2.0@dev",
                 "friendsofsymfony/rest-bundle": "^3.0",
                 "gedmo/doctrine-extensions": "^2.4.12 || ^3.0",
                 "jms/serializer-bundle": "^3.5",
@@ -6336,12 +6558,11 @@
                 "knplabs/knp-gaufrette-bundle": "^0.7",
                 "knplabs/knp-menu": "^3.1",
                 "knplabs/knp-menu-bundle": "^3.0",
-                "laminas/laminas-stdlib": "^3.3.1",
                 "lexik/jwt-authentication-bundle": "^2.6",
                 "liip/imagine-bundle": "^2.3",
                 "payum/payum": "^1.6",
                 "payum/payum-bundle": "^2.4",
-                "php": "^7.4 || ^8.0",
+                "php": "^7.3",
                 "php-http/guzzle6-adapter": "^2.0",
                 "polishsymfonycommunity/symfony-mocker-container": "^1.0",
                 "ramsey/uuid": "^3.9",
@@ -6349,10 +6570,11 @@
                 "stof/doctrine-extensions-bundle": "^1.4",
                 "swiftmailer/swiftmailer": "^6.2",
                 "sylius-labs/association-hydrator": "^1.1.3",
-                "sylius-labs/doctrine-migrations-extra-bundle": "^0.1.4",
+                "sylius-labs/doctrine-migrations-extra-bundle": "^0.1.3",
                 "sylius-labs/polyfill-symfony-event-dispatcher": "^1.0.1",
                 "sylius-labs/polyfill-symfony-framework-bundle": "^1.0",
                 "sylius-labs/polyfill-symfony-security": "^1.0",
+                "sylius/admin-api-bundle": "~1.9.3",
                 "sylius/fixtures-bundle": "^1.6.1",
                 "sylius/grid": "^1.8",
                 "sylius/grid-bundle": "^1.8",
@@ -6380,7 +6602,7 @@
                 "symfony/monolog-bundle": "^3.5",
                 "symfony/options-resolver": "^4.4 || ^5.2",
                 "symfony/polyfill-iconv": "^1.17",
-                "symfony/polyfill-intl-icu": "^1.22",
+                "symfony/polyfill-intl-icu": "^1.17",
                 "symfony/polyfill-mbstring": "^1.17",
                 "symfony/polyfill-php80": "^1.17",
                 "symfony/process": "^4.4 || ^5.2",
@@ -6407,9 +6629,11 @@
                 "webmozart/assert": "^1.9",
                 "willdurand/hateoas": "^3.0",
                 "willdurand/hateoas-bundle": "^2.0",
-                "winzou/state-machine-bundle": "^0.5"
+                "winzou/state-machine-bundle": "^0.5",
+                "zendframework/zend-stdlib": "^3.2"
             },
             "conflict": {
+                "api-platform/core": "^2.6",
                 "doctrine/doctrine-bundle": "2.3.0",
                 "jms/serializer-bundle": "3.9.0",
                 "laminas/laminas-code": "^4.0.0",
@@ -6480,19 +6704,21 @@
                 "mikey179/vfsstream": "^1.6",
                 "mockery/mockery": "^1.4",
                 "phpspec/phpspec": "^7.0",
-                "phpstan/phpstan": "0.12.82",
-                "phpstan/phpstan-doctrine": "0.12.33",
+                "phpstan/phpstan": "0.12.70",
+                "phpstan/phpstan-doctrine": "0.12.30",
                 "phpunit/phpunit": "^8.5",
                 "psalm/plugin-mockery": "0.7.0",
                 "psr/event-dispatcher": "^1.0",
+                "sspooky13/yaml-standards": "^5.1",
                 "stripe/stripe-php": "^6.43",
-                "sylius-labs/coding-standard": "^4.0",
+                "sylius-labs/coding-standard": "^3.1",
                 "symfony/browser-kit": "^4.4 || ^5.2",
                 "symfony/debug-bundle": "^4.4 || ^5.2",
                 "symfony/dotenv": "^4.4 || ^5.2",
                 "symfony/flex": "^1.7",
                 "symfony/web-profiler-bundle": "^4.4 || ^5.2",
-                "vimeo/psalm": "4.7.2"
+                "symplify/package-builder": "^8.0 <8.3",
+                "vimeo/psalm": "4.7.0"
             },
             "suggest": {
                 "ext-iconv": "For better performance than using Symfony Polyfill Component",
@@ -6502,7 +6728,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.10-dev"
+                    "dev-master": "1.9-dev"
                 },
                 "symfony": {
                     "allow-contrib": false
@@ -6538,7 +6764,7 @@
             ],
             "description": "E-Commerce platform for PHP, based on Symfony framework.",
             "homepage": "https://sylius.com",
-            "time": "2021-05-27T14:15:53+00:00"
+            "time": "2021-05-27T13:29:01+00:00"
         },
         {
             "name": "sylius/theme-bundle",
@@ -14597,6 +14823,53 @@
             "time": "2016-10-03T07:35:21+00:00"
         },
         {
+            "name": "slam/php-cs-fixer-extensions",
+            "version": "v1.19.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Slamdunk/php-cs-fixer-extensions.git",
+                "reference": "ab6c0772558086d71bba504db67c381851fbda32"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Slamdunk/php-cs-fixer-extensions/zipball/ab6c0772558086d71bba504db67c381851fbda32",
+                "reference": "ab6c0772558086d71bba504db67c381851fbda32",
+                "shasum": ""
+            },
+            "require": {
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "php": "^7.3"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-phpunit": "^0.12",
+                "phpunit/phpunit": "^7.5",
+                "roave/security-advisories": "dev-master",
+                "slam/php-debug-r": "^1.6",
+                "slam/phpstan-extensions": "^4.0",
+                "thecodingmachine/phpstan-strict-rules": "^0.12"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SlamCsFixer\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Filippo Tessarotto",
+                    "email": "zoeslam@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Slam extension of friendsofphp/php-cs-fixer",
+            "time": "2020-01-02T10:19:52+00:00"
+        },
+        {
             "name": "slevomat/coding-standard",
             "version": "4.8.7",
             "source": {
@@ -15163,31 +15436,32 @@
         },
         {
             "name": "symplify/better-phpdoc-parser",
-            "version": "v4.5.0",
+            "version": "v4.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Symplify/BetterPhpDocParser.git",
-                "reference": "70da999495c373b311f66b3227714b50b4ace117"
+                "reference": "8981ae3a217c921fdb81d2e7e18c89a7223409b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Symplify/BetterPhpDocParser/zipball/70da999495c373b311f66b3227714b50b4ace117",
-                "reference": "70da999495c373b311f66b3227714b50b4ace117",
+                "url": "https://api.github.com/repos/Symplify/BetterPhpDocParser/zipball/8981ae3a217c921fdb81d2e7e18c89a7223409b1",
+                "reference": "8981ae3a217c921fdb81d2e7e18c89a7223409b1",
                 "shasum": ""
             },
             "require": {
                 "nette/utils": "^2.5",
                 "php": "^7.1",
-                "phpstan/phpdoc-parser": "^0.3",
-                "symplify/package-builder": "^4.5"
+                "phpstan/phpdoc-parser": "^0.2|^0.3",
+                "symplify/package-builder": "^4.8",
+                "thecodingmachine/safe": "^0.1.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^7.0"
+                "phpunit/phpunit": "^7.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.5-dev"
+                    "dev-master": "4.8-dev"
                 }
             },
             "autoload": {
@@ -15201,40 +15475,42 @@
             ],
             "description": "Slim wrapper around phpstan/phpdoc-parser with format preserving printer",
             "abandoned": "rector/rector",
-            "time": "2018-06-30T18:46:21+00:00"
+            "time": "2018-09-15T13:45:05+00:00"
         },
         {
             "name": "symplify/coding-standard",
-            "version": "v4.5.1",
+            "version": "v4.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symplify/coding-standard.git",
-                "reference": "1f66c7381c1e67abb3b582ef1f5151787325aa78"
+                "reference": "3a4b432b821423478b3f097106255907979e4ee5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symplify/coding-standard/zipball/1f66c7381c1e67abb3b582ef1f5151787325aa78",
-                "reference": "1f66c7381c1e67abb3b582ef1f5151787325aa78",
+                "url": "https://api.github.com/repos/symplify/coding-standard/zipball/3a4b432b821423478b3f097106255907979e4ee5",
+                "reference": "3a4b432b821423478b3f097106255907979e4ee5",
                 "shasum": ""
             },
             "require": {
-                "friendsofphp/php-cs-fixer": "^2.12",
+                "friendsofphp/php-cs-fixer": "^2.13",
                 "nette/finder": "^2.4",
                 "nette/utils": "^2.5",
                 "php": "^7.1",
+                "slam/php-cs-fixer-extensions": "^1.17",
                 "squizlabs/php_codesniffer": "^3.3",
-                "symplify/token-runner": "^4.5"
+                "symplify/token-runner": "^4.8",
+                "thecodingmachine/safe": "^0.1.3"
             },
             "require-dev": {
                 "nette/application": "^2.4",
-                "phpunit/phpunit": "^7.0",
-                "symplify/easy-coding-standard-tester": "^4.5",
-                "symplify/package-builder": "^4.5"
+                "phpunit/phpunit": "^7.3",
+                "symplify/easy-coding-standard-tester": "^4.8",
+                "symplify/package-builder": "^4.8"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.6-dev"
+                    "dev-master": "4.8-dev"
                 }
             },
             "autoload": {
@@ -15246,31 +15522,31 @@
             "license": [
                 "MIT"
             ],
-            "description": "Set of Symplify rules for PHP_CodeSniffer.",
-            "time": "2018-07-13T14:06:52+00:00"
+            "description": "Set of Symplify rules for PHP_CodeSniffer and PHP CS Fixer.",
+            "time": "2018-09-15T13:22:18+00:00"
         },
         {
             "name": "symplify/easy-coding-standard",
-            "version": "v4.5.1",
+            "version": "v4.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symplify/easy-coding-standard.git",
-                "reference": "1c628d2c20f11cf4981a150e9ec921d0452f1cd3"
+                "reference": "f91cbb452676e627dfcabba7d31a0aef29b834fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symplify/easy-coding-standard/zipball/1c628d2c20f11cf4981a150e9ec921d0452f1cd3",
-                "reference": "1c628d2c20f11cf4981a150e9ec921d0452f1cd3",
+                "url": "https://api.github.com/repos/symplify/easy-coding-standard/zipball/f91cbb452676e627dfcabba7d31a0aef29b834fc",
+                "reference": "f91cbb452676e627dfcabba7d31a0aef29b834fc",
                 "shasum": ""
             },
             "require": {
-                "friendsofphp/php-cs-fixer": "^2.12",
-                "jean85/pretty-package-versions": "^1.1",
-                "nette/robot-loader": "^3.0.3",
+                "friendsofphp/php-cs-fixer": "^2.13",
+                "jean85/pretty-package-versions": "^1.2",
+                "nette/robot-loader": "^3.1.0",
                 "nette/utils": "^2.5",
                 "ocramius/package-versions": "^1.3",
                 "php": "^7.1",
-                "slevomat/coding-standard": "^4.6",
+                "slevomat/coding-standard": "^4.7",
                 "squizlabs/php_codesniffer": "^3.3",
                 "symfony/cache": "^3.4|^4.0",
                 "symfony/config": "^3.4|^4.0",
@@ -15279,13 +15555,14 @@
                 "symfony/finder": "^3.4|^4.0",
                 "symfony/http-kernel": "^3.4|^4.0",
                 "symfony/yaml": "^3.4|^4.0",
-                "symplify/coding-standard": "^4.5",
-                "symplify/package-builder": "^4.5",
-                "symplify/token-runner": "^4.5"
+                "symplify/coding-standard": "^4.8",
+                "symplify/package-builder": "^4.8",
+                "symplify/token-runner": "^4.8",
+                "thecodingmachine/safe": "^0.1.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^7.0",
-                "symplify/easy-coding-standard-tester": "^4.5"
+                "phpunit/phpunit": "^7.3",
+                "symplify/easy-coding-standard-tester": "^4.8"
             },
             "bin": [
                 "bin/ecs"
@@ -15293,7 +15570,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.6-dev"
+                    "dev-master": "4.8-dev"
                 }
             },
             "autoload": {
@@ -15310,7 +15587,7 @@
                 "MIT"
             ],
             "description": "Use Coding Standard with 0-knowledge of PHP-CS-Fixer and PHP_CodeSniffer.",
-            "time": "2018-07-17T16:40:31+00:00"
+            "time": "2018-09-15T13:22:18+00:00"
         },
         {
             "name": "symplify/package-builder",
@@ -15361,34 +15638,35 @@
         },
         {
             "name": "symplify/token-runner",
-            "version": "v4.5.1",
+            "version": "v4.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Symplify/TokenRunner.git",
-                "reference": "a13bd0c4343f4154df0415afaa5cd993f896fee3"
+                "reference": "3e1cdf9cad6836433c78b3adbd0c8e5000acc8a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Symplify/TokenRunner/zipball/a13bd0c4343f4154df0415afaa5cd993f896fee3",
-                "reference": "a13bd0c4343f4154df0415afaa5cd993f896fee3",
+                "url": "https://api.github.com/repos/Symplify/TokenRunner/zipball/3e1cdf9cad6836433c78b3adbd0c8e5000acc8a4",
+                "reference": "3e1cdf9cad6836433c78b3adbd0c8e5000acc8a4",
                 "shasum": ""
             },
             "require": {
-                "friendsofphp/php-cs-fixer": "^2.12",
+                "friendsofphp/php-cs-fixer": "^2.13",
                 "nette/finder": "^2.4",
                 "nette/utils": "^2.5",
                 "php": "^7.1",
                 "squizlabs/php_codesniffer": "^3.3",
-                "symplify/better-phpdoc-parser": "^4.5",
-                "symplify/package-builder": "^4.5"
+                "symplify/better-phpdoc-parser": "^4.8",
+                "symplify/package-builder": "^4.8",
+                "thecodingmachine/safe": "^0.1.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^7.0"
+                "phpunit/phpunit": "^7.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.6-dev"
+                    "dev-master": "4.8-dev"
                 }
             },
             "autoload": {
@@ -15402,7 +15680,7 @@
             ],
             "description": "Set of utils for PHP_CodeSniffer and PHP CS Fixer.",
             "abandoned": "https://github.com/symplify/codingstandard",
-            "time": "2018-07-14T19:02:26+00:00"
+            "time": "2018-09-15T14:17:28+00:00"
         },
         {
             "name": "thecodingmachine/safe",
@@ -15661,7 +15939,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "sylius/sylius": 10
+        "friendsofsymfony/oauth-server-bundle": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
