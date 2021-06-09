@@ -443,6 +443,9 @@
             "ref": "421933bf8f0e75546ac8e00cb3eb12904fa2ac1a"
         }
     },
+    "slam/php-cs-fixer-extensions": {
+        "version": "v1.19.4"
+    },
     "slevomat/coding-standard": {
         "version": "4.8.4"
     },
