@@ -48,7 +48,7 @@ final class RegistrationContext implements Context
         );
 
         $this->notificationChecker->checkNotification(
-            sprintf('For demo purposes you can visit http://localhost:8080%s to verify the account.', $verificationLink),
+            sprintf('For demo purposes you can visit https://127.0.0.1:8080%s to verify the account.', $verificationLink),
             NotificationType::success()
         );
     }
