@@ -67,9 +67,6 @@
     "composer/xdebug-handler": {
         "version": "1.3.0"
     },
-    "dealerdirect/phpcodesniffer-composer-installer": {
-        "version": "v0.7.1"
-    },
     "dmore/behat-chrome-extension": {
         "version": "1.3.0"
     },
@@ -277,6 +274,9 @@
     "lakion/mink-debug-extension": {
         "version": "v1.2.3"
     },
+    "laminas/laminas-eventmanager": {
+        "version": "3.3.1"
+    },
     "laminas/laminas-zendframework-bridge": {
         "version": "1.1.1"
     },
@@ -475,6 +475,9 @@
     "psr/container": {
         "version": "1.0.0"
     },
+    "psr/event-dispatcher": {
+        "version": "1.0.0"
+    },
     "psr/http-client": {
         "version": "1.0.0"
     },
@@ -540,9 +543,6 @@
             "version": "4.0",
             "ref": "421933bf8f0e75546ac8e00cb3eb12904fa2ac1a"
         }
-    },
-    "slevomat/coding-standard": {
-        "version": "4.8.4"
     },
     "sonata-project/block-bundle": {
         "version": "3.12.1"
@@ -675,9 +675,6 @@
     "symfony/css-selector": {
         "version": "v3.4.16"
     },
-    "symfony/debug": {
-        "version": "v4.1.5"
-    },
     "symfony/debug-bundle": {
         "version": "4.1",
         "recipe": {
@@ -744,6 +741,9 @@
             "ref": "1717e67afa995e4f01a25ba9ae7aca5b2327bcaa"
         }
     },
+    "symfony/http-client": {
+        "version": "v5.3.3"
+    },
     "symfony/http-client-contracts": {
         "version": "v2.3.1"
     },
@@ -785,6 +785,9 @@
     },
     "symfony/options-resolver": {
         "version": "v4.1.5"
+    },
+    "symfony/password-hasher": {
+        "version": "v5.3.3"
     },
     "symfony/polyfill-ctype": {
         "version": "v1.9.0"
@@ -953,6 +956,9 @@
     },
     "symfony/yaml": {
         "version": "v4.1.5"
+    },
+    "symplify/auto-bind-parameter": {
+        "version": "8.3.16"
     },
     "symplify/autowire-array-parameter": {
         "version": "8.3.23"
