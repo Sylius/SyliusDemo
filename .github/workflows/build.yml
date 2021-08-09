@@ -132,7 +132,9 @@ jobs:
 
             -
                 name: Load fixtures
-                run: bin/console sylius:fixtures:load -n
+                run: |
+                    bin/console sylius:fixtures:load -n
+                    rm private/invoices/*
 
             -
                 name: Validate composer.json
