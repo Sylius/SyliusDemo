@@ -981,6 +981,9 @@
     "symplify/smart-file-system": {
         "version": "8.3.48"
     },
+    "symplify/symplify-kernel": {
+        "version": "8.3.48"
+    },
     "textalk/websocket": {
         "version": "1.5.0"
     },

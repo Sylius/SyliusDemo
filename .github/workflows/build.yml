@@ -58,6 +58,13 @@ jobs:
                     mysql root password: "root"
 
             -
+                name: Install wkthtmltopdf
+                run: |
+                    sudo apt-get install -y xfonts-base xfonts-75dpi
+                    wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.focal_amd64.deb
+                    sudo dpkg -i wkhtmltox_0.12.6-1.focal_amd64.deb
+
+            -
                 name: Output PHP version for Symfony CLI
                 run: php -v | head -n 1 | awk '{ print $2 }' > .php-version
 
