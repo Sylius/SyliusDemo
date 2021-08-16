@@ -25,7 +25,7 @@
         "sensiolabs/security-checker": " ^6.0",
         "sylius/sylius": "dev-master",
         "symfony/flex": "^1.7",
-        "sylius/invoicing-plugin": "^0.17",
+        "sylius/invoicing-plugin": "~0.17",
         "sylius/refund-plugin": "^1.0",
         "sylius/admin-api-bundle": "^1.10",
         "bugsnag/bugsnag-symfony": "^1.7",
