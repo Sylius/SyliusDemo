@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+    composer:
+        image: composer
+        working_dir: /app
+        volumes:
+            -   .:/app
+    php:
+        image: php:7.4-alpine
+        working_dir: /app
+        volumes:
+            -   .:/app
+    nginx:
+        image: nginx:alpine
+        volumes:
+            -   ./public:/srv/sylius/public
+            -   ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+        depends_on:
+            -   composer
+    mysql:
+        image: mysql
