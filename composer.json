@@ -41,12 +41,13 @@
         "phpspec/phpspec": "^7.0",
         "phpunit/phpunit": "^8.5",
         "stripe/stripe-php": "^4.1",
-        "sylius-labs/coding-standard": "^2.0",
+        "sylius-labs/coding-standard": "^4.0",
         "symfony/browser-kit": "^5.2",
         "symfony/debug-bundle": "^4.4 || ^5.2",
         "symfony/intl": "^5.2",
         "symfony/web-profiler-bundle": "^4.4 || ^5.2",
-        "symfony/web-server-bundle": "^4.4 || ^5.2"
+        "symfony/web-server-bundle": "^4.4 || ^5.2",
+        "rector/rector": "^0.11.57"
     },
     "prefer-stable": true,
     "autoload": {

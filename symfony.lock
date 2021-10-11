@@ -44,6 +44,9 @@
     "container-interop/container-interop": {
         "version": "1.2.0"
     },
+    "dealerdirect/phpcodesniffer-composer-installer": {
+        "version": "v0.7.1"
+    },
     "doctrine/annotations": {
         "version": "1.0",
         "recipe": {
@@ -350,6 +353,9 @@
     "phpstan/phpdoc-parser": {
         "version": "0.3"
     },
+    "phpstan/phpstan": {
+        "version": "0.12.99"
+    },
     "phpunit/php-code-coverage": {
         "version": "5.3.2"
     },
@@ -400,6 +406,9 @@
     },
     "ramsey/uuid": {
         "version": "3.8.0"
+    },
+    "rector/rector": {
+        "version": "0.11.57"
     },
     "sebastian/code-unit-reverse-lookup": {
         "version": "1.0.1"
