@@ -11,13 +11,11 @@ use Sylius\Behat\Service\NotificationCheckerInterface;
 
 final class ManagingChannelsContext implements Context
 {
-    /** @var CreatePageInterface */
-    private $channelCreatePage;
+    private ?CreatePageInterface $channelCreatePage;
 
-    /** @var NotificationCheckerInterface */
-    private $notificationChecker;
+    private ?NotificationCheckerInterface $notificationChecker;
 
-    public function __construct(CreatePageInterface $channelCreatePage, NotificationCheckerInterface $notificationChecker)
+    public function __construct(?CreatePageInterface $channelCreatePage, ?NotificationCheckerInterface $notificationChecker)
     {
         $this->channelCreatePage = $channelCreatePage;
         $this->notificationChecker = $notificationChecker;

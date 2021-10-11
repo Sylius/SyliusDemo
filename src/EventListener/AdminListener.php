@@ -9,22 +9,13 @@ use Symfony\Component\HttpFoundation\Session\Session;
 
 final class AdminListener
 {
-    /**
-     * @var Session
-     */
-    private $session;
+    private Session $session;
 
-    /**
-     * @param Session $session
-     */
     public function __construct(Session $session)
     {
         $this->session = $session;
     }
 
-    /**
-     * @param GenericEvent $event
-     */
     public function preDelete(GenericEvent $event): void
     {
         $subject = $subject = $event->getSubject();
@@ -39,9 +30,6 @@ final class AdminListener
         }
     }
 
-    /**
-     * @param GenericEvent $event
-     */
     public function preUpdate(GenericEvent $event): void
     {
         $subject = $subject = $event->getSubject();

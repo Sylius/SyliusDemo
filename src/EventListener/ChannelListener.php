@@ -18,28 +18,16 @@ use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 
 final class ChannelListener
 {
-    /**
-     * @var Session
-     */
-    private $session;
+    private Session $session;
 
-    /**
-     * @var Router
-     */
-    private $router;
+    private Router $router;
 
-    /**
-     * @param Session $session
-     */
     public function __construct(Session $session, Router $router)
     {
         $this->session = $session;
         $this->router = $router;
     }
 
-    /**
-     * @param GetResponseEvent $event
-     */
     public function preCreate(GetResponseEvent $event): void
     {
         if ('sylius_admin_channel_create' === $event->getRequest()->get('_route')) {
