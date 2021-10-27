@@ -13,10 +13,5 @@ namespace App\Generator;
 
 interface FlashMessageGeneratorInterface
 {
-    /**
-     * @param string $token
-     *
-     * @return string
-     */
     public function generate(string $token): string;
 }

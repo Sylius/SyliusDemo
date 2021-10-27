@@ -14,19 +14,16 @@ use Webmozart\Assert\Assert;
 
 final class ManagingAdministratorsContext implements Context
 {
-    /** @var NotificationCheckerInterface */
-    private $notificationChecker;
+    private ?NotificationCheckerInterface $notificationChecker;
 
-    /** @var RepositoryInterface */
-    private $adminUserRepository;
+    private ?RepositoryInterface $adminUserRepository;
 
-    /** @var UpdatePageInterface */
-    private $adminUserUpdatePage;
+    private ?UpdatePageInterface $adminUserUpdatePage;
 
     public function __construct(
-        NotificationCheckerInterface $notificationChecker,
-        RepositoryInterface $adminUserRepository,
-        UpdatePageInterface $adminUserUpdatePage
+        ?NotificationCheckerInterface $notificationChecker,
+        ?RepositoryInterface $adminUserRepository,
+        ?UpdatePageInterface $adminUserUpdatePage
     ) {
         $this->notificationChecker = $notificationChecker;
         $this->adminUserRepository = $adminUserRepository;

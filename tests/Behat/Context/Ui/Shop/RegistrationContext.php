@@ -14,19 +14,16 @@ use Webmozart\Assert\Assert;
 
 final class RegistrationContext implements Context
 {
-    /** @var NotificationCheckerInterface */
-    private $notificationChecker;
+    private ?NotificationCheckerInterface $notificationChecker;
 
-    /** @var UrlGeneratorInterface */
-    private $urlGenerator;
+    private ?UrlGeneratorInterface $urlGenerator;
 
-    /** @var RepositoryInterface */
-    private $shopUserRepository;
+    private ?RepositoryInterface $shopUserRepository;
 
     public function __construct(
-        NotificationCheckerInterface $notificationChecker,
-        UrlGeneratorInterface $urlGenerator,
-        RepositoryInterface $shopUserRepository
+        ?NotificationCheckerInterface $notificationChecker,
+        ?UrlGeneratorInterface $urlGenerator,
+        ?RepositoryInterface $shopUserRepository
     ) {
         $this->notificationChecker = $notificationChecker;
         $this->urlGenerator = $urlGenerator;

@@ -16,20 +16,10 @@ use Symfony\Contracts\Translation\TranslatorInterface;
 
 final class VerificationFlashMessageGenerator implements FlashMessageGeneratorInterface
 {
-    /**
-     * @var UrlGeneratorInterface
-     */
-    private $urlGenerator;
+    private UrlGeneratorInterface $urlGenerator;
 
-    /**
-     * @var TranslatorInterface
-     */
-    private $translator;
+    private TranslatorInterface $translator;
 
-    /**
-     * @param UrlGeneratorInterface $urlGenerator
-     * @param TranslatorInterface $translator
-     */
     public function __construct(
         UrlGeneratorInterface $urlGenerator,
         TranslatorInterface $translator
@@ -38,9 +28,6 @@ final class VerificationFlashMessageGenerator implements FlashMessageGeneratorIn
         $this->translator = $translator;
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function generate(string $token): string
     {
         $url = $this

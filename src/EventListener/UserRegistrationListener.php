@@ -19,20 +19,10 @@ use Webmozart\Assert\Assert;
 
 final class UserRegistrationListener
 {
-    /**
-     * @var Session
-     */
-    private $session;
+    private Session $session;
 
-    /**
-     * @var FlashMessageGeneratorInterface
-     */
-    private $flashMessageGenerator;
+    private FlashMessageGeneratorInterface $flashMessageGenerator;
 
-    /**
-     * @param Session $session
-     * @param FlashMessageGeneratorInterface $flashMessageGenerator
-     */
     public function __construct(
         Session $session,
         FlashMessageGeneratorInterface $flashMessageGenerator
@@ -41,9 +31,6 @@ final class UserRegistrationListener
         $this->flashMessageGenerator = $flashMessageGenerator;
     }
 
-    /**
-     * @param GenericEvent $event
-     */
     public function addVerificationLink(GenericEvent $event): void
     {
         /** @var UserInterface $subject */
