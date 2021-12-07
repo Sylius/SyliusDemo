@@ -20,18 +20,18 @@
         }
     ],
     "require": {
-        "php": "^7.4",
+        "php": "^8.0",
         "friendsofsymfony/oauth-server-bundle": ">2.0.0-alpha.0 ^2.0@dev",
         "sensiolabs/security-checker": " ^6.0",
-        "sylius/sylius": "dev-master",
+        "sylius/sylius": "dev-master as 1.10",
         "symfony/flex": "^1.7",
         "sylius/invoicing-plugin": "~0.17",
         "sylius/refund-plugin": "^1.0",
-        "sylius/admin-api-bundle": "^1.10",
+        "sylius/admin-api-bundle": "^1.10-RC.2",
         "bugsnag/bugsnag-symfony": "^1.7",
         "sylius/paypal-plugin": "^1.2",
         "symfony/dotenv": "^4.4 || ^5.2",
-        "bitbag/cms-plugin": "^3.0"
+        "bitbag/cms-plugin": "dev-master"
     },
     "require-dev": {
         "behat/behat": "^3.6.1",
@@ -59,7 +59,8 @@
         "symfony/web-server-bundle": "^4.4"
     },
     "conflict": {
-        "slam/php-cs-fixer-extensions": "^1.19.2"
+        "slam/php-cs-fixer-extensions": "^1.19.2",
+        "symfony/doctrine-messenger": "^6.0"
     },
     "prefer-stable": true,
     "autoload": {

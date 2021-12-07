@@ -18,10 +18,10 @@ jobs:
         strategy:
             fail-fast: false
             matrix:
-                php: [7.4]
-                symfony: [^4.4, ^5.2]
+                php: [8.0]
+                symfony: [^5.4]
                 node: [10.x]
-                mysql: [5.7, 8.0]
+                mysql: [5.7]
 
         env:
             APP_ENV: test
@@ -151,7 +151,7 @@ jobs:
 
             -
                 name: Validate database schema
-                run: bin/console doctrine:schema:validate
+                run: bin/console doctrine:schema:validate --skip-sync -vvv
 
             -
                 name: Run Behat
