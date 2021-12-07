@@ -151,7 +151,7 @@ jobs:
 
             -
                 name: Validate database schema
-                run: bin/console doctrine:schema:validate
+                run: bin/console doctrine:schema:validate --skip-sync -vvv
 
             -
                 name: Run Behat
