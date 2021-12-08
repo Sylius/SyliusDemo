@@ -30,8 +30,7 @@
         "sylius/admin-api-bundle": "^1.10-RC.2",
         "bugsnag/bugsnag-symfony": "^1.7",
         "sylius/paypal-plugin": "^1.2",
-        "symfony/dotenv": "^4.4 || ^5.2",
-        "bitbag/cms-plugin": "dev-master"
+        "symfony/dotenv": "^4.4 || ^5.2"
     },
     "require-dev": {
         "behat/behat": "^3.6.1",
