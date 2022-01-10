@@ -67,7 +67,7 @@ If you want to report a bug or suggest an idea, please use [GitHub issues](https
 Community Support
 -----------------
 
-Get Sylius support on [Slack](https://sylius.com/slack), [Forum](https://forum.sylius.com/) or [Stack Overflow](https://stackoverflow.com/questions/tagged/sylius)
+Get Sylius support on [Slack](https://sylius.com/slack), [Forum](https://forum.sylius.com/) or [Stack Overflow](https://stackoverflow.com/questions/tagged/sylius).
 
 MIT License
 -----------
