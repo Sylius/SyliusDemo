@@ -51,7 +51,7 @@
         "phpspec/phpspec": "^7.0",
         "phpunit/phpunit": "^8.5",
         "stripe/stripe-php": "^6.43",
-        "sylius-labs/coding-standard": "^3.1",
+        "sylius-labs/coding-standard": "^4.2",
         "symfony/browser-kit": "^4.4 || ^5.2",
         "symfony/debug-bundle": "^4.4 || ^5.2",
         "symfony/intl": "^4.4 || ^5.2",
@@ -96,7 +96,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": true,
-            "require": "^5.2"
+            "require": "^5.4"
         }
     }
 }
