@@ -6,7 +6,7 @@
 
 [![License](https://img.shields.io/packagist/l/Sylius/Sylius.svg)](https://packagist.org/packages/sylius/sylius)
 [![Version](https://img.shields.io/packagist/vpre/Sylius/Sylius.svg)](https://packagist.org/packages/sylius/sylius)
-[![Build Status on Linux](https://travis-ci.org/Sylius/SyliusDemo.svg?branch=master)](https://travis-ci.org/Sylius/SyliusDemo)
+[![Build](https://github.com/Sylius/SyliusDemo/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/Sylius/SyliusDemo/actions/workflows/build.yml)
 [![Scrutinizer Quality Score](https://img.shields.io/scrutinizer/g/Sylius/Sylius.svg)](https://scrutinizer-ci.com/g/Sylius/Sylius/)
 [![Total Downloads](https://poser.pugx.org/sylius/sylius/downloads)](https://packagist.org/packages/sylius/sylius)
 
