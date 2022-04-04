@@ -1,25 +1,201 @@
 {% set is_stable = 'DEV' not in sylius_meta.version %}
 {% set admin_url = is_stable ? 'https://demo.sylius.com/admin' : 'https://master.demo.sylius.com/admin' %}
+{% set version_descriptor = ' (v' ~ sylius_meta.version ~ ')' %}
 
-{% if app.request.attributes.get('_route') == 'sylius_shop_homepage' %}
-    <div class="ui message">
-        <p>
-            <strong>How to access Sylius administration panel?</strong><br>
-            Go to <a href="{{ admin_url }}">{{ admin_url }}</a><br><br>
+<style>
+    .info-box {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 9998;
+        display: none;
+        padding: 25px 25px 90px;
+        width: calc(100vw - 40px);
+        max-width: 420px;
+        min-height: 400px;
+        border-radius: 6px;
+        color: #fff;
+        font-size: 16px !important;
+        line-height: 1.6;
+        box-shadow: 0px 6px 18px 0px rgba(0, 0, 0, 0.22);
+        background: rgba(36, 157, 129, 0.9);
+        backdrop-filter: blur(10px);
+        overflow: hidden;
+    }
 
-            <strong>Do you know that you can browse the demo of different Sylius versions?</strong><br>
-            In the bottom right corner you can switch between the demo of the latest stable release and the demo of yet unreleased features.<br><br>
+    .info-box.show {
+        display: block;
+    }
 
-            {% if not is_stable %}
-                <strong>How to test the new Sylius API?</strong><br>
-                Go to <a href="{{ 'https://master.demo.sylius.com/api/v2/docs' }}">{{ 'https://master.demo.sylius.com/api/v2/docs' }}</a><br><br>
-            {% endif %}
+    .info-box a {
+        color: rgba(255, 255, 255, 0.65);
+        text-decoration: underline;
+    }
 
-            <strong>How to access Sylius Plus demo?</strong><br>
-            Go to <a href="{{ 'https://plus.demo.sylius.com' }}">{{ 'https://plus.demo.sylius.com' }}</a><br><br>
+    .info-box a:hover {
+        color: rgba(255, 255, 255, 1) !important;
+        text-decoration: underline;
+    }
 
-            <strong>Any questions?</strong><br>
-            <a href="https://sylius.com/contact/?utm_source=demo">Contact us!</a>
-        </p>
+    .info-box label {
+        font-size: 16px !important;
+        font-weight: bold;
+    }
+
+    .info-box select {
+        width: 100%;
+        border-radius: 4px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: rgba(255, 255, 255, 0.65);
+        padding: 7px 10px !important;
+    }
+
+    .info-box__item {
+        margin-bottom: 20px;
+    }
+
+    .info-cta {
+        position: absolute;
+        bottom: 20px;
+        left: 80px;
+        display: flex;
+        align-items: center;
+        height: 48px;
+        padding: 0 20px;
+        border-radius: 6px;
+        background: #1E2E3E;
+    }
+
+    .info-cta a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .info-toggle {
+        position: fixed;
+        bottom: 40px;
+        left: 40px;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 6px;
+        color: #1E2E3E;
+        box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.05);
+        background: #22B99A;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+
+    .info-toggle:hover {
+        background: rgba(34, 185, 154, 0.8) !important;
+    }
+
+    .info-toggle.show {
+        background: #22B99A;
+    }
+
+    .info-toggle > svg:first-child {
+        display: block;
+    }
+
+    .info-toggle > svg:last-child {
+        display: none;
+    }
+
+    .info-toggle.show > svg:first-child {
+        display: none;
+    }
+
+    .info-toggle.show > svg:last-child {
+        display: block;
+    }
+
+    .admin-layout .admin-layout__sidebar {
+        z-index: 997;
+    }
+
+    .admin-layout__nav .sylius-admin-menu {
+        padding-bottom: 94px;
+    }
+</style>
+
+<div class="info-toggle" id="info-toggle">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-info-lg" viewBox="0 0 16 16">
+        <path d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0Z"/>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+        <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+    </svg>
+</div>
+
+<div class="info-box" id="info-box">
+    <div class="info-box__item">
+        <label for="version-select">Change Sylius version:</label>
+        <select id="version-select">
+            <option value="//demo.sylius.com"{% if is_stable %} selected{% endif %}>
+                Last Stable Release{{ is_stable ? version_descriptor : '' }}
+            </option>
+            <option value="//master.demo.sylius.com"{% if not is_stable %} selected{% endif %}>
+                Next Release Features{{ is_stable ? '' : version_descriptor }}
+            </option>
+        </select>
     </div>
-{% endif %}
+
+    <div class="info-box__item">
+        <strong>Admin panel:</strong><br>
+        <a href="{{ admin_url }}">{{ admin_url }}</a>
+    </div>
+
+    {% if not is_stable %}
+        <div class="info-box__item">
+            <strong>Sylius API:</strong><br>
+            <a href="{{ 'https://master.demo.sylius.com/api/v2/docs' }}">{{ 'https://master.demo.sylius.com/api/v2/docs' }}</a>
+        </div>
+    {% endif %}
+
+    <div class="info-box__item">
+        <strong>Any questions?</strong><br>
+        <a href="https://sylius.com/contact/?utm_source=demo">Contact us!</a>
+    </div>
+
+    <div class="info-cta" id="demo-cta">
+        <a href="https://sylius.com/try/?utm_source=demo" target="_blank">Get a live demo of Sylius Plus</a>
+    </div>
+</div>
+
+<script type="text/javascript">
+    class DemoInfoBox {
+        constructor() {
+            this.isOpen = false;
+            this.versionSelect = document.getElementById('version-select');
+            this.infoBox = document.getElementById('info-box');
+            this.infoToggle = document.getElementById('info-toggle');
+
+            if (window.sessionStorage.getItem('sylius:infoBox') !== 'close') {
+                this.toggleVisibility();
+            }
+
+            this.infoToggle.addEventListener('click', this.toggleVisibility.bind(this));
+            this.versionSelect.addEventListener('change', e => window.location.href = e.target.value);
+        }
+
+        toggleVisibility() {
+            this.infoBox.classList.toggle('show');
+            this.infoToggle.classList.toggle('show');
+            this.isOpen = !this.isOpen;
+            this.saveVisibility();
+        }
+
+        saveVisibility() {
+            const state = this.isOpen ? 'open' : 'close';
+            window.sessionStorage.setItem('sylius:infoBox', state);
+        }
+    }
+
+    const demoInfoBox = new DemoInfoBox();
+</script>
