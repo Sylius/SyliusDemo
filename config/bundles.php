@@ -65,6 +65,4 @@ return [
     Bugsnag\BugsnagBundle\BugsnagBundle::class => ['all' => true],
     Sylius\PayPalPlugin\SyliusPayPalPlugin::class => ['all' => true],
     BabDev\PagerfantaBundle\BabDevPagerfantaBundle::class => ['all' => true],
-    FOS\CKEditorBundle\FOSCKEditorBundle::class => ['all' => true],
-    BitBag\SyliusCmsPlugin\BitBagSyliusCmsPlugin::class => ['all' => true],
 ];

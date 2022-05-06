@@ -30,8 +30,7 @@
         "sylius/admin-api-bundle": "^1.10-RC.2",
         "bugsnag/bugsnag-symfony": "^1.7",
         "sylius/paypal-plugin": "^1.2",
-        "symfony/dotenv": "^4.4 || ^5.2",
-        "bitbag/cms-plugin": "^3.0"
+        "symfony/dotenv": "^4.4 || ^5.2"
     },
     "require-dev": {
         "behat/behat": "^3.6.1",
@@ -84,13 +83,17 @@
         "auto-scripts": {
             "cache:clear": "symfony-cmd",
             "assets:install %PUBLIC_DIR%": "symfony-cmd",
-            "security-checker security:check": "script",
-            "ckeditor:install": "symfony-cmd"
+            "security-checker security:check": "script"
         }
     },
     "config": {
         "preferred-install": {
             "*": "dist"
+        },
+        "allow-plugins": {
+            "symfony/thanks": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "symfony/flex": true
         }
     },
     "extra": {
