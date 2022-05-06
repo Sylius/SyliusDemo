@@ -19,29 +19,20 @@
             "src/Entity/.gitignore"
         ]
     },
+    "babdev/pagerfanta-bundle": {
+        "version": "v3.6.1"
+    },
     "behat/behat": {
         "version": "v3.5.0"
     },
     "behat/gherkin": {
         "version": "v4.5.1"
     },
-    "behat/mink": {
-        "version": "v1.7.1"
-    },
-    "behat/mink-browserkit-driver": {
-        "version": "1.3.3"
-    },
-    "behat/mink-extension": {
-        "version": "2.3.1"
-    },
     "behat/mink-selenium2-driver": {
         "version": "v1.3.1"
     },
     "behat/transliterator": {
         "version": "v1.2.0"
-    },
-    "bitbag/cms-plugin": {
-        "version": "v3.0.8"
     },
     "bugsnag/bugsnag": {
         "version": "v3.21.0"
@@ -61,11 +52,11 @@
     "composer/ca-bundle": {
         "version": "1.1.2"
     },
-    "composer/semver": {
-        "version": "1.4.2"
+    "composer/package-versions-deprecated": {
+        "version": "1.11.99.5"
     },
-    "composer/xdebug-handler": {
-        "version": "1.3.0"
+    "dealerdirect/phpcodesniffer-composer-installer": {
+        "version": "v0.7.2"
     },
     "dmore/behat-chrome-extension": {
         "version": "1.3.0"
@@ -145,11 +136,26 @@
     "egulias/email-validator": {
         "version": "2.1.6"
     },
+    "enshrined/svg-sanitize": {
+        "version": "0.15.4"
+    },
+    "fakerphp/faker": {
+        "version": "v1.19.0"
+    },
     "fig/link-util": {
         "version": "1.1.0"
     },
+    "friends-of-behat/mink": {
+        "version": "v1.10.0"
+    },
+    "friends-of-behat/mink-browserkit-driver": {
+        "version": "v1.6.1"
+    },
     "friends-of-behat/mink-debug-extension": {
         "version": "v2.0.1"
+    },
+    "friends-of-behat/mink-extension": {
+        "version": "v2.6.1"
     },
     "friends-of-behat/page-object-extension": {
         "version": "0.1"
@@ -160,26 +166,8 @@
     "friends-of-behat/variadic-extension": {
         "version": "v1.1.0"
     },
-    "friendsofphp/php-cs-fixer": {
-        "version": "2.2",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "master",
-            "version": "2.2",
-            "ref": "81dee417d2cc60cd1c9d6208dff2ec22a1103e93"
-        }
-    },
-    "friendsofsymfony/ckeditor-bundle": {
-        "version": "2.3",
-        "recipe": {
-            "repo": "github.com/symfony/recipes-contrib",
-            "branch": "master",
-            "version": "2.0",
-            "ref": "f5ad42002183a6881962683e6d84bbb25cdfce5d"
-        },
-        "files": [
-            "config/packages/fos_ckeditor.yaml"
-        ]
+    "friendsofphp/proxy-manager-lts": {
+        "version": "v1.0.12"
     },
     "friendsofsymfony/oauth-server-bundle": {
         "version": "2.0.x-dev"
@@ -195,9 +183,6 @@
             "version": "2.2",
             "ref": "258300d52be6ad59b32a888d5ddafbf9638540ff"
         }
-    },
-    "fzaninotto/faker": {
-        "version": "v1.8.0"
     },
     "gedmo/doctrine-extensions": {
         "version": "v2.4.36"
@@ -220,14 +205,8 @@
     "instaclick/php-webdriver": {
         "version": "1.4.5"
     },
-    "jean85/pretty-package-versions": {
-        "version": "1.2"
-    },
     "jms/metadata": {
         "version": "1.6.0"
-    },
-    "jms/parser-lib": {
-        "version": "1.0.0"
     },
     "jms/serializer": {
         "version": "1.13.0"
@@ -268,17 +247,14 @@
             "config/packages/knp_snappy.yaml"
         ]
     },
-    "lakion/api-test-case": {
-        "version": "v3.1.3"
-    },
     "lakion/mink-debug-extension": {
         "version": "v1.2.3"
     },
-    "laminas/laminas-eventmanager": {
-        "version": "3.3.1"
+    "laminas/laminas-code": {
+        "version": "4.5.1"
     },
-    "laminas/laminas-zendframework-bridge": {
-        "version": "1.1.1"
+    "laminas/laminas-stdlib": {
+        "version": "3.7.1"
     },
     "lchrusciel/api-test-case": {
         "version": "v3.1.4"
@@ -288,9 +264,6 @@
     },
     "lcobucci/jwt": {
         "version": "3.3.1"
-    },
-    "league/csv": {
-        "version": "9.7.4"
     },
     "league/uri": {
         "version": "5.3.0"
@@ -349,21 +322,6 @@
             "ref": "aaf440eb4d289ead8e2ef986c4f25c97fffec4ac"
         }
     },
-    "nette/finder": {
-        "version": "v2.4.2"
-    },
-    "nette/robot-loader": {
-        "version": "v3.1.0"
-    },
-    "nette/utils": {
-        "version": "v2.5.3"
-    },
-    "nikic/php-parser": {
-        "version": "v4.10.4"
-    },
-    "ocramius/proxy-manager": {
-        "version": "2.2.2"
-    },
     "openlss/lib-array2xml": {
         "version": "0.0.10"
     },
@@ -388,12 +346,6 @@
     "phar-io/version": {
         "version": "1.0.1"
     },
-    "php": {
-        "version": "7.4"
-    },
-    "php-cs-fixer/diff": {
-        "version": "v1.3.0"
-    },
     "php-http/guzzle6-adapter": {
         "version": "v1.1.1"
     },
@@ -409,9 +361,6 @@
     "php-http/promise": {
         "version": "v1.0.0"
     },
-    "phpcollection/phpcollection": {
-        "version": "0.5.0"
-    },
     "phpdocumentor/reflection-common": {
         "version": "1.0.1"
     },
@@ -420,9 +369,6 @@
     },
     "phpdocumentor/type-resolver": {
         "version": "0.4.0"
-    },
-    "phpoption/phpoption": {
-        "version": "1.5.0"
     },
     "phpseclib/phpseclib": {
         "version": "2.0.29"
@@ -438,9 +384,6 @@
     },
     "phpstan/phpdoc-parser": {
         "version": "0.3"
-    },
-    "phpstan/phpstan": {
-        "version": "0.12.65"
     },
     "phpunit/php-code-coverage": {
         "version": "5.3.2"
@@ -489,9 +432,6 @@
     },
     "psr/log": {
         "version": "1.0.2"
-    },
-    "psr/simple-cache": {
-        "version": "1.0.1"
     },
     "ralouphie/getallheaders": {
         "version": "2.0.5"
@@ -544,6 +484,9 @@
             "ref": "421933bf8f0e75546ac8e00cb3eb12904fa2ac1a"
         }
     },
+    "slevomat/coding-standard": {
+        "version": "7.1"
+    },
     "sonata-project/block-bundle": {
         "version": "3.12.1"
     },
@@ -567,6 +510,9 @@
             "version": "3.0",
             "ref": "0dc9cceda799fd3a08b96987e176a261028a3709"
         }
+    },
+    "stella-maris/clock": {
+        "version": "0.1.4"
     },
     "stof/doctrine-extensions-bundle": {
         "version": "1.2",
@@ -595,8 +541,17 @@
     "sylius-labs/polyfill-symfony-event-dispatcher": {
         "version": "v1.0.0"
     },
+    "sylius-labs/polyfill-symfony-framework-bundle": {
+        "version": "v1.0.0"
+    },
+    "sylius-labs/polyfill-symfony-security": {
+        "version": "v1.0.0"
+    },
     "sylius/admin-api-bundle": {
         "version": "v1.10.0"
+    },
+    "sylius/calendar": {
+        "version": "v0.3.0"
     },
     "sylius/fixtures-bundle": {
         "version": "v1.4.1"
@@ -616,6 +571,9 @@
             "config/packages/sylius_invoicing.yaml",
             "config/routes/sylius_invoicing.yaml"
         ]
+    },
+    "sylius/mailer-bundle": {
+        "version": "v1.7.1"
     },
     "sylius/paypal-plugin": {
         "version": "v1.0.0-rc.1"
@@ -813,9 +771,6 @@
     "symfony/polyfill-php56": {
         "version": "v1.14.0"
     },
-    "symfony/polyfill-php70": {
-        "version": "v1.9.0"
-    },
     "symfony/polyfill-php72": {
         "version": "v1.9.0"
     },
@@ -824,6 +779,9 @@
     },
     "symfony/polyfill-php80": {
         "version": "v1.15.0"
+    },
+    "symfony/polyfill-php81": {
+        "version": "v1.25.0"
     },
     "symfony/process": {
         "version": "v4.1.5"
@@ -894,6 +852,9 @@
     "symfony/templating": {
         "version": "v4.1.5"
     },
+    "symfony/thanks": {
+        "version": "v1.2.10"
+    },
     "symfony/translation": {
         "version": "3.3",
         "recipe": {
@@ -957,32 +918,8 @@
     "symfony/yaml": {
         "version": "v4.1.5"
     },
-    "symplify/auto-bind-parameter": {
-        "version": "8.3.16"
-    },
-    "symplify/autowire-array-parameter": {
-        "version": "8.3.23"
-    },
-    "symplify/coding-standard": {
-        "version": "v4.8.0"
-    },
-    "symplify/console-color-diff": {
-        "version": "8.3.23"
-    },
     "symplify/easy-coding-standard": {
         "version": "v4.8.0"
-    },
-    "symplify/package-builder": {
-        "version": "v4.8.0"
-    },
-    "symplify/set-config-resolver": {
-        "version": "8.3.26"
-    },
-    "symplify/smart-file-system": {
-        "version": "8.3.48"
-    },
-    "symplify/symplify-kernel": {
-        "version": "8.3.48"
     },
     "textalk/websocket": {
         "version": "1.5.0"
@@ -1005,14 +942,8 @@
     "twig/twig": {
         "version": "v2.5.0"
     },
-    "webimpress/safe-writer": {
-        "version": "2.1.0"
-    },
     "webmozart/assert": {
         "version": "1.3.0"
-    },
-    "white-october/pagerfanta-bundle": {
-        "version": "v1.2.1"
     },
     "willdurand/hateoas": {
         "version": "2.12.0"
@@ -1031,14 +962,5 @@
     },
     "winzou/state-machine-bundle": {
         "version": "v0.3.1"
-    },
-    "zendframework/zend-code": {
-        "version": "3.3.1"
-    },
-    "zendframework/zend-eventmanager": {
-        "version": "3.2.1"
-    },
-    "zendframework/zend-stdlib": {
-        "version": "3.2.1"
     }
 }
