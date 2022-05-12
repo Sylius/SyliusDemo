@@ -9,10 +9,7 @@
         left: 20px;
         z-index: 9998;
         display: none;
-        padding: 25px 25px 90px;
-        width: calc(100vw - 40px);
-        max-width: 420px;
-        min-height: 400px;
+        padding: 25px 25px 80px;
         border-radius: 6px;
         color: #fff;
         font-size: 16px !important;
@@ -40,6 +37,8 @@
     .info-box label {
         font-size: 16px !important;
         font-weight: bold;
+        padding: 0 !important;
+        margin: 0 !important;
     }
 
     .info-box select {
@@ -48,11 +47,28 @@
         background: rgba(255, 255, 255, 0.1);
         border: 1px solid rgba(255, 255, 255, 0.2);
         color: rgba(255, 255, 255, 0.65);
-        padding: 7px 10px !important;
+        padding: 4px 10px !important;
     }
 
     .info-box__item {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+    }
+
+    @media (min-width: 600px) {
+        .info-box__item {
+            display: flex;
+            align-items: center;
+            min-height: 30px;
+        }
+    }
+
+    .info-box__item__label {
+        flex-shrink: 0;
+        width: 130px;
+    }
+
+    .info-box__item__content {
+        flex-grow: 1;
     }
 
     .info-cta {
@@ -135,33 +151,40 @@
 
 <div class="info-box" id="info-box">
     <div class="info-box__item">
-        <label for="version-select">Change Sylius version:</label>
-        <select id="version-select">
-            <option value="//demo.sylius.com"{% if is_stable %} selected{% endif %}>
-                Last Stable Release{{ is_stable ? version_descriptor : '' }}
-            </option>
-            <option value="//master.demo.sylius.com"{% if not is_stable %} selected{% endif %}>
-                Next Release Features{{ is_stable ? '' : version_descriptor }}
-            </option>
-        </select>
+        <div class="info-box__item__label">
+            <label for="version-select">Sylius version:</label>
+        </div>
+        <div class="info-box__item__content">
+            <select id="version-select">
+                <option value="//demo.sylius.com"{% if is_stable %} selected{% endif %}>
+                    Last Stable Release{{ is_stable ? version_descriptor : '' }}
+                </option>
+                <option value="//master.demo.sylius.com"{% if not is_stable %} selected{% endif %}>
+                    Next Release Features{{ is_stable ? '' : version_descriptor }}
+                </option>
+            </select>
+        </div>
     </div>
 
     <div class="info-box__item">
-        <strong>Admin panel:</strong><br>
-        <a href="{{ admin_url }}">{{ admin_url }}</a>
+        <div class="info-box__item__label">
+            <strong>Admin panel:</strong><br>
+        </div>
+        <div class="info-box__item__content">
+            <a href="{{ admin_url }}">{{ admin_url }}</a>
+        </div>
     </div>
 
     {% if not is_stable %}
         <div class="info-box__item">
-            <strong>Sylius API:</strong><br>
-            <a href="{{ 'https://master.demo.sylius.com/api/v2/docs' }}">{{ 'https://master.demo.sylius.com/api/v2/docs' }}</a>
+            <div class="info-box__item__label">
+                <strong>Sylius API:</strong><br>
+            </div>
+            <div class="info-box__item__content">
+                <a href="{{ 'https://master.demo.sylius.com/api/v2/docs' }}">{{ 'https://master.demo.sylius.com/api/v2/docs' }}</a>
+            </div>
         </div>
     {% endif %}
-
-    <div class="info-box__item">
-        <strong>Any questions?</strong><br>
-        <a href="https://sylius.com/contact/?utm_source=demo">Contact us!</a>
-    </div>
 
     <div class="info-cta" id="demo-cta">
         <a href="https://sylius.com/try/?utm_source=demo" target="_blank">Get a live demo of Sylius Plus</a>
