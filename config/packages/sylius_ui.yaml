@@ -10,8 +10,3 @@ sylius_ui:
                 analistics:
                     template: "/Blocks/_analytics.html.twig"
                     priority: 10
-        sylius.shop.layout.footer:
-            blocks:
-                footer:
-                    template: "/Blocks/_versionSwitcher.html.twig"
-                    priority: 10
