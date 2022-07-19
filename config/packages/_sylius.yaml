@@ -28,3 +28,11 @@ sylius_theme:
         filesystem:
             directories:
                 - "%kernel.project_dir%/themes"
+
+sylius_ui:
+    events:
+        sylius.admin.login.form.content:
+            blocks:
+                test_credentials:
+                    template: 'Admin/Security/Login/testCredentials.html.twig'
+                    priority: 30
