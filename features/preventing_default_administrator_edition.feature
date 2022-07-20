@@ -15,5 +15,4 @@ Feature: Preventing default administrator edition
         And I save my changes
         And I am logged in as "sylius@example.com" administrator
         And I browse administrators
-        Then I should be notified that I cannot edit Administrator of Sylius Demo
-        And I should see the administrator "sylius@example.com" in the list
+        Then I should see the administrator "sylius@example.com" in the list
