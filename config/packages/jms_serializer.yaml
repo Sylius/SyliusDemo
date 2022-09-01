@@ -2,3 +2,8 @@ jms_serializer:
     visitors:
         xml_serialization:
             format_output: '%kernel.debug%'
+    metadata:
+        directories:
+            product:
+                namespace_prefix: "App\\Entity\\Product"
+                path: '%kernel.project_dir%/config/serializer/product'

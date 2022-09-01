@@ -1,0 +1,7 @@
+App\Entity\Product\Product:
+    exclusion_policy: ALL
+    xml_root_name: product
+    virtual_properties:
+        getDescriptor:
+            serialized_name: descriptor
+            groups: [Autocomplete]
