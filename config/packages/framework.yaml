@@ -4,9 +4,3 @@ framework:
     csrf_protection: true
     session:
         handler_id: ~
-    assets:
-        packages:
-            shop:
-                json_manifest_path: '%kernel.project_dir%/public/build/shop/manifest.json'
-            admin:
-                json_manifest_path: '%kernel.project_dir%/public/build/admin/manifest.json'

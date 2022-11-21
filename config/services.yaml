@@ -4,23 +4,6 @@ parameters:
     locale: en_US
 
 services:
-    App\EventListener\AdminListener:
-        arguments: ['@session']
-        tags:
-            - { name: kernel.event_listener, event: sylius.admin_user.pre_delete, method: preDelete }
-            - { name: kernel.event_listener, event: sylius.admin_user.pre_update, method: preUpdate }
-
-    App\EventListener\ChannelListener:
-        arguments: ['@session', '@router']
-        tags:
-            - { name: kernel.event_listener, event: kernel.request , method: preCreate }
-
-    App\EventListener\UserRegistrationListener:
-        class: App\EventListener\UserRegistrationListener
-        arguments: ['@session', '@App\Generator\FlashMessageGeneratorInterface']
-        tags:
-            - { name: kernel.event_listener, event: sylius.user.email_verification.token , method: addVerificationLink }
-
     App\Generator\FlashMessageGeneratorInterface:
         class: App\Generator\VerificationFlashMessageGenerator
         arguments: ['@router', '@translator.default']

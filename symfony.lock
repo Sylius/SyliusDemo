@@ -169,12 +169,6 @@
     "friendsofphp/proxy-manager-lts": {
         "version": "v1.0.12"
     },
-    "friendsofsymfony/oauth-server-bundle": {
-        "version": "2.0.x-dev"
-    },
-    "friendsofsymfony/oauth2-php": {
-        "version": "1.3.1"
-    },
     "friendsofsymfony/rest-bundle": {
         "version": "2.2",
         "recipe": {
@@ -488,15 +482,6 @@
     "sebastian/version": {
         "version": "2.0.1"
     },
-    "sensiolabs/security-checker": {
-        "version": "4.0",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "master",
-            "version": "4.0",
-            "ref": "421933bf8f0e75546ac8e00cb3eb12904fa2ac1a"
-        }
-    },
     "slevomat/coding-standard": {
         "version": "7.1"
     },
@@ -560,9 +545,6 @@
     "sylius-labs/polyfill-symfony-security": {
         "version": "v1.0.0"
     },
-    "sylius/admin-api-bundle": {
-        "version": "v1.10.0"
-    },
     "sylius/calendar": {
         "version": "v0.3.0"
     },
@@ -615,9 +597,6 @@
     },
     "sylius/theme-bundle": {
         "version": "v1.4.2"
-    },
-    "symfony/amqp-messenger": {
-        "version": "v5.2.3"
     },
     "symfony/asset": {
         "version": "v4.1.5"
@@ -712,12 +691,6 @@
             "ref": "1717e67afa995e4f01a25ba9ae7aca5b2327bcaa"
         }
     },
-    "symfony/http-client": {
-        "version": "v5.3.3"
-    },
-    "symfony/http-client-contracts": {
-        "version": "v2.3.1"
-    },
     "symfony/http-foundation": {
         "version": "v4.1.5"
     },
@@ -799,9 +772,6 @@
     "symfony/polyfill-php72": {
         "version": "v1.9.0"
     },
-    "symfony/polyfill-php73": {
-        "version": "v1.11.0"
-    },
     "symfony/polyfill-php80": {
         "version": "v1.15.0"
     },
@@ -819,9 +789,6 @@
     },
     "symfony/proxy-manager-bridge": {
         "version": "v4.1.5"
-    },
-    "symfony/redis-messenger": {
-        "version": "v5.2.3"
     },
     "symfony/routing": {
         "version": "4.0",
@@ -845,9 +812,6 @@
         "version": "v4.4.15"
     },
     "symfony/security-csrf": {
-        "version": "v4.4.15"
-    },
-    "symfony/security-guard": {
         "version": "v4.4.15"
     },
     "symfony/security-http": {
@@ -929,15 +893,6 @@
             "branch": "master",
             "version": "3.3",
             "ref": "6bdfa1a95f6b2e677ab985cd1af2eae35d62e0f6"
-        }
-    },
-    "symfony/web-server-bundle": {
-        "version": "3.3",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "master",
-            "version": "3.3",
-            "ref": "dae9b39fd6717970be7601101ce5aa960bf53d9a"
         }
     },
     "symfony/webpack-encore-bundle": {
