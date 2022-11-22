@@ -16,16 +16,17 @@ use App\Generator\FlashMessageGeneratorInterface;
 use PhpSpec\ObjectBehavior;
 use Sylius\Component\User\Model\UserInterface;
 use Symfony\Component\EventDispatcher\GenericEvent;
+use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\HttpFoundation\Session\Flash\FlashBagInterface;
 use Symfony\Component\HttpFoundation\Session\Session;
 
 final class UserRegistrationListenerSpec extends ObjectBehavior
 {
     function let(
-        Session $session,
+        RequestStack $requestStack,
         FlashMessageGeneratorInterface $flashMessageGenerator
     ) {
-        $this->beConstructedWith($session, $flashMessageGenerator);
+        $this->beConstructedWith($requestStack, $flashMessageGenerator);
     }
 
     function it_is_initializable()
@@ -37,10 +38,13 @@ final class UserRegistrationListenerSpec extends ObjectBehavior
         FlashBagInterface $flashBag,
         FlashMessageGeneratorInterface $flashMessageGenerator,
         GenericEvent $event,
+        RequestStack $requestStack,
         Session $session,
         UserInterface $user
     ) {
         $event->getSubject()->willReturn($user);
+
+        $requestStack->getSession()->willReturn($session);
 
         $session->getFlashBag()->willReturn($flashBag);
 

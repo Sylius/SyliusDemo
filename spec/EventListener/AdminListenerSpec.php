@@ -7,14 +7,15 @@ use PhpSpec\ObjectBehavior;
 use Sylius\Component\Core\Model\AdminUserInterface;
 use Symfony\Component\EventDispatcher\GenericEvent;
 use Symfony\Component\HttpFoundation\File\Exception\UnexpectedTypeException;
+use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\HttpFoundation\Session\Flash\FlashBagInterface;
 use Symfony\Component\HttpFoundation\Session\Session;
 
 final class AdminListenerSpec extends ObjectBehavior
 {
-    function let(Session $session)
+    function let(RequestStack $requestStack)
     {
-        $this->beConstructedWith($session);
+        $this->beConstructedWith($requestStack);
     }
 
     function it_is_initializable()
@@ -26,12 +27,14 @@ final class AdminListenerSpec extends ObjectBehavior
         GenericEvent $event,
         AdminUserInterface $adminUser,
         FlashBagInterface $flashBag,
+        RequestStack $requestStack,
         Session $session
     ) {
         $event->getSubject()->willReturn($adminUser);
 
         $adminUser->getEmailCanonical()->willReturn('sylius@example.com');
 
+        $requestStack->getSession()->willReturn($session);
         $session->getFlashBag()->willReturn($flashBag);
         $flashBag->add("error", "sylius_demo.admin_account.prevent_delete")->shouldBeCalled();
 
@@ -51,11 +54,14 @@ final class AdminListenerSpec extends ObjectBehavior
         GenericEvent $event,
         AdminUserInterface $adminUser,
         FlashBagInterface $flashBag,
+        RequestStack $requestStack,
         Session $session
     ) {
         $event->getSubject()->willReturn($adminUser);
 
         $adminUser->getEmailCanonical()->willReturn('sylius@example.com');
+
+        $requestStack->getSession()->willReturn($session);
         $session->getFlashBag()->willReturn($flashBag);
 
         $flashBag->add('error', 'sylius_demo.admin_account.prevent_edit')->shouldBeCalled();

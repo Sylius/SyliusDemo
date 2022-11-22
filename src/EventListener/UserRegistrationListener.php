@@ -12,36 +12,18 @@
 namespace App\EventListener;
 
 use App\Generator\FlashMessageGeneratorInterface;
-use Doctrine\Common\Persistence\ObjectManager;
-use Sylius\Component\Core\Model\CustomerInterface;
 use Sylius\Component\User\Model\UserInterface;
-use Sylius\Component\User\Security\Generator\GeneratorInterface;
 use Symfony\Component\EventDispatcher\GenericEvent;
+use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\HttpFoundation\Session\Session;
 use Webmozart\Assert\Assert;
 
 final class UserRegistrationListener
 {
-    /**
-     * @var Session
-     */
-    private $session;
-
-    /**
-     * @var FlashMessageGeneratorInterface
-     */
-    private $flashMessageGenerator;
-
-    /**
-     * @param Session $session
-     * @param FlashMessageGeneratorInterface $flashMessageGenerator
-     */
     public function __construct(
-        Session $session,
-        FlashMessageGeneratorInterface $flashMessageGenerator
+        private RequestStack $requestStack,
+        private FlashMessageGeneratorInterface $flashMessageGenerator
     ) {
-        $this->session = $session;
-        $this->flashMessageGenerator = $flashMessageGenerator;
     }
 
     /**
@@ -56,6 +38,8 @@ final class UserRegistrationListener
         $token = $subject->getEmailVerificationToken();
         $message = $this->flashMessageGenerator->generate($token);
 
-        $this->session->getFlashBag()->add('success', $message);
+        /** @var Session $session */
+        $session = $this->requestStack->getSession();
+        $session->getFlashBag()->add('success', $message);
     }
 }
