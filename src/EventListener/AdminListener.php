@@ -5,15 +5,13 @@ namespace App\EventListener;
 use Sylius\Component\Core\Model\AdminUserInterface;
 use Symfony\Component\EventDispatcher\GenericEvent;
 use Symfony\Component\HttpFoundation\File\Exception\UnexpectedTypeException;
+use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\HttpFoundation\Session\Session;
 
 final class AdminListener
 {
-    private Session $session;
-
-    public function __construct(Session $session)
+    public function __construct(private RequestStack $requestStack)
     {
-        $this->session = $session;
     }
 
     public function preDelete(GenericEvent $event): void
@@ -25,7 +23,11 @@ final class AdminListener
         }
 
         if ('sylius@example.com' === $subject->getEmailCanonical()) {
-            $this->session->getFlashBag()->add('error', 'sylius_demo.admin_account.prevent_delete');
+
+            /** @var Session $session */
+            $session = $this->requestStack->getSession();
+
+            $session->getFlashBag()->add('error', 'sylius_demo.admin_account.prevent_delete');
             $event->stopPropagation();
         }
     }
@@ -39,7 +41,11 @@ final class AdminListener
         }
 
         if ('sylius@example.com' === $subject->getEmailCanonical()) {
-            $this->session->getFlashBag()->add('error', 'sylius_demo.admin_account.prevent_edit');
+
+            /** @var Session $session */
+            $session = $this->requestStack->getSession();
+
+            $session->getFlashBag()->add('error', 'sylius_demo.admin_account.prevent_edit');
             $event->stopPropagation();
         }
     }

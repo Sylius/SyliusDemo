@@ -15,7 +15,7 @@ use App\Generator\FlashMessageGeneratorInterface;
 use App\Generator\VerificationFlashMessageGenerator;
 use PhpSpec\ObjectBehavior;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
-use Symfony\Component\Translation\TranslatorInterface;
+use Symfony\Contracts\Translation\TranslatorInterface;
 
 final class VerificationFlashMessageGeneratorSpec extends ObjectBehavior
 {
