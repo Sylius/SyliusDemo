@@ -21,9 +21,8 @@
     ],
     "require": {
         "php": "^8.0",
-        "sensiolabs/security-checker": " ^6.0",
-        "sylius/sylius": "^1.11",
-        "symfony/dotenv": "^5.4",
+        "sylius/sylius": "^1.12",
+        "symfony/dotenv": "^6.0",
         "symfony/flex": "^1.7"
     },
     "require-dev": {
@@ -44,12 +43,14 @@
         "phpunit/phpunit": "^8.5",
         "stripe/stripe-php": "^4.1",
         "sylius-labs/coding-standard": "^4.0",
-        "symfony/browser-kit": "^5.4",
-        "symfony/debug-bundle": "^5.4",
-        "symfony/intl": "^5.4",
-        "symfony/web-profiler-bundle": "^5.4",
+        "symfony/browser-kit": "^6.0",
+        "symfony/debug-bundle": "^6.0",
+        "symfony/intl": "^6.0",
+        "symfony/web-profiler-bundle": "^6.0",
+        "symfony/webpack-encore-bundle": "^1.15",
         "rector/rector": "^0.11.57"
     },
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
@@ -71,18 +72,22 @@
         ],
         "auto-scripts": {
             "cache:clear": "symfony-cmd",
-            "assets:install %PUBLIC_DIR%": "symfony-cmd",
-            "security-checker security:check": "script"
+            "assets:install %PUBLIC_DIR%": "symfony-cmd"
         }
     },
     "config": {
         "preferred-install": {
             "*": "dist"
+        },
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": false,
+            "symfony/flex": true
         }
     },
     "extra": {
         "symfony": {
-            "allow-contrib": false
+            "allow-contrib": false,
+            "require": "^6.0"
         }
     }
 }
