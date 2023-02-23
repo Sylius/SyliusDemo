@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1a2babd6a1a1098f587b1d539a0b611c",
+    "content-hash": "007c5cbed0ee5c4da42fe0115c3d95e4",
     "packages": [
         {
             "name": "alcohol/iso4217",
@@ -7904,12 +7904,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/PriceHistoryPlugin.git",
-                "reference": "b8a69862e642c003541e48946c650de75532148e"
+                "reference": "1184cf37299f3ead81f553a8a98f2b65a1bc75d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/PriceHistoryPlugin/zipball/b8a69862e642c003541e48946c650de75532148e",
-                "reference": "b8a69862e642c003541e48946c650de75532148e",
+                "url": "https://api.github.com/repos/Sylius/PriceHistoryPlugin/zipball/1184cf37299f3ead81f553a8a98f2b65a1bc75d2",
+                "reference": "1184cf37299f3ead81f553a8a98f2b65a1bc75d2",
                 "shasum": ""
             },
             "require": {
@@ -7984,7 +7984,7 @@
                 "issues": "https://github.com/Sylius/PriceHistoryPlugin/issues",
                 "source": "https://github.com/Sylius/PriceHistoryPlugin/tree/main"
             },
-            "time": "2023-02-21T15:24:44+00:00"
+            "time": "2023-02-23T11:34:26+00:00"
         },
         {
             "name": "sylius/refund-plugin",
@@ -8268,12 +8268,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/Sylius.git",
-                "reference": "e1e0409dbb212129d26cec0f0570007f012c3cf1"
+                "reference": "aef3367b2ce6f01c614039b57498577aab24b804"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/e1e0409dbb212129d26cec0f0570007f012c3cf1",
-                "reference": "e1e0409dbb212129d26cec0f0570007f012c3cf1",
+                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/aef3367b2ce6f01c614039b57498577aab24b804",
+                "reference": "aef3367b2ce6f01c614039b57498577aab24b804",
                 "shasum": ""
             },
             "require": {
@@ -8470,7 +8470,7 @@
                 "phpspec/phpspec": "^7.2",
                 "phpspec/prophecy-phpunit": "^2.0",
                 "phpstan/phpstan": "^1.6",
-                "phpstan/phpstan-doctrine": "1.3.32",
+                "phpstan/phpstan-doctrine": "1.3.33",
                 "phpstan/phpstan-symfony": "^1.2",
                 "phpstan/phpstan-webmozart-assert": "^1.1",
                 "phpunit/phpunit": "^9.5",
@@ -8541,7 +8541,7 @@
                 "issues": "https://github.com/Sylius/Sylius/issues",
                 "source": "https://github.com/Sylius/Sylius/tree/1.13"
             },
-            "time": "2023-02-21T14:21:33+00:00"
+            "time": "2023-02-23T11:50:59+00:00"
         },
         {
             "name": "sylius/theme-bundle",
@@ -17692,16 +17692,16 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.7.1",
+            "version": "3.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "1359e176e9307e906dc3d890bcc9603ff6d90619"
+                "reference": "ed8e00df0a83aa96acf703f8c2979ff33341f879"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/1359e176e9307e906dc3d890bcc9603ff6d90619",
-                "reference": "1359e176e9307e906dc3d890bcc9603ff6d90619",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/ed8e00df0a83aa96acf703f8c2979ff33341f879",
+                "reference": "ed8e00df0a83aa96acf703f8c2979ff33341f879",
                 "shasum": ""
             },
             "require": {
@@ -17737,14 +17737,15 @@
             "homepage": "https://github.com/squizlabs/PHP_CodeSniffer",
             "keywords": [
                 "phpcs",
-                "standards"
+                "standards",
+                "static analysis"
             ],
             "support": {
                 "issues": "https://github.com/squizlabs/PHP_CodeSniffer/issues",
                 "source": "https://github.com/squizlabs/PHP_CodeSniffer",
                 "wiki": "https://github.com/squizlabs/PHP_CodeSniffer/wiki"
             },
-            "time": "2022-06-18T07:21:10+00:00"
+            "time": "2023-02-22T23:07:41+00:00"
         },
         {
             "name": "stripe/stripe-php",
@@ -18484,5 +18485,8 @@
         "php": "^8.0"
     },
     "platform-dev": [],
+    "platform-overrides": {
+        "php": "8.0.13"
+    },
     "plugin-api-version": "2.3.0"
 }

@@ -86,6 +86,9 @@
         "preferred-install": {
             "*": "dist"
         },
+        "platform": {
+            "php": "8.0.13"
+        },
         "allow-plugins": {
             "dealerdirect/phpcodesniffer-composer-installer": false,
             "symfony/flex": true
