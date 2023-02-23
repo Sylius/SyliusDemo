@@ -16,8 +16,7 @@ namespace App\Entity\Channel;
 use Doctrine\ORM\Mapping as ORM;
 use Sylius\Component\Core\Model\Channel as BaseChannel;
 use Sylius\PriceHistoryPlugin\Domain\Model\ChannelInterface;
-use Sylius\PriceHistoryPlugin\Domain\Model\LowestPriceForDiscountedProductsCheckingPeriodTrait;
-use Sylius\PriceHistoryPlugin\Domain\Model\LowestPriceForDiscountedProductsVisibleAwareTrait;
+use Sylius\PriceHistoryPlugin\Domain\Model\LowestPriceForDiscountedProductsAwareTrait;
 
 /**
  * @ORM\Entity()
@@ -25,6 +24,5 @@ use Sylius\PriceHistoryPlugin\Domain\Model\LowestPriceForDiscountedProductsVisib
  */
 class Channel extends BaseChannel implements ChannelInterface
 {
-    use LowestPriceForDiscountedProductsCheckingPeriodTrait;
-    use LowestPriceForDiscountedProductsVisibleAwareTrait;
+    use LowestPriceForDiscountedProductsAwareTrait;
 }
