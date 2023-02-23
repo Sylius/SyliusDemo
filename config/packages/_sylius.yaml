@@ -36,6 +36,18 @@ sylius_ui:
                     template: 'Admin/Security/Login/testCredentials.html.twig'
                     priority: 30
 
+sylius_channel:
+    resources:
+        channel:
+            classes:
+                model: App\Entity\Channel\Channel
+
+sylius_core:
+    resources:
+        channel_pricing:
+            classes:
+                model: App\Entity\Channel\ChannelPricing
+
 sylius_product:
     resources:
         product:
