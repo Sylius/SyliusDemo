@@ -7,6 +7,7 @@ imports:
 
     - { resource: "@SyliusApiBundle/Resources/config/app/config.yaml" }
 
+    - { resource: "@SyliusPriceHistoryPlugin/config/config.yaml" }
     - { resource: "@SyliusPayPalPlugin/Resources/config/config.yaml" }
 
 parameters:
