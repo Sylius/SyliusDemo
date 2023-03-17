@@ -573,9 +573,6 @@
     "sylius/paypal-plugin": {
         "version": "v1.0.0-rc.1"
     },
-    "sylius/price-history-plugin": {
-        "version": "dev-main"
-    },
     "sylius/refund-plugin": {
         "version": "0.4",
         "recipe": {
