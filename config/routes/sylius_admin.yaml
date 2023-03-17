@@ -5,7 +5,3 @@ sylius_admin:
 sylius_paypal_admin:
     resource: "@SyliusPayPalPlugin/Resources/config/admin_routing.yml"
     prefix: /admin
-
-sylius_price_history_admin:
-    resource: '@SyliusPriceHistoryPlugin/config/admin_routing.yaml'
-    prefix: /admin
