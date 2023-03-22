@@ -1,3 +1,7 @@
 sylius_admin:
     resource: "@SyliusAdminBundle/Resources/config/routing.yml"
     prefix: /admin
+
+sylius_price_history_admin:
+    resource: '@SyliusPriceHistoryPlugin/config/admin_routing.yaml'
+    prefix: /admin

@@ -59,4 +59,5 @@ return [
     BabDev\PagerfantaBundle\BabDevPagerfantaBundle::class => ['all' => true],
     Symfony\WebpackEncoreBundle\WebpackEncoreBundle::class => ['all' => true],
     League\FlysystemBundle\FlysystemBundle::class => ['all' => true],
+    Sylius\PriceHistoryPlugin\SyliusPriceHistoryPlugin::class => ['all' => true],
 ];

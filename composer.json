@@ -21,6 +21,7 @@
     ],
     "require": {
         "php": "^8.0",
+        "sylius/price-history-plugin": "^0.2-dev",
         "sylius/sylius": "^1.12",
         "symfony/dotenv": "^6.0",
         "symfony/flex": "^1.7"
