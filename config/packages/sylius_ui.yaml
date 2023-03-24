@@ -10,3 +10,6 @@ sylius_ui:
                 analistics:
                     template: "/Blocks/_analytics.html.twig"
                     priority: 10
+        sylius.admin.order.show.payment_content:
+            blocks:
+                refund_transition: false
