@@ -536,6 +536,9 @@
     "sylius/mailer-bundle": {
         "version": "v2.0.0-BETA.1"
     },
+    "sylius/price-history-plugin": {
+        "version": "dev-main"
+    },
     "sylius/registry": {
         "version": "v1.4.1"
     },
