@@ -30,3 +30,6 @@ services:
         arguments: ['@Twig\Extra\Intl\IntlExtension']
         tags:
             - {name: twig.extension}
+
+    sylius.http_client:
+        class: GuzzleHttp\Client

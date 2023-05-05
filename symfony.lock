@@ -329,6 +329,18 @@
             "ref": "aaf440eb4d289ead8e2ef986c4f25c97fffec4ac"
         }
     },
+    "nyholm/psr7": {
+        "version": "1.8",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "1.0",
+            "ref": "a9f242fbadb1407681c019f38c67ab448b056341"
+        },
+        "files": [
+            "config/packages/nyholm_psr7.yaml"
+        ]
+    },
     "openlss/lib-array2xml": {
         "version": "0.0.10"
     },
