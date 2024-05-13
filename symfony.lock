@@ -28,9 +28,6 @@
     "behat/gherkin": {
         "version": "v4.5.1"
     },
-    "behat/mink-selenium2-driver": {
-        "version": "v1.3.1"
-    },
     "behat/transliterator": {
         "version": "v1.2.0"
     },
@@ -183,9 +180,6 @@
     },
     "imagine/imagine": {
         "version": "v0.7.1"
-    },
-    "instaclick/php-webdriver": {
-        "version": "1.4.5"
     },
     "jms/metadata": {
         "version": "1.6.0"
