@@ -42,7 +42,7 @@ Feature: Filtering orders by variants
         And I should see an order with "#0000001" number
         And I should see an order with "#0000002" number
 
-    @ui @javascript
+    @ui @mink:chromedriver
     Scenario: Filtering orders by multiple variants of different products
         When I browse orders
         And I filter by variants "Neutron Sleeveless" and "Sundress"
