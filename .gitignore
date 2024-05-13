@@ -17,6 +17,8 @@
 /behat.yml
 /phpspec.yml
 
+/drivers/
+
 /bin/*
 !/bin/console
 ###> phpunit/phpunit ###
