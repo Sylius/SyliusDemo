@@ -23,3 +23,6 @@ sylius_theme:
         filesystem:
             directories:
                 - "%kernel.project_dir%/themes"
+
+sylius_state_machine_abstraction:
+    default_adapter: 'symfony_workflow'
