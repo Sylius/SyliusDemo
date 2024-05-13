@@ -1,7 +1,5 @@
-{% set is_stable = 'DEV' not in sylius_meta.version %}
-{% set admin_url = is_stable ? 'https://demo.sylius.com/admin' : 'https://master.demo.sylius.com/admin' %}
-{% set api_url = is_stable ? 'https://demo.sylius.com/api/v2/docs' : 'https://master.demo.sylius.com/api/v2/docs' %}
-{% set version_descriptor = ' (v' ~ sylius_meta.version ~ ')' %}
+{% set admin_url = 'https://stable-ce.demo.sylius.com/admin' %}
+{% set api_url = 'https://stable-ce.demo.sylius.com/api/v2/docs' %}
 
 <style>
     .info-box {
@@ -26,7 +24,7 @@
     }
 
     .info-box a {
-        color: rgba(255, 255, 255, 0.8);
+        color: rgba(255, 255, 255, 0.65);
         text-decoration: underline;
     }
 
@@ -47,13 +45,8 @@
         border-radius: 4px;
         background: rgba(255, 255, 255, 0.1);
         border: 1px solid rgba(255, 255, 255, 0.2);
-        color: rgba(255, 255, 255, 0.8);
+        color: rgba(255, 255, 255, 0.65);
         padding: 4px 10px !important;
-    }
-
-    .info-box select option {
-        background: #fff;
-        color: #1E2E3E;
     }
 
     .info-box__item {
@@ -75,6 +68,10 @@
 
     .info-box__item__content {
         flex-grow: 1;
+    }
+
+    .select-color-green {
+        background: rgba(36, 157, 129, 0.9) !important;
     }
 
     .info-cta {
@@ -161,12 +158,21 @@
             <label for="version-select">Sylius version:</label>
         </div>
         <div class="info-box__item__content">
-            <select id="version-select">
-                <option value="//demo.sylius.com"{% if is_stable %} selected{% endif %}>
-                    Last Stable Release{{ is_stable ? version_descriptor : '' }}
+            <select id="version-select" class="select-color-green">
+                <option value="//demo.sylius.com">
+                    Sylius Demo (with Plus modules)
                 </option>
-                <option value="//master.demo.sylius.com"{% if not is_stable %} selected{% endif %}>
-                    Next Release Features{{ is_stable ? '' : version_descriptor }}
+                <option value="//b2b-suite.demo.sylius.com">
+                    Sylius Plus B2B Suite
+                </option>
+                <option value="//marketplace-suite.demo.sylius.com">
+                    Sylius Plus Marketplace Suite
+                </option>
+                <option value="//stable-ce.demo.sylius.com" selected>
+                    Sylius Community Edition (stable)
+                </option>
+                <option value="//master-ce.demo.sylius.com">
+                    Sylius Community Edition (1.14-dev)
                 </option>
             </select>
         </div>
@@ -181,22 +187,17 @@
         </div>
     </div>
 
-
     <div class="info-box__item">
         <div class="info-box__item__label">
             <strong>Sylius API:</strong><br>
         </div>
         <div class="info-box__item__content">
-            <a href="{{ api_url }}">
-                {{ api_url }}
-            </a>
+            <a href="{{ api_url }}">{{ api_url }}</a>
         </div>
     </div>
 
     <div class="info-cta" id="demo-cta">
-        <a href="https://sylius.com/try/?utm_source=demo" target="_blank">
-            Get a live demo of Sylius Plus
-        </a>
+        <a href="https://sylius.com/try/?utm_source=demo" target="_blank">Get a live demo of Sylius Plus</a>
     </div>
 </div>
 
