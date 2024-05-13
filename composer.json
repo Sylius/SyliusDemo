@@ -55,7 +55,6 @@
         "symfony/web-profiler-bundle": "^6.4"
     },
     "conflict": {
-        "slam/php-cs-fixer-extensions": "^1.19.2",
         "bugsnag/bugsnag-symfony": "1.14.0"
     },
     "minimum-stability": "dev",
