@@ -28,9 +28,6 @@
     "behat/gherkin": {
         "version": "v4.5.1"
     },
-    "behat/mink-selenium2-driver": {
-        "version": "v1.3.1"
-    },
     "behat/transliterator": {
         "version": "v1.2.0"
     },
@@ -195,9 +192,6 @@
     },
     "imagine/imagine": {
         "version": "v0.7.1"
-    },
-    "instaclick/php-webdriver": {
-        "version": "1.4.5"
     },
     "jms/metadata": {
         "version": "1.6.0"
@@ -365,6 +359,18 @@
     "phar-io/version": {
         "version": "1.0.1"
     },
+    "php-http/discovery": {
+        "version": "1.19",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "1.18",
+            "ref": "f45b5dd173a27873ab19f5e3180b2f661c21de02"
+        },
+        "files": [
+            "config/packages/http_discovery.yaml"
+        ]
+    },
     "php-http/guzzle6-adapter": {
         "version": "v1.1.1"
     },
@@ -415,9 +421,6 @@
     },
     "phpunit/php-timer": {
         "version": "1.0.9"
-    },
-    "phpunit/php-token-stream": {
-        "version": "2.0.2"
     },
     "phpunit/phpunit": {
         "version": "4.7",
@@ -753,6 +756,15 @@
     },
     "symfony/options-resolver": {
         "version": "v4.1.5"
+    },
+    "symfony/panther": {
+        "version": "2.1",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "1.0",
+            "ref": "673836afb0eac2b0ec36c44f2ff0379e5a4b2177"
+        }
     },
     "symfony/password-hasher": {
         "version": "v5.3.3"
