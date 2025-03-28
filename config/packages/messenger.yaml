@@ -1,3 +1,0 @@
-framework:
-    messenger:
-        default_bus: sylius.event_bus
