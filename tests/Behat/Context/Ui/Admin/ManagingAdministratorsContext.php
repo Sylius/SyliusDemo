@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of the Sylius package.
+ *
+ * (c) Sylius Sp. z o.o.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 declare(strict_types=1);
 
 namespace Tests\Behat\Context\Ui\Admin;
@@ -26,7 +35,7 @@ final class ManagingAdministratorsContext implements Context
     public function __construct(
         NotificationCheckerInterface $notificationChecker,
         RepositoryInterface $adminUserRepository,
-        UpdatePageInterface $adminUserUpdatePage
+        UpdatePageInterface $adminUserUpdatePage,
     ) {
         $this->notificationChecker = $notificationChecker;
         $this->adminUserRepository = $adminUserRepository;
@@ -53,7 +62,7 @@ final class ManagingAdministratorsContext implements Context
     {
         $this->notificationChecker->checkNotification(
             'You cannot delete administrator of Sylius Demo!',
-            NotificationType::failure()
+            NotificationType::failure(),
         );
     }
 
@@ -64,7 +73,7 @@ final class ManagingAdministratorsContext implements Context
     {
         $this->notificationChecker->checkNotification(
             'You cannot edit administrator of Sylius Demo!',
-            NotificationType::failure()
+            NotificationType::failure(),
         );
     }
 }

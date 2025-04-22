@@ -1,5 +1,16 @@
 <?php
 
+/*
+ * This file is part of the Sylius package.
+ *
+ * (c) Sylius Sp. z o.o.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+declare(strict_types=1);
+
 namespace App\EventListener;
 
 use Sylius\Component\Core\Model\AdminUserInterface;
@@ -14,9 +25,6 @@ final class AdminListener
     {
     }
 
-    /**
-     * @param GenericEvent $event
-     */
     public function preDelete(GenericEvent $event): void
     {
         $subject = $subject = $event->getSubject();
@@ -26,7 +34,6 @@ final class AdminListener
         }
 
         if ('sylius@example.com' === $subject->getEmailCanonical()) {
-
             /** @var Session $session */
             $session = $this->requestStack->getSession();
 
@@ -35,9 +42,6 @@ final class AdminListener
         }
     }
 
-    /**
-     * @param GenericEvent $event
-     */
     public function preUpdate(GenericEvent $event): void
     {
         $subject = $subject = $event->getSubject();
@@ -47,7 +51,6 @@ final class AdminListener
         }
 
         if ('sylius@example.com' === $subject->getEmailCanonical()) {
-
             /** @var Session $session */
             $session = $this->requestStack->getSession();
 

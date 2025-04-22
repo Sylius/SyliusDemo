@@ -9,7 +9,7 @@ const uiBundleResources = path.resolve(syliusBundles, 'UiBundle/Resources/privat
 Encore
     .setOutputPath('public/build/shop/')
     .setPublicPath('/build/shop')
-    .addEntry('shop-entry', './assets/shop/entry.js')
+    .addEntry('shop-entry', './assets/shop/entrypoint.js')
     .disableSingleRuntimeChunk()
     .cleanupOutputBeforeBuild()
     .enableSourceMaps(!Encore.isProduction())
@@ -29,7 +29,7 @@ Encore.reset();
 Encore
     .setOutputPath('public/build/admin/')
     .setPublicPath('/build/admin')
-    .addEntry('admin-entry', './assets/admin/entry.js')
+    .addEntry('admin-entry', './assets/admin/entrypoint.js')
     .disableSingleRuntimeChunk()
     .cleanupOutputBeforeBuild()
     .enableSourceMaps(!Encore.isProduction())

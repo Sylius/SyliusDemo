@@ -3,11 +3,13 @@
 /*
  * This file is part of the Sylius package.
  *
- * (c) Paweł Jędrzejewski
+ * (c) Sylius Sp. z o.o.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
+declare(strict_types=1);
 
 namespace App\Generator;
 
@@ -16,30 +18,22 @@ use Symfony\Contracts\Translation\TranslatorInterface;
 
 final class VerificationFlashMessageGenerator implements FlashMessageGeneratorInterface
 {
-    /**
-     * @var UrlGeneratorInterface
-     */
+    /** @var UrlGeneratorInterface */
     private $urlGenerator;
 
-    /**
-     * @var TranslatorInterface
-     */
+    /** @var TranslatorInterface */
     private $translator;
 
-    /**
-     * @param UrlGeneratorInterface $urlGenerator
-     * @param TranslatorInterface $translator
-     */
     public function __construct(
         UrlGeneratorInterface $urlGenerator,
-        TranslatorInterface $translator
+        TranslatorInterface $translator,
     ) {
         $this->urlGenerator = $urlGenerator;
         $this->translator = $translator;
     }
 
     /**
-     * {@inheritdoc}
+     * @inheritdoc
      */
     public function generate(string $token): string
     {
