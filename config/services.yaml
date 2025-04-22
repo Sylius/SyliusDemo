@@ -31,5 +31,10 @@ services:
         tags:
             - {name: twig.extension}
 
+    App\Form\Extension\MollieGatewayConfigurationTypeExtension:
+        class: App\Form\Extension\MollieGatewayConfigurationTypeExtension
+        tags:
+            - { name: form.type_extension }
+
     sylius.http_client:
         class: GuzzleHttp\Client
