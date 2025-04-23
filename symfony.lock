@@ -576,6 +576,19 @@
     "sylius/mailer-bundle": {
         "version": "v1.7.1"
     },
+    "sylius/mollie-plugin": {
+        "version": "2.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "main",
+            "version": "2.0",
+            "ref": "5c75284ff135abe33187e0fe195cf6dcd47207f9"
+        },
+        "files": [
+            "config/packages/sylius_mollie.yaml",
+            "config/routes/sylius_mollie.yaml"
+        ]
+    },
     "sylius/paypal-plugin": {
         "version": "v1.0.0-rc.1"
     },
@@ -976,6 +989,18 @@
     },
     "willdurand/hateoas-bundle": {
         "version": "1.4.0"
+    },
+    "willdurand/js-translation-bundle": {
+        "version": "5.1",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "2.0",
+            "ref": "02b720a49f6d36b44d557e0b18e48bf09e0a8e07"
+        },
+        "files": [
+            "config/routes/js_translation.yaml"
+        ]
     },
     "willdurand/jsonp-callback-validator": {
         "version": "v1.1.0"

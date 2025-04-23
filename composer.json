@@ -26,7 +26,8 @@
         "sylius/refund-plugin": "^1.6",
         "sylius/sylius": "1.14.0",
         "symfony/flex": "^2.4",
-        "bugsnag/bugsnag-symfony": "^1.7"
+        "bugsnag/bugsnag-symfony": "^1.7",
+        "sylius/mollie-plugin": "^2.0"
     },
     "require-dev": {
         "behat/behat": "^3.14",

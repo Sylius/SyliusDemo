@@ -1,6 +1,7 @@
 <!DOCTYPE html>
+{% set mollie = constant('Sylius\\MolliePlugin\\Payum\\Factory\\MollieGatewayFactory::FACTORY_NAME') %}
 
-<html>
+<html lang="{{ sylius.localeCode|split('_')[0] }}">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,48 +26,51 @@
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-
             gtag('config', 'UA-42730941-5');
         </script>
     {% endblock %}
 </head>
 
 <body class="pushable">
-<div class="ui sidebar vertical inverted menu visible left" id="sidebar">
-    {% block sidebar %}
-    {% endblock %}
-</div>
-<div class="ui borderless fixed menu">
-    {% block topbar %}
-    {% endblock %}
-</div>
-<div class="pusher">
-    <div class="full height" id="wrapper">
-        <div id="content">
-            {% block flash_messages %}
-                {% include '@SyliusUi/_flashes.html.twig' %}
-            {% endblock %}
+  <div class="ui sidebar vertical inverted menu visible left" id="sidebar">
+      {% block sidebar %}
+      {% endblock %}
+  </div>
 
-            {% block pre_content %}
-            {% endblock %}
+  <div class="ui borderless fixed menu">
+      {% block topbar %}
+      {% endblock %}
+  </div>
 
-            {% block content %}
-            {% endblock %}
+  {% include '@SyliusMolliePlugin/Ui/OnboardingWizard/_navigation.html.twig' %}
 
-            {% block post_content %}
-            {% endblock %}
-        </div>
+  <div class="pusher">
+      <div class="full height" id="wrapper">
+          <div id="content">
+              {% block flash_messages %}
+                  {% include '@SyliusUi/_flashes.html.twig' %}
+              {% endblock %}
 
-        <div class="sylius-footer">
-            {% block footer %}
-            {% endblock %}
-        </div>
-    </div>
-</div>
+              {% block pre_content %}
+              {% endblock %}
 
-{% include '@SyliusUi/Modal/_confirmation.html.twig' %}
+              {% block content %}
+              {% endblock %}
 
-{% block javascripts %}
-{% endblock %}
+              {% block post_content %}
+              {% endblock %}
+          </div>
+
+          <div class="sylius-footer">
+              {% block footer %}
+              {% endblock %}
+          </div>
+      </div>
+  </div>
+
+  {% include '@SyliusUi/Modal/_confirmation.html.twig' %}
+
+  {% block javascripts %}
+  {% endblock %}
 </body>
 </html>

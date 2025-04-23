@@ -37,3 +37,22 @@ sylius_product:
         product:
             classes:
                 model: App\Entity\Product\Product
+        product_variant:
+            classes:
+                model: App\Entity\Product\ProductVariant
+sylius_payum:
+    resources:
+        gateway_config:
+            classes:
+                model: App\Entity\Payment\GatewayConfig
+sylius_order:
+    resources:
+        order:
+            classes:
+                model: App\Entity\Order\Order
+sylius_user:
+    resources:
+        admin:
+            user:
+                classes:
+                    model: App\Entity\User\AdminUser
