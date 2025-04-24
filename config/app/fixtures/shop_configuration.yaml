@@ -154,16 +154,19 @@ sylius_fixtures:
                                 enabled: true
                                 channels:
                                     - 'FASHION_WEB'
+                                zone: 'US'
                             dhl_express:
                                 code: 'dhl_express'
                                 name: 'DHL Express'
                                 channels:
                                     - 'FASHION_WEB'
+                                zone: 'WORLD'
                             fedex:
                                 code: 'fedex'
                                 name: 'FedEx'
                                 channels:
                                     - 'FASHION_WEB'
+                                zone: 'EEA'
 
                 customer_group:
                     options:
