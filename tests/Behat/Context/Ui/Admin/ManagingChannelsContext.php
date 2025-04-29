@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of the Sylius package.
+ *
+ * (c) Sylius Sp. z o.o.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 declare(strict_types=1);
 
 namespace Tests\Behat\Context\Ui\Admin;
@@ -38,7 +47,7 @@ final class ManagingChannelsContext implements Context
     {
         $this->notificationChecker->checkNotification(
             'You cannot create channel on Sylius Demo!',
-            NotificationType::failure()
+            NotificationType::failure(),
         );
     }
 }

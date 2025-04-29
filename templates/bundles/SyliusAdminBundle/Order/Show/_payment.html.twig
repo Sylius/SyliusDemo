@@ -3,7 +3,7 @@
 
 <div class="item">
     <div class="right floated content">
-        {{ label.default(('sylius.ui.'~payment.state)|trans) }}
+        {% include '@SyliusAdmin/Common/Label/paymentState.html.twig' with {'data': payment.state} %}
     </div>
     <i class="large payment icon"></i>
     <div class="content">
@@ -25,20 +25,28 @@
         {% if payment.details['payment-link'] is defined %}
             <div class="ui segment">
                 <a href="{{ payment.details['payment-link'] }}">
-                    <button type="submit" id="payment-link" class="ui icon labeled tiny yellow fluid loadable button"><i class="money icon"></i> {{ 'sylius.ui.pay'|trans }}</button>
+                    <button type="submit" id="payment-link" class="ui icon labeled tiny yellow fluid loadable button">
+                        <i class="money icon"></i> {{ 'sylius.ui.pay'|trans }}
+                    </button>
                 </a>
             </div>
         {% endif %}
     {% endif %}
-    {% if
-        payment.method.gatewayConfig.factoryName == 'sylius.pay_pal' and
-        payment.state == 'refunded'
-    %}
+    {% if payment.method.gatewayConfig.factoryName == 'sylius.pay_pal' andpayment.state == 'refunded' %}
         <div class="ui icon mini message">
             <i class="paypal icon"></i>
             <div class="content">
                 <p>{{ 'sylius.pay_pal.tender_type'|trans }}</p>
             </div>
+        </div>
+    {% endif %}
+    {% if payment.method.gatewayConfig.factoryName == constant('Sylius\\MolliePlugin\\Payum\\Factory\\MollieGatewayFactory::FACTORY_NAME') and sm_can(payment, 'refund', 'sylius_payment') %}
+        <div class="ui segment">
+            <form action="{{ path('sylius_admin_order_payment_refund', {'orderId': order.id, 'id': payment.id}) }}" method="post" novalidate>
+                <input type="hidden" name="_method" value="PUT">
+                <input type="hidden" name="_csrf_token" value="{{ csrf_token(payment.id) }}" />
+                <button type="submit" class="ui icon labeled tiny yellow fluid loadable button"><i class="reply all icon"></i> {{ 'sylius.ui.refund'|trans }}</button>
+            </form>
         </div>
     {% endif %}
 </div>

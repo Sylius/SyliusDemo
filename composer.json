@@ -22,11 +22,12 @@
     "require": {
         "php": "^8.1",
         "sylius/invoicing-plugin": "^1.0",
-        "sylius/paypal-plugin": "1.7.x-dev",
+        "sylius/paypal-plugin": "^1.7",
         "sylius/refund-plugin": "^1.6",
-        "sylius/sylius": "1.14.0",
+        "sylius/sylius": "^1.14",
         "symfony/flex": "^2.4",
-        "bugsnag/bugsnag-symfony": "^1.7"
+        "bugsnag/bugsnag-symfony": "^1.7",
+        "sylius/mollie-plugin": "^2.0"
     },
     "require-dev": {
         "behat/behat": "^3.14",

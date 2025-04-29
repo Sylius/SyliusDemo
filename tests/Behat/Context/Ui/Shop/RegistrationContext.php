@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of the Sylius package.
+ *
+ * (c) Sylius Sp. z o.o.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 declare(strict_types=1);
 
 namespace Tests\Behat\Context\Ui\Shop;
@@ -26,7 +35,7 @@ final class RegistrationContext implements Context
     public function __construct(
         NotificationCheckerInterface $notificationChecker,
         UrlGeneratorInterface $urlGenerator,
-        RepositoryInterface $shopUserRepository
+        RepositoryInterface $shopUserRepository,
     ) {
         $this->notificationChecker = $notificationChecker;
         $this->urlGenerator = $urlGenerator;
@@ -44,12 +53,12 @@ final class RegistrationContext implements Context
 
         $verificationLink = $this->urlGenerator->generate(
             'sylius_shop_user_verification',
-            ['_locale' => 'en_US', 'token' => $shopUser->getEmailVerificationToken()]
+            ['_locale' => 'en_US', 'token' => $shopUser->getEmailVerificationToken()],
         );
 
         $this->notificationChecker->checkNotification(
             sprintf('For demo purposes you can visit https://127.0.0.1:8080%s to verify the account.', $verificationLink),
-            NotificationType::success()
+            NotificationType::success(),
         );
     }
 }

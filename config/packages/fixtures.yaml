@@ -1,0 +1,15 @@
+# This file is part of the Sylius package.
+# (c) Sylius Sp. z o.o.
+
+imports:
+    - { resource: '../app/fixtures/shop_configuration.yaml' }
+    - { resource: '../app/fixtures/tshirt.yaml' }
+    - { resource: '../app/fixtures/cap.yaml' }
+    - { resource: '../app/fixtures/dress.yaml' }
+    - { resource: '../app/fixtures/jeans.yaml' }
+    - { resource: '../app/fixtures/promotion.yaml' }
+    - { resource: '../app/fixtures/custom_fixtures.yaml' }
+
+parameters:
+    env(SYLIUS_FIXTURES_HOSTNAME): 'localhost'
+    env(SYLIUS_FIXTURES_THEME_NAME): ~
