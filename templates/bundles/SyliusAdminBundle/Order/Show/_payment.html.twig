@@ -32,7 +32,7 @@
             </div>
         {% endif %}
     {% endif %}
-    {% if payment.method.gatewayConfig.factoryName == 'sylius.pay_pal' andpayment.state == 'refunded' %}
+    {% if payment.method.gatewayConfig.factoryName == 'sylius.pay_pal' and payment.state == 'refunded' %}
         <div class="ui icon mini message">
             <i class="paypal icon"></i>
             <div class="content">
