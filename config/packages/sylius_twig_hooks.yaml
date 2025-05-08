@@ -1,9 +1,14 @@
 sylius_twig_hooks:
     hooks:
-        'sylius_shop.base.offcanvas':
-            info_box:
-                template: "info_box.html.twig"
-                priority: 100
+        'sylius_admin.base#stylesheets':
+            app_styles:
+                template: 'admin/stylesheets.html.twig'
+        'sylius_admin.base#javascripts':
+            app_javascripts:
+                template: 'admin/javascripts.html.twig'
+            override:
+                template: "css_override.html.twig"
+                priority: -10
 
         'sylius_admin.security.login':
             info_box:
@@ -20,24 +25,23 @@ sylius_twig_hooks:
                 template: "info_box.html.twig"
                 priority: 100
 
-        'sylius_shop.base#javascripts':
+
+        'sylius_shop.base#stylesheets':
             analytics:
                 template: "analytics.html.twig"
                 priority: 100
-
-        'sylius_shop.base#stylesheets':
+            app_styles:
+                template: 'shop/stylesheets.html.twig'
+        'sylius_shop.base#javascripts':
+            app_javascripts:
+                template: 'shop/javascripts.html.twig'
             override:
                 template: "css_override.html.twig"
                 priority: -10
 
-        'sylius_admin.base#stylesheets':
-            override:
-                template: "css_override.html.twig"
-                priority: -10
-
-        'sylius_shop.account.login.content.login_container':
-            analytics:
-                template: "shop_demo_credentials.html.twig"
+        'sylius_shop.base#metatags':
+            homepage_metatags:
+                template: "shop_metatags.html.twig"
                 priority: 150
 
         'sylius_shop.homepage.index#metatags':
@@ -45,9 +49,14 @@ sylius_twig_hooks:
                 template: "homepage_metatags.html.twig"
                 priority: 150
 
-        'sylius_shop.base#metatags':
-            homepage_metatags:
-                template: "shop_metatags.html.twig"
+        'sylius_shop.base.offcanvas':
+            info_box:
+                template: "info_box.html.twig"
+                priority: 100
+
+        'sylius_shop.account.login.content.login_container':
+            analytics:
+                template: "shop_demo_credentials.html.twig"
                 priority: 150
 
         'sylius_shop.homepage.index':
@@ -69,8 +78,8 @@ sylius_twig_hooks:
                     limit: 8
                     template: '@SyliusShop/homepage/list_products.html.twig'
                 priority: 0
+
         'sylius_shop.base.footer.content':
             payment_methods:
                 template: 'payment_methods.html.twig'
                 priority: 100
-
