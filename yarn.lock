@@ -1176,7 +1176,7 @@
     "@popperjs/core" "^2.11.8"
     "@symfony/stimulus-bridge" "^3.2.0"
     "@symfony/webpack-encore" "^5.0.1"
-    "@tabler/core" "^1.0.0-beta21"
+    "@tabler/core" "~1.0.0"
     apexcharts "^3.41.0"
     bootstrap "^5.3.3"
     infinite-tree "^1.17.1"
@@ -1200,7 +1200,6 @@
     "@symfony/stimulus-bridge" "^3.2.0"
     "@symfony/webpack-encore" "^5.0.1"
     bootstrap "^5.3.3"
-    flag-icons "^7.2.3"
     sass "~1.64.2"
     sass-loader "^16.0.1"
     spotlight.js "^0.7.8"
@@ -1219,10 +1218,10 @@
     schema-utils "^3.0.0"
 
 "@symfony/ux-autocomplete@file:vendor/symfony/ux-autocomplete/assets":
-  version "1.0.0"
+  version "2.23.0"
 
 "@symfony/ux-live-component@file:vendor/symfony/ux-live-component/assets":
-  version "1.0.0"
+  version "2.23.0"
   dependencies:
     idiomorph "^0.3.0"
 
@@ -1247,19 +1246,19 @@
     tmp "^0.2.1"
     yargs-parser "^21.0.0"
 
-"@tabler/core@^1.0.0-beta21":
-  version "1.0.0-beta21"
-  resolved "https://registry.yarnpkg.com/@tabler/core/-/core-1.0.0-beta21.tgz#cd10d7648b3b7b31927a430fd776d3304e796403"
-  integrity sha512-9ZKu38BScc0eHruhX/SlVDSiXenBFSgBp2WDq6orkuC8J/1yutKDt7CdXuJpBwkiADEk5yqYV31Ku+CnhwOc3Q==
+"@tabler/core@~1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@tabler/core/-/core-1.0.0.tgz#08736378108663b5893a31ad462be7d12e64be67"
+  integrity sha512-uFmv6f8TAaW2JaGwzjT1LfK+TjmBQSTCoznCMdV5uur4cv4TtJlV8Hh1Beu55YX0svMtOQ0Xts7tYv/+qBEcfA==
   dependencies:
     "@popperjs/core" "^2.11.8"
-    "@tabler/icons" "^3.14.0"
+    "@tabler/icons" "^3.29.0"
     bootstrap "5.3.3"
 
-"@tabler/icons@^3.14.0":
-  version "3.21.0"
-  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-3.21.0.tgz#d48b5d96d56736d4bd7d32b4a77b1c3e8df12908"
-  integrity sha512-5+GkkmWCr1wgMor5cOF1/YYflTQdc15y10FUikJ3HW8hDiFjfbuoAHJi17FT1vwsr1sA78rkJMn+fDoOOjnnPA==
+"@tabler/icons@^3.29.0":
+  version "3.31.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-3.31.0.tgz#92d39dc336f2e3e312170420b00ffe9ca474925e"
+  integrity sha512-dblAdeKY3+GA1U+Q9eziZ0ooVlZMHsE8dqP0RkwvRtEsAULoKOYaCUOcJ4oW1DjWegdxk++UAt2SlQVnmeHv+g==
 
 "@trysound/sax@0.2.0":
   version "0.2.0"
@@ -1320,6 +1319,11 @@
   version "17.0.31"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.31.tgz#a5bb84ecfa27eec5e1c802c6bbf8139bdb163a5d"
   integrity sha512-AR0x5HbXGqkEx9CadRH3EBYx/VkiUgZIhP4wvPn/+5KIsgpNoyFaRlVe0Zlx9gRtg8fA06a9tskE2MSN7TcG4Q==
+
+"@types/trusted-types@^2.0.7":
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/@types/trusted-types/-/trusted-types-2.0.7.tgz#baccb07a970b91707df3a3e8ba6896c57ead2d11"
+  integrity sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==
 
 "@types/webpack-env@^1.16.4":
   version "1.18.5"
@@ -2070,6 +2074,13 @@ domhandler@^5.0.2, domhandler@^5.0.3:
   dependencies:
     domelementtype "^2.3.0"
 
+dompurify@^3.2.5:
+  version "3.2.5"
+  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-3.2.5.tgz#11b108656a5fb72b24d916df17a1421663d7129c"
+  integrity sha512-mLPd29uoRe9HpvwP2TxClGQBzGXeEC/we/q+bFlmPPmj2p2Ugl3r6ATu/UU1v77DXNcehiBg9zsr1dREyA/dJQ==
+  optionalDependencies:
+    "@types/trusted-types" "^2.0.7"
+
 domutils@^2.5.2, domutils@^2.8.0:
   version "2.8.0"
   resolved "https://registry.yarnpkg.com/domutils/-/domutils-2.8.0.tgz#4437def5db6e2d1f5d6ee859bd95ca7d02048135"
@@ -2258,11 +2269,6 @@ find-up@^6.3.0:
   dependencies:
     locate-path "^7.1.0"
     path-exists "^5.0.0"
-
-flag-icons@^7.2.3:
-  version "7.2.3"
-  resolved "https://registry.yarnpkg.com/flag-icons/-/flag-icons-7.2.3.tgz#b67f379fa0ef28c4e605319a78035131bdd8ced7"
-  integrity sha512-X2gUdteNuqdNqob2KKTJTS+ZCvyWeLCtDz9Ty8uJP17Y4o82Y+U/Vd4JNrdwTAjagYsRznOn9DZ+E/Q52qbmqg==
 
 flattree@^0.11.1:
   version "0.11.1"
@@ -3536,6 +3542,11 @@ svgo@^3.3.2:
     csso "^5.0.5"
     picocolors "^1.0.0"
 
+swiper@^11.2.6:
+  version "11.2.6"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-11.2.6.tgz#826943bf87158518ca0b1f57d387272b12a07c52"
+  integrity sha512-8aXpYKtjy3DjcbzZfz+/OX/GhcU5h+looA6PbAzHMZT6ESSycSp9nAjPCenczgJyslV+rUGse64LMGpWE3PX9Q==
+
 tapable@^2.1.1, tapable@^2.2.0, tapable@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/tapable/-/tapable-2.2.1.tgz#1967a73ef4060a82f12ab96af86d52fdb76eeca0"
@@ -3588,6 +3599,13 @@ tom-select@^2.2.2:
   dependencies:
     "@orchidjs/sifter" "^1.0.3"
     "@orchidjs/unicode-variants" "^1.0.4"
+
+trix@^2.0.0:
+  version "2.1.14"
+  resolved "https://registry.yarnpkg.com/trix/-/trix-2.1.14.tgz#c123a8f1ef48e3acc2ef032b10a058e996deb794"
+  integrity sha512-2WaoD7rBkhsqPPpQ5yRaA4xByIHOqns0F4Qim9XytwG2YacwdbPNe4mXAxohMPgsgYpLl1oSFWaLlKUaILigjw==
+  dependencies:
+    dompurify "^3.2.5"
 
 unicode-canonical-property-names-ecmascript@^2.0.0:
   version "2.0.0"

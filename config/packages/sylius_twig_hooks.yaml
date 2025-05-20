@@ -1,9 +1,14 @@
 sylius_twig_hooks:
     hooks:
-        'sylius_shop.base.offcanvas':
-            info_box:
-                template: "info_box.html.twig"
-                priority: 100
+        'sylius_admin.base#stylesheets':
+            app_styles:
+                template: 'admin/stylesheets.html.twig'
+        'sylius_admin.base#javascripts':
+            app_javascripts:
+                template: 'admin/javascripts.html.twig'
+            override:
+                template: "css_override.html.twig"
+                priority: -10
 
         'sylius_admin.security.login':
             info_box:
@@ -20,24 +25,23 @@ sylius_twig_hooks:
                 template: "info_box.html.twig"
                 priority: 100
 
-        'sylius_shop.base#javascripts':
+
+        'sylius_shop.base#stylesheets':
             analytics:
                 template: "analytics.html.twig"
                 priority: 100
-
-        'sylius_shop.base#stylesheets':
+            app_styles:
+                template: 'shop/stylesheets.html.twig'
+        'sylius_shop.base#javascripts':
+            app_javascripts:
+                template: 'shop/javascripts.html.twig'
             override:
                 template: "css_override.html.twig"
                 priority: -10
 
-        'sylius_admin.base#stylesheets':
-            override:
-                template: "css_override.html.twig"
-                priority: -10
-
-        'sylius_shop.account.login.content.login_container':
-            analytics:
-                template: "shop_demo_credentials.html.twig"
+        'sylius_shop.base#metatags':
+            homepage_metatags:
+                template: "shop_metatags.html.twig"
                 priority: 150
 
         'sylius_shop.homepage.index#metatags':
@@ -45,32 +49,74 @@ sylius_twig_hooks:
                 template: "homepage_metatags.html.twig"
                 priority: 150
 
-        'sylius_shop.base#metatags':
-            homepage_metatags:
-                template: "shop_metatags.html.twig"
+        'sylius_shop.base.offcanvas':
+            info_box:
+                template: "info_box.html.twig"
+                priority: 100
+
+        'sylius_shop.account.login.content.login_container':
+            analytics:
+                template: "shop_demo_credentials.html.twig"
                 priority: 150
 
-        'sylius_shop.homepage.index':
-            banner:
-                template: '@SyliusShop/homepage/banner.html.twig'
-                priority: 300
-            latest_deals:
-                component: 'sylius_shop:product:list'
-                props:
-                    limit: 4
-                    template: '@SyliusShop/homepage/list_deals.html.twig'
-                configuration:
-                    title: 'sylius.homepage.latest_deals'
-                    test_attribute: 'latest-deals'
-                priority: 200
-            latest_products:
-                component: 'sylius_shop:product:list'
-                props:
-                    limit: 8
-                    template: '@SyliusShop/homepage/list_products.html.twig'
-                priority: 0
         'sylius_shop.base.footer.content':
             payment_methods:
                 template: 'payment_methods.html.twig'
                 priority: 100
+        'sylius_shop.base.header.navbar.menu':
+            blog_item:
+                template: 'shop/header/navbar/menu/blog_item.html.twig'
+                priority: -100
+            faq_item:
+                template: 'shop/header/navbar/menu/faq_item.html.twig'
+                priority: -200
 
+        'sylius_shop.homepage.index':
+            new_collection:
+                enabled: false
+            container:
+                template: 'shop/homepage/index/container.html.twig'
+                priority: 100
+
+        'sylius_shop.homepage.index.container':
+            homepage_new_collection:
+                template: 'shop/homepage/index/sections.html.twig'
+
+        'sylius_shop.homepage.index.container.sections':
+            homepage_new_collection_header:
+                component: 'sylius_cms:shop:render:block'
+                props:
+                    code: 'homepage_new_collection_header'
+
+        'sylius_shop.homepage.index.container.sections#left':
+            homepage_new_collection_banner:
+                component: 'sylius_cms:shop:render:block'
+                props:
+                    code: 'homepage_new_collection_banner'
+
+        'sylius_shop.homepage.index.container.sections#right':
+            homepage_new_collection_products:
+                component: 'sylius_cms:shop:render:block'
+                props:
+                    code: 'homepage_new_collection_products'
+
+        'sylius_shop.product.show.content':
+            mid_season_sale_banner:
+                component: 'sylius_cms:shop:render:block'
+                props:
+                    code: 'mid_season_sale_banner'
+                priority: 150
+            product_listing:
+                enabled: false
+            specified_products_in_taxons:
+                component: 'sylius_cms:shop:render:block'
+                props:
+                    code: 'specified_products_in_taxons'
+                priority: -100
+
+        'sylius_shop.product.index.content.body.main.header':
+            mid_season_sale_banner_taxon:
+                component: 'sylius_cms:shop:render:block'
+                props:
+                    code: 'mid_season_sale_banner_taxon'
+                priority: -100

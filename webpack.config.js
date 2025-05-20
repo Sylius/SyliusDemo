@@ -15,11 +15,16 @@ Encore
     .setOutputPath('public/build/app/shop')
     .setPublicPath('/build/app/shop')
     .addEntry('app-shop-entry', './assets/shop/entrypoint.js')
+    .addAliases({
+        '@vendor': path.resolve(__dirname, 'vendor'),
+    })
     .disableSingleRuntimeChunk()
     .cleanupOutputBeforeBuild()
     .enableSourceMaps(!Encore.isProduction())
     .enableVersioning(Encore.isProduction())
-    .enableSassLoader();
+    .enableSassLoader()
+    .enableStimulusBridge(path.resolve(__dirname, './assets/shop/controllers.json'))
+;
 
 const appShopConfig = Encore.getWebpackConfig();
 
@@ -33,11 +38,16 @@ Encore
     .setOutputPath('public/build/app/admin')
     .setPublicPath('/build/app/admin')
     .addEntry('app-admin-entry', './assets/admin/entrypoint.js')
+    .addAliases({
+        '@vendor': path.resolve(__dirname, 'vendor'),
+    })
     .disableSingleRuntimeChunk()
     .cleanupOutputBeforeBuild()
     .enableSourceMaps(!Encore.isProduction())
     .enableVersioning(Encore.isProduction())
-    .enableSassLoader();
+    .enableSassLoader()
+    .enableStimulusBridge(path.resolve(__dirname, './assets/admin/controllers.json'))
+;
 
 const appAdminConfig = Encore.getWebpackConfig();
 
