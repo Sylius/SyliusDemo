@@ -27,6 +27,7 @@
         "sylius/paypal-plugin": "2.0.x-dev",
         "sylius/refund-plugin": "2.0.x-dev",
         "sylius/cms-plugin": "1.0.x-dev",
+        "sylius/mollie-plugin": "3.0.x-dev",
         "sylius/sylius": "2.0.x-dev",
         "symfony/flex": "^2.4"
     },
