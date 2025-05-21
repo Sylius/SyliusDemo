@@ -46,6 +46,7 @@ default:
                 - sylius.behat.context.ui.admin.managing_administrators
                 - sylius.behat.context.ui.admin.notification
                 - sylius.behat.context.ui.admin.login
+                - sylius.behat.context.ui.save
 
                 - sylius_demo.behat.context.ui.admin.managing_administrators_context
             filters:

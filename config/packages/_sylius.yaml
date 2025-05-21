@@ -25,8 +25,31 @@ sylius_theme:
             directories:
                 - "%kernel.project_dir%/themes"
 
+sylius_order:
+    resources:
+        order:
+            classes:
+                model: App\Entity\Order\Order
+
+sylius_payment:
+    resources:
+        gateway_config:
+            classes:
+                model: App\Entity\Payment\GatewayConfig
+
 sylius_product:
     resources:
         product:
             classes:
                 model: App\Entity\Product\Product
+        product_variant:
+            classes:
+                model: App\Entity\Product\ProductVariant
+
+sylius_user:
+    resources:
+        admin:
+            user:
+                classes:
+                    model: App\Entity\User\AdminUser
+
