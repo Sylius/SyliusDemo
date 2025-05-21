@@ -120,3 +120,19 @@ sylius_twig_hooks:
                 props:
                     code: 'mid_season_sale_banner_taxon'
                 priority: -100
+
+        'sylius_admin.payment_method.update.content.form.sections.gateway_configuration.mollie.credentials':
+            test_credentials:
+                enabled: false
+            api_key_live:
+                enabled: false
+            test_api_keys_action:
+                enabled: false
+
+        'sylius_admin.payment_method.update.content.form.sections.gateway_configuration.mollie_subscription.credentials':
+            test_credentials:
+                enabled: false
+            api_key_live:
+                enabled: false
+            test_api_keys_action:
+                enabled: false
