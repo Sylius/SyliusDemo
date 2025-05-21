@@ -1,0 +1,29 @@
+# This file is part of the Sylius package.
+# (c) Sylius Sp. z o.o.
+
+sylius_fixtures:
+    suites:
+        demo:
+            fixtures:
+                product_review:
+                    options:
+                        random: 40
+
+                similar_product_association:
+                    options:
+                        amount: 3
+
+                order:
+                    options:
+                        amount: 20
+                        channel: 'FASHION_WEB'
+
+                payments:
+                    options:
+                        percentage_completed: 75
+
+                address:
+                    options:
+                        random: 10
+                        prototype:
+                            country_code: US
