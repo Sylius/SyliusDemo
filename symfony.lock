@@ -615,6 +615,19 @@
             "ref": "42a2dc11276d447efefa639b95f9c7a4edd7031a"
         }
     },
+    "sylius/wishlist-plugin": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "main",
+            "version": "1.0",
+            "ref": "1e7c16bad23f1e977fcd53af6c4fbdfed0c11a75"
+        },
+        "files": [
+            "config/packages/sylius_wishlist.yaml",
+            "config/routes/sylius_wishlist.yaml"
+        ]
+    },
     "symfony/asset": {
         "version": "v4.1.5"
     },

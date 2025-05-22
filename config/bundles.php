@@ -71,4 +71,5 @@ return [
     winzou\Bundle\StateMachineBundle\winzouStateMachineBundle::class => ['all' => true],
     Bazinga\Bundle\JsTranslationBundle\BazingaJsTranslationBundle::class => ['all' => true],
     Sylius\MolliePlugin\SyliusMolliePlugin::class => ['all' => true],
+    Sylius\WishlistPlugin\SyliusWishlistPlugin::class => ['all' => true],
 ];
