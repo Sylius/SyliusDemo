@@ -29,7 +29,8 @@
         "sylius/cms-plugin": "1.0.x-dev",
         "sylius/mollie-plugin": "3.0.x-dev",
         "sylius/sylius": "2.0.x-dev",
-        "symfony/flex": "^2.4"
+        "symfony/flex": "^2.4",
+        "sylius/wishlist-plugin": "1.0.x-dev"
     },
     "require-dev": {
         "behat/behat": "^3.14",
