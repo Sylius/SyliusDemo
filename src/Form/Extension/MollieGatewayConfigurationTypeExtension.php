@@ -22,6 +22,7 @@ final class MollieGatewayConfigurationTypeExtension extends AbstractTypeExtensio
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
+            ->remove('profile_id')
             ->remove('api_key_live')
             ->remove('api_key_test')
         ;
