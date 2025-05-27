@@ -68,7 +68,6 @@ return [
     Sylius\PayPalPlugin\SyliusPayPalPlugin::class => ['all' => true],
     Sylius\RefundPlugin\SyliusRefundPlugin::class => ['all' => true],
     Sylius\CmsPlugin\SyliusCmsPlugin::class => ['all' => true],
-    winzou\Bundle\StateMachineBundle\winzouStateMachineBundle::class => ['all' => true],
     Bazinga\Bundle\JsTranslationBundle\BazingaJsTranslationBundle::class => ['all' => true],
     Sylius\MolliePlugin\SyliusMolliePlugin::class => ['all' => true],
     Sylius\WishlistPlugin\SyliusWishlistPlugin::class => ['all' => true],
