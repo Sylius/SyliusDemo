@@ -11,6 +11,9 @@ parameters:
     sylius_core.public_dir: '%kernel.project_dir%/public'
     sylius.cache:
         type: array
+    sylius_refund.supported_gateways:
+        - offline
+        - mollie
 
 sylius_shop:
     product_grid:
