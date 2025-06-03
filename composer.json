@@ -30,7 +30,8 @@
         "sylius/mollie-plugin": "3.0.x-dev",
         "sylius/sylius": "2.0.x-dev",
         "symfony/flex": "^2.4",
-        "sylius/wishlist-plugin": "1.0.x-dev"
+        "sylius/wishlist-plugin": "1.0.x-dev",
+        "sylius/product-bundle-plugin": "1.0.x-dev"
     },
     "require-dev": {
         "behat/behat": "^3.14",
@@ -105,6 +106,12 @@
         "symfony": {
             "allow-contrib": true,
             "require": "^7.1"
+        }
+    },
+    "repositories": {
+        "sylius-product-bundle-plugin": {
+            "type": "vcs",
+            "url": "https://github.com/Sylius/ProductBundlePlugin.git"
         }
     }
 }
