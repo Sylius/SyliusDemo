@@ -461,9 +461,6 @@
     "sebastian/recursion-context": {
         "version": "3.0.0"
     },
-    "sebastian/resource-operations": {
-        "version": "1.0.0"
-    },
     "sebastian/type": {
         "version": "1.1.4"
     },
@@ -818,14 +815,8 @@
     "symfony/polyfill-mbstring": {
         "version": "v1.9.0"
     },
-    "symfony/polyfill-php72": {
-        "version": "v1.9.0"
-    },
     "symfony/polyfill-php80": {
         "version": "v1.15.0"
-    },
-    "symfony/polyfill-php81": {
-        "version": "v1.25.0"
     },
     "symfony/process": {
         "version": "v4.1.5"
