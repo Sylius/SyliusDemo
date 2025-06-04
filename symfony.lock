@@ -572,6 +572,19 @@
     "sylius/paypal-plugin": {
         "version": "2.0.x-dev"
     },
+    "sylius/product-bundle-plugin": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "main",
+            "version": "1.0",
+            "ref": "19437b51c393256f8eef86a59b8378f2ee284bf8"
+        },
+        "files": [
+            "config/packages/sylius_product_bundle.yaml",
+            "config/routes/sylius_product_bundle.yaml"
+        ]
+    },
     "sylius/refund-plugin": {
         "version": "2.0",
         "recipe": {

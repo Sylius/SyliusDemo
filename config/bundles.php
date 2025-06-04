@@ -71,4 +71,5 @@ return [
     Bazinga\Bundle\JsTranslationBundle\BazingaJsTranslationBundle::class => ['all' => true],
     Sylius\MolliePlugin\SyliusMolliePlugin::class => ['all' => true],
     Sylius\WishlistPlugin\SyliusWishlistPlugin::class => ['all' => true],
+    Sylius\ProductBundlePlugin\SyliusProductBundlePlugin::class => ['all' => true],
 ];
