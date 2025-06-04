@@ -107,11 +107,5 @@
             "allow-contrib": true,
             "require": "7.2.*"
         }
-    },
-    "repositories": {
-        "sylius-product-bundle-plugin": {
-            "type": "vcs",
-            "url": "https://github.com/Sylius/ProductBundlePlugin.git"
-        }
     }
 }
