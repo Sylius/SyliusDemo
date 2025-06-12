@@ -19,19 +19,19 @@
         <div class="info-box__item__content">
             <select id="version-select" class="select-color-green">
                 <option value="//demo.sylius.com">
-                    Sylius 1.x - Plus Demo
+                    Sylius Demo (with Plus modules)
                 </option>
                 <option value="//b2b-suite.demo.sylius.com">
-                    Sylius 1.x - B2B Plus
+                    Sylius Plus B2B Suite
                 </option>
                 <option value="//marketplace-suite.demo.sylius.com">
-                    Sylius 1.x - Marketplace Plus
+                    Sylius Plus Marketplace Suite
                 </option>
                 <option value="//v1.demo.sylius.com">
-                    Sylius 1.14 - Community Edition LTS
+                    Sylius Community Edition (version 1.14)
                 </option>
                 <option value="//v2.demo.sylius.com" selected>
-                    Sylius 2.0 - Latest Community Edition
+                    Sylius Community Edition (version 2.1)
                 </option>
             </select>
         </div>
@@ -59,35 +59,3 @@
         <a href="https://sylius.com/try/?utm_source=demo" target="_blank">Get a live demo of Sylius Plus</a>
     </div>
 </div>
-
-<script type="text/javascript">
-    class DemoInfoBox {
-        constructor() {
-            this.isOpen = false;
-            this.versionSelect = document.getElementById('version-select');
-            this.infoBox = document.getElementById('info-box');
-            this.infoToggle = document.getElementById('info-toggle');
-
-            if (window.sessionStorage.getItem('sylius:infoBox') !== 'close') {
-                this.toggleVisibility();
-            }
-
-            this.infoToggle.addEventListener('click', this.toggleVisibility.bind(this));
-            this.versionSelect.addEventListener('change', e => window.location.href = e.target.value);
-        }
-
-        toggleVisibility() {
-            this.infoBox.classList.toggle('show');
-            this.infoToggle.classList.toggle('show');
-            this.isOpen = !this.isOpen;
-            this.saveVisibility();
-        }
-
-        saveVisibility() {
-            const state = this.isOpen ? 'open' : 'close';
-            window.sessionStorage.setItem('sylius:infoBox', state);
-        }
-    }
-
-    const demoInfoBox = new DemoInfoBox();
-</script>
