@@ -56,7 +56,8 @@
         "symfony/web-profiler-bundle": "^6.4"
     },
     "conflict": {
-        "bugsnag/bugsnag-symfony": "1.14.0"
+        "bugsnag/bugsnag-symfony": "1.14.0",
+        "symfony/serializer": "^6.4.23"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
