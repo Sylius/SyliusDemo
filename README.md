@@ -34,11 +34,10 @@ Installation
 $ wget http://getcomposer.org/composer.phar
 $ php composer.phar create-project -s beta sylius/sylius-standard project
 $ cd project
-$ npm install
-$ npm run gulp
-$ php bin/console sylius:install
-$ php bin/console server:start
-$ open http://localhost:8000/
+$ make init
+$ npm run build
+$ docker composer up -d
+$ open http://localhost:80/
 ```
 
 Troubleshooting
