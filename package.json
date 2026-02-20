@@ -14,7 +14,7 @@
     "intl-messageformat": "^10.7.16",
     "lodash.get": "^4.4.2",
     "shepherd.js": "11.0",
-    "swiper": "^11.2.6",
+    "swiper": "^12.1.2",
     "trix": "^2.0.0"
   },
   "devDependencies": {
