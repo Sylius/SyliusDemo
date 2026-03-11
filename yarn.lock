@@ -969,7 +969,7 @@
     "@babel/preset-env" "^7.25.8"
     "@hotwired/stimulus" "^3.0.0"
     "@popperjs/core" "^2.11.8"
-    "@sylius/admin-bundle" "file:../../../Library/Caches/Yarn/v6/npm-@sylius-ui-admin-2.0.0-7f7920df-500b-4ec2-845e-2a6b99fd6f69-1749064432293/node_modules/@sylius-ui/admin/Resources/assets"
+    "@sylius/admin-bundle" "file:vendor/sylius/sylius/src/Sylius/Bundle/AdminBundle/Resources/assets"
     "@symfony/stimulus-bridge" "^3.2.0"
     "@symfony/webpack-encore" "^5.0.1"
     "@tabler/core" "^1.3.0"
@@ -993,7 +993,7 @@
     "@babel/preset-env" "^7.25.8"
     "@hotwired/stimulus" "^3.0.0"
     "@popperjs/core" "^2.11.8"
-    "@sylius/shop-bundle" "file:../../../Library/Caches/Yarn/v6/npm-@sylius-ui-shop-2.0.0-ac847cba-b6b2-40f2-b653-b55db73828a5-1749064435748/node_modules/@sylius-ui/shop/Resources/assets"
+    "@sylius/shop-bundle" "file:vendor/sylius/sylius/src/Sylius/Bundle/ShopBundle/Resources/assets"
     "@symfony/stimulus-bridge" "^3.2.0"
     "@symfony/webpack-encore" "^5.0.1"
     bootstrap "^5.3.3"
@@ -3123,9 +3123,9 @@ terser@^5.31.1:
     source-map-support "~0.5.20"
 
 tmp@^0.2.1:
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/tmp/-/tmp-0.2.3.tgz#eb783cc22bc1e8bebd0671476d46ea4eb32a79ae"
-  integrity sha512-nZD7m9iCPC5g0pYmcaxogYKggSfLsdxl8of3Q/oIbqCqLLIO9IAF0GWjX1z9NZRHPiXv8Wex4yDCaZsgEw0Y8w==
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/tmp/-/tmp-0.2.4.tgz#c6db987a2ccc97f812f17137b36af2b6521b0d13"
+  integrity sha512-UdiSoX6ypifLmrfQ/XfiawN6hkjSBpCjhKxxZcWlUUmoXLaCKQU0bx4HF/tdDK2uzRuchf1txGvrWBzYREssoQ==
 
 to-regex-range@^5.0.1:
   version "5.0.1"
