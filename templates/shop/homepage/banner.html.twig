@@ -1,0 +1,50 @@
+{% set features = ['storefront', 'cart', 'account', 'admin', 'payments'] %}
+
+<div class="mb-6 position-relative">
+    <div class="overflow-hidden">
+        <img src="{{ asset('images/homepage-banner.webp') }}" width="1920" height="793" class="img-fluid w-100" alt="Home">
+    </div>
+    <div class="container position-absolute top-0 start-0 end-0">
+        <div class="homepage-info-box">
+            <span class="homepage-info-box__badge fs-7 fw-bold ff-manrope text-white">
+                {{ 'sylius_demo.homepage.info_box.badge'|trans }}
+            </span>
+            <div class="homepage-info-box__inner">
+                <p class="mb-2 fs-5 fw-semibold text-app-neutral-800">{{ 'sylius_demo.homepage.info_box.title'|trans }}</p>
+                <span class="mb-[40px] fs-[48px] fw-bold text-app-neutral-800 lh-1 app-hero__highlight">
+                    {{ 'sylius_demo.homepage.info_box.subtitle'|trans }}
+                    {% include 'shop/common/background_shapes/underline.svg.twig' %}
+                </span>
+                <p class="mb-5 fs-5 fw-normal text-app-neutral-800 lh-[140%]">
+                    {{ 'sylius_demo.homepage.info_box.description_prefix'|trans }}<span class="text-app-primary-400 ff-source fw-normal fs-5 homepage-info-box__standard-link">{{ 'sylius_demo.homepage.info_box.description_link'|trans }}</span>{{ 'sylius_demo.homepage.info_box.description_suffix'|trans }}
+                </p>
+                <div class="homepage-info-box__features mb-[64px]">
+                    <p class="mb-3 fs-4 fw-bold text-app-neutral-800">{{ 'sylius_demo.homepage.info_box.features_title'|trans }}</p>
+                    <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                        {% for key in features %}
+                            <li class="d-flex align-items-center gap-3">
+                                {{ ux_icon('lucide:move-right', {'class': 'icon icon-sm text-app-primary-300'}) }}
+                                <span class="fs-5 text-app-neutral-800">{{ ('sylius_demo.homepage.info_box.features.' ~ key)|trans }}</span>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="d-flex align-items-center gap-5">
+                    <div class="fs-[18px] fw-bold text-app-neutral-800">
+                        {{ 'sylius_demo.homepage.info_box.credentials_title'|trans }}
+                    </div>
+                    <div class="d-flex flex-column gap-3 flex-grow-1 homepage-info-box__buttons">
+                        <a href="/admin" class="app-btn app-btn--xl app-btn--outline-dark w-100 justify-content-between fw-bold border border-app-neutral-400">
+                            {{ 'sylius_demo.homepage.info_box.btn_admin'|trans }}
+                            {{ ux_icon('lucide:move-right', {'class': 'icon icon-sm'}) }}
+                        </a>
+                        <a href="{{ path('sylius_shop_login') }}" class="app-btn app-btn--xl app-btn--outline-dark w-100 justify-content-between fw-bold border border-app-neutral-400">
+                            {{ 'sylius_demo.homepage.info_box.btn_customer'|trans }}
+                            {{ ux_icon('lucide:move-right', {'class': 'icon icon-sm'}) }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

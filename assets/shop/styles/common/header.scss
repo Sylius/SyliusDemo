@@ -1,0 +1,16 @@
+.ecosystem-link {
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: $app-neutral-100;
+  }
+}
+
+.ecosystem-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}

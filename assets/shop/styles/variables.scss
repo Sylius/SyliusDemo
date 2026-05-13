@@ -1,0 +1,27 @@
+@import '~bootstrap/scss/functions';
+
+$headings-font-weight: 700;
+$font-weight-bolder: 700;
+
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins/breakpoints';
+
+$app-primary: #1F9985;
+$app-primary-dark: #1A9F83;
+$app-primary-300: #199C80;
+$app-primary-400: #0D9C7E;
+$app-primary-600: #258E7D;
+$app-primary-900: #0B3539;
+$yellow: #FFCC24;
+$app-red: #C80802;
+
+$app-neutral-50: #F7F8FC;
+$app-neutral-100: #EFF2F9;
+$app-neutral-200: #E1E8F3;
+$app-neutral-300: #C9D1DD;
+$app-neutral-400: #AAB3C3;
+$app-neutral-500: #7D8796;
+$app-neutral-600: #5C6676;
+$app-neutral-700: #2D3B4E;
+$app-neutral-800: #1E2E3E;
+$app-neutral-900: #141F2D;

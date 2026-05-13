@@ -1,0 +1,48 @@
+.app-hero__highlight {
+    position: relative;
+    display: inline-block;
+
+    svg {
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.homepage-info-box__standard-link {
+    background: #F3F3F3;
+}
+
+.homepage-info-box__buttons {
+    min-width: 280px;
+}
+
+.homepage-info-box {
+    position: relative;
+    margin-top: 50px;
+    margin-left: auto;
+    max-width: 730px;
+    background: #fff;
+    box-shadow: 0 0 50.3px 0 rgba(0, 0, 0, 0.25);
+    padding: 54px 60px;
+    border-radius: 24px;
+
+    &__badge {
+        position: absolute;
+        top: -14px;
+        right: 56px;
+        background-color: $app-primary-300;
+        color: #fff;
+        border-radius: 999px;
+        width: 195px;
+        padding: 4px 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 42px;
+        letter-spacing: 0.19em;
+        text-transform: uppercase;
+    }
+}
