@@ -1,0 +1,183 @@
+.app-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+
+  height: 36px;
+  padding: 8px 16px;
+  font-size: 12px;
+  line-height: 20px;
+
+  &--xs {
+    height: 28px;
+    padding: 4px 8px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  &--sm {
+    height: 36px;
+    padding: 8px 16px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  &--md {
+    height: 40px;
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &--lg {
+    height: 48px;
+    padding: 12px 24px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  &--xl {
+    height: 58px;
+    padding: 16px 32px;
+    font-size: 18px;
+    line-height: 1.75;
+  }
+
+  &--primary {
+    background-color: $app-primary;
+    color: white;
+    border: 1px solid $app-primary;
+
+    &:hover, &:active {
+      background-color: $app-primary-dark;
+      border-color: $app-primary-dark;
+    }
+  }
+
+  &--secondary {
+    background-color: $app-neutral-800;
+    color: #fff;
+
+    &:hover, &:active {
+      background-color: $app-neutral-900;
+      color: #fff;
+    }
+  }
+
+  &--outline-primary {
+    background-color: transparent;
+    color: $app-primary;
+    border: 1px solid $app-primary;
+
+    &:hover, &:active {
+      background-color: $app-primary;
+      color: white;
+    }
+  }
+
+  &--outline {
+    background-color: transparent;
+    color: #475569;
+    border: 1px solid $app-neutral-400;
+
+    &:hover, &:active {
+      background-color: $app-neutral-100;
+      color: #475569;
+      text-decoration: none;
+    }
+
+    &.active {
+      background-color: $app-neutral-200;
+      border: 1px solid $app-neutral-800;
+    }
+  }
+
+  &--outline-dark {
+    background-color: transparent;
+    color: $app-neutral-800;
+    border: 1px solid $app-neutral-800;
+
+    &:hover, &:active {
+      background-color: $app-neutral-100;
+      color: $app-neutral-800;
+      text-decoration: none;
+    }
+  }
+
+  &--outline-light {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+
+    &:hover, &:active {
+      background-color: transparent;
+    }
+  }
+
+  &--neutral {
+    background-color: $app-neutral-200;
+    color: $app-neutral-800;
+
+    &:hover, &:active {
+      background-color: $app-neutral-300;
+    }
+  }
+
+  &--white {
+    background-color: #fff;
+  }
+
+  &--pill {
+    font-size: 14px;
+    flex-shrink: 0;
+    height: 40px;
+
+    &:hover, &:active {
+      background-color: $app-neutral-100;
+    }
+  }
+
+  &--pill-active {
+    background-color: $app-neutral-200;
+    color: $app-neutral-800;
+    border: 1px solid $app-neutral-800;
+
+    &:hover, &:active {
+      background-color: $app-neutral-200;
+    }
+  }
+
+  &--dark {
+    background-color: #000;
+    color: #fff;
+    border-radius: 12px;
+    padding: 14px 28px;
+    height: 52px;
+    font-size: 16px;
+    font-weight: 600;
+
+    &:hover, &:active {
+      background-color: #222;
+      color: #fff;
+    }
+  }
+
+  &--icon-only {
+    padding: 0;
+    aspect-ratio: 1;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+  }
+}

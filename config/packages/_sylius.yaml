@@ -6,6 +6,8 @@ imports:
     - { resource: "@SyliusPayumBundle/Resources/config/app/config.yaml" }
     - { resource: "@SyliusPayPalPlugin/config/config.yaml" }
 
+    - { resource: "twig_hooks/**/*.yaml" }
+
 parameters:
     fixtures_dir: "%kernel.project_dir%/src/Resources/fixtures"
     sylius_core.public_dir: '%kernel.project_dir%/public'

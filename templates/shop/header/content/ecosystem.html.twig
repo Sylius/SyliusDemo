@@ -1,0 +1,48 @@
+<div class="col-auto">
+<div class="dropdown">
+    <button type="button"
+            class="app-btn app-btn--md app-btn--icon-only rounded-circle app-btn--outline fw-bold text-black"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            aria-label="{{ 'sylius.ui.login'|trans }}">
+        {{ ux_icon('lucide:layout-grid', {'class': 'icon icon-sm'}) }}
+    </button>
+
+    {% set primary_links = [
+        { 'name': 'sylius_demo.ui.grid_links.sylius'|trans, 'img': asset('images/ecosystem_icons/sylius.svg'), 'url': 'https://sylius.com' },
+        { 'name': 'sylius_demo.ui.grid_links.sylius_plus'|trans, 'img': asset('images/ecosystem_icons/sylius_plus.svg'), 'url': 'https://sylius.com/plus' },
+        { 'name': 'sylius_demo.ui.grid_links.addons'|trans, 'img': asset('images/ecosystem_icons/addons.svg'), 'url': 'https://addons.sylius.com' },
+        { 'name': 'sylius_demo.ui.grid_links.academy'|trans, 'img': asset('images/ecosystem_icons/academy.svg'), 'url': 'https://academy.sylius.com' },
+        { 'name': 'sylius_demo.ui.grid_links.docs'|trans, 'img': asset('images/ecosystem_icons/docs.svg'), 'url': 'https://docs.sylius.com' }
+    ] %}
+
+    {% set secondary_links = [
+        { 'name': 'sylius_demo.ui.grid_links.support'|trans, 'img': asset('images/ecosystem_icons/support.svg'), 'url': 'https://sylius.com/support' },
+        { 'name': 'sylius_demo.ui.grid_links.contact_us'|trans, 'img': asset('images/ecosystem_icons/contact_us.svg'), 'url': 'https://sylius.com/contact' }
+    ] %}
+
+    <div class="dropdown-menu dropdown-menu-end p-2 mt-2 rounded-3 bg-app-neutral-200 border-0">
+        <div class="d-grid bg-white rounded-3 p-2" style="grid-template-columns: repeat(3, 104px); gap: 8px;">
+            {% for link in primary_links %}
+                <a class="d-flex flex-column align-items-center gap-2 p-2 ecosystem-link" href="{{ link.url }}">
+                    <img class="ecosystem-icon" src="{{ link.img }}" alt="{{ link.name }}">
+                    <div class="text-center text-nowrap fs-[12px] fw-semibold">
+                        {{ link.name }}
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+
+        <div class="d-grid p-2 mt-2" style="grid-template-columns: repeat(3, 104px); gap: 8px;">
+            {% for link in secondary_links %}
+                <a class="d-flex flex-column align-items-center gap-2 p-2 ecosystem-link" href="{{ link.url }}">
+                    <img class="ecosystem-icon" src="{{ link.img }}" alt="{{ link.name }}">
+                    <div class="text-center text-nowrap fs-[12px] fw-semibold">
+                        {{ link.name }}
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+</div>

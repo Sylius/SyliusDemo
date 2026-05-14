@@ -1,0 +1,6 @@
+sylius_twig_hooks:
+    hooks:
+        'sylius_shop.base.header.content':
+            ecosystem:
+                template: 'shop/header/content/ecosystem.html.twig'
+                priority: 50

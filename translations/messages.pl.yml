@@ -1,0 +1,31 @@
+sylius_demo:
+    ui:
+        grid_links:
+            sylius: 'Sylius'
+            sylius_plus: 'Sylius Plus'
+            addons: 'Dodatki'
+            academy: 'Akademia'
+            docs: 'Dokumentacja'
+            support: 'Wsparcie'
+            contact_us: 'Skontaktuj się'
+    verification_link_flash: 'W celach demonstracyjnych możesz odwiedzić %url%, aby zweryfikować konto.'
+    meta_description: 'Odkryj Sylius – elastyczną platformę e-commerce opartą na Symfony. Poznaj funkcje do personalizacji swojego sklepu i przetestuj jego możliwości!'
+    homepage:
+        info_box:
+            title: 'To jest Sylius prosto z pudełka'
+            subtitle_prefix: 'Witaj w Sylius '
+            subtitle_highlight: 'Community Edition Demo'
+            badge: 'Dostęp publiczny'
+            credentials_title: 'Dane logowania dostępne są na formularzach logowania.'
+            btn_admin: 'Otwórz panel admina'
+            btn_customer: 'Zaloguj się jako klient'
+            features_title: 'Co możesz tu przetestować?'
+            features:
+                storefront: 'Sklep z produktami i wariantami'
+                cart: 'Koszyk i pełny proces zamówienia'
+                account: 'Konto klienta z historią zamówień'
+                admin: 'Panel admina: katalog, zamówienia, promocje, wysyłki itp.'
+                payments: 'Oficjalne integracje płatności'
+            description_prefix: 'Standardowa instalacja z '
+            description_link: 'Sylius/Sylius-Standard'
+            description_suffix: ': tylko oficjalne wtyczki Sylius, bez własnego motywu. To co widzisz, to dokładnie to, co otrzymujesz po instalacji Sylius.'
