@@ -13,7 +13,8 @@ sylius_demo:
     homepage:
         info_box:
             title: 'This is Sylius out of the box'
-            subtitle: 'Welcome to the Sylius Community Edition Demo'
+            subtitle_prefix: 'Welcome to the Sylius '
+            subtitle_highlight: 'Community Edition Demo'
             badge: 'Public access'
             credentials_title: 'Login credentials are available on the login forms.'
             btn_admin: 'Open admin panel'

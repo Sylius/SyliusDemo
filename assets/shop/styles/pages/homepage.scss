@@ -12,7 +12,7 @@
 }
 
 .homepage-banner__container {
-    @media (min-width: 992px) {
+    @media (min-width: 1200px) {
         position: absolute;
         top: 0;
         left: 0;
@@ -32,12 +32,13 @@
         line-height: 20px;
     }
 
-    @media (max-width: 991.98px) {
+    @media (max-width: 1199.98px) {
         min-width: 240px;
 
         .app-btn {
             font-size: 16px;
             padding: 14px 24px;
+            height: 48px;
         }
     }
 }
@@ -48,7 +49,7 @@
     margin-left: auto;
     max-width: 730px;
 
-    @media (max-width: 991.98px) {
+    @media (max-width: 1199.98px) {
         margin-left: 0;
         max-width: 100%;
         border-radius: 0;
@@ -61,7 +62,11 @@
         margin-bottom: 40px;
         display: block;
 
-        @media (max-width: 991.98px) {
+        @media (max-width: 1799.98px) {
+            font-size: 40px;
+        }
+
+        @media (max-width: 1199.98px) {
             font-size: 28px;
             margin-bottom: 28px;
             text-align: center;
@@ -69,14 +74,14 @@
     }
 
     &__inner {
-        @media (max-width: 991.98px) {
+        @media (max-width: 1199.98px) {
             display: flex;
             flex-direction: column;
         }
     }
 
     &__credentials {
-        @media (max-width: 991.98px) {
+        @media (max-width: 1199.98px) {
             order: 1;
             margin-bottom: 32px;
         }
@@ -85,7 +90,7 @@
     &__credentials-text {
         font-size: 18px;
 
-        @media (max-width: 991.98px) {
+        @media (max-width: 1199.98px) {
             font-size: 16px;
         }
     }
@@ -93,7 +98,11 @@
     &__features {
         margin-bottom: 64px;
 
-        @media (max-width: 991.98px) {
+        @media (max-width: 1799.98px) {
+            margin-bottom: 32px;
+        }
+
+        @media (max-width: 1199.98px) {
             order: 2;
             margin-bottom: 0;
         }
@@ -102,8 +111,18 @@
     &__feature-text {
         font-size: 20px;
 
-        @media (max-width: 991.98px) {
+        @media (max-width: 1799.98px) {
+            font-size: 16px;
+        }
+
+        @media (max-width: 1199.98px) {
             font-size: 14px;
+        }
+    }
+
+    &__features-title {
+        @media (max-width: 1599.98px) {
+            font-size: 16px;
         }
     }
 
@@ -133,7 +152,12 @@
         font-size: 20px;
         margin-bottom: 3rem;
 
-        @media (max-width: 991.98px) {
+        @media (max-width: 1799.98px) {
+            font-size: 18px;
+            margin-bottom: 24px;
+        }
+
+        @media (max-width: 1199.98px) {
             font-size: 16px;
             margin-bottom: 32px;
             text-align: center;
@@ -143,7 +167,7 @@
     &__title {
         font-size: 20px;
 
-        @media (max-width: 991.98px) {
+        @media (max-width: 1199.98px) {
             text-align: center;
             font-size: 14px;
         }
@@ -153,12 +177,17 @@
     padding: 54px 60px;
     border-radius: 24px;
 
+    @media (max-width: 1799.98px) {
+        padding-top: 34px;
+        padding-bottom: 34px;
+    }
+
     &__badge {
         position: absolute;
         top: -14px;
         right: 56px;
 
-        @media (max-width: 991.98px) {
+        @media (max-width: 1199.98px) {
             top: -67px;
             right: auto;
             left: 50%;

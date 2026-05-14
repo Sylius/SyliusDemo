@@ -2,7 +2,10 @@
 
 <div class="mb-6 position-relative">
     <div class="overflow-hidden">
-        <img src="{{ asset('images/homepage-banner.webp') }}" width="1920" height="793" class="img-fluid w-100" alt="Home">
+        <div class="d-flex justify-content-center align-items-center position-relative">
+            <img src="{{ asset('images/homepage-banner.webp') }}" width="1920" height="793" class="img-fluid w-100" alt="Home">
+            <img src="{{ asset('build/shop/images/homepage-banner-logo.webp', 'shop') }}" class="position-absolute d-xl-none" style="max-width: 40vw" alt="New collection">
+        </div>
     </div>
     <div class="container homepage-banner__container">
         <div class="homepage-info-box">
@@ -11,16 +14,15 @@
             </span>
             <div class="homepage-info-box__inner">
                 <p class="mb-2 fw-semibold text-app-neutral-800 homepage-info-box__title">{{ 'sylius_demo.homepage.info_box.title'|trans }}</p>
-                <span class="fw-bold text-app-neutral-800 lh-1 app-hero__highlight homepage-info-box__subtitle">
-                    {{ 'sylius_demo.homepage.info_box.subtitle'|trans }}
-                    {% include 'shop/common/background_shapes/underline.svg.twig' %}
+                <span class="fw-bold text-app-neutral-800 lh-1 homepage-info-box__subtitle">
+                    {{ 'sylius_demo.homepage.info_box.subtitle_prefix'|trans }}<span class="app-hero__highlight">{{ 'sylius_demo.homepage.info_box.subtitle_highlight'|trans }}{% include 'shop/common/background_shapes/underline.svg.twig' %}</span>
                 </span>
                 <p class="fw-normal text-app-neutral-800 lh-[140%] homepage-info-box__description">
                     {{ 'sylius_demo.homepage.info_box.description_prefix'|trans }}<span class="text-app-primary-400 ff-source fw-normal fs-5 homepage-info-box__standard-link">{{ 'sylius_demo.homepage.info_box.description_link'|trans }}</span>{{ 'sylius_demo.homepage.info_box.description_suffix'|trans }}
                 </p>
                 {# Desktop #}
-                <div class="homepage-info-box__features d-none d-lg-block">
-                    <p class="mb-3 fs-4 fw-bold text-app-neutral-800">{{ 'sylius_demo.homepage.info_box.features_title'|trans }}</p>
+                <div class="homepage-info-box__features d-none d-xl-block">
+                    <p class="mb-3 fs-4 fw-bold text-app-neutral-800 homepage-info-box__features-title">{{ 'sylius_demo.homepage.info_box.features_title'|trans }}</p>
                     <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
                         {% for key in features %}
                             <li class="d-flex align-items-center gap-3">
@@ -32,7 +34,7 @@
                 </div>
 
                 {# Mobile accordion #}
-                <div class="homepage-info-box__features d-lg-none">
+                <div class="homepage-info-box__features d-xl-none">
                     <button class="homepage-info-box__features-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#featuresCollapse" aria-expanded="false">
                         <span class="fw-bold text-app-neutral-800">{{ 'sylius_demo.homepage.info_box.features_title'|trans }}</span>
                         {{ ux_icon('lucide:chevron-down', {'class': 'icon homepage-info-box__features-chevron text-app-primary-400'}) }}
@@ -48,7 +50,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="d-flex align-items-center gap-3 gap-lg-5 homepage-info-box__credentials">
+                <div class="d-flex align-items-center gap-3 gap-xl-5 homepage-info-box__credentials">
                     <div class="fw-bold text-app-neutral-800 homepage-info-box__credentials-text">
                         {{ 'sylius_demo.homepage.info_box.credentials_title'|trans }}
                     </div>
