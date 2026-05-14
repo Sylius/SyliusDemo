@@ -4,7 +4,7 @@
     <div class="overflow-hidden">
         <div class="d-flex justify-content-center align-items-center position-relative">
             <img src="{{ asset('images/homepage-banner.webp') }}" width="1920" height="793" class="img-fluid w-100" alt="Home">
-            <img src="{{ asset('build/shop/images/homepage-banner-logo.webp', 'shop') }}" class="position-absolute d-xl-none" style="max-width: 40vw" alt="New collection">
+            <img src="{{ asset('build/shop/images/homepage-banner-logo.webp', 'shop') }}" class="position-absolute d-lg-none" style="max-width: 40vw" alt="New collection">
         </div>
     </div>
     <div class="container homepage-banner__container">
@@ -21,7 +21,7 @@
                     {{ 'sylius_demo.homepage.info_box.description_prefix'|trans }}<span class="text-app-primary-400 ff-source fw-normal fs-5 homepage-info-box__standard-link">{{ 'sylius_demo.homepage.info_box.description_link'|trans }}</span>{{ 'sylius_demo.homepage.info_box.description_suffix'|trans }}
                 </p>
                 {# Desktop #}
-                <div class="homepage-info-box__features d-none d-xl-block">
+                <div class="homepage-info-box__features d-none d-xxl-block">
                     <p class="mb-3 fs-4 fw-bold text-app-neutral-800 homepage-info-box__features-title">{{ 'sylius_demo.homepage.info_box.features_title'|trans }}</p>
                     <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
                         {% for key in features %}
@@ -34,7 +34,7 @@
                 </div>
 
                 {# Mobile accordion #}
-                <div class="homepage-info-box__features d-xl-none">
+                <div class="homepage-info-box__features d-xxl-none">
                     <button class="homepage-info-box__features-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#featuresCollapse" aria-expanded="false">
                         <span class="fw-bold text-app-neutral-800">{{ 'sylius_demo.homepage.info_box.features_title'|trans }}</span>
                         {{ ux_icon('lucide:chevron-down', {'class': 'icon homepage-info-box__features-chevron text-app-primary-400'}) }}

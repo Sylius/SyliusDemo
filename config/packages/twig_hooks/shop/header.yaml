@@ -3,4 +3,4 @@ sylius_twig_hooks:
         'sylius_shop.base.header.content':
             ecosystem:
                 template: 'shop/header/content/ecosystem.html.twig'
-                priority: -100
+                priority: 50
