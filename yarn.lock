@@ -969,7 +969,7 @@
     "@babel/preset-env" "^7.25.8"
     "@hotwired/stimulus" "^3.0.0"
     "@popperjs/core" "^2.11.8"
-    "@sylius/admin-bundle" "file:../../../Library/Caches/Yarn/v6/npm-@sylius-ui-admin-2.0.0-7f7920df-500b-4ec2-845e-2a6b99fd6f69-1749064432293/node_modules/@sylius-ui/admin/Resources/assets"
+    "@sylius/admin-bundle" "file:vendor/sylius/sylius/src/Sylius/Bundle/AdminBundle/Resources/assets"
     "@symfony/stimulus-bridge" "^3.2.0"
     "@symfony/webpack-encore" "^5.0.1"
     "@tabler/core" "^1.3.0"
@@ -993,7 +993,7 @@
     "@babel/preset-env" "^7.25.8"
     "@hotwired/stimulus" "^3.0.0"
     "@popperjs/core" "^2.11.8"
-    "@sylius/shop-bundle" "file:../../../Library/Caches/Yarn/v6/npm-@sylius-ui-shop-2.0.0-ac847cba-b6b2-40f2-b653-b55db73828a5-1749064435748/node_modules/@sylius-ui/shop/Resources/assets"
+    "@sylius/shop-bundle" "file:vendor/sylius/sylius/src/Sylius/Bundle/ShopBundle/Resources/assets"
     "@symfony/stimulus-bridge" "^3.2.0"
     "@symfony/webpack-encore" "^5.0.1"
     bootstrap "^5.3.3"
@@ -3091,10 +3091,10 @@ svgo@^3.3.2:
     csso "^5.0.5"
     picocolors "^1.0.0"
 
-swiper@^11.2.6:
-  version "11.2.8"
-  resolved "https://registry.yarnpkg.com/swiper/-/swiper-11.2.8.tgz#2b5d7da3093454c0a7bf090f1714fb4332142702"
-  integrity sha512-S5FVf6zWynPWooi7pJ7lZhSUe2snTzqLuUzbd5h5PHUOhzgvW0bLKBd2wv0ixn6/5o9vwc/IkQT74CRcLJQzeg==
+swiper@^12.1.2:
+  version "12.1.2"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-12.1.2.tgz#39eaad0c088def66a7eb8f6bae1439384586ab90"
+  integrity sha512-4gILrI3vXZqoZh71I1PALqukCFgk+gpOwe1tOvz5uE9kHtl2gTDzmYflYCwWvR4LOvCrJi6UEEU+gnuW5BtkgQ==
 
 tapable@^2.1.1, tapable@^2.2.0, tapable@^2.2.1:
   version "2.2.2"
