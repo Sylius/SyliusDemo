@@ -23,14 +23,9 @@
         "php": "^8.2",
         "bugsnag/bugsnag-symfony": "^1.14.3",
         "nyholm/psr7": "^1.8",
-        "sylius/cms-plugin": "1.0.x-dev",
-        "sylius/invoicing-plugin": "2.0.x-dev",
         "sylius/mollie-plugin": "3.1.x-dev",
         "sylius/paypal-plugin": "2.0.x-dev",
-        "sylius/product-bundle-plugin": "1.0.x-dev",
-        "sylius/refund-plugin": "2.0.x-dev",
         "sylius/sylius": "2.2.x-dev",
-        "sylius/wishlist-plugin": "1.0.x-dev",
         "symfony/flex": "^2.7"
     },
     "require-dev": {
