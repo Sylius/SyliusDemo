@@ -77,7 +77,6 @@ default:
             contexts:
                 - sylius.behat.context.hook.doctrine_orm
                 - sylius.behat.context.hook.mailer
-                - Tests\Sylius\InvoicingPlugin\Behat\Context\Hook\InvoicesContext
 
                 - sylius.behat.context.setup.admin_security
                 - sylius.behat.context.setup.admin_user

@@ -1,2 +1,0 @@
-sylius_product_bundle:
-    resource: "@SyliusProductBundlePlugin/config/routes.yaml"

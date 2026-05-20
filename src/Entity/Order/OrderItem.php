@@ -16,18 +16,9 @@ namespace App\Entity\Order;
 use Doctrine\ORM\Mapping as ORM;
 use Sylius\Component\Core\Model\OrderItem as BaseOrderItem;
 use Sylius\Component\Core\Model\OrderItemInterface;
-use Sylius\ProductBundlePlugin\Entity\OrderItemInterface as ProductBundleOrderItemInterface;
-use Sylius\ProductBundlePlugin\Entity\ProductBundleOrderItemsAwareTrait;
 
 #[ORM\Entity]
 #[ORM\Table(name: 'sylius_order_item')]
-class OrderItem extends BaseOrderItem implements OrderItemInterface, ProductBundleOrderItemInterface
+class OrderItem extends BaseOrderItem implements OrderItemInterface
 {
-    use ProductBundleOrderItemsAwareTrait;
-
-    public function __construct()
-    {
-        parent::__construct();
-        $this->initializeProductBundleOrderItems();
-    }
 }
