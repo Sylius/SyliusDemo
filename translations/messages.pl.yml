@@ -6,6 +6,7 @@ sylius_demo:
             addons: 'Dodatki'
             academy: 'Akademia'
             docs: 'Dokumentacja'
+            demo: 'Demo'
             support: 'Wsparcie'
             contact_us: 'Skontaktuj się'
     verification_link_flash: 'W celach demonstracyjnych możesz odwiedzić %url%, aby zweryfikować konto.'
