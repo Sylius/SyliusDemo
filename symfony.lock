@@ -202,21 +202,6 @@
     "knplabs/knp-menu-bundle": {
         "version": "v2.2.1"
     },
-    "knplabs/knp-snappy": {
-        "version": "v1.1.0"
-    },
-    "knplabs/knp-snappy-bundle": {
-        "version": "1.5",
-        "recipe": {
-            "repo": "github.com/symfony/recipes-contrib",
-            "branch": "master",
-            "version": "1.5",
-            "ref": "c81bdcf4a9d4e7b1959071457f9608631865d381"
-        },
-        "files": [
-            "config/packages/knp_snappy.yaml"
-        ]
-    },
     "laminas/laminas-code": {
         "version": "4.5.1"
     },
@@ -515,37 +500,11 @@
     "sylius-labs/polyfill-symfony-event-dispatcher": {
         "version": "v1.0.0"
     },
-    "sylius/cms-plugin": {
-        "version": "1.0",
-        "recipe": {
-            "repo": "github.com/symfony/recipes-contrib",
-            "branch": "main",
-            "version": "1.0",
-            "ref": "82fbfcc27034f459d25ca473a757b9a6db876823"
-        },
-        "files": [
-            "config/packages/sylius_cms.yaml",
-            "config/routes/sylius_cms.yaml"
-        ]
-    },
     "sylius/fixtures-bundle": {
         "version": "v1.4.1"
     },
     "sylius/grid-bundle": {
         "version": "v1.4.4"
-    },
-    "sylius/invoicing-plugin": {
-        "version": "0.5",
-        "recipe": {
-            "repo": "github.com/symfony/recipes-contrib",
-            "branch": "master",
-            "version": "0.5",
-            "ref": "4720bdeb3db9f81932523a640184244cf75da7f0"
-        },
-        "files": [
-            "config/packages/sylius_invoicing.yaml",
-            "config/routes/sylius_invoicing.yaml"
-        ]
     },
     "sylius/mailer-bundle": {
         "version": "v1.7.1"
@@ -565,32 +524,6 @@
     },
     "sylius/paypal-plugin": {
         "version": "2.0.x-dev"
-    },
-    "sylius/product-bundle-plugin": {
-        "version": "1.0",
-        "recipe": {
-            "repo": "github.com/symfony/recipes-contrib",
-            "branch": "main",
-            "version": "1.0",
-            "ref": "19437b51c393256f8eef86a59b8378f2ee284bf8"
-        },
-        "files": [
-            "config/packages/sylius_product_bundle.yaml",
-            "config/routes/sylius_product_bundle.yaml"
-        ]
-    },
-    "sylius/refund-plugin": {
-        "version": "2.0",
-        "recipe": {
-            "repo": "github.com/symfony/recipes-contrib",
-            "branch": "main",
-            "version": "0.4",
-            "ref": "a3f813f608c6f04bd7d0b4cefd73a96bf378c390"
-        },
-        "files": [
-            "config/packages/sylius_refund.yaml",
-            "config/routes/sylius_refund.yaml"
-        ]
     },
     "sylius/registry": {
         "version": "v1.4.1"
@@ -621,19 +554,6 @@
             "version": "0.4",
             "ref": "42a2dc11276d447efefa639b95f9c7a4edd7031a"
         }
-    },
-    "sylius/wishlist-plugin": {
-        "version": "1.0",
-        "recipe": {
-            "repo": "github.com/symfony/recipes-contrib",
-            "branch": "main",
-            "version": "1.0",
-            "ref": "1e7c16bad23f1e977fcd53af6c4fbdfed0c11a75"
-        },
-        "files": [
-            "config/packages/sylius_wishlist.yaml",
-            "config/routes/sylius_wishlist.yaml"
-        ]
     },
     "symfony/asset": {
         "version": "v4.1.5"

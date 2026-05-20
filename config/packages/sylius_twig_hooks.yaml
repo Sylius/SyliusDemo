@@ -63,64 +63,6 @@ sylius_twig_hooks:
             payment_methods:
                 template: 'payment_methods.html.twig'
                 priority: 100
-        'sylius_shop.base.header.navbar.menu':
-            blog_item:
-                template: 'shop/header/navbar/menu/blog_item.html.twig'
-                priority: -100
-            faq_item:
-                template: 'shop/header/navbar/menu/faq_item.html.twig'
-                priority: -200
-
-        'sylius_shop.homepage.index':
-            new_collection:
-                enabled: false
-            container:
-                template: 'shop/homepage/index/container.html.twig'
-                priority: 100
-
-        'sylius_shop.homepage.index.container':
-            homepage_new_collection:
-                template: 'shop/homepage/index/sections.html.twig'
-
-        'sylius_shop.homepage.index.container.sections':
-            homepage_new_collection_header:
-                component: 'sylius_cms:shop:render:block'
-                props:
-                    code: 'homepage_new_collection_header'
-
-        'sylius_shop.homepage.index.container.sections#left':
-            homepage_new_collection_banner:
-                component: 'sylius_cms:shop:render:block'
-                props:
-                    code: 'homepage_new_collection_banner'
-
-        'sylius_shop.homepage.index.container.sections#right':
-            homepage_new_collection_products:
-                component: 'sylius_cms:shop:render:block'
-                props:
-                    code: 'homepage_new_collection_products'
-
-        'sylius_shop.product.show.content':
-            mid_season_sale_banner:
-                component: 'sylius_cms:shop:render:block'
-                props:
-                    code: 'mid_season_sale_banner'
-                priority: 150
-            product_listing:
-                enabled: false
-            specified_products_in_taxons:
-                component: 'sylius_cms:shop:render:block'
-                props:
-                    code: 'specified_products_in_taxons'
-                priority: -100
-
-        'sylius_shop.product.index.content.body.main.header':
-            mid_season_sale_banner_taxon:
-                component: 'sylius_cms:shop:render:block'
-                props:
-                    code: 'mid_season_sale_banner_taxon'
-                priority: -100
-
         'sylius_admin.payment_method.update.content.form.sections.gateway_configuration.mollie.credentials':
             test_credentials:
                 enabled: false
