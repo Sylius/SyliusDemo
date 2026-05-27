@@ -35,5 +35,10 @@ services:
         tags:
             - { name: form.type_extension }
 
+    App\Form\Extension\PayPalConfigurationTypeExtension:
+        class: App\Form\Extension\PayPalConfigurationTypeExtension
+        tags:
+            - { name: form.type_extension }
+
     sylius.http_client:
         class: GuzzleHttp\Client
