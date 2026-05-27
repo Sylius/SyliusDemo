@@ -11,6 +11,13 @@ sylius_demo:
             contact_us: 'Skontaktuj się'
     verification_link_flash: 'W celach demonstracyjnych możesz odwiedzić %url%, aby zweryfikować konto.'
     meta_description: 'Odkryj Sylius – elastyczną platformę e-commerce opartą na Symfony. Poznaj funkcje do personalizacji swojego sklepu i przetestuj jego możliwości!'
+    paypal_demo:
+        cta_label: 'Zakończ płatność demo'
+        cta_note: 'Tryb demo: dane PayPal nie są wymagane.'
+        locked_tooltip: 'Wyłączone w trybie demo'
+        spinner_text: 'Łączenie z PayPal...'
+        error_text: 'Płatność demo nie powiodła się. Odśwież stronę i spróbuj ponownie.'
+        reload_button: 'Odśwież'
     homepage:
         info_box:
             title: 'To jest Sylius prosto z pudełka'
