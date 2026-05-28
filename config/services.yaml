@@ -2,6 +2,7 @@
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     locale: en_US
+    app.demo_mode: '%env(bool:APP_DEMO_MODE)%'
 
 services:
     App\EventListener\AdminListener:
@@ -30,6 +31,19 @@ services:
         class: App\Generator\VerificationFlashMessageGenerator
         arguments: ['@router', '@translator.default']
 
+    App\Controller\CompleteDemoPayPalPaymentAction:
+        arguments:
+            $demoMode: '%app.demo_mode%'
+            $paymentRepository: '@sylius.repository.payment'
+            $csrfTokenManager: '@security.csrf.token_manager'
+            $orderProvider: '@Sylius\PayPalPlugin\Provider\OrderProviderInterface'
+            $capturePaymentResolver: '@Sylius\PayPalPlugin\Resolver\CapturePaymentResolverInterface'
+            $paymentStateManager: '@Sylius\PayPalPlugin\Manager\PaymentStateManagerInterface'
+            $stateMachine: '@Sylius\Abstraction\StateMachine\StateMachineInterface'
+            $urlGenerator: '@router'
+            $entityManager: '@doctrine.orm.entity_manager'
+        tags: ['controller.service_arguments']
+
     App\Form\Extension\MollieGatewayConfigurationTypeExtension:
         class: App\Form\Extension\MollieGatewayConfigurationTypeExtension
         tags:
@@ -42,3 +56,7 @@ services:
 
     sylius.http_client:
         class: GuzzleHttp\Client
+
+twig:
+    globals:
+        app_demo_mode: '%app.demo_mode%'

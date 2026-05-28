@@ -1,0 +1,6 @@
+app_demo_paypal_complete:
+    path: /demo/paypal/complete/{orderToken}/{paymentId}
+    methods: [POST]
+    controller: App\Controller\CompleteDemoPayPalPaymentAction
+    requirements:
+        paymentId: '\d+'

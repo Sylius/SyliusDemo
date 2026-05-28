@@ -11,6 +11,13 @@ sylius_demo:
             contact_us: 'Contact us'
     verification_link_flash: 'For demo purposes you can visit %url% to verify the account.'
     meta_description: 'Explore the Sylius – a flexible e-commerce platform built on Symfony. Discover features to customize your online store and test its capabilities!'
+    paypal_demo:
+        cta_label: 'Complete demo payment'
+        cta_note: 'Demo mode: PayPal credentials are not required.'
+        locked_tooltip: 'Disabled in demo mode'
+        spinner_text: 'Authenticating with PayPal...'
+        error_text: 'Demo payment failed. Please reload the page and try again.'
+        reload_button: 'Reload'
     homepage:
         info_box:
             title: 'This is Sylius out of the box'
