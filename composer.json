@@ -23,9 +23,9 @@
         "php": "^8.2",
         "bugsnag/bugsnag-symfony": "^1.14.3",
         "nyholm/psr7": "^1.8",
-        "sylius/mollie-plugin": "3.1.x-dev",
-        "sylius/paypal-plugin": "2.0.x-dev",
-        "sylius/sylius": "2.2.x-dev",
+        "sylius/mollie-plugin": "^3.2",
+        "sylius/paypal-plugin": "^2.0",
+        "sylius/sylius": "^2.2",
         "symfony/flex": "^2.7"
     },
     "require-dev": {
@@ -42,7 +42,6 @@
         "friends-of-behat/symfony-extension": "^2.6.2",
         "friends-of-behat/variadic-extension": "^1.6",
         "lchrusciel/api-test-case": "^5.3",
-        "phpspec/phpspec": "^7.6",
         "phpunit/phpunit": "^10.5",
         "robertfausk/behat-panther-extension": "^1.2",
         "stripe/stripe-php": "^6.43",
@@ -53,7 +52,6 @@
         "symfony/intl": "^7.2",
         "symfony/web-profiler-bundle": "^7.2"
     },
-    "minimum-stability": "dev",
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
@@ -97,7 +95,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": true,
-            "require": "7.4.*"
+            "require": "^7.4"
         }
     }
 }
