@@ -78,3 +78,13 @@ sylius_twig_hooks:
                 enabled: false
             test_api_keys_action:
                 enabled: false
+
+        'sylius_admin.payment_method.update.content.form.sections.gateway_configuration.sylius_paypal':
+            client_id:
+                enabled: false
+            client_secret:
+                enabled: false
+            reports_sftp_username:
+                enabled: false
+            reports_sftp_password:
+                enabled: false
