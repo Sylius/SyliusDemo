@@ -1,7 +1,6 @@
 class DemoInfoBox {
     constructor() {
         this.isOpen = false;
-        this.versionSelect = document.getElementById('version-select');
         this.infoBox = document.getElementById('info-box');
         this.infoToggle = document.getElementById('info-toggle');
 
@@ -10,7 +9,6 @@ class DemoInfoBox {
         }
 
         this.infoToggle.addEventListener('click', this.toggleVisibility.bind(this));
-        this.versionSelect.addEventListener('change', e => window.location.href = e.target.value);
     }
 
     toggleVisibility() {
