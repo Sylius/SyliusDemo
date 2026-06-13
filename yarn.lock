@@ -969,7 +969,7 @@
     "@babel/preset-env" "^7.25.8"
     "@hotwired/stimulus" "^3.0.0"
     "@popperjs/core" "^2.11.8"
-    "@sylius/admin-bundle" "file:../../../Library/Caches/Yarn/v6/npm-@sylius-ui-admin-2.0.0-7f7920df-500b-4ec2-845e-2a6b99fd6f69-1749064432293/node_modules/@sylius-ui/admin/Resources/assets"
+    "@sylius/admin-bundle" "file:vendor/sylius/sylius/src/Sylius/Bundle/AdminBundle/Resources/assets"
     "@symfony/stimulus-bridge" "^3.2.0"
     "@symfony/webpack-encore" "^5.0.1"
     "@tabler/core" "^1.3.0"
@@ -993,7 +993,7 @@
     "@babel/preset-env" "^7.25.8"
     "@hotwired/stimulus" "^3.0.0"
     "@popperjs/core" "^2.11.8"
-    "@sylius/shop-bundle" "file:../../../Library/Caches/Yarn/v6/npm-@sylius-ui-shop-2.0.0-ac847cba-b6b2-40f2-b653-b55db73828a5-1749064435748/node_modules/@sylius-ui/shop/Resources/assets"
+    "@sylius/shop-bundle" "file:vendor/sylius/sylius/src/Sylius/Bundle/ShopBundle/Resources/assets"
     "@symfony/stimulus-bridge" "^3.2.0"
     "@symfony/webpack-encore" "^5.0.1"
     bootstrap "^5.3.3"
@@ -2319,9 +2319,9 @@ lodash.uniq@^4.5.0:
   integrity sha512-xfBaXQd9ryd9dlSDvnvI0lvxfLJlYAZzXomUYzLKtUeOQvOP5piqAWuGtrhWeqaXK9hhoM/iyJc5AV+XfsX3HQ==
 
 lodash@^4.17.20, lodash@^4.17.21:
-  version "4.17.21"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
-  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
+  version "4.17.23"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.23.tgz#f113b0378386103be4f6893388c73d0bde7f2c5a"
+  integrity sha512-LgVTMpQtIopCi79SJeDiP0TfWi5CNEc/L/aRdTh3yIvmZXTnheWpKjSZhnvMl8iXbC1tFg9gdHHDMLoV7CnG+w==
 
 lru-cache@^5.1.1:
   version "5.1.1"
