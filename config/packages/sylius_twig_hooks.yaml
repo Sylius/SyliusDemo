@@ -88,3 +88,23 @@ sylius_twig_hooks:
                 enabled: false
             reports_sftp_password:
                 enabled: false
+
+        'sylius_admin.payment_method.update.content.form.sections.gateway_configuration.stripe_checkout.form':
+            api_keys:
+                enabled: false
+            api_keys_info:
+                enabled: false
+            webhook_secret_keys:
+                enabled: false
+            webhook_secret_key_info:
+                enabled: false
+
+        'sylius_admin.payment_method.update.content.form.sections.gateway_configuration.stripe_web_elements.form':
+            api_keys:
+                enabled: false
+            api_keys_info:
+                enabled: false
+            webhook_secret_keys:
+                enabled: false
+            webhook_secret_key_info:
+                enabled: false

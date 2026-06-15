@@ -61,15 +61,6 @@
     "dmore/chrome-mink-driver": {
         "version": "2.7.0"
     },
-    "doctrine/annotations": {
-        "version": "1.0",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "master",
-            "version": "1.0",
-            "ref": "cb4152ebcadbe620ea2261da1a1c5a9b8cea7672"
-        }
-    },
     "doctrine/collections": {
         "version": "v1.5.0"
     },
@@ -135,6 +126,19 @@
     },
     "fig/link-util": {
         "version": "1.1.0"
+    },
+    "flux-se/sylius-stripe-plugin": {
+        "version": "2.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "main",
+            "version": "2.0",
+            "ref": "143bd4a3ffc977255dbdf24352526a6d3c341a76"
+        },
+        "files": [
+            "config/packages/sylius_stripe.yaml",
+            "config/routes/sylius_stripe.yaml"
+        ]
     },
     "friends-of-behat/mink": {
         "version": "v1.10.0"
@@ -210,9 +214,6 @@
     },
     "lchrusciel/api-test-case": {
         "version": "v3.1.4"
-    },
-    "lcobucci/clock": {
-        "version": "2.0.0"
     },
     "lcobucci/jwt": {
         "version": "3.3.1"
@@ -344,23 +345,8 @@
     "php-http/promise": {
         "version": "v1.0.0"
     },
-    "phpdocumentor/reflection-common": {
-        "version": "1.0.1"
-    },
-    "phpdocumentor/reflection-docblock": {
-        "version": "4.3.0"
-    },
-    "phpdocumentor/type-resolver": {
-        "version": "0.4.0"
-    },
     "phpspec/php-diff": {
         "version": "v1.1.0"
-    },
-    "phpspec/phpspec": {
-        "version": "4.3.2"
-    },
-    "phpspec/prophecy": {
-        "version": "1.8.0"
     },
     "phpstan/phpdoc-parser": {
         "version": "0.3"
@@ -496,9 +482,6 @@
     },
     "sylius-labs/doctrine-migrations-extra-bundle": {
         "version": "v0.1.3"
-    },
-    "sylius-labs/polyfill-symfony-event-dispatcher": {
-        "version": "v1.0.0"
     },
     "sylius/fixtures-bundle": {
         "version": "v1.4.1"

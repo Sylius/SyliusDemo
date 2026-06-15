@@ -66,4 +66,5 @@ return [
     Sylius\PayPalPlugin\SyliusPayPalPlugin::class => ['all' => true],
     Bazinga\Bundle\JsTranslationBundle\BazingaJsTranslationBundle::class => ['all' => true],
     Sylius\MolliePlugin\SyliusMolliePlugin::class => ['all' => true],
+    FluxSE\SyliusStripePlugin\FluxSESyliusStripePlugin::class => ['all' => true],
 ];
