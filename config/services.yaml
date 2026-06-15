@@ -40,5 +40,10 @@ services:
         tags:
             - { name: form.type_extension }
 
+    App\Form\Extension\StripeGatewayConfigurationTypeExtension:
+        class: App\Form\Extension\StripeGatewayConfigurationTypeExtension
+        tags:
+            - { name: form.type_extension }
+
     sylius.http_client:
         class: GuzzleHttp\Client
