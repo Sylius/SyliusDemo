@@ -45,7 +45,6 @@
         "lchrusciel/api-test-case": "^5.3",
         "phpunit/phpunit": "^10.5",
         "robertfausk/behat-panther-extension": "^1.2",
-        "stripe/stripe-php": "^20.0",
         "sylius-labs/coding-standard": "^4.4",
         "symfony/browser-kit": "^7.2",
         "symfony/debug-bundle": "^7.2",
