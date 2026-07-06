@@ -27,7 +27,8 @@
         "sylius/mollie-plugin": "^3.2",
         "sylius/paypal-plugin": "^2.0",
         "sylius/sylius": "^2.2",
-        "symfony/flex": "^2.7"
+        "symfony/flex": "^2.7",
+        "sylius/adyen-plugin": "^2.0"
     },
     "require-dev": {
         "behat/behat": "^3.22",

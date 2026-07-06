@@ -108,3 +108,57 @@ sylius_twig_hooks:
                 enabled: false
             webhook_secret_key_info:
                 enabled: false
+
+        'sylius_admin.payment_method.update.content.form.sections.gateway_configuration.adyen':
+            notifications_endpoint:
+                enabled: false
+            environment:
+                enabled: false
+            merchant_account:
+                enabled: false
+            live_endpoint_url_prefix:
+                enabled: false
+            api_key:
+                enabled: false
+            client_key:
+                enabled: false
+            hmac_key:
+                enabled: false
+            auth_user:
+                enabled: false
+            auth_password:
+                enabled: false
+            esd_enabled:
+                enabled: false
+            esd_type:
+                enabled: false
+            merchant_category_code:
+                enabled: false
+            capture_mode:
+                enabled: false
+
+        'sylius_admin.payment_method.create.content.form.sections.gateway_configuration.adyen':
+            environment:
+                enabled: false
+            merchant_account:
+                enabled: false
+            live_endpoint_url_prefix:
+                enabled: false
+            api_key:
+                enabled: false
+            client_key:
+                enabled: false
+            hmac_key:
+                enabled: false
+            auth_user:
+                enabled: false
+            auth_password:
+                enabled: false
+            esd_enabled:
+                enabled: false
+            esd_type:
+                enabled: false
+            merchant_category_code:
+                enabled: false
+            capture_mode:
+                enabled: false
