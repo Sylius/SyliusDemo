@@ -15,6 +15,11 @@ services:
         tags:
             - { name: kernel.event_listener, event: kernel.request , method: preCreate }
 
+    App\EventListener\AdyenListener:
+        arguments: [ '@request_stack', '@router' ]
+        tags:
+            - { name: kernel.event_listener, event: kernel.request , method: preAccess }
+
     App\EventListener\ChannelListener:
         arguments: [ '@request_stack', '@router' ]
         tags:
@@ -44,6 +49,15 @@ services:
         class: App\Form\Extension\StripeGatewayConfigurationTypeExtension
         tags:
             - { name: form.type_extension }
+
+    App\Form\Extension\AdyenConfigurationTypeExtension:
+        class: App\Form\Extension\AdyenConfigurationTypeExtension
+        tags:
+            - { name: form.type_extension }
+
+    App\Api\Serializer\GatewayConfigNormalizer:
+        tags:
+            - { name: serializer.normalizer, priority: 100 }
 
     sylius.http_client:
         class: GuzzleHttp\Client

@@ -7,6 +7,8 @@ sylius_demo:
     payment_method:
         mollie:
             prevent_create: 'You cannot create Mollie payment method on Sylius Demo!'
+        adyen:
+            prevent_access: 'You cannot access this page on Sylius Demo!'
 
 sylius:
     customer:
