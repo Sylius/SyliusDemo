@@ -19,7 +19,7 @@ jobs:
             fail-fast: false
             matrix:
                 php: ["8.3"]
-                symfony: ["7.3.*"]
+                symfony: ["7.4.*"]
                 node: ["22.x"]
                 mysql: ["8.4"]
 
@@ -154,6 +154,10 @@ jobs:
             -
                 name: Validate database schema
                 run: bin/console doctrine:schema:validate --skip-sync -vvv
+
+            -
+                name: Run PHPUnit
+                run: vendor/bin/phpunit --colors=always
 
             -
                 name: Install Behat driver

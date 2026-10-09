@@ -13,7 +13,6 @@
 !/etc/build/.gitignore
 
 /behat.yml
-/phpspec.yml
 
 /drivers/
 private/invoices/
@@ -22,6 +21,7 @@ private/invoices/
 !/bin/console
 ###> phpunit/phpunit ###
 /phpunit.xml
+/.phpunit.result.cache
 ###< phpunit/phpunit ###
 
 ###> squizlabs/php_codesniffer ###
