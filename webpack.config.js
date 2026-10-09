@@ -1,3 +1,4 @@
+const fs = require('fs');
 const path = require('path');
 const Encore = require('@symfony/webpack-encore');
 
@@ -5,10 +6,12 @@ const SyliusAdmin = require('@sylius-ui/admin');
 const SyliusShop = require('@sylius-ui/shop');
 
 // Admin config
-const adminConfig = SyliusAdmin.getWebpackConfig(path.resolve(__dirname));
+const adminConfig = SyliusAdmin.getBaseWebpackConfig(path.resolve(__dirname));
 
 // Shop config
-const shopConfig = SyliusShop.getWebpackConfig(path.resolve(__dirname));
+const shopConfig = SyliusShop.getBaseWebpackConfig(path.resolve(__dirname));
+
+const commonControllers = path.resolve(__dirname, './assets/controllers.json');
 
 // App shop config
 Encore
@@ -23,7 +26,7 @@ Encore
     .enableSourceMaps(!Encore.isProduction())
     .enableVersioning(Encore.isProduction())
     .enableSassLoader()
-    .enableStimulusBridge(path.resolve(__dirname, './assets/shop/controllers.json'))
+    .enableStimulusBridge(mergeControllers('shop', [commonControllers, path.resolve(__dirname, './assets/shop/controllers.json')]))
 ;
 
 const appShopConfig = Encore.getWebpackConfig();
@@ -46,7 +49,7 @@ Encore
     .enableSourceMaps(!Encore.isProduction())
     .enableVersioning(Encore.isProduction())
     .enableSassLoader()
-    .enableStimulusBridge(path.resolve(__dirname, './assets/admin/controllers.json'))
+    .enableStimulusBridge(mergeControllers('admin', [commonControllers, path.resolve(__dirname, './assets/admin/controllers.json')]))
 ;
 
 const appAdminConfig = Encore.getWebpackConfig();
@@ -55,3 +58,23 @@ appAdminConfig.externals = Object.assign({}, appAdminConfig.externals, { window:
 appAdminConfig.name = 'app.admin';
 
 module.exports = [shopConfig, adminConfig, appShopConfig, appAdminConfig];
+
+function mergeControllers(name, filePaths, cacheDir = 'var/cache/webpack') {
+    const merged = filePaths.reduce(
+        (acc, filePath) => {
+            const json = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+            acc.controllers = { ...acc.controllers, ...json.controllers };
+            acc.entrypoints = { ...acc.entrypoints, ...json.entrypoints };
+            return acc;
+        },
+        { controllers: {}, entrypoints: {} }
+    );
+
+    const tmpDir = path.resolve(__dirname, cacheDir);
+    if (!fs.existsSync(tmpDir)) fs.mkdirSync(tmpDir, { recursive: true });
+
+    const outFile = path.join(tmpDir, `controllers.merged.${name}.json`);
+    fs.writeFileSync(outFile, JSON.stringify(merged, null, 2), 'utf-8');
+
+    return outFile;
+}

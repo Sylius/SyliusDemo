@@ -1097,7 +1097,7 @@
   resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.34.52.tgz#62f8a686e4ab28a8944902e2ad2d648312ef11cb"
   integrity sha512-XiMQh7qqVlxZzcVD+kkGMNGMzcTrDMLWI7S4x7z1MkCkbDPrekpZXEUK0eZqZFMuHQg2a2DZOcDIh9o5v3Gonw==
 
-"@sylius-ui/admin-js@file:vendor/sylius/sylius/src/Sylius/Bundle/AdminBundle/Resources/npm":
+"@sylius-ui/admin@file:vendor/sylius/sylius/src/Sylius/Bundle/AdminBundle/Resources/npm":
   version "2.0.0"
   dependencies:
     "@babel/core" "^7.17.0"
@@ -1105,7 +1105,7 @@
     "@babel/preset-env" "^7.25.8"
     "@hotwired/stimulus" "^3.2.2"
     "@popperjs/core" "^2.11.8"
-    "@sylius/admin-bundle" "file:../../../.cache/yarn/v6/npm-@sylius-ui-admin-js-2.0.0-4a1c9044-27d5-4198-a88d-c6fbd4128756-1791463566521/node_modules/@sylius-ui/assets"
+    "@sylius/admin-bundle" "file:../../../.cache/yarn/v6/npm-@sylius-ui-admin-2.0.0-a68f7a2c-fe88-49e3-984c-147a26bb0060-1791548413155/node_modules/@sylius-ui/assets"
     "@symfony/stimulus-bridge" "^3.2.0"
     "@symfony/webpack-encore" "^6.0.0"
     "@tabler/core" "~1.4.0"
@@ -1121,12 +1121,7 @@
     webpack ">=5.72 <5.109"
     webpack-cli "^6.0.0"
 
-"@sylius-ui/admin@file:vendor/sylius/sylius/src/Sylius/Bundle/AdminBundle":
-  version "2.0.0"
-  dependencies:
-    "@sylius-ui/admin-js" "file:../../../.cache/yarn/v6/npm-@sylius-ui-admin-2.0.0-7f62c99a-494a-4800-b8f2-9d611ef517b5-1791463566519/node_modules/@sylius-ui/admin/Resources/npm"
-
-"@sylius-ui/shop-js@file:vendor/sylius/sylius/src/Sylius/Bundle/ShopBundle/Resources/npm":
+"@sylius-ui/shop@file:vendor/sylius/sylius/src/Sylius/Bundle/ShopBundle/Resources/npm":
   version "2.0.0"
   dependencies:
     "@babel/core" "^7.17.0"
@@ -1134,7 +1129,7 @@
     "@babel/preset-env" "^7.25.8"
     "@hotwired/stimulus" "^3.2.2"
     "@popperjs/core" "^2.11.8"
-    "@sylius/shop-bundle" "file:../../../.cache/yarn/v6/npm-@sylius-ui-shop-js-2.0.0-cce8d2d8-d0b7-463f-a2f0-397972a65e11-1791463567913/node_modules/@sylius-ui/assets"
+    "@sylius/shop-bundle" "file:../../../.cache/yarn/v6/npm-@sylius-ui-shop-2.0.0-0f900e02-7317-404e-8ee7-48d1fc1037e8-1791548413236/node_modules/@sylius-ui/assets"
     "@symfony/stimulus-bridge" "^3.2.0"
     "@symfony/webpack-encore" "^6.0.0"
     bootstrap "^5.3.8"
@@ -1144,13 +1139,11 @@
     webpack ">=5.72 <5.109"
     webpack-cli "^6.0.0"
 
-"@sylius-ui/shop@file:vendor/sylius/sylius/src/Sylius/Bundle/ShopBundle":
-  version "2.0.0"
-  dependencies:
-    "@sylius-ui/shop-js" "file:../../../.cache/yarn/v6/npm-@sylius-ui-shop-2.0.0-bb9c0c16-ceea-4526-a546-6238e87f0ffc-1791463567912/node_modules/@sylius-ui/shop/Resources/npm"
-
 "@sylius/admin-bundle@file:vendor/sylius/sylius/src/Sylius/Bundle/AdminBundle/Resources/assets":
   version "2.0.0"
+
+"@sylius/paypal-plugin@file:vendor/sylius/paypal-plugin/assets/shop":
+  version "0.1.0"
 
 "@sylius/shop-bundle@file:vendor/sylius/sylius/src/Sylius/Bundle/ShopBundle/Resources/assets":
   version "2.0.0"
