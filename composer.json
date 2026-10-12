@@ -20,13 +20,13 @@
         }
     ],
     "require": {
-        "php": "^8.2",
+        "php": "^8.3",
         "bugsnag/bugsnag-symfony": "^1.14.3",
         "flux-se/sylius-stripe-plugin": "^2.0.0",
         "nyholm/psr7": "^1.8",
         "sylius/mollie-plugin": "^3.2",
         "sylius/paypal-plugin": "^2.0",
-        "sylius/sylius": "~2.2.0",
+        "sylius/sylius": "^2.3",
         "symfony/flex": "^2.7"
     },
     "require-dev": {
@@ -64,13 +64,6 @@
         }
     },
     "scripts": {
-        "reload-database": [
-            "rm -rf web/media/*",
-            "php bin/console doctrine:cache:clear-metadata",
-            "php bin/console doctrine:cache:clear-query",
-            "php bin/console doctrine:cache:clear-result",
-            "php bin/console --no-debug sylius:fixtures:load"
-        ],
         "post-install-cmd": [
             "@auto-scripts"
         ],
