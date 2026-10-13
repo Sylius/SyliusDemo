@@ -1105,7 +1105,7 @@
     "@babel/preset-env" "^7.25.8"
     "@hotwired/stimulus" "^3.2.2"
     "@popperjs/core" "^2.11.8"
-    "@sylius/admin-bundle" "file:../../../.cache/yarn/v6/npm-@sylius-ui-admin-2.0.0-5d6d2664-55d8-4d08-ae13-6a5c4a057976-1791874018772/node_modules/@sylius-ui/assets"
+    "@sylius/admin-bundle" "file:vendor/sylius/sylius/src/Sylius/Bundle/AdminBundle/Resources/assets"
     "@symfony/stimulus-bridge" "^3.2.0"
     "@symfony/webpack-encore" "^6.0.0"
     "@tabler/core" "~1.4.0"
@@ -1129,7 +1129,7 @@
     "@babel/preset-env" "^7.25.8"
     "@hotwired/stimulus" "^3.2.2"
     "@popperjs/core" "^2.11.8"
-    "@sylius/shop-bundle" "file:../../../.cache/yarn/v6/npm-@sylius-ui-shop-2.0.0-f86346e3-2be5-4097-bfaa-415cfcf26238-1791874018856/node_modules/@sylius-ui/assets"
+    "@sylius/shop-bundle" "file:vendor/sylius/sylius/src/Sylius/Bundle/ShopBundle/Resources/assets"
     "@symfony/stimulus-bridge" "^3.2.0"
     "@symfony/webpack-encore" "^6.0.0"
     bootstrap "^5.3.8"
@@ -3086,9 +3086,9 @@ source-list-map@^2.0.1:
   integrity sha512-qnQ7gVMxGNxsiL4lEuJwe/To8UnK7fAnmbGEEH8RpLouuKbeEm0lhbQVFIrNSuB+G7tVrAlVsZgETT5nljf+Iw==
 
 "source-map-js@>=0.6.2 <2.0.0", source-map-js@^1.0.1, source-map-js@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.2.1.tgz#1ce5650fddd87abc099eda37dcff024c2667ae46"
-  integrity sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.2.2.tgz#79fb88d97535a21cb27162cb05d211b67acea4ab"
+  integrity sha512-KGj/8Y43x35aZVDtt+J4mK1hoLGHULMYfSkODJNQjNDC3oW1PqPoxMwo0pLUsWM/UEGzON/NxeHywEfNXNP3Vw==
 
 source-map-support@~0.5.20:
   version "0.5.21"
