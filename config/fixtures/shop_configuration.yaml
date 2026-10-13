@@ -8,10 +8,6 @@ sylius_fixtures:
                 orm_purger: ~
                 images_purger: ~
                 logger: ~
-                shop_user_verification:
-                    options:
-                        emails:
-                            - 'shop@example.com'
 
             fixtures:
                 locale:
@@ -109,6 +105,7 @@ sylius_fixtures:
                                 menu_taxon: 'MENU_CATEGORY'
                                 contact_phone_number: '+41 123 456 789'
                                 contact_email: 'contact@example.com'
+                                account_verification_required: false
                             fashion_web_store_us:
                                 name: 'Fashion Web Store US'
                                 code: 'FASHION_WEB_US'
@@ -129,6 +126,7 @@ sylius_fixtures:
                                 menu_taxon: 'MENU_CATEGORY'
                                 contact_phone_number: '+41 123 456 789'
                                 contact_email: 'contact@example.com'
+                                account_verification_required: false
 
                 payment_method:
                     options:
