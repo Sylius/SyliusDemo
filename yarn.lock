@@ -1105,7 +1105,7 @@
     "@babel/preset-env" "^7.25.8"
     "@hotwired/stimulus" "^3.2.2"
     "@popperjs/core" "^2.11.8"
-    "@sylius/admin-bundle" "file:../../../.cache/yarn/v6/npm-@sylius-ui-admin-2.0.0-5d6d2664-55d8-4d08-ae13-6a5c4a057976-1791874018772/node_modules/@sylius-ui/assets"
+    "@sylius/admin-bundle" "file:vendor/sylius/sylius/src/Sylius/Bundle/AdminBundle/Resources/assets"
     "@symfony/stimulus-bridge" "^3.2.0"
     "@symfony/webpack-encore" "^6.0.0"
     "@tabler/core" "~1.4.0"
@@ -1129,7 +1129,7 @@
     "@babel/preset-env" "^7.25.8"
     "@hotwired/stimulus" "^3.2.2"
     "@popperjs/core" "^2.11.8"
-    "@sylius/shop-bundle" "file:../../../.cache/yarn/v6/npm-@sylius-ui-shop-2.0.0-f86346e3-2be5-4097-bfaa-415cfcf26238-1791874018856/node_modules/@sylius-ui/assets"
+    "@sylius/shop-bundle" "file:vendor/sylius/sylius/src/Sylius/Bundle/ShopBundle/Resources/assets"
     "@symfony/stimulus-bridge" "^3.2.0"
     "@symfony/webpack-encore" "^6.0.0"
     bootstrap "^5.3.8"
@@ -2211,9 +2211,9 @@ icss-utils@^5.0.0, icss-utils@^5.1.0:
   integrity sha512-soFhflCVWLfRNOPU3iv5Z9VUdT44xFRbzjLsEzSr5AQmgqPMTHdU3PMT1Cf1ssx8fLNJDA1juftYl+PUcv3MqA==
 
 immutable@^4.0.0:
-  version "4.3.7"
-  resolved "https://registry.yarnpkg.com/immutable/-/immutable-4.3.7.tgz#c70145fc90d89fb02021e65c84eb0226e4e5a381"
-  integrity sha512-1hqclzwYwjRDFLjcFxOM5AYkkG0rpFPpr1RLPMEuGczoS7YA8gLhy8SWXYRAA/XwfEHpfo3cw5JGioS32fnMRw==
+  version "4.3.9"
+  resolved "https://registry.yarnpkg.com/immutable/-/immutable-4.3.9.tgz#c98349e05e9c6e2a4d8fe88ac0b363e0d536b544"
+  integrity sha512-ObHy4YN7ycwZOUCLI1/6svfyAFu7vL8RhAvVu/bh/RZW9EPlOyDaQ9jDQWCtdqzaXUjgXZCW1migtHE7YI7UGQ==
 
 import-local@^3.0.2:
   version "3.2.0"
