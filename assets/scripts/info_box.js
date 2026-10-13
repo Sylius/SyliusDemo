@@ -4,6 +4,10 @@ class DemoInfoBox {
         this.infoBox = document.getElementById('info-box');
         this.infoToggle = document.getElementById('info-toggle');
 
+        if (this.infoBox === null || this.infoToggle === null) {
+            return;
+        }
+
         if (window.sessionStorage.getItem('sylius:infoBox') !== 'close') {
             this.toggleVisibility();
         }

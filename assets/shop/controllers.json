@@ -1,4 +1,11 @@
 {
-  "controllers": [],
+  "controllers": {
+    "@sylius/shop-bundle": {
+      "api-login": {
+        "enabled": true,
+        "fetch": "lazy"
+      }
+    }
+  },
   "entrypoints": []
 }
