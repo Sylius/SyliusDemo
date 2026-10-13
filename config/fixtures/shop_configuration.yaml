@@ -8,6 +8,10 @@ sylius_fixtures:
                 orm_purger: ~
                 images_purger: ~
                 logger: ~
+                shop_user_verification:
+                    options:
+                        emails:
+                            - 'shop@example.com'
 
             fixtures:
                 locale:

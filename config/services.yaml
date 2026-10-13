@@ -26,6 +26,11 @@ services:
         tags:
             - { name: kernel.event_listener, event: sylius.user.email_verification.token , method: addVerificationLink }
 
+    App\Fixture\Listener\ShopUserVerificationListener:
+        arguments: [ '@sylius.repository.shop_user', '@sylius.manager.shop_user' ]
+        tags:
+            - { name: sylius_fixtures.listener }
+
     App\Generator\FlashMessageGeneratorInterface:
         class: App\Generator\VerificationFlashMessageGenerator
         arguments: ['@router', '@translator.default']
