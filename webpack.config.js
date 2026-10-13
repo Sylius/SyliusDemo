@@ -17,6 +17,11 @@ const commonControllers = path.resolve(__dirname, './assets/controllers.json');
 Encore
     .setOutputPath('public/build/app/shop')
     .setPublicPath('/build/app/shop')
+    .copyFiles({
+        from: './assets/shop/images',
+        to: 'images/[path][name].[hash:8].[ext]',
+        pattern: /\.(png|jpe?g|gif|svg|webp)$/,
+    })
     .addEntry('app-shop-entry', './assets/shop/entrypoint.js')
     .addAliases({
         '@vendor': path.resolve(__dirname, 'vendor'),
@@ -40,6 +45,11 @@ Encore.reset();
 Encore
     .setOutputPath('public/build/app/admin')
     .setPublicPath('/build/app/admin')
+    .copyFiles({
+        from: './assets/admin/images',
+        to: 'images/[path][name].[hash:8].[ext]',
+        pattern: /\.(png|jpe?g|gif|svg|webp)$/,
+    })
     .addEntry('app-admin-entry', './assets/admin/entrypoint.js')
     .addAliases({
         '@vendor': path.resolve(__dirname, 'vendor'),
