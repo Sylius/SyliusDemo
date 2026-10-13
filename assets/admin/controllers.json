@@ -1,4 +1,51 @@
 {
-  "controllers": [],
+  "controllers": {
+    "@sylius/admin-bundle": {
+      "slug": {
+        "enabled": true,
+        "fetch": "lazy"
+      },
+      "taxon-slug": {
+        "enabled": true,
+        "fetch": "lazy"
+      },
+      "taxon-tree": {
+        "enabled": true,
+        "fetch": "lazy"
+      },
+      "delete-taxon": {
+        "enabled": true,
+        "fetch": "lazy"
+      },
+      "product-attribute-autocomplete": {
+        "enabled": true,
+        "fetch": "lazy"
+      },
+      "product-taxon-tree": {
+        "enabled": true,
+        "fetch": "lazy"
+      },
+      "save-positions": {
+        "enabled": true,
+        "fetch": "lazy"
+      },
+      "compound-form-errors": {
+        "enabled": true,
+        "fetch": "lazy"
+      },
+      "tabs-errors": {
+        "enabled": true,
+        "fetch": "lazy"
+      },
+      "back-button": {
+        "enabled": true,
+        "fetch": "lazy"
+      },
+      "theme-switcher": {
+        "enabled": true,
+        "fetch": "lazy"
+      }
+    }
+  },
   "entrypoints": []
 }
