@@ -74,6 +74,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'dresses'
                                 taxons:
                                     - 'dresses'
@@ -91,6 +92,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'dresses'
                                 taxons:
                                     - 'dresses'
@@ -108,6 +110,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'dresses'
                                 taxons:
                                     - 'dresses'
@@ -126,6 +129,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'dresses'
                                 taxons:
                                     - 'dresses'
@@ -143,6 +147,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'dresses'
                                 taxons:
                                     - 'dresses'
@@ -160,6 +165,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'dresses'
                                 taxons:
                                     - 'dresses'
@@ -177,6 +183,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'dresses'
                                 taxons:
                                     - 'dresses'
@@ -194,6 +201,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'dresses'
                                 taxons:
                                     - 'dresses'
@@ -211,6 +219,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'dresses'
                                 taxons:
                                     - 'dresses'
@@ -228,6 +237,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'dresses'
                                 taxons:
                                     - 'dresses'
@@ -245,6 +255,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'dresses'
                                 taxons:
                                     - 'dresses'
@@ -262,6 +273,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'dresses'
                                 taxons:
                                     - 'dresses'
@@ -279,6 +291,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'dresses'
                                 taxons:
                                     - 'dresses'
@@ -296,6 +309,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'dresses'
                                 taxons:
                                     - 'dresses'
@@ -313,6 +327,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'dresses'
                                 taxons:
                                     - 'dresses'
@@ -330,6 +345,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'dresses'
                                 taxons:
                                     - 'dresses'
@@ -347,6 +363,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'dresses'
                                 taxons:
                                     - 'dresses'

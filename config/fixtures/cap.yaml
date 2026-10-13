@@ -69,6 +69,7 @@ sylius_fixtures:
                                 tax_category: 'other'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'caps_with_pompons'
                                 taxons:
                                     - 'caps'
@@ -84,6 +85,7 @@ sylius_fixtures:
                                 tax_category: 'other'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'simple_caps'
                                 taxons:
                                     - 'caps'
@@ -99,6 +101,7 @@ sylius_fixtures:
                                 tax_category: 'other'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'caps_with_pompons'
                                 taxons:
                                     - 'caps'
@@ -114,6 +117,7 @@ sylius_fixtures:
                                 tax_category: 'other'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'simple_caps'
                                 taxons:
                                     - 'caps'
@@ -129,6 +133,7 @@ sylius_fixtures:
                                 tax_category: 'other'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'simple_caps'
                                 taxons:
                                     - 'caps'
@@ -146,6 +151,7 @@ sylius_fixtures:
                                 tax_category: 'other'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'simple_caps'
                                 taxons:
                                     - 'caps'
@@ -163,6 +169,7 @@ sylius_fixtures:
                                 tax_category: 'other'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'caps_with_pompons'
                                 taxons:
                                     - 'caps'
@@ -180,6 +187,7 @@ sylius_fixtures:
                                 tax_category: 'other'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'simple_caps'
                                 taxons:
                                     - 'caps'
@@ -197,6 +205,7 @@ sylius_fixtures:
                                 tax_category: 'other'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'simple_caps'
                                 taxons:
                                     - 'caps'
@@ -214,6 +223,7 @@ sylius_fixtures:
                                 tax_category: 'other'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'caps_with_pompons'
                                 taxons:
                                     - 'caps'
@@ -229,6 +239,7 @@ sylius_fixtures:
                                 tax_category: 'other'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'simple_caps'
                                 taxons:
                                     - 'caps'
@@ -244,6 +255,7 @@ sylius_fixtures:
                                 tax_category: 'other'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'caps_with_pompons'
                                 taxons:
                                     - 'caps'
@@ -259,6 +271,7 @@ sylius_fixtures:
                                 tax_category: 'other'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'simple_caps'
                                 taxons:
                                     - 'caps'
@@ -275,6 +288,7 @@ sylius_fixtures:
                                 tax_category: 'other'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'caps_with_pompons'
                                 taxons:
                                     - 'caps'
@@ -290,6 +304,7 @@ sylius_fixtures:
                                 tax_category: 'other'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'caps_with_pompons'
                                 taxons:
                                     - 'caps'
@@ -305,6 +320,7 @@ sylius_fixtures:
                                 tax_category: 'other'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'simple_caps'
                                 taxons:
                                     - 'caps'
@@ -320,6 +336,7 @@ sylius_fixtures:
                                 tax_category: 'other'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'caps_with_pompons'
                                 taxons:
                                     - 'caps'

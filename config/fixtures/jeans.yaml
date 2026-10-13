@@ -82,6 +82,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'mens_jeans'
                                 taxons:
                                     - 'jeans'
@@ -101,6 +102,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'mens_jeans'
                                 taxons:
                                     - 'jeans'
@@ -120,6 +122,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'mens_jeans'
                                 taxons:
                                     - 'jeans'
@@ -139,6 +142,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'mens_jeans'
                                 taxons:
                                     - 'jeans'
@@ -158,6 +162,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'mens_jeans'
                                 taxons:
                                     - 'jeans'
@@ -177,6 +182,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'mens_jeans'
                                 taxons:
                                     - 'jeans'
@@ -196,6 +202,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'mens_jeans'
                                 taxons:
                                     - 'jeans'
@@ -215,6 +222,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'mens_jeans'
                                 taxons:
                                     - 'jeans'
@@ -234,6 +242,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'mens_jeans'
                                 taxons:
                                     - 'jeans'
@@ -253,6 +262,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'mens_jeans'
                                 taxons:
                                     - 'jeans'
@@ -272,6 +282,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'mens_jeans'
                                 taxons:
                                     - 'jeans'
@@ -291,6 +302,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'mens_jeans'
                                 taxons:
                                     - 'jeans'
@@ -310,6 +322,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'womens_jeans'
                                 taxons:
                                     - 'jeans'
@@ -329,6 +342,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'womens_jeans'
                                 taxons:
                                     - 'jeans'
@@ -348,6 +362,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'womens_jeans'
                                 taxons:
                                     - 'jeans'
@@ -367,6 +382,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'womens_jeans'
                                 taxons:
                                     - 'jeans'
@@ -386,6 +402,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'womens_jeans'
                                 taxons:
                                     - 'jeans'
@@ -405,6 +422,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'womens_jeans'
                                 taxons:
                                     - 'jeans'
@@ -424,6 +442,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'womens_jeans'
                                 taxons:
                                     - 'jeans'
@@ -443,6 +462,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'womens_jeans'
                                 taxons:
                                     - 'jeans'
@@ -462,6 +482,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'womens_jeans'
                                 taxons:
                                     - 'jeans'
@@ -481,6 +502,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'womens_jeans'
                                 taxons:
                                     - 'jeans'
@@ -500,6 +522,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'womens_jeans'
                                 taxons:
                                     - 'jeans'
@@ -519,6 +542,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'womens_jeans'
                                 taxons:
                                     - 'jeans'
@@ -538,6 +562,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'womens_jeans'
                                 taxons:
                                     - 'jeans'
@@ -557,6 +582,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'womens_jeans'
                                 taxons:
                                     - 'jeans'
@@ -576,6 +602,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'womens_jeans'
                                 taxons:
                                     - 'jeans'
@@ -595,6 +622,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'womens_jeans'
                                 taxons:
                                     - 'jeans'
@@ -614,6 +642,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'womens_jeans'
                                 taxons:
                                     - 'jeans'
@@ -632,6 +661,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'womens_jeans'
                                 taxons:
                                     - 'jeans'
