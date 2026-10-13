@@ -105,6 +105,26 @@ sylius_fixtures:
                                 menu_taxon: 'MENU_CATEGORY'
                                 contact_phone_number: '+41 123 456 789'
                                 contact_email: 'contact@example.com'
+                            fashion_web_store_us:
+                                name: 'Fashion Web Store US'
+                                code: 'FASHION_WEB_US'
+                                locales:
+                                    - '%locale%'
+                                currencies:
+                                    - 'USD'
+                                enabled: true
+                                hostname: '%env(resolve:SYLIUS_FIXTURES_USD_HOSTNAME)%'
+                                theme_name: '%env(resolve:SYLIUS_FIXTURES_THEME_NAME)%'
+                                shop_billing_data:
+                                    company: 'Sylius'
+                                    tax_id: '0001112222'
+                                    country_code: 'US'
+                                    street: 'Test St. 15'
+                                    city: 'eCommerce Town'
+                                    postcode: '00 33 22'
+                                menu_taxon: 'MENU_CATEGORY'
+                                contact_phone_number: '+41 123 456 789'
+                                contact_email: 'contact@example.com'
 
                 payment_method:
                     options:
@@ -114,11 +134,13 @@ sylius_fixtures:
                                 name: 'Cash on delivery'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                             bank_transfer:
                                 code: 'bank_transfer'
                                 name: 'Bank transfer'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 enabled: true
 
                 shipping_method:
@@ -130,16 +152,19 @@ sylius_fixtures:
                                 enabled: true
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                             dhl_express:
                                 code: 'dhl_express'
                                 name: 'DHL Express'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                             fedex:
                                 code: 'fedex'
                                 name: 'FedEx'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
 
                 customer_group:
                     options:

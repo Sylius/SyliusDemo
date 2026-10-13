@@ -15,6 +15,7 @@ sylius_fixtures:
                                 name: 'Christmas'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 coupon_based: true
                                 coupons:
                                     -   code: 'CHRISTMAS_SALE'
@@ -30,21 +31,27 @@ sylius_fixtures:
                                 ends_at: '7 day'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 rules:
                                     -   type: 'item_total'
                                         configuration:
                                             FASHION_WEB:
+                                                amount: 100.00
+                                            FASHION_WEB_US:
                                                 amount: 100.00
                                 actions:
                                     -   type: 'order_fixed_discount'
                                         configuration:
                                             FASHION_WEB:
                                                 amount: 10.00
+                                            FASHION_WEB_US:
+                                                amount: 10.00
                             back_to_school:
                                 code: 'back_to_school'
                                 name: 'Back to school'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 starts_at: 'September 1 last year'
                                 ends_at: 'September 30 last year'
                                 archived_at: 'October 1 last year'
@@ -52,6 +59,8 @@ sylius_fixtures:
                                     -   type: 'item_total'
                                         configuration:
                                             FASHION_WEB:
+                                                amount: 100.00
+                                            FASHION_WEB_US:
                                                 amount: 100.00
                                 actions:
                                     -   type: 'order_percentage_discount'
@@ -66,6 +75,7 @@ sylius_fixtures:
                                 name: 'Winter sale'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 priority: 1
                                 scopes:
                                     -   type: 'for_variants'
@@ -83,6 +93,7 @@ sylius_fixtures:
                                 name: 'Spring sale'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 priority: 3
                                 scopes:
                                     -   type: 'for_taxons'
@@ -94,11 +105,14 @@ sylius_fixtures:
                                         configuration:
                                             FASHION_WEB:
                                                 amount: 3.00
+                                            FASHION_WEB_US:
+                                                amount: 3.00
                             summer:
                                 code: 'summer'
                                 name: 'Summer sale'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 exclusive: true
                                 priority: 4
                                 scopes:
@@ -117,6 +131,7 @@ sylius_fixtures:
                                 end_date: '10 days'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 priority: 2
                                 scopes:
                                     -   type: 'for_products'

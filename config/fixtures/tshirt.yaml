@@ -87,6 +87,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'womens_t_shirts'
                                 taxons:
                                     - 't_shirts'
@@ -108,6 +109,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'womens_t_shirts'
                                 taxons:
                                     - 't_shirts'
@@ -126,6 +128,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'womens_t_shirts'
                                 taxons:
                                     - 't_shirts'
@@ -146,6 +149,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'womens_t_shirts'
                                 taxons:
                                     - 't_shirts'
@@ -166,6 +170,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'womens_t_shirts'
                                 taxons:
                                     - 't_shirts'
@@ -185,6 +190,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'womens_t_shirts'
                                 taxons:
                                     - 't_shirts'
@@ -205,6 +211,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'womens_t_shirts'
                                 taxons:
                                     - 't_shirts'
@@ -224,6 +231,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'womens_t_shirts'
                                 taxons:
                                     - 't_shirts'
@@ -243,6 +251,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'womens_t_shirts'
                                 taxons:
                                     - 't_shirts'
@@ -263,6 +272,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'womens_t_shirts'
                                 taxons:
                                     - 't_shirts'
@@ -282,6 +292,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'womens_t_shirts'
                                 taxons:
                                     - 't_shirts'
@@ -300,6 +311,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'womens_t_shirts'
                                 taxons:
                                     - 't_shirts'
@@ -319,6 +331,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'mens_t_shirts'
                                 taxons:
                                     - 't_shirts'
@@ -338,6 +351,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'mens_t_shirts'
                                 taxons:
                                     - 't_shirts'
@@ -357,6 +371,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'mens_t_shirts'
                                 taxons:
                                     - 't_shirts'
@@ -376,6 +391,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'mens_t_shirts'
                                 taxons:
                                     - 't_shirts'
@@ -395,6 +411,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'mens_t_shirts'
                                 taxons:
                                     - 't_shirts'
@@ -414,6 +431,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'mens_t_shirts'
                                 taxons:
                                     - 't_shirts'
@@ -433,6 +451,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'mens_t_shirts'
                                 taxons:
                                     - 't_shirts'
@@ -452,6 +471,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'mens_t_shirts'
                                 taxons:
                                     - 't_shirts'
@@ -471,6 +491,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'mens_t_shirts'
                                 taxons:
                                     - 't_shirts'
@@ -490,6 +511,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'mens_t_shirts'
                                 taxons:
                                     - 't_shirts'
@@ -509,6 +531,7 @@ sylius_fixtures:
                                 tax_category: 'clothing'
                                 channels:
                                     - 'FASHION_WEB'
+                                    - 'FASHION_WEB_US'
                                 main_taxon: 'mens_t_shirts'
                                 taxons:
                                     - 't_shirts'

@@ -12,4 +12,5 @@ imports:
 
 parameters:
   env(SYLIUS_FIXTURES_HOSTNAME): 'localhost'
+  env(SYLIUS_FIXTURES_USD_HOSTNAME): '127.0.0.1'
   env(SYLIUS_FIXTURES_THEME_NAME): ~

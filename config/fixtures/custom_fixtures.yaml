@@ -18,6 +18,12 @@ sylius_fixtures:
                         amount: 20
                         channel: 'FASHION_WEB'
 
+                order_us:
+                    name: 'order'
+                    options:
+                        amount: 20
+                        channel: 'FASHION_WEB_US'
+
                 payments:
                     options:
                         percentage_completed: 75
