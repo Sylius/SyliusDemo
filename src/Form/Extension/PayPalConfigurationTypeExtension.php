@@ -24,8 +24,6 @@ final class PayPalConfigurationTypeExtension extends AbstractTypeExtension
         $builder
             ->remove('client_id')
             ->remove('client_secret')
-            ->remove('reports_sftp_username')
-            ->remove('reports_sftp_password')
         ;
     }
 
