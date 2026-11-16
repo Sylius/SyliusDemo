@@ -79,12 +79,6 @@ sylius_twig_hooks:
             test_api_keys_action:
                 enabled: false
 
-        'sylius_admin.payment_method.update.content.form.sections.gateway_configuration.sylius_paypal':
-            client_id:
-                enabled: false
-            client_secret:
-                enabled: false
-
         'sylius_admin.payment_method.update.content.form.sections.gateway_configuration.stripe_checkout.form':
             api_keys:
                 enabled: false
